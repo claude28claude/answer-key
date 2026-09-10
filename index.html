@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Answer Key — Static GK, Ancient and Medieval History, the New Criminal Laws, Geography, Polity</title>
+<meta name="description" content="Six SSC subjects, index first. Static GK: the eight classical dances, the folk dances of every state and union territory, and the festivals and fairs that get asked. Ancient India from the stone age to Harsha. Medieval India from the Rajputs to the later Mughals. The three new criminal laws — Bharatiya Nyaya Sanhita, Bharatiya Nagarik Suraksha Sanhita and Bharatiya Sakshya Adhiniyam — with the section numbers that are asked by number. Geography, built around the Himalayas. Polity: Centre-State relations and the Seventh Schedule. Searchable, works offline, installable.">
+<meta name="theme-color" content="#0e1113">
+<meta name="color-scheme" content="dark">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="application-name" content="The Answer Key">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Answer Key">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%230e1113'/%3E%3Ccircle cx='36' cy='36' r='16' fill='none' stroke='%2357c98a' stroke-width='7'/%3E%3Cpath d='M47 47 L78 78' stroke='%2357c98a' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M62 62 L54 70 M71 71 L63 79' stroke='%2357c98a' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+<!-- The two faces almost every screen is set in are told to the browser here,
+     so their download starts with the stylesheet instead of after it. That is
+     the difference between the text re-setting once before you look at it and
+     re-setting while you are reading. The other five faces are wanted less
+     often and are left to load in the ordinary way. -->
+<link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/literata-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="topin">
+    <a class="brand" href="#/" aria-label="The Answer Key — the index">
+      <svg class="mk" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="36" cy="36" r="16" fill="none" stroke="#57c98a" stroke-width="7"/>
+        <path d="M47 47 L78 78" stroke="#57c98a" stroke-width="7" stroke-linecap="round"/>
+        <path d="M62 62 L54 70 M71 71 L63 79" stroke="#57c98a" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+      <span class="brandtext">
+        <b>The Answer Key</b>
+        <span id="brandsub">The index</span>
+      </span>
+    </a>
+
+    <div class="searchwrap">
+      <span class="ico" aria-hidden="true">⌕</span>
+      <input id="q" type="search"
+             placeholder="Search everything…  try “Bihu”, “Nyaya 103”, “Zojila” or “Concurrent”"
+             autocomplete="off" spellcheck="false" aria-label="Search all six subjects"
+             aria-controls="results" aria-expanded="false">
+      <kbd>/</kbd>
+    </div>
+
+    <button id="install" class="installbtn" hidden>
+      <span aria-hidden="true">↓</span> Install<span class="lbl"> app</span>
+    </button>
+  </div>
+
+  <nav class="tabs" id="tabs" aria-label="Subjects"></nav>
+</header>
+
+<div id="results" hidden role="listbox" aria-label="Search results"></div>
+
+<main id="main"></main>
+
+<!-- Back a step. It lives in the shell rather than being rebuilt per page, so
+     there is exactly one of it and only its hidden state changes. Fixed to the
+     bottom because an installed app has no browser chrome to go back with. -->
+<button type="button" class="backfab" id="backfab" aria-label="Go back a step" hidden>Back</button>
+
+<footer>
+  <div class="wrap">
+    <p><b>What this is.</b> Six subjects for the SSC track, cut down to the part
+      that is actually asked. The static portion comes first because it is the
+      part that is pure recall and therefore the part worth having in one place:
+      the eight classical dances, the folk dances of every state and union
+      territory, and the festivals and fairs.</p>
+    <p><b>The three new criminal laws are quoted by number.</b> The Bharatiya
+      Nyaya Sanhita, the Bharatiya Nagarik Suraksha Sanhita and the Bharatiya
+      Sakshya Adhiniyam are asked by section number — <em>which section is
+      murder</em>, not <em>what is murder</em> — so every section here carries
+      its number, the old IPC, CrPC or Evidence Act number it replaces, and the
+      punishment. The section numbers were checked against the bare Acts and
+      against published mapping tables rather than written from memory.</p>
+    <p><b>Where the popular answer is wrong, the page says so.</b> Chhau is not
+      one state's dance. Garba and Dandiya are not the same thing. Sedition was
+      not simply renamed. Every one of those sits in a <em>Careful</em> box
+      instead of being smoothed over, because the wrong version is the one the
+      question is built to catch.</p>
+    <p><b>What is firm and what moves.</b> Dates of enactment, section numbers
+      and the entries of the Seventh Schedule are firm. Heights of peaks,
+      lengths of ranges and the counts of List entries move by small amounts
+      between sources; where they do, the figure carries the version the
+      standard textbooks use, and the note says that it moves.</p>
+    <p class="colophon">
+      No tracking. No network calls. Works offline once loaded.
+      Press <kbd>/</kbd> to search, <kbd>J</kbd> and <kbd>K</kbd> to move, <kbd>Esc</kbd> to close.
+    </p>
+  </div>
+</footer>
+
+<script src="data-static.js"></script>
+<script src="data-ancient.js"></script>
+<script src="data-medieval.js"></script>
+<script src="data-laws.js"></script>
+<script src="data-geo.js"></script>
+<script src="data-polity.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
