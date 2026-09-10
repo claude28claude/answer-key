@@ -532,7 +532,7 @@ topics:[
     ["`193(3)(ii)`","The **victim must be informed of the progress** of the investigation within **90 days**"],
     ["`230`","The accused and the victim must be **supplied copies of the police report and other documents within 14 days** of production or appearance"],
     ["`251`","**Charges** must be framed by a Court of Session within **60 days** of the first hearing on charge"],
-    ["`258`","Judgment in a warrant case tried by a Magistrate: **within 30 days** of the close of arguments, extendable to **45 days** for reasons recorded"],
+    ["`258`","Judgment of acquittal or conviction in a **Sessions trial**: **within 30 days** of the completion of arguments, extendable to **45 days** for reasons recorded in writing"],
     ["`346`","Adjournments: not more than **two** may be granted in any case, and only for reasons recorded"],
     ["`392`","**Judgment must be pronounced within 45 days** of the termination of the trial"],
     ["`472`","**Mercy petition**: a convict under sentence of death may petition the Governor within **30 days**, and the President within **60 days** of the Governor's rejection. There is no time limit on the President's decision, and the section bars an appeal to any court against the President's order"]
