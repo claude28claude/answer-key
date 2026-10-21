@@ -5,9 +5,18 @@
 
    HOW THE SITE IS PUT TOGETHER. Each data-*.js file pushes one subject onto
    window.SUBJECTS. A subject holds topics; a topic holds blocks; a block is
-   one of five shapes (paragraph, table, list, careful-note, swap-cards). The
-   renderer knows those five shapes and nothing else, so adding a subject is
-   adding a data file and one line in index.html — never a change here.
+   one of seven shapes (paragraph, table, list, careful-note, swap-cards, a
+   bank of multiple-choice questions, a figure). The renderer knows those
+   seven shapes and nothing else, so adding a subject is adding a data file
+   and one line in index.html — never a change here.
+
+   THE QUESTION BLOCK is the one shape that is not just read. A maths formula
+   is either in your head or it is not, and reading it again tells you
+   nothing about which. So the maths half of the site is written as questions
+   with the four options an SSC paper would give, and the formula is in the
+   explanation that opens once you have committed to an answer. Answering
+   locks the question, because a formula you looked up before guessing has
+   not been tested.
 
    THREE ROUTES, all in the hash so the site can be served from a static
    folder or a subdirectory of GitHub Pages without any server rewriting:
@@ -86,7 +95,22 @@ function countTopic(t){
     if (b.rows) n += b.rows.length;
     if (b.list) n += b.list.length;
     if (b.swap) n += b.swap.length;
+    if (b.mcq) n += b.mcq.length;
   });
+  return n;
+}
+
+/* How many of a topic's entries are questions. A maths topic is worth opening
+   for the practice rather than for the reading, so the index says how many
+   questions are in it rather than only how many lines. */
+function countQ(t){
+  var n = 0;
+  (t.blocks || []).forEach(function(b){ if (b.mcq) n += b.mcq.length; });
+  return n;
+}
+function countSubjectQ(s){
+  var n = 0;
+  s.topics.forEach(function(t){ n += countQ(t); });
   return n;
 }
 function countSubject(s){
@@ -103,6 +127,44 @@ function countSubject(s){
    swap (facing cards), careful (a warning). Nothing else is understood, which
    is what keeps the data files honest.
    -------------------------------------------------------------------------- */
+/* A FIGURE. The SVG comes out of diagrams.js, which is our own hand-written
+   markup, so it is written into the page as markup rather than escaped — it
+   is the one thing on the site that is. A key with no drawing behind it shows
+   as a visible gap instead of silently nothing, because a question that says
+   "in the figure" with no figure is unanswerable, and a silent omission is
+   the one failure a reader cannot report. */
+function figure(key, cap){
+  var svg = (window.DIA || {})[key];
+  if (!svg) return '<div class="dia miss">Figure missing: ' + esc(key) + '</div>';
+  return '<figure class="dia">' + svg +
+         (cap ? '<figcaption>' + rich(cap) + '</figcaption>' : '') + '</figure>';
+}
+
+var LETTERS = 'ABCD';
+
+/* ONE QUESTION. The options are buttons: a question you have not answered
+   has no answer on screen at all, and the explanation is written into the
+   page from the start but hidden, so that revealing it needs no second
+   thought and works with the network off. */
+function renderQ(m, i){
+  var h = ['<li class="mcq" data-a="' + (m.a | 0) + '">'];
+  h.push('<div class="qt">' + rich(m.q) +
+         (m.tag ? '<span class="qtag">' + esc(m.tag) + '</span>' : '') + '</div>');
+  if (m.d) h.push(figure(m.d, m.dcap));
+  h.push('<div class="opts" role="group" aria-label="Options">');
+  (m.o || []).forEach(function(o, j){
+    h.push('<button type="button" class="opt" data-i="' + j + '">' +
+           '<span class="ol">' + LETTERS.charAt(j) + '</span>' +
+           '<span class="ox">' + rich(o) + '</span></button>');
+  });
+  h.push('</div>');
+  h.push('<button type="button" class="showans">Show the answer</button>');
+  h.push('<div class="ans" hidden><span class="al">' + LETTERS.charAt(m.a | 0) + '</span>' +
+         '<span class="aw">' + rich(m.why || '') + '</span></div>');
+  h.push('</li>');
+  return h.join('');
+}
+
 function renderBlock(b){
   var out = [];
 
@@ -110,8 +172,34 @@ function renderBlock(b){
     return '<div class="careful"><span class="cl">Careful</span>' + rich(b.careful) + '</div>';
   }
 
+  /* A bank of questions. Its own shape rather than a flag on the paragraph
+     block, because it carries a score bar and a reset, and nothing else on
+     the site has state. */
+  if (b.mcq){
+    out.push('<div class="block mcqblock">');
+    if (b.h) out.push('<h3>' + esc(b.h) + '</h3>');
+    if (b.p){
+      var pq = Array.isArray(b.p) ? b.p : [b.p];
+      pq.forEach(function(p){ out.push('<p>' + rich(p) + '</p>'); });
+    }
+    out.push('<div class="mcqbar"><span class="score">' + b.mcq.length +
+             ' question' + (b.mcq.length === 1 ? '' : 's') + '</span>' +
+             '<span class="acts">' +
+             '<button type="button" data-mcq="reveal">Reveal all</button>' +
+             '<button type="button" data-mcq="reset">Start again</button>' +
+             '</span></div>');
+    out.push('<ol class="mcqs">');
+    b.mcq.forEach(function(m, i){ out.push(renderQ(m, i)); });
+    out.push('</ol>');
+    if (b.note) out.push('<p class="bnote">' + rich(b.note) + '</p>');
+    out.push('</div>');
+    return out.join('');
+  }
+
   out.push('<div class="block">');
   if (b.h) out.push('<h3>' + esc(b.h) + '</h3>');
+
+  if (b.dia) out.push(figure(b.dia, b.cap));
 
   if (b.p){
     var ps = Array.isArray(b.p) ? b.p : [b.p];
@@ -152,38 +240,130 @@ function renderBlock(b){
     out.push('</div>');
   }
 
-  if (b.note) out.push('<p style="color:var(--dim);font-size:var(--t-small)">' + rich(b.note) + '</p>');
+  if (b.note) out.push('<p class="bnote">' + rich(b.note) + '</p>');
 
   out.push('</div>');
   return out.join('');
 }
 
 /* --------------------------------------------------------------------------
+   ANSWERING
+
+   All of it is delegated from main, so a page that has just been re-rendered
+   needs nothing wired up, and 900 questions cost 900 data attributes rather
+   than 900 listeners.
+
+   A question locks when it is answered. That is the whole point: a formula
+   you were still deciding about while the answer was on screen has not been
+   tested. "Start again" unlocks the block when you want to run it a second
+   time.
+   -------------------------------------------------------------------------- */
+function scoreBlock(block){
+  if (!block) return;
+  var all = block.querySelectorAll('.mcq');
+  var done = block.querySelectorAll('.mcq.done').length;
+  var ok = block.querySelectorAll('.mcq.ok').length;
+  var el2 = block.querySelector('.score');
+  if (!el2) return;
+  el2.textContent = done
+    ? done + ' of ' + all.length + ' answered · ' + ok + ' right'
+    : all.length + ' question' + (all.length === 1 ? '' : 's');
+}
+
+function revealQ(li){
+  if (!li) return;
+  var ans = li.querySelector('.ans');
+  if (ans) ans.hidden = false;
+  li.classList.add('open');
+  var correct = li.querySelector('.opt[data-i="' + (li.dataset.a | 0) + '"]');
+  if (correct) correct.classList.add('right');
+  Array.prototype.forEach.call(li.querySelectorAll('.opt'), function(o){ o.disabled = true; });
+}
+
+function answerQ(opt){
+  var li = opt.closest('.mcq');
+  if (!li || li.classList.contains('done')) return;
+  var right = (li.dataset.a | 0) === (opt.dataset.i | 0);
+  li.classList.add('done');
+  if (right) li.classList.add('ok'); else opt.classList.add('wrong');
+  revealQ(li);
+  scoreBlock(li.closest('.mcqblock'));
+}
+
+main.addEventListener('click', function(e){
+  var opt = e.target.closest('.opt');
+  if (opt && !opt.disabled){ answerQ(opt); return; }
+
+  var show = e.target.closest('.showans');
+  if (show){ revealQ(show.closest('.mcq')); return; }
+
+  var act = e.target.closest('[data-mcq]');
+  if (!act) return;
+  var block = act.closest('.mcqblock');
+  var qs = Array.prototype.slice.call(block.querySelectorAll('.mcq'));
+  if (act.dataset.mcq === 'reveal'){
+    qs.forEach(revealQ);
+  } else {
+    qs.forEach(function(li){
+      li.classList.remove('done', 'ok', 'open');
+      var ans = li.querySelector('.ans');
+      if (ans) ans.hidden = true;
+      Array.prototype.forEach.call(li.querySelectorAll('.opt'), function(o){
+        o.disabled = false;
+        o.classList.remove('right', 'wrong');
+      });
+    });
+  }
+  scoreBlock(block);
+});
+
+/* --------------------------------------------------------------------------
    THE THREE PAGES
    -------------------------------------------------------------------------- */
 
+var PART_DEFAULT = 'Recall and theory';
+
 function pageIndex(){
-  var totalTopics = 0, totalFacts = 0;
-  SUBJECTS.forEach(function(s){ totalTopics += s.topics.length; totalFacts += countSubject(s); });
+  var totalTopics = 0, totalFacts = 0, totalQ = 0;
+  SUBJECTS.forEach(function(s){
+    totalTopics += s.topics.length;
+    totalFacts += countSubject(s);
+    totalQ += countSubjectQ(s);
+  });
 
   var h = [];
   h.push('<section class="hero">');
   h.push('<h1>Everything this site holds, on one screen</h1>');
-  h.push('<p>Six subjects for the SSC track. The static portion is first because it is ' +
-         'the part that is pure recall — the eight classical dances, the folk dances of every ' +
-         'state and union territory, and the festivals and fairs. Then Ancient and Medieval ' +
-         'India, the three new criminal laws quoted by section number, Geography built around ' +
-         'the Himalayas, and the two pieces of Polity that are asked most and understood least: ' +
-         'Centre-State relations and the Seventh Schedule.</p>');
+  h.push('<p>Two halves. The part that is <b>pure recall</b> comes first — the eight ' +
+         'classical dances and the folk dances of every state, the festivals and the fairs, ' +
+         'Ancient and Medieval India, the three new criminal laws quoted by section number, ' +
+         'Geography built around the Himalayas, and the two pieces of Polity that are asked ' +
+         'most and understood least. Then the <b>maths</b>: algebra, geometry, mensuration in ' +
+         'two and three dimensions, trigonometry with the whole of height and distance, and ' +
+         'profit with mixture — written as questions rather than as a formula sheet, because ' +
+         'reading a formula again never tells you whether you knew it.</p>');
   h.push('<div class="herostats">' +
          '<span><b>' + SUBJECTS.length + '</b> subjects</span>' +
          '<span><b>' + totalTopics + '</b> topics</span>' +
          '<span><b>' + totalFacts + '</b> indexed facts</span>' +
+         (totalQ ? '<span><b>' + totalQ + '</b> questions</span>' : '') +
          '<span>Works offline</span></div>');
   h.push('</section>');
 
-  h.push('<div class="indexgrid">');
+  /* The index is laid out in parts — the reading half and the practice half —
+     because by eleven subjects an undivided grid of cards stops being an
+     index and becomes a wall. A subject with no part named falls into the
+     first one, so the six original subjects needed no editing. */
+  var open = null;
   SUBJECTS.forEach(function(s, i){
+    var part = s.part || PART_DEFAULT;
+    if (part !== open){
+      if (open !== null) h.push('</div>');
+      h.push('<h2 class="parth"><span>' + esc(part) + '</span></h2>');
+      h.push('<div class="indexgrid">');
+      open = part;
+    }
+    var nq = countSubjectQ(s);
     h.push('<section class="idxcard">');
     h.push('<span class="num">Subject ' + (i + 1) + '</span>');
     h.push('<h2><a href="#/s/' + s.id + '">' + esc(s.n) + '</a></h2>');
@@ -195,12 +375,14 @@ function pageIndex(){
              '<span class="t">' + esc(t.n) + '</span>' +
              '<span class="c">' + countTopic(t) + '</span></a></li>');
     });
-    h.push('</ul></section>');
+    h.push('</ul>');
+    if (nq) h.push('<p class="qtot">' + nq + ' questions in this subject</p>');
+    h.push('</section>');
   });
-  h.push('</div>');
+  if (open !== null) h.push('</div>');
 
   brandsub.textContent = 'The index';
-  document.title = 'The Answer Key — SSC static GK, history, the new criminal laws, geography, polity';
+  document.title = 'The Answer Key — SSC static GK, history, the new criminal laws, geography, polity, advanced maths';
   return h.join('');
 }
 
@@ -221,6 +403,11 @@ function pageSubject(sub){
   h.push('<p class="eyebrow">Subject</p>');
   h.push('<h1>' + esc(sub.n) + '</h1>');
   h.push('<p class="lede">' + esc(sub.intro || sub.w) + '</p>');
+  var sq = countSubjectQ(sub);
+  if (sq) h.push('<p class="herostats" style="margin-top:14px">' +
+                 '<span><b>' + sub.topics.length + '</b> topics</span>' +
+                 '<span><b>' + sq + '</b> questions</span>' +
+                 '<span>Answer locks the question</span></p>');
   h.push('</div>');
 
   h.push('<div class="rail">' + railFor(sub, null) + '<div>');
@@ -313,6 +500,7 @@ function syncTabs(){
   var parts = hash.split('/').filter(Boolean);
   var activeSub = (parts[0] === 't' || parts[0] === 's') ? parts[1] : null;
   Array.prototype.forEach.call(tabsEl.children, function(btn){
+    if (btn.tagName !== 'BUTTON') return;
     var isOn = btn.dataset.sub === (activeSub || '__index__');
     if (isOn) btn.setAttribute('aria-current', 'true');
     else btn.removeAttribute('aria-current');
@@ -321,7 +509,13 @@ function syncTabs(){
 
 function buildTabs(){
   var h = ['<button data-sub="__index__" type="button">Index</button>'];
+  var open = null;
   SUBJECTS.forEach(function(s){
+    /* A hairline where the reading half ends and the practice half begins, so
+       that a row of twelve tabs still reads as two groups. */
+    var part = s.part || PART_DEFAULT;
+    if (open !== null && part !== open) h.push('<span class="tabdiv" aria-hidden="true"></span>');
+    open = part;
     h.push('<button data-sub="' + s.id + '" type="button">' + esc(s.tab || s.n) + '</button>');
   });
   tabsEl.innerHTML = h.join('');
@@ -368,6 +562,17 @@ function buildIndex(){
         });
         (b.swap || []).forEach(function(sw){
           INDEX.push({ s: s, t: t, title: strip(sw[1]), body: strip(sw[0]) + (sw[2] ? ' — ' + strip(sw[2]) : ''), kind: b.h || 'Pair' });
+        });
+        /* A question is indexed by its text, and its own explanation is the
+           body — so searching a formula finds the question that tests it and
+           the result row already shows what the formula is. */
+        (b.mcq || []).forEach(function(m){
+          var right = (m.o || [])[m.a | 0];
+          INDEX.push({
+            s: s, t: t, title: strip(m.q),
+            body: (right ? strip(right) + ' — ' : '') + strip(m.why || ''),
+            kind: 'Question'
+          });
         });
       });
     });
@@ -460,6 +665,16 @@ function highlight(root, term){
     node.parentNode.replaceChild(span, node);
     if (!first) first = span;
   });
+
+  /* A word found inside an explanation is inside a hidden box, so the search
+     would otherwise scroll to a question and leave the line it promised
+     invisible. Only the questions that actually hold the word are opened —
+     opening the whole topic would hand over nine hundred answers because one
+     formula was looked up. */
+  Array.prototype.forEach.call(root.querySelectorAll('.ans[hidden] mark'), function(m){
+    revealQ(m.closest('.mcq'));
+  });
+
   if (first && first.scrollIntoView) first.scrollIntoView({ block: 'center' });
 }
 

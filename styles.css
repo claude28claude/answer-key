@@ -160,7 +160,17 @@ em{font-style:italic}
   font-family:var(--mono);font-size:var(--t-micro);color:var(--dimmer);
   border:1px solid var(--line2);border-radius:5px;padding:1px 6px;pointer-events:none;
 }
-@media (max-width:640px){.searchwrap kbd{display:none}}
+/* Under 640px the "/" hint is hidden, so the 42px of right padding it was
+   sitting in is empty space — and on a 320px phone that empty space is the
+   whole reason the header, and with it the page, scrolled sideways. The brand
+   is allowed to shrink for the same reason. */
+@media (max-width:640px){
+  .searchwrap kbd{display:none}
+  #q{padding-right:13px}
+  .brand{min-width:0}
+  .brandtext{min-width:0;overflow:hidden}
+  .brand b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}
 
 .installbtn{
   flex:0 0 auto;background:transparent;color:var(--jade);
@@ -226,7 +236,7 @@ h3{font-size:var(--t-copy)}
 }
 .herostats b{color:var(--jade);font-weight:500}
 
-.indexgrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(330px,1fr))}
+.indexgrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(330px,100%),1fr))}
 .idxcard{
   border:1px solid var(--line);border-radius:var(--r);background:var(--panel);
   padding:18px 18px 12px;display:flex;flex-direction:column;
@@ -357,7 +367,7 @@ td code,li code,p code{
 
 /* A row of facing cards, for "this became that" — an old section number and
    its new one, an old name and its new one. */
-.swap{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin:14px 0}
+.swap{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(210px,100%),1fr));margin:14px 0}
 .swap div{
   border:1px solid var(--line);border-radius:var(--r-s);background:var(--panel);padding:11px 13px;
 }
@@ -426,9 +436,176 @@ footer kbd{
   border:1px solid var(--line2);border-radius:4px;padding:0 5px;color:var(--dim);
 }
 
+/* ==========================================================================
+   THE INDEX IN PARTS
+
+   The site has two halves that are read in two different ways — one you read,
+   one you answer — so the index names them instead of running eleven cards
+   together.
+   ========================================================================== */
+.parth{
+  display:flex;align-items:center;gap:14px;
+  font-family:var(--mono);font-size:var(--t-tiny);font-weight:500;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--sand);
+  margin:34px 0 14px;
+}
+.parth:first-of-type{margin-top:0}
+.parth span{flex:0 0 auto}
+.parth::after{content:"";flex:1 1 auto;height:1px;background:var(--line)}
+.qtot{
+  font-family:var(--mono);font-size:var(--t-micro);color:var(--jade);
+  margin:10px 0 0;padding-top:9px;border-top:1px solid var(--line);
+}
+.tabdiv{flex:0 0 auto;width:1px;background:var(--line2);margin:9px 9px 10px}
+.bnote{color:var(--dim);font-size:var(--t-small)}
+
+/* ==========================================================================
+   QUESTIONS
+
+   A formula is either in your head or it is not. Reading it again cannot tell
+   you which, and that is the only reason this shape exists: the answer is not
+   on the screen until you have committed to one, and committing locks the
+   question.
+   ========================================================================== */
+.mcqbar{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:9px 2px;margin-bottom:4px;
+}
+.mcqbar .score{font-family:var(--mono);font-size:var(--t-tiny);color:var(--jade)}
+.mcqbar .acts{display:flex;gap:8px}
+.mcqbar button{
+  background:transparent;color:var(--dim);
+  border:1px solid var(--line2);border-radius:999px;
+  padding:4px 12px;cursor:pointer;
+  font-family:var(--sans);font-size:var(--t-micro);font-weight:600;
+}
+.mcqbar button:hover{color:var(--ink);border-color:var(--dim)}
+
+.mcqs{list-style:none;margin:0;padding:0;counter-reset:q}
+.mcq{
+  counter-increment:q;position:relative;
+  border:1px solid var(--line);border-radius:var(--r);background:var(--panel);
+  padding:30px 16px 14px;margin:14px 0;
+}
+.mcq::before{
+  content:"Q" counter(q);position:absolute;left:16px;top:9px;
+  font-family:var(--mono);font-size:var(--t-micro);letter-spacing:.09em;
+  color:var(--dimmer);
+}
+.mcq.ok{border-color:rgba(var(--jade-rgb),.34)}
+.mcq.done:not(.ok){border-color:rgba(var(--rose-rgb),.3)}
+
+.qt{
+  font-family:var(--serif);font-size:var(--t-copy);line-height:1.5;
+  margin-bottom:12px;
+}
+.qtag{
+  display:inline-block;vertical-align:middle;margin-left:8px;
+  font-family:var(--mono);font-size:var(--t-micro);color:var(--sky);
+  border:1px solid rgba(var(--sky-rgb),.35);border-radius:999px;padding:0 8px;
+  white-space:nowrap;
+}
+
+/* Options two across once there is room for two. SSC options are short — a
+   formula, a ratio, a number — and stacking four of them turns one question
+   into a screenful. */
+.opts{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(min(235px,100%),1fr))}
+.opt{
+  display:flex;align-items:flex-start;gap:10px;text-align:left;width:100%;
+  background:var(--panel2);color:var(--ink);
+  border:1px solid var(--line);border-radius:var(--r-s);
+  padding:9px 12px;cursor:pointer;
+  font-family:var(--sans);font-size:var(--t-small);line-height:1.45;
+}
+.opt:hover:not(:disabled){border-color:var(--line2);background:var(--panel3)}
+.opt:disabled{cursor:default;opacity:.62}
+.opt .ol{
+  flex:0 0 auto;font-family:var(--mono);font-size:var(--t-micro);
+  color:var(--dimmer);border:1px solid var(--line2);border-radius:50%;
+  width:19px;height:19px;line-height:17px;text-align:center;margin-top:2px;
+}
+.opt .ox{flex:1 1 auto;min-width:0}
+.opt.right,.opt.wrong{opacity:1}
+.opt.right{border-color:var(--jade);background:rgba(var(--jade-rgb),.1)}
+.opt.right .ol{color:var(--jade);border-color:var(--jade)}
+.opt.wrong{border-color:var(--rose);background:rgba(var(--rose-rgb),.09)}
+.opt.wrong .ol{color:var(--rose);border-color:var(--rose)}
+.opt.right::after,.opt.wrong::after{
+  flex:0 0 auto;font-family:var(--mono);font-size:var(--t-small);margin-top:1px;
+}
+.opt.right::after{content:"✓";color:var(--jade)}
+.opt.wrong::after{content:"✗";color:var(--rose)}
+
+.showans{
+  background:none;border:0;cursor:pointer;padding:10px 2px 0;
+  font-family:var(--sans);font-size:var(--t-tiny);font-weight:600;
+  color:var(--dim);text-decoration:underline;text-underline-offset:3px;
+}
+.showans:hover{color:var(--jade)}
+.mcq.open .showans{display:none}
+
+/* The explanation. It carries the formula being tested and why the tempting
+   option is the tempting one, which is the part worth reading twice.
+
+   The [hidden] rule is not redundant. The hidden attribute works by setting
+   display:none in the browser's own stylesheet, so ANY display declaration of
+   ours beats it — without the second rule here, every answer on the site is
+   on screen from the first paint and the practice is worthless. */
+.ans{
+  display:flex;gap:11px;align-items:flex-start;
+  border-left:3px solid var(--jade);border-radius:0 var(--r-s) var(--r-s) 0;
+  background:rgba(var(--jade-rgb),.07);
+  padding:11px 13px;margin-top:12px;
+}
+.ans .al{
+  flex:0 0 auto;font-family:var(--mono);font-size:var(--t-tiny);font-weight:500;
+  color:#08110c;background:var(--jade);border-radius:5px;
+  width:22px;height:22px;line-height:22px;text-align:center;
+}
+.ans[hidden]{display:none}
+.ans .aw{flex:1 1 auto;min-width:0;font-size:var(--t-small);color:var(--ink)}
+.ans .aw code{font-size:.95em}
+
+/* ==========================================================================
+   FIGURES
+
+   Hand-drawn SVG, four strokes and nothing else:
+     .l  the construction — the figure itself
+     .a  the thing being asked for
+     .g  guides and equal marks, dashed
+     .f  a shaded region
+   The figures take their colours from the palette above rather than carrying
+   their own, so a drawing cannot drift out of step with the site.
+   ========================================================================== */
+.dia{
+  margin:0 0 13px;padding:12px;
+  border:1px solid var(--line);border-radius:var(--r-s);background:var(--panel2);
+  display:flex;flex-direction:column;align-items:center;
+}
+.dia svg{width:100%;height:auto;max-width:330px;display:block;overflow:visible}
+.dia svg .l{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.dia svg .a{fill:none;stroke:var(--jade);stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}
+.dia svg .g{fill:none;stroke:var(--line2);stroke-width:1.2;stroke-dasharray:4 4}
+.dia svg .m{fill:none;stroke:var(--dim);stroke-width:1.3;stroke-linecap:round}
+.dia svg .f{fill:rgba(var(--jade-rgb),.17);stroke:none}
+.dia svg .p{fill:var(--sky);stroke:none}
+.dia svg text{font-family:var(--mono);font-size:11px;fill:var(--dim)}
+.dia svg text.b{fill:var(--ink)}
+.dia svg text.j{fill:var(--jade)}
+.dia figcaption{
+  font-size:var(--t-tiny);color:var(--dim);margin-top:9px;text-align:center;max-width:46ch;
+}
+.dia.miss{
+  font-family:var(--mono);font-size:var(--t-tiny);color:var(--rose);
+  border-color:rgba(var(--rose-rgb),.4);padding:14px;
+}
+
 @media print{
-  .top,.backfab,#results,footer,.railnav{display:none}
+  .top,.backfab,#results,footer,.railnav,.mcqbar,.showans{display:none}
   body{background:#fff;color:#000}
+  .ans{display:flex!important}
+  .ans[hidden]{display:flex!important}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}

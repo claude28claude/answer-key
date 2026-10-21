@@ -1,17 +1,34 @@
 {
-  "name": "The Answer Key — SSC Static GK, History, New Criminal Laws, Geography, Polity",
+  "name": "The Answer Key — SSC Static GK, History, New Criminal Laws, Geography, Polity and Advanced Maths",
   "short_name": "Answer Key",
-  "description": "Six subjects for the SSC track, index first. Static GK: the eight classical dances, the folk dances of every state and union territory, and the festivals and fairs. Ancient and Medieval India. The three new criminal laws — BNS, BNSS and BSA — quoted by section number. Geography, built around the Himalayas. Polity: Centre-State relations and the Seventh Schedule. Works offline.",
+  "description": "Eleven subjects for the SSC track, index first. The recall half: the eight classical dances and the folk dances of every state, the festivals and fairs, Ancient and Medieval India, the three new criminal laws — BNS, BNSS and BSA — by section number, Geography built around the Himalayas, and Centre-State relations with the Seventh Schedule. The maths half as questions with the formula in the explanation: algebra, geometry with drawn figures, mensuration in two and three dimensions, trigonometry with the whole of height and distance, and profit, loss and mixture. Works offline.",
   "start_url": "./index.html#/",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#0e1113",
   "theme_color": "#0e1113",
-  "categories": ["education", "reference", "books"],
+  "categories": [
+    "education",
+    "reference",
+    "books"
+  ],
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }

@@ -13,11 +13,13 @@
      once, fetch a fresh one in the background, use that next time. Fast on
      every visit, and never more than one visit behind.                      */
 
-var CACHE = 'answer-key-v1';
+var CACHE = 'answer-key-v2';
 var ASSETS = [
   './', './index.html', './styles.css', './app.js',
   './data-static.js', './data-ancient.js', './data-medieval.js',
   './data-laws.js', './data-geo.js', './data-polity.js',
+  './diagrams.js', './data-algebra.js', './data-geometry.js',
+  './data-mensuration.js', './data-trig.js', './data-profit.js',
   './fonts/literata-400.woff2', './fonts/literata-600.woff2',
   './fonts/literata-italic-400.woff2',
   './fonts/inter-400.woff2', './fonts/inter-600.woff2',

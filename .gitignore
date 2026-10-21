@@ -3,3 +3,12 @@ Thumbs.db
 desktop.ini
 .DS_Store
 *.log
+
+# The launch configuration is local tooling, not part of the site.
+.claude/
+
+# Generated build inputs. data-*.js and diagrams.js are the real files;
+# "node tools/build.js --split" regenerates these from them.
+tools/frag/
+tools/dia/
+figures-test.html

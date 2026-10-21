@@ -1,8 +1,8 @@
 # The Answer Key
 
-Six subjects for the SSC track, on one site, index first. A sister site to
-**The Article Machine** — same house style, same offline-first build, entirely
-separate content and its own look.
+Two halves of an SSC syllabus on one site, index first. The **recall half** is
+read; the **maths half** is answered. A sister site to **The Article Machine**
+— same house style, same offline-first build, entirely separate content.
 
 Live locally at **http://localhost:8138** once the dev server is running.
 
@@ -11,10 +11,15 @@ Live locally at **http://localhost:8138** once the dev server is running.
 ## What is on it
 
 The home page is a real **index**: every subject lists every topic inside it,
-as a link, with a count of how many facts that topic holds. Nothing is hidden
-behind a "read more".
+as a link, with a count of how many entries that topic holds. Nothing is
+hidden behind a "read more".
 
-**6 subjects · 52 topics · about 2,140 indexed facts.**
+**11 subjects · 93 topics · about 4120 indexed
+entries · 934 questions · 97 drawn figures.**
+
+---
+
+# Part one — recall and theory
 
 ### 1. Static GK — first on the site, because it is pure recall
 
@@ -88,21 +93,75 @@ actually is, with the commissions that have examined the question.
 
 ---
 
+# Part two — the maths, as questions
+
+Reading a formula again cannot tell you whether you knew it. So every formula
+in the maths half is set as a **question with the four options an SSC paper
+would give**. The answer is not on the screen until you have committed to one,
+and committing **locks** the question — a formula you were still deciding about
+while the answer was visible has not been tested.
+
+Each topic also carries the formulas twice over, so it can be revised as well
+as practised: a **quick box** of the five to seven lines that are most of the
+marks, and a **formula sheet** in which every formula the topic tests appears
+with the thing it is for.
+
+### 7. Algebra — the longest subject, because it was the weak one
+
+Nine topics: the identities and their expansions; the `a + b + c = 0` family;
+the `x + 1/x` family; surds, indices and rationalisation; quadratic equations
+and their roots; polynomials with the remainder and factor theorems; ratio,
+proportion and componendo–dividendo; maxima and minima; and linear equations
+with their graphs.
+
+### 8. Geometry — four of its twelve topics are the circle
+
+Lines and angles; the triangle's sides and angles; the four centres; medians,
+bisectors and Apollonius; congruence and similarity with the basic
+proportionality theorem; the right triangle; quadrilaterals and polygons; then
+the circle in four topics — chords and the angles they subtend, tangents and
+the alternate segment, **segments and cyclic quadrilaterals**, and two-circle
+configurations with the common tangents — and finally coordinate geometry.
+
+Every question that needs a picture has one.
+
+### 9. Mensuration — two dimensions, then three
+
+The triangle; quadrilaterals and polygons; the circle with its sector and
+segment; paths, borders and shaded regions. Then the cube, cuboid and prism;
+the cylinder, cone and frustum; the sphere, hemisphere and pyramid; and the
+melting, recasting and scaling questions that are built on top of them.
+
+### 10. Trigonometry and Height–Distance
+
+The ratios and the standard table; the identities and what questions do with
+them; conditional identities and the special angles; maximum and minimum
+values. Then **the whole of height and distance** in three topics: the single
+triangle, two angles or two observers, and the standard results worth carrying
+in your head — `h = √(xy)` for two complementary angles, and the rest.
+
+### 11. Profit, Loss and Mixture — kept separate, as asked
+
+Cost price and selling price with the percentage that is always on the cost
+price; marked price, discount and successive discounts; false weights and the
+dishonest shopkeeper; mixture and alligation; and replacement with
+three-vessel mixing.
+
+---
+
 ## How the site behaves
 
 - **Search everything.** Press `/` from anywhere. The index is built from every
-  table row, list item and key fact — one entry per *fact*, not one per topic —
-  so searching `Zojila` or `103` takes you to the line that answers it, not to
-  a topic that mentions it. `J` and `K` move through results, `Enter` opens,
-  `Esc` closes. The words you searched for are highlighted on the page you land
-  on.
-- **A "If you revise nothing else" box** at the top of every topic, holding the
-  handful of lines most likely to be the whole question. A revision pass can
-  read only these.
+  table row, list item, key fact **and question** — one entry per *fact*, not
+  one per topic — so searching `Zojila` or `103` or `πrl` takes you to the line
+  that answers it. `J` and `K` move through results, `Enter` opens, `Esc`
+  closes. The words you searched for are highlighted on the page you land on,
+  and a question whose explanation holds the word is opened for you.
+- **A "If you revise nothing else" box** at the top of every topic.
 - **"Careful" boxes** wherever the confidently repeated answer is the wrong one
-  — Chhau is not one state's dance; Garba and Dandiya Raas are different;
-  sedition was not simply renamed; the Planning Commission was never
-  constitutional.
+  — Chhau is not one state's dance; sedition was not simply renamed;
+  `(a + b)²` is not `a² + b²`; the shopkeeper's gain is on the weight he gives,
+  not the weight he charges for.
 - **Works offline.** Everything is precached on first visit. No tracking, no
   analytics, and **no network request ever leaves the site** — the fonts are
   self-hosted, there is no CDN and no framework.
@@ -118,50 +177,71 @@ From the workspace root:
 npx -y http-server answer-key -p 8138 -c-1
 ```
 
-Or, in Claude Code, the launch configuration named `answer-key` is already in
-`.claude/launch.json`.
+Or, in Claude Code, the launch configuration named `answer-key`.
 
 ---
 
 ## How it is put together
 
-No framework, no build step, no dependencies. Nine files do everything.
+No framework, no build step, no dependencies.
 
 | File | What it is |
 | --- | --- |
-| `index.html` | The shell — header, search box, tabs, footer. Loads the six data files and then `app.js`. |
+| `index.html` | The shell — header, search box, tabs, footer. Loads the data files and then `app.js`. |
 | `styles.css` | The whole look. One stylesheet, three self-hosted typefaces, a four-colour palette over one dark ground. |
-| `app.js` | The router, the renderer and the search index. About 450 lines. |
-| `data-static.js` | Static GK — dances and festivals. |
-| `data-ancient.js` | Ancient India. |
-| `data-medieval.js` | Medieval India. |
-| `data-laws.js` | BNS, BNSS and BSA. |
-| `data-geo.js` | Geography and the Himalayas. |
-| `data-polity.js` | Centre–State relations and the Seventh Schedule. |
+| `app.js` | The router, the renderer, the question logic and the search index. |
+| `data-static.js` … `data-polity.js` | The six recall subjects. |
+| `data-algebra.js`, `data-geometry.js`, `data-mensuration.js`, `data-trig.js`, `data-profit.js` | The five maths subjects. |
+| `diagrams.js` | Every figure, as hand-written SVG. |
 | `sw.js` | The service worker that makes it work offline. |
+| `check.js` | A dev-only checker. Nothing on the site loads it. |
 
 Each data file pushes one subject onto a shared list. A subject holds topics; a
-topic holds blocks; a block is one of five shapes — a paragraph, a table, a
-bullet list, a "Careful" note, or a row of facing cards. The renderer knows
-those five shapes and nothing else, so **adding a subject means adding one data
-file and one line in `index.html`** — never a change to `app.js`.
+topic holds blocks; a block is one of **seven** shapes — a paragraph, a table,
+a bullet list, a "Careful" note, a row of facing cards, a **bank of questions**,
+or a **figure**. The renderer knows those seven and nothing else, so adding a
+subject means adding one data file and one line in `index.html` — never a
+change to `app.js`.
+
+### The figures
+
+One drawing per configuration, reused by every question that needs it, so the
+lettering is the same every time and a reader who has learnt the figure does
+not have to read it again. They carry **no colours and no stroke widths of
+their own**: five classes in the stylesheet supply the construction lines, the
+line being asked about, the dashed guides, the angle arcs and the shaded
+regions. A figure therefore cannot drift out of step with the palette, and
+each one carries a one-sentence text alternative.
+
+### How the questions were checked
+
+A wrong answer key is worse than a missing topic, because the reader learns the
+wrong formula and then trusts it. So every topic was written by one pass and
+then **re-solved from scratch by a second pass that worked each question out
+before looking at the key**, and `check.js` enforces mechanically what can be
+enforced mechanically: exactly four distinct options, a keyed answer inside the
+range, no answer letter on more than a third of a topic, no question repeated
+anywhere on the site, an explanation that actually says something, balanced
+inline marks, no figure referred to without being drawn, and no `^` or `*`
+standing in for a power or a product.
+
+What a checker cannot do is tell you whether a formula is right. That is the
+part a second reader did by hand.
 
 ### Where the content came from, and how firm it is
 
 - **The three criminal laws.** Section numbers were checked against the bare
   Acts and against published section-mapping tables rather than written from
-  memory, because a wrong section number is worse than no number. Where sources
-  genuinely disagree — the chapter counts of the BNS and BNSS — the site says so
-  instead of picking one silently.
-- **Static GK, Ancient and Medieval India, Geography, Polity.** Written from the
-  established record. Dates of enactment, section numbers, regnal dates, battle
-  years and Seventh Schedule entries are firm. Peak heights, range lengths,
-  glacier lengths and List entry counts move by small amounts between sources;
-  where they do, the figure the standard textbooks use is given and the note
-  says that it moves.
-- **Where a fact is genuinely contested** — the height of Everest, the highest
-  peak "in India", how many classical dances there are — both answers are given,
-  along with which one the exam usually expects.
+  memory. Where sources genuinely disagree — the chapter counts of the BNS and
+  BNSS — the site says so instead of picking one silently.
+- **The maths.** Held to the SSC syllabus and nothing wider: no calculus, no
+  vectors, no matrices, no complex numbers, no conic sections, no inverse
+  trigonometric functions, no logarithms. Results that sit at the edge of the
+  syllabus but are genuinely asked — Ptolemy, Apollonius, the length of a
+  common tangent — are in, and say so.
+- **Static GK, Ancient and Medieval India, Geography, Polity.** Written from
+  the established record. Where a figure moves between sources, the figure the
+  standard textbooks use is given and the note says that it moves.
 
 ---
 
@@ -169,12 +249,8 @@ file and one line in `index.html`** — never a change to `app.js`.
 
 | | The Article Machine | The Answer Key |
 | --- | --- | --- |
-| Subjects | Constitution (506 articles), Constituent Assembly, Modern History, Economy, Static GK, Biology | Static GK (dances and festivals), Ancient India, Medieval India, the new criminal laws, Geography, Polity |
-| Home page | Subject cards | A full index — every topic listed |
-| Layout | Tabs and cards | A sticky topic rail beside the reading column |
+| Subjects | Constitution (506 articles), Constituent Assembly, Modern History, Economy, Static GK, Biology | Static GK, Ancient India, Medieval India, the new criminal laws, Geography, Polity — and then Algebra, Geometry, Mensuration, Trigonometry with Height and Distance, and Profit with Mixture |
+| How it is used | Read | Read, then answered |
+| Home page | Subject cards | A full index — every topic listed, in two parts |
 | Palette | Near-black with gold, purple and red | Cool slate with jade, sky and rose |
 | Port | 8137 | 8138 |
-
-They share nothing but the house style and the three typefaces. Neither
-duplicates the other's content: Modern History is on the Article Machine,
-Ancient and Medieval are here.
