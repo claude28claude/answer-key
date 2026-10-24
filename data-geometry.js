@@ -192,7 +192,7 @@ blocks:[
   {q:"An angle that is equal to its own complement measures:",
    o:["90°","30°","45°","60°"],
    a:2,
-   why:"**Complementary angles add to 180°... no — complementary angles add to 90°**, so θ = 90° − θ gives 2θ = 90° and θ = `45°`. Option A, `90°`, is the angle equal to its own **supplement**, since 180° − 90° = 90°. Keeping those two apart — `45°` for the complement, `90°` for the supplement — is the whole of this question.",
+   why:"**Complementary angles add to 90°** (the common mistake is to use 180°, which is the supplement total), so θ = 90° − θ gives 2θ = 90° and θ = `45°`. Option A, `90°`, is the angle equal to its own **supplement**, since 180° − 90° = 90°. Keeping those two apart — `45°` for the complement, `90°` for the supplement — is the whole of this question.",
    tag:"Complement"},
 
   {q:"A transversal cuts two parallel lines and one of the eight angles formed is a right angle. Then:",
@@ -638,7 +638,7 @@ blocks:[
   {q:"In △ABC, `AB = 5 cm`, `AC = 7 cm` and `BC = 6 cm`. The length of the median `AD` to `BC` is:",
    o:["√37 cm","√19 cm","4 cm","2√7 cm"],
    a:3,
-   why:"**AB² + AC² = 2(AD² + BD²)** with `BD = 3`: 25 + 49 = 2(AD² + 9), so 74 = 2AD² + 18, AD² = 28 and `AD = 2√7 cm`. Option A is what putting the whole base in gives, and option C is the base halved — neither is a median.",
+   why:"**AB² + AC² = 2(AD² + BD²)** with `BD = 3`: 25 + 49 = 2(AD² + 9), so 74 = 2AD² + 18, AD² = 28 and `AD = 2√7 cm`. Option A (√37) is what you get by dropping the `a²` term entirely — `m² = (b² + c²)/2 = 37` — and option C (4 cm) is a round-number trap that is neither the half-base (3) nor the median.",
    tag:"Apollonius",
    d:"t-median-apollonius"},
 
@@ -1229,7 +1229,7 @@ blocks:[
   {q:"The perimeter of that same rhombus is:",
    o:["40 cm","80 cm","56 cm","48 cm"],
    a:0,
-   why:"**All four sides of a rhombus are equal**, so the perimeter is `4 × 10 = 40 cm`. Option B doubles it, which is what using the un-halved √(d₁² + d₂²) as the side would give, and option D adds the two diagonals twice.",
+   why:"**All four sides of a rhombus are equal**, so the perimeter is `4 × 10 = 40 cm`. Option B (80) doubles it, which is what using the un-halved `√(d₁² + d₂²)` as the side gives, and option C (56) is `2(16 + 12)` — adding the two diagonals twice instead of finding the side.",
    tag:"Rhombus"},
 
   {q:"The diagonal of a square of side `8 cm` is:",
@@ -1274,7 +1274,7 @@ blocks:[
   {q:"The interior angles of a polygon add up to `1440°`. The number of sides is:",
    o:["12","9","6","10"],
    a:3,
-   why:"**(n − 2) × 180 = 1440**, so n − 2 = 8 and `n = 10`. Option A is what dividing 1440 by 120 gives — treating 1440 as `n` times the hexagon's interior angle — and option B comes from forgetting to add the 2 back.",
+   why:"**(n − 2) × 180 = 1440**, so n − 2 = 8 and `n = 10`. Option A (12) is `1440 ÷ 120` — treating 1440 as `n` times the hexagon's interior angle — and option B (9) is what adding 1 instead of 2 to the quotient gives.",
    tag:"Polygon"},
 
   {q:"Each exterior angle of a regular polygon with `12` sides is:",

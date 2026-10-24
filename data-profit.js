@@ -291,9 +291,9 @@ blocks:[
    tag:"Three discounts"},
 
   {q:"An article is marked `x%` above its cost price and sold at a discount of `d%` on the marked price. The profit per cent is:",
-   o:["(x − d)%","[(100 + x)(100 − d)/100] − 100","(100 + x)(100 − d)/100","(x − d − xd/100)%"],
+   o:["(x − d)%","[(100 + x)(100 − d)/100] − 100","(100 + x)(100 − d)/100","(x − d + xd/100)%"],
    a:1,
-   why:"**profit% = [(100 + x)(100 − d)/100] − 100**, because the markup acts on the cost price and the discount then acts on the larger marked price. Marked 25% up and sold at 8% off gives (125 × 92)/100 − 100 = 115 − 100 = `15%`. Option C is that calculation stopped one step early — 115 is the selling price as a percentage of the cost price, not the profit — and option A, the plain difference of the two rates, is the answer most often given.",
+   why:"**profit% = [(100 + x)(100 − d)/100] − 100**, because the markup acts on the cost price and the discount then acts on the larger marked price. Marked 25% up and sold at 8% off gives (125 × 92)/100 − 100 = 115 − 100 = `15%`. Option C is that calculation stopped one step early — 115 is the selling price as a percentage of the cost price, not the profit — and option D **adds** `xd/100` instead of subtracting it, turning the cross-term the wrong way. Option A, the plain difference of the two rates, is the answer most often given.",
    tag:"Markup and discount"},
 
   {q:"A shopkeeper marks his goods 40% above cost price and allows a discount of 10% on the marked price. His profit per cent is:",
