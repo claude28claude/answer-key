@@ -23,9 +23,9 @@
 
 (window.SUBJECTS = window.SUBJECTS || []).push({
 
-id:"static", n:"Static GK", tab:"Static GK", sub:"Dances and festivals",
-w:"The eight classical dances, the folk dances of every state and union territory, and the festivals and fairs — the part of the syllabus that is pure recall.",
-intro:"Pure recall, so worth learning once and properly. The classical dances first, because they carry the most detail per question; then the folk dances region by region, so that a state and its dances are learnt together rather than as an alphabetical list; then the festivals, grouped by what they actually are — harvest, tribal, religious — because that is how they are remembered and how they are asked.",
+id:"static", n:"Static GK", tab:"Static GK", sub:"Dances, festivals, national symbols, heritage sites, parks and awards",
+w:"The eight classical dances, the folk dances of every state and union territory, the festivals and fairs, national symbols and emblems, UNESCO World Heritage Sites, national parks and wildlife, and awards and honours.",
+intro:"Pure recall, so worth learning once and properly. The dances first, then the festivals, then four new sections — national symbols, UNESCO heritage sites, national parks and wildlife, and the awards and honours that SSC asks about year after year.",
 
 topics:[
 
@@ -749,6 +749,297 @@ topics:[
    ]},
 
   {careful:"**Kullu Dussehra starts when everyone else's ends.** The rest of India finishes Dussehra on Vijayadashami; Kullu begins on that day and runs a week. It is a favourite question because the instinct is to assume it runs at the same time."}
+ ]},
+
+/* ===================================================================== 9 */
+{id:"national-symbols", n:"National Symbols and Emblems", hy:1,
+ w:"The flag, the emblem, the anthem, the song, and every national symbol — the dates and the distinctions that are asked.",
+ quick:[
+  "The **National Emblem** is adapted from the **Sarnath Lion Capital of Ashoka**. Adopted on `26 January 1950`. The motto **Satyameva Jayate** is from the **Mundaka Upanishad**.",
+  "The **National Anthem** \"Jana Gana Mana\" was written by **Rabindranath Tagore**, first sung on `27 December 1911` at the Calcutta session of the Congress, and adopted on `24 January 1950`. Full playing time: `52 seconds`.",
+  "The **National Song** \"Vande Mataram\" was written by **Bankim Chandra Chattopadhyay** and appears in his novel *Anandamath*. First sung at the `1896` Congress session.",
+  "The **Bengal Tiger** replaced the **Lion** as the National Animal in `1973`, when Project Tiger was launched.",
+  "The **Saka Calendar** starts on **Chaitra 1** (= `22 March`, or 23 March in a leap year), and was adopted alongside the Gregorian calendar in `1957`."
+ ],
+ blocks:[
+  {h:"The National Flag",
+   cols:["Detail","What it is"],
+   rows:[
+    ["Colours","**Saffron** (courage and sacrifice) at the top, **white** (peace and truth) in the middle, **dark green** (faith and fertility) at the bottom — three equal horizontal bands"],
+    ["The Chakra","**Ashoka Chakra** — `24` spokes, in **navy blue**, at the centre of the white band. Represents the eternal wheel of law"],
+    ["Ratio","Width to length is `2:3`"],
+    ["Material","Must be made of **hand-spun and hand-woven** khadi (wool, cotton or silk). Machine-made is not permitted under the Flag Code"],
+    ["Flag Code","The **Flag Code of India, 2002** replaced all earlier codes. The `2022` amendment allowed the flag to be made of machine-made polyester too and to be flown day and night"],
+    ["Designer","**Pingali Venkayya** designed the basis of the flag, presented at the `1921` Congress session. The final version with the Ashoka Chakra was adopted on `22 July 1947`"]
+   ]},
+
+  {h:"The National Emblem",
+   cols:["Detail","What it is"],
+   rows:[
+    ["Source","Adapted from the **Sarnath Lion Capital of Ashoka** (circa 250 BCE). The original capital has four lions standing back to back; the emblem shows three (the fourth is hidden behind)"],
+    ["Adopted","`26 January 1950`"],
+    ["Motto","**Satyameva Jayate** (Truth alone triumphs), inscribed in Devanagari below the abacus. From the **Mundaka Upanishad**"],
+    ["The abacus","Shows a **bull** on the right and a **horse** on the left, with a **Dharma Chakra** in the centre. A lotus beneath, though not shown in the emblem"],
+    ["Protected by","**State Emblem of India (Prohibition of Improper Use) Act, 2005**"]
+   ]},
+
+  {careful:"**The National Anthem was adopted on 24 January 1950, but first sung on 27 December 1911.** Questions routinely swap these two dates. The full version runs `52 seconds` and the short version (first and last lines) runs `20 seconds`. It was NOT adopted on 26 January 1950 — that is the date for the National Emblem, not the Anthem. Two days apart, and the favourite swap."},
+
+  {h:"Anthem and Song",
+   cols:["","National Anthem","National Song"],
+   rows:[
+    ["Title","**Jana Gana Mana**","**Vande Mataram**"],
+    ["Author","**Rabindranath Tagore**","**Bankim Chandra Chattopadhyay**"],
+    ["Source","Written in Bengali, in **Sanskritised Bengali**","From the novel **Anandamath** (`1882`)"],
+    ["First sung","`27 December 1911`, Calcutta session of the Congress","`1896` session of the Congress"],
+    ["Adopted","`24 January 1950`","`24 January 1950` — same day as the Anthem"],
+    ["Duration","`52 seconds` (full); `20 seconds` (short)","The first two stanzas are the National Song"]
+   ]},
+
+  {h:"The national symbols",
+   swap:[
+    ["National Animal","**Bengal Tiger** (*Panthera tigris tigris*)","Replaced the **Lion** in `1973`, when Project Tiger was launched"],
+    ["National Bird","**Indian Peacock** (*Pavo cristatus*)","Adopted in `1963`"],
+    ["National Flower","**Lotus** (*Nelumbo nucifera*)","Sacred in both Hinduism and Buddhism"],
+    ["National Tree","**Indian Banyan** (*Ficus benghalensis*)","The national tree — not the neem, not the peepal"],
+    ["National Fruit","**Mango** (*Mangifera indica*)",""],
+    ["National River","**Ganga**","Declared in `2008` by the National River Conservation Directorate"],
+    ["National Aquatic Animal","**Ganges River Dolphin** (*Platanista gangetica*)","Declared in `2009`. Also called **susu**"],
+    ["National Heritage Animal","**Indian Elephant**","Declared in `2010`"],
+    ["National Reptile","**King Cobra** (*Ophiophagus hannah*)",""],
+    ["National Butterfly","**Orange Oakleaf** (*Kallima inachus*)","Declared in `2020`. Found in the Western Ghats and the North-East"]
+   ]},
+
+  {h:"The National Calendar",
+   cols:["Detail","What it is"],
+   rows:[
+    ["Name","**Saka Calendar**, based on the **Saka Era** (year 1 = 78 CE)"],
+    ["First day","**Chaitra 1** = `22 March` (23 March in a leap year)"],
+    ["Adopted","`22 March 1957`, alongside the Gregorian calendar, on the recommendation of the **Calendar Reform Committee** headed by **Meghnad Saha**"],
+    ["Months","`12` months. Chaitra has `30` days (31 in a leap year); the remaining five months of the first half have `31` days each; the six months of the second half have `30` days each"],
+    ["Used for","Government gazettes, AIR news bulletins, and official communications — alongside Gregorian dates"]
+   ]},
+
+  {careful:"**The National Animal was changed from the Lion to the Tiger in 1973.** The Lion is the National Animal of no country — it is on the National Emblem (the Sarnath pillar), and it is the mascot of the **Asiatic Lion** conservation programme at Gir, but the National Animal since 1973 is the Bengal Tiger. Questions that say 'the animal on the emblem is the National Animal' are traps."}
+
+ ]},
+
+/* ===================================================================== 10 */
+{id:"unesco-sites", n:"UNESCO World Heritage Sites in India", hy:1,
+ w:"All 42 sites — cultural, natural and the one mixed — with their years, states and the distinctions SSC asks.",
+ quick:[
+  "India has `42` UNESCO World Heritage Sites: `34` cultural, `7` natural, `1` mixed (as of 2024).",
+  "The first sites were inscribed in `1983`: **Taj Mahal**, **Ajanta Caves**, **Ellora Caves** and **Agra Fort** — all cultural. No natural site until `1985`.",
+  "**Khangchendzonga National Park** (Sikkim, `2016`) is India's **only mixed** site — both cultural and natural.",
+  "**Rajasthan** has the most sites (`4`), followed by **Maharashtra** and **Karnataka**.",
+  "The most recent inscriptions are **Santiniketan** and the **Sacred Ensembles of the Hoysala** (both `2023`), and the **Moidams** in Assam (`2024`)."
+ ],
+ blocks:[
+  {h:"Cultural sites",
+   cols:["Site","State","Year"],
+   rows:[
+    ["**Taj Mahal**","Uttar Pradesh","`1983`"],
+    ["**Ajanta Caves**","Maharashtra","`1983`"],
+    ["**Ellora Caves**","Maharashtra","`1983`"],
+    ["**Agra Fort**","Uttar Pradesh","`1983`"],
+    ["**Sun Temple, Konark**","Odisha","`1984`"],
+    ["**Group of Monuments at Mahabalipuram**","Tamil Nadu","`1984`"],
+    ["**Churches and Convents of Goa**","Goa","`1986`"],
+    ["**Fatehpur Sikri**","Uttar Pradesh","`1986`"],
+    ["**Group of Monuments at Hampi**","Karnataka","`1986`"],
+    ["**Khajuraho Group of Monuments**","Madhya Pradesh","`1986`"],
+    ["**Elephanta Caves**","Maharashtra","`1987`"],
+    ["**Great Living Chola Temples**","Tamil Nadu","`1987`"],
+    ["**Group of Monuments at Pattadakal**","Karnataka","`1987`"],
+    ["**Buddhist Monuments at Sanchi**","Madhya Pradesh","`1989`"],
+    ["**Humayun's Tomb**","Delhi","`1993`"],
+    ["**Qutb Minar and its Monuments**","Delhi","`1993`"],
+    ["**Mountain Railways of India**","Darjeeling / Nilgiri / Shimla","`1999` / `2005` / `2008`"],
+    ["**Mahabodhi Temple Complex**","Bihar (Bodh Gaya)","`2002`"],
+    ["**Rock Shelters of Bhimbetka**","Madhya Pradesh","`2003`"],
+    ["**Champaner-Pavagadh**","Gujarat","`2004`"],
+    ["**Chhatrapati Shivaji Terminus**","Maharashtra","`2004`"],
+    ["**Red Fort Complex**","Delhi","`2007`"],
+    ["**Jantar Mantar, Jaipur**","Rajasthan","`2010`"],
+    ["**Hill Forts of Rajasthan**","Rajasthan","`2013`"],
+    ["**Rani-ki-Vav**","Gujarat (Patan)","`2014`"],
+    ["**Archaeological Site of Nalanda**","Bihar","`2016`"],
+    ["**Le Corbusier Capitol Complex**","Chandigarh","`2016`"],
+    ["**Historic City of Ahmedabad**","Gujarat","`2017`"],
+    ["**Victorian Gothic and Art Deco of Mumbai**","Maharashtra","`2018`"],
+    ["**Jaipur City**","Rajasthan","`2019`"],
+    ["**Dholavira**","Gujarat (Kutch)","`2021`"],
+    ["**Ramappa Temple (Kakatiya)**","Telangana","`2021`"],
+    ["**Santiniketan**","West Bengal","`2023`"],
+    ["**Sacred Ensembles of the Hoysala**","Karnataka","`2023`"],
+    ["**Moidams — Mound-Burial System of the Ahom Dynasty**","Assam","`2024`"]
+   ]},
+
+  {h:"Natural sites",
+   cols:["Site","State","Year","Known for"],
+   rows:[
+    ["**Kaziranga**","Assam","`1985`","One-horned Indian rhinoceros — holds two-thirds of the world population"],
+    ["**Manas**","Assam","`1985`","Golden langur, pygmy hog, wild water buffalo"],
+    ["**Keoladeo Ghana (Bharatpur)**","Rajasthan","`1985`","Migratory birds, especially the Siberian crane"],
+    ["**Sundarbans**","West Bengal","`1987`","World's largest mangrove forest, Royal Bengal Tiger"],
+    ["**Nanda Devi and Valley of Flowers**","Uttarakhand","`1988` / `2005`","Alpine flora, snow leopard. Nanda Devi inscribed first, Valley of Flowers added as extension"],
+    ["**Western Ghats**","6 states","`2012`","Biodiversity hotspot. 39 serial sites across Kerala, TN, Karnataka, Goa, Maharashtra, Gujarat"],
+    ["**Great Himalayan National Park**","Himachal Pradesh","`2014`","Western tragopan, snow leopard, musk deer"]
+   ]},
+
+  {careful:"**Khangchendzonga is India's only mixed site** — inscribed in `2016` for both its natural landscape (the third-highest peak in the world) and its cultural significance as a sacred landscape of the Sikkimese Lepcha and Bhutia people. Questions that list it as a purely natural site are wrong. India has `34` cultural, `7` natural and `1` mixed — remembering the 34-7-1 split handles most counting questions."},
+
+  {h:"Sites by state — the states with the most",
+   cols:["State","Count","The sites"],
+   rows:[
+    ["**Rajasthan**","`4`","Keoladeo, Jantar Mantar, Hill Forts, Jaipur City"],
+    ["**Maharashtra**","`5`","Ajanta, Ellora, Elephanta, CST, Victorian Gothic Mumbai"],
+    ["**Karnataka**","`3`","Hampi, Pattadakal, Hoysala Ensembles"],
+    ["**Gujarat**","`3`","Champaner-Pavagadh, Rani-ki-Vav, Dholavira (+ Ahmedabad)"],
+    ["**Uttar Pradesh**","`3`","Taj Mahal, Agra Fort, Fatehpur Sikri"],
+    ["**Madhya Pradesh**","`3`","Khajuraho, Sanchi, Bhimbetka"],
+    ["**Delhi**","`3`","Humayun's Tomb, Qutb Minar, Red Fort"]
+   ]},
+
+  {h:"The first and the latest",
+   swap:[
+    ["First cultural sites","Taj Mahal, Ajanta, Ellora, Agra Fort — all `1983`","These four were India's first inscriptions"],
+    ["First natural sites","Kaziranga, Manas, Keoladeo — all `1985`","No natural site was inscribed in 1983 or 1984"],
+    ["First mixed site","**Khangchendzonga**, `2016`","Still the only one"],
+    ["Latest inscriptions","**Moidams** (Assam), `2024`","The Ahom dynasty mound-burial system"],
+    ["First state to have 4 sites","**Rajasthan**","Keoladeo (1985), Jantar Mantar (2010), Hill Forts (2013), Jaipur City (2019)"]
+   ]}
+
+ ]},
+
+/* ===================================================================== 11 */
+{id:"national-parks", n:"National Parks and Wildlife", hy:1,
+ w:"The parks that are asked, the animals in them, the tiger reserves, and the biosphere reserves.",
+ quick:[
+  "India has `106` National Parks, `567` Wildlife Sanctuaries and `54` Tiger Reserves (as of 2024).",
+  "**Jim Corbett** (Uttarakhand) was India's first National Park (`1936`), originally called **Hailey National Park** after the Governor. First Tiger Reserve too.",
+  "**Project Tiger** was launched in `1973` with `9` initial reserves. Jim Corbett was the first.",
+  "**Gir** (Gujarat) is the **only** place in the world with the **Asiatic Lion**.",
+  "India has `18` **Biosphere Reserves**. The first was **Nilgiri** (`1986`). Of these, `12` are in the UNESCO World Network."
+ ],
+ blocks:[
+  {h:"The parks that are asked — what lives where",
+   cols:["National Park","State","Known for"],
+   rows:[
+    ["**Jim Corbett**","Uttarakhand","**Bengal Tiger**. India's first NP (`1936`), first Tiger Reserve. Originally **Hailey National Park**"],
+    ["**Kaziranga**","Assam","**One-horned Indian rhinoceros** — holds two-thirds of the world population. UNESCO site"],
+    ["**Gir**","Gujarat","**Asiatic Lion** — the only wild population in the world"],
+    ["**Ranthambore**","Rajasthan","**Bengal Tiger**. Known for daytime tiger sightings; was a royal hunting ground of the Jaipur maharajas"],
+    ["**Sundarbans**","West Bengal","**Royal Bengal Tiger** (swimming tigers). World's largest mangrove forest. UNESCO site"],
+    ["**Kanha**","Madhya Pradesh","**Barasingha** (hard-ground swamp deer) — saved from extinction here. Kipling's *Jungle Book* is set in this landscape"],
+    ["**Bandhavgarh**","Madhya Pradesh","**Bengal Tiger** — one of India's highest tiger densities. White tigers were first found here"],
+    ["**Periyar**","Kerala","**Indian Elephant**. Built around Periyar Lake; elephants seen bathing in the lake"],
+    ["**Valley of Flowers**","Uttarakhand","**Alpine flowers** — over 600 species. UNESCO site, along with Nanda Devi"],
+    ["**Hemis**","Ladakh","**Snow Leopard**. **Largest** National Park in India by area"],
+    ["**Silent Valley**","Kerala","**Lion-tailed Macaque**. Saved from a hydroelectric project after a public campaign in the 1970s–80s"],
+    ["**Bandipur**","Karnataka","**Indian Elephant**, tiger. Part of the **Nilgiri Biosphere Reserve** along with Nagarhole, Mudumalai and Wayanad"],
+    ["**Manas**","Assam","**Golden Langur**, **Pygmy Hog** (world's smallest pig). UNESCO site"],
+    ["**Dudhwa**","Uttar Pradesh","**Swamp deer** (Barasingha), Indian rhinoceros (reintroduced). Borders Nepal"],
+    ["**Namdapha**","Arunachal Pradesh","Only park in the world with four big cats — **tiger, leopard, snow leopard, clouded leopard**"],
+    ["**Dachigam**","Jammu & Kashmir","**Hangul** (Kashmir stag) — the only species of red deer in India"]
+   ]},
+
+  {careful:"**Jim Corbett was originally called Hailey National Park** (after Sir Malcolm Hailey, the Governor of the United Provinces), established in `1936`. It was renamed **Ramganga National Park** in `1952`, then **Corbett National Park** in `1957` after the hunter-turned-conservationist Jim Corbett. SSC questions ask for the original name — the answer is Hailey, not Corbett, not Ramganga."},
+
+  {h:"Project Tiger and the Tiger Reserves",
+   cols:["Detail","What it is"],
+   rows:[
+    ["Launched","`1 April 1973`, on the recommendation of a special task force headed by **Kailash Sankhala**"],
+    ["First 9 reserves","Jim Corbett, Manas, Ranthambore, Palamau, Simlipal, Kanha, Melghat, Bandipur, Sundarbans"],
+    ["Current count","`54` Tiger Reserves across India (as of 2024)"],
+    ["Governing body","**National Tiger Conservation Authority (NTCA)**, established by the Wildlife (Protection) Amendment Act, `2006`"],
+    ["Census method","**Camera trapping** and pugmark analysis. The All India Tiger Estimation is done every 4 years"],
+    ["State with most tigers","**Madhya Pradesh**, followed by Karnataka and Uttarakhand (as of 2022 census)"]
+   ]},
+
+  {h:"Biosphere Reserves of India",
+   swap:[
+    ["Total","`18` Biosphere Reserves in India","`12` are in the **UNESCO World Network** of Biosphere Reserves"],
+    ["First","**Nilgiri** (`1986`)","Covers parts of Tamil Nadu, Karnataka and Kerala. Includes Bandipur, Nagarhole, Mudumalai, Wayanad, Silent Valley"],
+    ["Largest","**Gulf of Mannar** (Tamil Nadu)","A marine biosphere reserve"],
+    ["Nanda Devi","Uttarakhand (`1988`)","Also a UNESCO World Heritage Site"],
+    ["Sundarbans","West Bengal (`1989`)","World's largest mangrove, shared with Bangladesh"],
+    ["Panchmarhi","Madhya Pradesh (`1999`)","The only hill station of MP; includes Satpura NP"],
+    ["Great Nicobar","Andaman & Nicobar (`1989`)","Southernmost point of India — Indira Point is here"],
+    ["Khangchendzonga","Sikkim (`2000`)","Also a UNESCO World Heritage Site (mixed)"],
+    ["Achanakmar-Amarkantak","Madhya Pradesh / Chhattisgarh (`2005`)","Source of the **Narmada** and the **Son** rivers"]
+   ]},
+
+  {careful:"**Kaziranga is for the rhinoceros, not the tiger** — though it has more tigers per unit area than most reserves. The question 'which park has the one-horned rhinoceros?' expects **Kaziranga**; the question 'which park was the first Tiger Reserve?' expects **Jim Corbett**. Swapping these two is the standard error. Kaziranga is in **Assam**, Jim Corbett in **Uttarakhand** — the states are asked alongside the animals."}
+
+ ]},
+
+/* ===================================================================== 12 */
+{id:"awards", n:"Awards and Honours", hy:1,
+ w:"Bharat Ratna, Padma awards, gallantry awards, and the literary and sporting awards that SSC asks.",
+ quick:[
+  "**Bharat Ratna** is the highest civilian honour. First awarded in `1954` to **C. Rajagopalachari**, **S. Radhakrishnan** and **C.V. Raman**.",
+  "**Padma Awards** in descending order: **Padma Vibhushan**, **Padma Bhushan**, **Padma Shri**. Announced on the eve of **Republic Day**.",
+  "The highest gallantry award in wartime is the **Param Vir Chakra**; in peacetime it is the **Ashoka Chakra**.",
+  "The **Jnanpith Award** is the highest literary award. First recipient: **G. Sankara Kurup** (Malayalam, `1965`).",
+  "The highest sporting honour was renamed from **Rajiv Gandhi Khel Ratna** to **Major Dhyan Chand Khel Ratna** in `2021`."
+ ],
+ blocks:[
+  {h:"Bharat Ratna — the milestones",
+   cols:["Milestone","Recipient","Year"],
+   rows:[
+    ["First recipients","**C. Rajagopalachari**, **S. Radhakrishnan**, **C.V. Raman**","`1954`"],
+    ["First woman","**Indira Gandhi**","`1971`"],
+    ["First posthumous","**Lal Bahadur Shastri**","`1966`"],
+    ["First non-Indian","**Khan Abdul Ghaffar Khan** (Pakistan)","`1987`"],
+    ["Second non-Indian","**Nelson Mandela** (South Africa)","`1990`"],
+    ["First sportsperson","**Sachin Tendulkar** (at age 40, youngest ever)","`2014`"],
+    ["First scientist after C.V. Raman","**C.N.R. Rao**","`2014`"],
+    ["Discontinued","`1977–1980` (Janata Party government) and `1992–1997`","—"]
+   ]},
+
+  {careful:"**Bharat Ratna does not have a fixed limit of 3 per year.** The convention of awarding at most 3 was informal, and was broken in `2024` when `5` were awarded. Also, there is **no provision for a monetary grant** — it is an honour only, carrying no cash prize. Unlike the Padma Awards, the Bharat Ratna **can be awarded posthumously**, and has been — to Shastri, Subhas Chandra Bose (later withdrawn), and several others."},
+
+  {h:"Padma Awards — the three tiers",
+   cols:["Award","What it is","Key facts"],
+   rows:[
+    ["**Padma Vibhushan**","For exceptional and distinguished service","Second highest civilian honour after Bharat Ratna"],
+    ["**Padma Bhushan**","For distinguished service of a high order","Third highest civilian honour"],
+    ["**Padma Shri**","For distinguished service in any field","Fourth highest civilian honour. The most commonly awarded of the three"]
+   ]},
+
+  {h:"Gallantry Awards — the six, in order",
+   cols:["Award","Context","What it is"],
+   rows:[
+    ["**Param Vir Chakra**","Wartime","Highest wartime gallantry. Equivalent to the Victoria Cross. `21` awarded (as of 2024), of which `14` posthumous"],
+    ["**Maha Vir Chakra**","Wartime","Second highest wartime gallantry"],
+    ["**Vir Chakra**","Wartime","Third highest wartime gallantry"],
+    ["**Ashoka Chakra**","Peacetime","Highest peacetime gallantry. Equivalent to the Param Vir Chakra but for bravery outside war"],
+    ["**Kirti Chakra**","Peacetime","Second highest peacetime gallantry"],
+    ["**Shaurya Chakra**","Peacetime","Third highest peacetime gallantry"]
+   ]},
+
+  {h:"Literary, scientific and cultural awards",
+   swap:[
+    ["Jnanpith Award","Highest literary award. Given by **Bharatiya Jnanpith**","First recipient: **G. Sankara Kurup** (Malayalam, `1965`). **Hindi** and **Kannada** writers have won the most"],
+    ["Sahitya Akademi Award","Given for outstanding works in `24` Indian languages","Given by the **Sahitya Akademi** (National Academy of Letters), founded `1954`"],
+    ["Dadasaheb Phalke Award","Highest award in Indian cinema","First recipient: **Devika Rani** (`1969`). Named after the father of Indian cinema"],
+    ["Kalidas Samman","For outstanding contribution to classical arts","Given by the **Government of Madhya Pradesh**"],
+    ["Shanti Swarup Bhatnagar Prize","For notable research in science and technology","Given by **CSIR** since `1958`. Named after CSIR's first director-general"]
+   ]},
+
+  {h:"Sporting awards",
+   cols:["Award","For","Since","Key fact"],
+   rows:[
+    ["**Major Dhyan Chand Khel Ratna**","Outstanding performance in sports over 4 years","`1991`","Renamed from Rajiv Gandhi Khel Ratna in `2021`"],
+    ["**Arjuna Award**","Outstanding performance in sports","`1961`","The most well-known sporting honour"],
+    ["**Dronacharya Award**","Outstanding coaches","`1985`","Named after the guru of the Pandavas"],
+    ["**Dhyan Chand Award**","Lifetime contribution to sports development","`2002`","Now distinct from the Khel Ratna, which was also renamed after Dhyan Chand"],
+    ["**Tenzing Norgay National Adventure Award**","Outstanding achievement in adventure","`1993`","For land, water and air adventure"]
+   ]},
+
+  {careful:"**The Khel Ratna was renamed in 2021, not abolished.** It was called the **Rajiv Gandhi Khel Ratna** from `1991` to `2021`, and is now the **Major Dhyan Chand Khel Ratna**. The **Dhyan Chand Award** (for lifetime contribution, since 2002) is a separate award that existed before the rename — so after 2021 there are TWO awards with Dhyan Chand's name, for different things. Questions ask which is which."}
+
  ]}
 
 ]});
