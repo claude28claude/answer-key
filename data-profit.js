@@ -22,7 +22,7 @@ intro:"Three topics on profit and discount, then two on mixture. The percentages
 
 topics:[
 
-/* ============================================================ 1 — Cost price, selling price and the percentage (21 questions) */
+/* ============================================================ 1 — Cost price, selling price and the percentage (28 questions) */
 {
 id:"profit-basics", n:"Cost price, selling price and the percentage", hy:1,
 w:"Profit and loss from the cost price up: the two directions between CP and SP, the percentage reckoned on the wrong base, and the standard results — same selling price at ±x%, n sold at the price of m, the selling price doubled.",
@@ -192,13 +192,55 @@ blocks:[
    o:["no profit and no loss","a loss of ₹16","a loss of 1%","a gain of ₹80"],
    a:0,
    why:"**Equal cost prices with a gain of `x%` and a loss of `x%` break even**, because both percentages are taken on the same number: 800 × 110/100 = ₹880 and 800 × 90/100 = ₹720 add to ₹1,600, which is exactly the total cost price. Option C is the famous `x²/100` loss of 1%, and option B is that 1% of ₹1,600 — both belong to the **other** case, equal **selling** prices, where the cost prices differ. One word in the question decides which case it is.",
-   tag:"Same CP, ±x%"}
- ],
+   tag:"Same CP, ±x%"},
+
+  {q:"An article is sold for ₹`750` at a loss of 25%. Its cost price is:",
+   o:["₹1,000","₹937.50","₹562.50","₹900"],
+   a:0,
+   why:"**CP = SP × 100/(100 − l)** = 750 × 100/75 = `₹1,000`. Option B adds 25% of ₹750 back on to it, which is the standard wrong move — the 25% was a percentage of the cost price, not of the selling price. Option C takes 25% off ₹750 a second time, and option D is what the profit formula CP = SP × 100/(100 + l) gives with the sign error.",
+   tag:"CP from SP"},
+
+  {q:"A man bought 5 kg of apples for ₹`200` and sold them at ₹`48` per kg. His gain or loss per cent is:",
+   o:["a gain of 20%","a loss of 4%","a gain of 4%","a loss of 20%"],
+   a:0,
+   why:"CP per kg = 200/5 = ₹40 and SP per kg = ₹48. **Profit% = (Profit/CP) × 100** = (8/40) × 100 = `20%` gain. Option B takes 8/200 × 100 = 4%, which divides the per-kg profit by the total cost. Option D reverses the direction of the trade.",
+   tag:"Profit%"},
+
+  {q:"A trader sells an article at a loss of `x%` of the selling price. His loss as a per cent of the cost price is:",
+   o:["100x/(100 + x)","100x/(100 − x)","x","x²/100"],
+   a:0,
+   why:"**A loss of `x%` of the selling price is `100x/(100 + x)` per cent of the cost price.** Take SP = ₹100: the loss is ₹x, so CP = ₹(100 + x) and Loss% on CP = x/(100 + x) × 100. Option B uses (100 − x) in the denominator, which is the formula for converting a loss on the *cost price* to the SP base. Option C copies the figure unchanged, ignoring the different bases.",
+   tag:"SP base to CP base"},
+
+  {q:"If the selling price is tripled, a profit of 10% becomes:",
+   o:["30%","230%","310%","130%"],
+   a:1,
+   why:"Take CP = ₹100, so SP = ₹110. Tripled SP = ₹330. **Profit% = (330 − 100)/100 × 100 = `230%`**. The general rule: tripling the SP turns a profit of `p%` into `200 + 3p` per cent — here 200 + 30 = 230. Option B is 3 × 10, which triples the profit percentage instead of the selling price. Option D is 100 + 30, the formula for doubling not tripling.",
+   tag:"SP tripled"},
+
+  {q:"A man bought oranges at 5 for ₹`10` and sold them at 4 for ₹`12`. His gain per cent is:",
+   o:["40%","20%","50%","10%"],
+   a:2,
+   why:"CP of one orange = 10/5 = ₹2 and SP of one = 12/4 = ₹3. **Profit% = (Profit/CP) × 100** = (1/2) × 100 = `50%`. Option B is (12 − 10)/10 × 100, comparing a batch of 5 with a batch of 4 — different quantities of different things. Option C is the profit as a percentage of the selling price.",
+   tag:"x for ₹y"},
+
+  {q:"The cost price of 25 articles is equal to the selling price of 20 articles. The gain per cent is:",
+   o:["20%","80%","25%","125%"],
+   a:2,
+   why:"**If the CP of `n` articles equals the SP of `m` articles, gain% = ((n − m)/m) × 100** = ((25 − 20)/20) × 100 = `25%`. Take each CP as ₹1: 25 articles cost ₹25, and that is the SP of 20, so each sells for ₹1.25. Option A divides by 25 instead of 20, the standard base error. Option D is 25/20 as a percentage, which is 100 + p.",
+   tag:"CP of n = SP of m"},
+
+  {q:"An article is sold at a profit of 30%. Had it been sold for ₹`105` less, there would have been a loss of 5%. The cost price is:",
+   o:["₹350","₹300","₹400","₹210"],
+   a:1,
+   why:"Both percentages are of the cost price: SP₁ = 1.30 × CP and SP₂ = 0.95 × CP. The gap is **k = CP × (p + l)/100** = CP × 35/100 = 105, so CP = 105 × 100/35 = `₹300`. Option A is 105/0.30, treating ₹105 as the profit alone. Option D is 105 × 2, a guess at the gap being half the cost.",
+   tag:"Two SPs, gap ₹k"}
+],
   note:"Before computing anything, name the base: whose price is the percentage a percentage of. Most of the marks lost in this topic are lost there and not in the arithmetic."}
 ]
 },
 
-/* ============================================================ 2 — Marked price, discount and successive discounts (22 questions) */
+/* ============================================================ 2 — Marked price, discount and successive discounts (28 questions) */
 {
 id:"profit-discount", n:"Marked price, discount and successive discounts", hy:1,
 w:"The discount is on the marked price and the profit is on the cost price — every formula here, and every mistake, turns on which of the two is the base.",
@@ -372,13 +414,49 @@ blocks:[
    o:["a gain of 20%","a gain of 8%","a gain of 5%","a loss of 8%"],
    a:1,
    why:"The two discounts are a single **(a + b − ab/100)%** = 30 − 2 = 28%, so **profit% = [(100 + x)(100 − d)/100] − 100** = (150 × 72)/100 − 100 = 108 − 100 = a gain of `8%`. Option C is what treating the discounts as 30% would give — 150 × 0.70 = 105, a gain of 5% — and it is the tempting answer here. Option A is 50 − 30, the markup and the rates netted off as though all three stood on the cost price.",
-   tag:"Markup and discount"}
- ],
+   tag:"Markup and discount"},
+
+  {q:"The marked price of a shirt is ₹`1,200`. After a discount of 15%, the selling price is:",
+   o:["₹1,020","₹1,380","₹180","₹1,080"],
+   a:0,
+   why:"**SP = MP(100 − d)/100** = 1200 × 85/100 = `₹1,020`. Option B adds the discount instead of subtracting it. Option C is the discount itself, not the selling price. Option D uses 10% in place of 15%.",
+   tag:"SP from MP"},
+
+  {q:"An article is sold for ₹`840` after a discount of 16% on the marked price. The marked price is:",
+   o:["₹974.40","₹1,000","₹840","₹700"],
+   a:1,
+   why:"**MP = SP × 100/(100 − d)** = 840 × 100/84 = `₹1,000`. Option A is 840 × 1.16 = 974.40, adding the discount back to the selling price — the standard wrong move. Going back through a discount is done by dividing, never by adding `d%` on top.",
+   tag:"MP from SP"},
+
+  {q:"Successive discounts of 20% and 25% are equivalent to a single discount of:",
+   o:["45%","40%","35%","50%"],
+   a:1,
+   why:"**Single discount = (a + b − ab/100)%** = 20 + 25 − 500/100 = 45 − 5 = `40%`. Net factor: (0.80)(0.75) = 0.60, so 40% is the discount. Option A adds the rates. Option C understates the effect.",
+   tag:"Successive"},
+
+  {q:"A shopkeeper marks his goods `30%` above cost and allows a discount of `20%`. His profit per cent is:",
+   o:["10%","50%","4%","6%"],
+   a:2,
+   why:"**profit% = [(100 + x)(100 − d)/100] − 100** = (130 × 80)/100 − 100 = 104 − 100 = `4%`. Option A is 30 − 20, subtracting the rates as though both stood on the cost price.",
+   tag:"Markup and discount"},
+
+  {q:"Under a 'buy 3 get 2 free' offer, the effective discount per cent is:",
+   o:["66⅔%","40%","60%","33⅓%"],
+   a:1,
+   why:"The customer pays for 3 and takes 5, so **discount% = [x/(x + y)] × 100** = (2/5) × 100 = `40%`. Option A is 2/3 × 100, free articles over paid articles. Option C is the fraction paid. Option D is 'buy 2 get 1 free'.",
+   tag:"Free goods"},
+
+  {q:"An article costs ₹`480`. The shopkeeper wants a profit of `25%` after allowing a discount of `20%`. He must mark it at:",
+   o:["₹600","₹720","₹576","₹750"],
+   a:3,
+   why:"**MP = CP(100 + p)/(100 − d)** = 480 × 125/80 = `₹750`. The needed SP = 480 × 1.25 = ₹600, so option A is the selling price, not the marked price. Option D is 480 × 1.25 × 1.20 = 720, multiplying by (100 + d)/100 instead of dividing by (100 − d)/100. Option C is 480 × 1.20, the cost price marked up by the discount rate instead of by the combined factor.",
+   tag:"MP needed"}
+],
   note:"Every question above is answered by one line of the sheet. Before ticking, name the base: a discount per cent is a percentage of the marked price, a profit per cent a percentage of the cost price, and nothing in this topic goes wrong anywhere else."}
 ]
 },
 
-/* ============================================================ 3 — False weights and the dishonest shopkeeper (21 questions) */
+/* ============================================================ 3 — False weights and the dishonest shopkeeper (28 questions) */
 {
 id:"profit-dishonest", n:"False weights and the dishonest shopkeeper", hy:1,
 w:"The false weight, the faulty measure, the water in the milk, and the one denominator that decides every answer in the topic.",
@@ -548,13 +626,55 @@ blocks:[
    o:["35%","25%","10%","37.5%"],
    a:3,
    why:"**factor = (mixture/milk) × (100 + x)/100** = (5/4) × (110/100) = 1.25 × 1.1 = 1.375, a gain of `37.5%`. Treat the water as free: 4 litres of milk cost 4 units and 5 litres go out at 1.1 units each, so ₹5.50 comes back on ₹4. Option A adds the 25 and the 10 instead of multiplying the factors, and options B and C are the water and the markup taken separately.",
-   tag:"Water and markup"}
- ],
+   tag:"Water and markup"},
+
+  {q:"A shopkeeper uses a weight of 950 g in place of 1 kg and sells at cost price. His gain per cent is:",
+   o:["5%","50/9 %","10%","5 5/19 %"],
+   a:3,
+   why:"**gain% = (error/(true value − error)) × 100** = (50/950) × 100 = 100/19 = `5 5/19 %`. Option A divides 50 by the true 1,000 g, the standard wrong-denominator error. Option B divides 50 by 900, which is the answer for a 900 g weight, not 950 g. The denominator is always the weight handed over.",
+   tag:"950 g for 1 kg"},
+
+  {q:"A dealer sells at cost price and gains `20%` by false weight. He also adds water equal to `10%` of the quantity of goods he sells. His total gain per cent is:",
+   o:["30%","32%","10%","20%"],
+   a:1,
+   why:"A gain of 20% from false weight is a factor of 1.20. Adding 10% water means for every 100 units of goods he adds 10 of water, selling 110 units while paying for 100 — a factor of 1.10. **Total factor = 1.20 × 1.10 = 1.32**, a gain of `32%`. Option A adds the two percentages, which is always wrong when two effects multiply. Options C and D are each effect alone.",
+   tag:"Weight and water"},
+
+  {q:"A milkman adds water equal to `25%` of the milk and sells at `10%` above the cost price of milk. His gain per cent is:",
+   o:["37.5%","35%","25%","10%"],
+   a:0,
+   why:"Adding water equal to 25% of the milk gives mixture/milk = 5/4 = 1.25. With a 10% markup: **factor = (mixture/milk) × (100 + x)/100** = 1.25 × 1.10 = 1.375, a gain of `37.5%`. Option B adds the two percentages, 25 + 10. Option C is the water gain alone and option D the markup alone.",
+   tag:"Water and markup"},
+
+  {q:"A shopkeeper buys at `1,200 g` per kg from the wholesaler and sells at `800 g` per kg to customers, at the nominal cost price throughout. His gain per cent is:",
+   o:["50%","40%","25%","20%"],
+   a:0,
+   why:"**factor = (quantity received)/(quantity given)** = 1200/800 = 3/2 = 1.5, a gain of `50%`. For every ₹1,000 he spends he gets 1,200 g; selling at 800 g per ₹1,000, that yields ₹1,500 in revenue. Option B divides the difference 400 g by the nominal 1,000 g. Option C is the selling-side gain alone, 200/800 = 25%, and option D is the buying-side gain alone, 200/1000.",
+   tag:"Both ends"},
+
+  {q:"If the price of sugar falls by `25%`, a family can buy how much more sugar for the same money?",
+   o:["25% more","20% more","33⅓% more","75% more"],
+   a:2,
+   why:"**A price fall of `x%` lets you buy (100x)/(100 − x)% more for the same money** = (100 × 25)/75 = `33⅓%` more. At ₹1 per kg they bought 100 kg; at 75 paise they buy 133⅓ kg. Option A repeats the fall as the extra, and option B is the companion formula (100 × 25)/125 = 20%, which belongs to a price *rise*.",
+   tag:"Price fall"},
+
+  {q:"The price of oil rises by `25%`. By what per cent must a family reduce its consumption so that the oil bill stays unchanged?",
+   o:["25%","20%","16⅔%","80%"],
+   a:1,
+   why:"**cut% = (100x)/(100 + x)** = (100 × 25)/125 = `20%`. The new quantity is 100/125 = 4/5 of the old, a cut of one fifth. Option A repeats the rise. Option C is (100 × 25)/150, from adding 25 to 125 — an error with no formula behind it. Option D is the new consumption as a fraction of the old, not the cut.",
+   tag:"Price rise"},
+
+  {q:"A shopkeeper uses a weight of 850 g for 1 kg and sells at `5%` above cost price. His total gain per cent is:",
+   o:["22 12/17 %","23 9/17 %","25%","20%"],
+   a:1,
+   why:"**factor = (true/given) × (100 + x)/100** = (1000/850) × (105/100) = (20/17) × 1.05 = 2100/1700 = 21/17. Gain = (21 − 17)/17 × 100 = 400/17 = `23 9/17 %`. Option A is what the weight gain alone gives, (150/850) × 100 = 17 11/17%, plus 5 added — the standard error of adding instead of multiplying. Option C is a rounded guess and option D the weight gain computed on 1000 g.",
+   tag:"Weight and markup"}
+],
   note:"Every question here turns on which quantity the percentage is taken of. When an answer comes out at a round 10% or 20%, check the denominator before ticking it — the round number is usually the trap."}
 ]
 },
 
-/* ============================================================ 4 — Mixture and alligation (22 questions) */
+/* ============================================================ 4 — Mixture and alligation (28 questions) */
 {
 id:"mix-allig", n:"Mixture and alligation", hy:1,
 w:"The alligation cross and the one thing that goes wrong with it — which difference belongs to which quantity — then milk and water with water priced at nothing, and the rates, speeds, profit per cents and average marks where most of alligation's marks actually are.",
@@ -730,13 +850,49 @@ blocks:[
    o:["1 : 1","1 : 2","2 : 3","2 : 1"],
    a:3,
    why:"A class average is the mean of the two group averages weighted by the **number** in each group, so **(boys)/(girls) = (girls' average − class average)/(class average − boys' average)** = (84 − 76)/(76 − 72) = 8/4 = `2 : 1`. Two boys at 72 and one girl at 84 make 228 marks over three pupils, which is 76. Option B is the inversion, and the check kills it — 76 lies nearer the boys' 72, so there must be more boys. Option C is the boys' share of the class, two pupils in every three.",
-   tag:"Two groups"}
- ],
+   tag:"Two groups"},
+
+  {q:"Tea costing ₹80 per kg is mixed with tea costing ₹50 per kg in the ratio `1 : 2`. The mean price of the mixture per kg is:",
+   o:["₹65","₹60","₹70","₹55"],
+   a:1,
+   why:"**Mean price = (mc + nd)/(m + n)** = (1 × 80 + 2 × 50)/3 = 180/3 = `₹60`. Option A is the simple average (80 + 50)/2 = 65, which holds only for equal quantities. There is more of the cheaper tea, so the mean must sit below ₹65 — that rules out options A and C at a glance.",
+   tag:"Mean price"},
+
+  {q:"In what ratio must two kinds of rice costing ₹24 and ₹36 per kg be mixed so that the mixture costs ₹30 per kg?",
+   o:["1 : 2","2 : 1","1 : 1","3 : 2"],
+   a:2,
+   why:"**(cheaper)/(dearer) = (dearer − mean)/(mean − cheaper)** = (36 − 30)/(30 − 24) = 6/6 = `1 : 1`. ₹30 is exactly the midpoint of ₹24 and ₹36, so the two quantities must be equal. Options A and B push the mean to one side.",
+   tag:"Equal ratio"},
+
+  {q:"A shopkeeper mixes rice at ₹30 per kg with rice at ₹50 per kg and sells the mixture at ₹46.20 per kg to make a profit of `10%`. The cheaper and dearer rice are in the ratio:",
+   o:["3 : 2","1 : 3","2 : 3","3 : 1"],
+   a:2,
+   why:"Mean cost price = SP/1.10 = 46.20/1.10 = `₹42` per kg. By alligation: **(cheaper)/(dearer) = (d − mean)/(mean − c)** = (50 − 42)/(42 − 30) = 8/12 = `2 : 3`. Check: 2 kg at ₹30 and 3 kg at ₹50 cost 60 + 150 = ₹210 over 5 kg = ₹42 per kg, and 42 × 1.10 = ₹46.20. Option A is the cross inverted. Option B wrongly gives the dearer share as 3/4 of the mixture.",
+   tag:"Mixture at profit"},
+
+  {q:"How much water must be added to 40 litres of milk costing ₹60 per litre so that the mixture is worth ₹40 per litre?",
+   o:["20 litres","30 litres","10 litres","60 litres"],
+   a:0,
+   why:"**Water to add = q × (price of milk − mean price)/mean price** = 40 × (60 − 40)/40 = `20 litres`. Water : milk = 20 : 40 = 1 : 2. Check: 40 litres of milk at ₹60 costs ₹2,400 over 60 litres = ₹40 per litre. Option D is the new total volume, one step past the answer. Option B gives water : milk = 3 : 4, making the mixture worth ₹240/7 ≈ ₹34.29.",
+   tag:"Water added"},
+
+  {q:"A man invests ₹12,000, part at `5%` per annum and the rest at `8%` per annum, and earns ₹840 as total interest in one year. How much did he invest at `8%`?",
+   o:["₹8,000","₹4,000","₹6,000","₹9,600"],
+   a:0,
+   why:"Average rate = (840/12000) × 100 = 7%. By alligation: **(sum at lower)/(sum at higher) = (higher − avg)/(avg − lower)** = (8 − 7)/(7 − 5) = 1/2, so the ratio is 1 : 2, giving ₹4,000 at 5% and `₹8,000` at 8%. Check: 200 + 640 = 840. Option B is the amount at 5%. Option C splits equally.",
+   tag:"Two interest rates"},
+
+  {q:"In 90 kg of a mixture of two kinds of sugar costing ₹30 and ₹45 per kg, the mixture is worth ₹35 per kg. The quantity of the dearer sugar is:",
+   o:["30 kg","60 kg","45 kg","36 kg"],
+   a:0,
+   why:"**(cheaper)/(dearer) = (dearer − mean)/(mean − cheaper)** = (45 − 35)/(35 − 30) = 10/5 = 2 : 1. Dearer = 90 × 1/3 = `30 kg`, cheaper = 60 kg. Check: 60 × 30 + 30 × 45 = 3150, and 3150/90 = 35. Option B is the cheaper quantity. Option C splits equally.",
+   tag:"Quantity"}
+],
   note:"Every question above is one alligation cross, and the differences always sit on the prices, rates, speeds or averages while the ratio comes out on the quantities. If an answer disagrees with the check — the mean lies nearer the price of whatever there is more of — the cross was written upside down."}
 ]
 },
 
-/* ============================================================ 5 — Replacement, ratios and three-vessel mixing (20 questions) */
+/* ============================================================ 5 — Replacement, ratios and three-vessel mixing (28 questions) */
 {
 id:"mix-replace", n:"Replacement, ratios and three-vessel mixing", hy:1,
 w:"The replacement formula and everything built on it: drawing off and refilling n times, changing a mixture's ratio by hand, and pouring three vessels into one.",
@@ -896,8 +1052,56 @@ blocks:[
    o:["2 : 1","8 : 17","3 : 2","17 : 8"],
    a:3,
    why:"**The ratio becomes (milk − k × a/(a + b) + k) : (water − k × b/(a + b))** = (30 − 6 + 10) : (20 − 4) = 34 : 16 = `17 : 8`. Option A, `2 : 1`, comes from adding the 10 litres of milk without taking the mixture out first, giving 40 : 20 — the skipped step, and the tempting option. Option B inverts the answer and option C is the ratio before the operation.",
-   tag:"Refilled with milk"}
- ],
+   tag:"Refilled with milk"},
+
+  {q:"A vessel holds 80 litres of pure milk. 20 litres is drawn off and replaced with water, and this is done three times. The milk left in the vessel is:",
+   o:["33.75 litres","45 litres","48 litres","60 litres"],
+   a:0,
+   why:"**Milk left = v(1 − x/v)ⁿ** = 80 × (1 − 20/80)³ = 80 × (3/4)³ = 80 × 27/64 = `33.75` litres. Option B is the answer after two operations, 80 × 9/16 = 45 — one step short. Option C is 80 − 3 × 20/80 × 80, the linear approach treating each draw as taking 20 litres of milk; option D is the answer after one operation only.",
+   tag:"Three replacements"},
+
+  {q:"From a vessel full of pure spirit, one-fifth is drawn off and replaced with water, and this is done twice. The spirit remaining is what fraction of the vessel?",
+   o:["3/5","16/25","2/5","9/25"],
+   a:1,
+   why:"**Fraction left = (1 − x/v)ⁿ** = (4/5)² = `16/25`. Option A is the fraction left after one operation only, and option D is the fraction that has been *removed*, 1 − 16/25 = 9/25 — the complement of the answer, which is what the question did not ask for. Option C is 2 × 1/5, the linear answer that treats both draws as taking pure spirit.",
+   tag:"Fraction left"},
+
+  {q:"A 50-litre mixture of milk and water is in the ratio `3 : 2`. 10 litres of the mixture is drawn off and replaced with pure water. The new ratio of milk to water is:",
+   o:["2 : 3","9 : 16","12 : 13","3 : 2"],
+   a:2,
+   why:"Milk starts at 50 × 3/5 = 30 litres. **The milk left after one replacement = (component) × (1 − x/v)** = 30 × (1 − 10/50) = 30 × 4/5 = 24 litres, and water = 50 − 24 = 26, so the ratio is 24 : 26 = `12 : 13`. Option A would need the milk to fall below half the vessel, which one draw of only a fifth cannot do. Option B is what applying the factor to the vessel instead of to the milk gives: 50 × 0.8 = 40 litres of milk, which is more than the vessel started with.",
+   tag:"Mixture replaced"},
+
+  {q:"A vessel full of wine has one-third drawn off and replaced with water, then one-third drawn off again and replaced with water. The ratio of wine to water is:",
+   o:["4 : 5","2 : 1","5 : 4","4 : 9"],
+   a:0,
+   why:"**The wine fraction is (1 − x/v)ⁿ** = (2/3)² = 4/9 of the vessel, so wine : water = 4 : (9 − 4) = `4 : 5`. Option D is wine : total, the fraction `4/9` read as a ratio without subtracting the wine from the total. Option B is the ratio after one operation, 2 : 1. Option C inverts the answer — there is more water than wine after two draws.",
+   tag:"Wine and water"},
+
+  {q:"A vessel of capacity `v` litres is full of pure milk. After `x` litres is drawn off and replaced with water once, the water in the vessel is:",
+   o:["x litres","v − x litres","v(1 − x/v) litres","(x/v) × v litres"],
+   a:0,
+   why:"In one operation, `x` litres of pure milk is removed and `x` litres of water is added, so **the water in the vessel is exactly `x` litres** and the milk is `v − x`. The replacement formula (1 − x/v)ⁿ is a shortcut for repeated operations; for n = 1 from pure liquid, milk left = v − x and water = `x`. Option B is the milk, not the water. Options C and D are both the milk left, stated differently.",
+   tag:"First operation"},
+
+  {q:"A 60-litre mixture of milk and water is in the ratio `2 : 1`. 12 litres of the mixture is taken out and replaced with pure water. The amount of milk now in the vessel is:",
+   o:["32 litres","28 litres","40 litres","36 litres"],
+   a:0,
+   why:"Milk starts at 60 × 2/3 = 40 litres. **Milk left = (component) × (1 − x/v)** = 40 × (1 − 12/60) = 40 × 4/5 = `32` litres. Option B is what subtracting the full 12 from the milk gives: 40 − 12 = 28, treating the entire draw as pure milk — the skipped-step error. Option C is the milk before the operation and option D is the milk if only 12 × 1/3 = 4 litres of water were added.",
+   tag:"Mixture replaced"},
+
+  {q:"From a 40-litre vessel of pure milk, `x` litres is drawn off and replaced with water, three times over. The milk left is `(8/27)` of the vessel. `x` is:",
+   o:["13.33 litres","10 litres","8 litres","40/3 litres"],
+   a:3,
+   why:"**(1 − x/40)³ = 8/27 = (2/3)³**, so 1 − x/40 = 2/3 and x/40 = 1/3, giving x = `40/3` litres. Option B is what a cube root of 8/27 = 2/3 gives when then treated as x = 40 × (1 − 2/3) × some mis-step. Option D is the decimal form of 40/3 — the same answer restated, but the listed option rounds it, so it is wrong as written.",
+   tag:"Finding x"},
+
+  {q:"Two vessels of equal capacity hold mixtures of milk and water in the ratios `3 : 1` and `1 : 3`. Equal quantities are drawn from each and mixed. The fraction of the result that is milk is:",
+   o:["3/8","1/2","5/8","3/4"],
+   a:1,
+   why:"With equal quantities the milk fraction is the **average of the two milk fractions**: ½(3/4 + 1/4) = ½(1) = `1/2`, so milk and water are in equal parts. Option B is what adding the ratio terms gives, (3 + 1) : (1 + 3) = 4 : 4 = 1 : 1, which happens to agree here. Option C takes 3/4 of one and 1/4 of the other without halving. Option D is the milk fraction of vessel A alone.",
+   tag:"Two vessels"}
+],
   note:"Every question above is one line of the sheet. If a question needed more than two lines of working, the line to go back to is the one about the component the mixture carries away when it leaves."}
 ]
 }

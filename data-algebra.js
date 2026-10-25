@@ -22,7 +22,7 @@ intro:"Nine topics, in the order the chapter is usually taught: the identities f
 
 topics:[
 
-/* ============================================================ 1 — Identities and expansions (24 questions) */
+/* ============================================================ 1 — Identities and expansions (28 questions) */
 {
 id:"identities", n:"Identities and expansions", hy:1,
 w:"The eleven identities the whole of SSC algebra is built on, and the rearrangement of each one that the question actually uses.",
@@ -209,13 +209,37 @@ blocks:[
    o:["a + b + c = 0","abc = 1","a = b = c","a, b and c are in arithmetic progression"],
    a:2,
    why:"The condition rearranges to `a² + b² + c² − ab − bc − ca = 0`, and that expression equals **½[(a − b)² + (b − c)² + (c − a)²]**. A sum of squares is zero only when every square is zero, so **a = b = c**. Option A is the other condition that makes a³ + b³ + c³ = 3abc, and it is the trap put here for it.",
-   tag:"a = b = c"}
- ],
+   tag:"a = b = c"},
+
+  {q:"`a³ + b³` factorises as:",
+   o:["(a + b)(a² + ab + b²)","(a − b)(a² + ab + b²)","(a + b)(a² − ab + b²)","(a + b)(a² − 2ab + b²)"],
+   a:2,
+   why:"**a³ + b³ = (a + b)(a² − ab + b²).** The sign outside is plus, so the middle sign inside is *minus* — they are always opposite. Option A keeps both plus and is the standard slip; option B is the factorisation of **a³ − b³**; option D is (a + b)(a − b)² = (a + b)(a² − 2ab + b²), a different expression entirely.",
+   tag:"a³+b³"},
+
+  {q:"If `a + b = 10` and `a − b = 6`, then `a² − b²` is:",
+   o:["100","60","64","36"],
+   a:1,
+   why:"**a² − b² = (a + b)(a − b)** = 10 × 6 = `60`. Option C, `64`, is **(a + b)² − (a − b)² = 4ab** — a different identity applied to the same pair. Option D is (a − b)² = 36, and option A is (a + b)² = 100.",
+   tag:"a²−b²"},
+
+  {q:"`(a − b)³` expands to:",
+   o:["a³ − 3a²b + 3ab² − b³","a³ − 3a²b − 3ab² + b³","a³ + 3a²b − 3ab² − b³","a³ − 3a²b + 3ab² + b³"],
+   a:0,
+   why:"**(a − b)³ = a³ − 3a²b + 3ab² − b³.** The signs alternate: +, −, +, −. Option D changes only the last sign and looks deceptively close; option B flips the third and fourth signs together. For comparison, **(a + b)³** has all four terms positive.",
+   tag:"(a−b)³"},
+
+  {q:"If `a + b = 6` and `ab = 7`, then `(a − b)²` is:",
+   o:["36","22","29","8"],
+   a:3,
+   why:"**(a − b)² = (a + b)² − 4ab** = 36 − 28 = `8`. Option B, `22`, is **a² + b² = (a + b)² − 2ab** = 36 − 14 — the identity that subtracts *2*ab, not *4*ab. Option C subtracts ab once (36 − 7), and option A is (a + b)² itself.",
+   tag:"(a−b)²"}
+],
   note:"Every question above is answered by one line from the sheet. If a question took you more than about thirty seconds of writing, the identity it uses is the one to go back to."}
 ]
 },
 
-/* ============================================================ 2 — The a + b + c = 0 family (26 questions) */
+/* ============================================================ 2 — The a + b + c = 0 family (28 questions) */
 {
 id:"abc-zero", n:"The a + b + c = 0 family", hy:1,
 w:"One identity, and the dozen results SSC builds out of it — the cubes, the fourth powers, the product of the pair-sums, and the substitution that turns three differences into one product.",
@@ -414,13 +438,25 @@ blocks:[
    o:["0","−2xyz","2xyz","3xyz"],
    a:0,
    why:"With x + y + z = 0, **(x + y)(y + z)(z + x) = −xyz**: the substitutions y + z = −x, z + x = −y and x + y = −z make the product (−x)(−y)(−z), and three minus signs multiply to one minus. Adding xyz then leaves `0`. Option C, `2xyz`, is what comes of taking the product as +xyz and adding, and option B of taking it as −xyz and then subtracting instead of adding — the single minus sign is the whole question.",
-   tag:"(a+b)(b+c)(c+a)"}
- ],
+   tag:"(a+b)(b+c)(c+a)"},
+
+  {q:"If `a + b + c = 0`, then `(a + b)² + (b + c)² + (c + a)²` equals:",
+   o:["2(a² + b² + c²)","a² + b² + c²","a² + b² + c² − 2abc","0"],
+   a:1,
+   why:"Substitute a + b = −c, b + c = −a and c + a = −b: the sum becomes c² + a² + b² = **a² + b² + c²**. Option A doubles it — the factor of 2 belongs to the fourth-power result **(a² + b² + c²)² = 2(a⁴ + b⁴ + c⁴)**, not here. Option D assumes that because each bracket involves things adding to zero, the squares must vanish too, which squares never do.",
+   tag:"Squares of pair-sums"},
+
+  {q:"If `a + b + c = 5` and `a² + b² + c² = 13`, then `ab + bc + ca` is:",
+   o:["12","−6","6","4"],
+   a:2,
+   why:"**(a + b + c)² = a² + b² + c² + 2(ab + bc + ca)**, so 25 = 13 + 2(ab + bc + ca), giving ab + bc + ca = `6`. Option A is the value before dividing by 2 — the 2 comes from the expansion and cannot be dropped. This is the same identity used in the a + b + c = 0 questions, read backwards to find the cross-product sum.",
+   tag:"Finding ab+bc+ca"}
+],
   note:"Twenty-six questions, every one of them a substitution into a line of the sheet above. If a question here took real working rather than a substitution, go back and write that row out — the rest is arithmetic."}
 ]
 },
 
-/* ============================================================ 3 — The x + 1/x family (25 questions) */
+/* ============================================================ 3 — The x + 1/x family (28 questions) */
 {
 id:"algebra-recip", n:"The x + 1/x family", hy:1,
 w:"Everything that follows from one value of x + 1/x or x − 1/x — the squares, the cubes, the fourth and sixth powers, and the dividing-through step that hands you the value in the first place.",
@@ -611,8 +647,26 @@ blocks:[
    o:["k⁴ − 2","(k² − 2)² + 2","(k² − 2)² − 2","(k² + 2)² − 2"],
    a:2,
    why:"Square x² + 1/x²: **x⁴ + 1/x⁴ = (x² + 1/x²)² − 2 = (k² − 2)² − 2.** Option A, `k⁴ − 2`, is the trap, because it skips the middle step — for k = 3 it gives `79` where the true value is `47`. Each squaring costs its own 2, so two squarings mean two separate subtractions, which is also why option B's `+ 2` is wrong.",
-   tag:"x⁴+1/x⁴"}
- ],
+   tag:"x⁴+1/x⁴"},
+
+  {q:"If x − 1/x = 4, then x² + 1/x² is:",
+   o:["14","16","18","20"],
+   a:2,
+   why:"**x² + 1/x² = (x − 1/x)² + 2 = m² + 2** = 16 + 2 = `18`. With a *minus* given, the correction is *added*. Option A, `14`, subtracts the 2 instead — that is the formula for the *other* given, **(x + 1/x)² − 2**. Option B is 4² without any correction at all.",
+   tag:"x−1/x numeric"},
+
+  {q:"If 2x² − 7x + 2 = 0 and x ≠ 0, then x + 1/x is:",
+   o:["7/2","7","2/7","9/2"],
+   a:0,
+   why:"The first and last coefficients are both `2`, so this is an x + 1/x equation in disguise. **Divide through by 2x: x − 7/2 + 1/x = 0, so x + 1/x = 7/2.** The general rule is **ax² + bx + a = 0 ⇒ x + 1/x = −b/a**; here −(−7)/2 = `7/2`. Option B, `7`, divides by x but forgets to divide by the leading coefficient as well.",
+   tag:"Divide by ax"},
+
+  {q:"(x + 1/x)² + (x − 1/x)² is equal to:",
+   o:["4","x² + 1/x²","(x² + 1/x²)²","2(x² + 1/x²)"],
+   a:3,
+   why:"Expand each square: **(x + 1/x)² = x² + 2 + 1/x²** and **(x − 1/x)² = x² − 2 + 1/x²**. Adding them, the +2 and −2 cancel, leaving **2(x² + 1/x²)**. Option A, `4`, is the *difference* of the same two squares, not their sum — that is the bridge identity. Option B drops the factor of 2.",
+   tag:"Sum of squares"}
+],
   note:"Every question above is answered by one line from the sheet. If a question needed more than one rearrangement of your own, the formula it uses is the one to go back to."}
 ]
 },
@@ -1069,7 +1123,7 @@ blocks:[
 ]
 },
 
-/* ============================================================ 6 — Polynomials, remainder and factor theorem (27 questions) */
+/* ============================================================ 6 — Polynomials, remainder and factor theorem (28 questions) */
 {
 id:"algebra-polynomial", n:"Polynomials, remainder and factor theorem", hy:1,
 w:"The two theorems that turn a long division into a single substitution, the division algorithm that fixes the shape of a remainder, and the divisibility rules SSC sets on xⁿ ± 1.",
@@ -1278,13 +1332,19 @@ blocks:[
    o:["x³ + 2x² + 3x + 4","x³ − 2x² + 5x − 4","x³ + x² + x + 1","2x³ − x² + 3x − 1"],
    a:1,
    why:"**(x − 1) is a factor exactly when f(1) = 0, and f(1) is just the sum of the coefficients.** Adding up: option A gives `10`, option B gives 1 − 2 + 5 − 4 = `0`, option C gives `4`, option D gives `3`. So option B is the one. Option C is the near miss worth knowing: its coefficients sum to 4, but f(−1) = −1 + 1 − 1 + 1 = 0, so it is divisible by **(x + 1)** instead.",
-   tag:"Sum of coefficients"}
- ],
+   tag:"Sum of coefficients"},
+
+  {q:"If the sum of the coefficients of a polynomial p(x) is zero, then p(x) is divisible by:",
+   o:["(x + 1)","(x − 1)","(x² + 1)","x"],
+   a:1,
+   why:"**The sum of the coefficients of p(x) is p(1)**: each coefficient of xⁿ contributes that coefficient × 1 = itself. If p(1) = 0 then `(x − 1)` is a factor by the factor theorem. Option A would need p(−1) = 0, which is the **alternating** sum of the coefficients, not the plain sum.",
+   tag:"Factor theorem"}
+],
   note:"Every question above is one substitution or one degree count. If you found yourself carrying out a long division, the line from the sheet that would have replaced it is the one to go back to."}
 ]
 },
 
-/* ============================================================ 7 — Ratio, proportion and componendo–dividendo (27 questions) */
+/* ============================================================ 7 — Ratio, proportion and componendo–dividendo (28 questions) */
 {
 id:"ratio-prop", n:"Ratio, proportion and componendo–dividendo", hy:1,
 w:"The four proportionals, the four operations on a ratio equation, and the one rule — equal ratios may have their numerators and denominators added — that half of SSC's ratio questions turn on.",
@@ -1383,8 +1443,14 @@ blocks:[
    o:["2","3","4","6"],
    a:2,
    why:"**Four numbers are in proportion when the product of the extremes equals the product of the means**, so (10 − x)(24 − x) = (12 − x)(19 − x). The x² terms cancel — they always do — leaving 240 − 34x = 228 − 31x, so 3x = 12 and `x = 4`. The numbers become 6, 8, 15, 20, and 6 : 8 = 15 : 20 = 3 : 4. Option D gives 4, 6, 13, 18, where 4 : 6 is 2 : 3 but 13 : 18 is not.",
-   tag:"Make proportional"}
- ]},
+   tag:"Make proportional"},
+
+  {q:"The triplicate ratio of `2 : 3` is:",
+   o:["4 : 9","6 : 9","8 : 27","8 : 9"],
+   a:2,
+   why:"**The triplicate ratio of a : b is a³ : b³** = 2³ : 3³ = `8 : 27`. Option A (4 : 9) is the **duplicate** ratio a² : b², and option D (8 : 9) cubes only the first term.",
+   tag:"Kinds of ratio"}
+]},
 
  {h:"QUESTIONS — the four operations, and equal ratios",
   mcq:[
@@ -1515,7 +1581,7 @@ blocks:[
 ]
 },
 
-/* ============================================================ 8 — Maximum and minimum values (26 questions) */
+/* ============================================================ 8 — Maximum and minimum values (28 questions) */
 {
 id:"algebra-maxmin", n:"Maximum and minimum values",
 w:"The greatest and least value of a quadratic, of x + 1/x, of bx + a/x and of a sum of moduli — and the one line of AM ≥ GM that produces most of them.",
@@ -1713,13 +1779,25 @@ blocks:[
    o:["x = 3 only","x = 11/2 only","x = 8 only","every x from `3` to `8`"],
    a:3,
    why:"**|x − a| + |x − b| equals |a − b| for every x between a and b**, so the least value `5` is reached on a whole stretch, not at one point; outside that stretch the sum is 5 plus twice the overshoot. Option B names the midpoint, which is the answer for a sum of **squares** — `(x − 3)² + (x − 8)²` is least at x = 11/2 and nowhere else. A sum of moduli has an interval of minimising points, a sum of squares has one.",
-   tag:"Sum of moduli"}
- ],
+   tag:"Sum of moduli"},
+
+  {q:"The maximum value of `12x − 9x²` for real x is:",
+   o:["4","12","3","9"],
+   a:0,
+   why:"**12x − 9x² = −9(x − 2/3)² + 4** by completing the square. The coefficient of x² is negative, so there is a greatest value and no least value. Option B (12) is the coefficient of x, not the maximum.",
+   tag:"Complete the square"},
+
+  {q:"The least value of `x⁴ + 1/x⁴` for x > 0 is:",
+   o:["2","4","1","0"],
+   a:0,
+   why:"**x⁴ + 1/x⁴ = (x² + 1/x²)² − 2.** Since x² + 1/x² ≥ 2 by AM ≥ GM, the least value is 4 − 2 = `2`. Option B (4) is the minimum of (x² + 1/x²)² before the 2 is subtracted.",
+   tag:"AM ≥ GM"}
+],
   note:"If a question gave you the right number against the wrong word — the place instead of the value, or the maximum instead of the minimum — the fix is the first Careful box, not more practice."}
 ]
 },
 
-/* ============================================================ 9 — Linear equations and their graphs (26 questions) */
+/* ============================================================ 9 — Linear equations and their graphs (28 questions) */
 {
 id:"lineareq", n:"Linear equations and their graphs",
 w:"When a pair of equations has one solution, none, or infinitely many — and the picture each case makes on the axes, with intercepts, slope and the triangle a line cuts off.",
@@ -1917,8 +1995,20 @@ blocks:[
    o:["36","45","72","63"],
    a:3,
    why:"**A two-digit number is 10t + u and its reverse is 10u + t, so their difference is 9(t − u).** Here 9(t − u) = 27 gives t − u = 3, and with t + u = 9 that makes t = 6 and u = 3, so the number is `63` — and 63 − 36 = 27. Options B and C also have digits adding to 9, which is the trap: that condition alone fixes nothing, and option A is the reversed number itself.",
-   tag:"Word problem"}
- ],
+   tag:"Word problem"},
+
+  {q:"If `x − y = 3` and `x² − y² = 39`, then `x + y` is:",
+   o:["13","36","6","12"],
+   a:0,
+   why:"**x² − y² = (x − y)(x + y)**, so 3(x + y) = 39 and `x + y = 13`. Option B (36) is 39 − 3, subtracting instead of dividing; the identity turns what looks like a quadratic problem into a single division.",
+   tag:"Simultaneous"},
+
+  {q:"The graph of `x = 4` is:",
+   o:["a line parallel to the x-axis","a line parallel to the y-axis","a line through the origin","the y-axis itself"],
+   a:1,
+   why:"**`x = constant` is a vertical line, parallel to the y-axis**, passing through (4, 0). Option A is what `y = constant` gives — the two constants, one in x and one in y, produce lines in perpendicular directions.",
+   tag:"Graph"}
+],
   note:"Every question above is answered by one line of the sheet. If a pair of equations ever looks like more than a ratio test, write both in the form ax + by = c first — the three ratios then read straight off."}
 ]
 }

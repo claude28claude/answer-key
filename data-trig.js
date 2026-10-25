@@ -20,7 +20,7 @@ intro:"Four topics of trigonometry, then three of height and distance. The table
 
 topics:[
 
-/* ============================================================ 1 — The ratios, the table and complementary angles (22 questions) */
+/* ============================================================ 1 — The ratios, the table and complementary angles (28 questions) */
 {
 id:"trig-ratios", n:"The ratios, the table and complementary angles", hy:1,
 w:"The six ratios on a right triangle, the table of values at 0°, 30°, 45°, 60° and 90°, the reciprocal and quotient relations, the complementary-angle rules, the ranges, and the conversion between degrees and radians.",
@@ -212,13 +212,49 @@ blocks:[
    why:"With both legs equal, the opposite and adjacent sides of either acute angle are the same, so **sin45° = cos45° = 1/√2** — and this is why `sinθ = cosθ` has the single acute solution `45°`. Option C is the trap: `√2` is the **hypotenuse** of this triangle and so is sec45° and cosec45°, while **tan45° = opposite/adjacent = 1**. Option B is sin30° and option D is cosec30°.",
    tag:"45-45-90",
    d:"t-45-45-90",
-   dcap:"The 45-45-90 triangle: equal legs, hypotenuse √2 times a leg."}
- ],
+   dcap:"The 45-45-90 triangle: equal legs, hypotenuse √2 times a leg."},
+
+  {q:"The value of `sin²30° + cos²60°` is:",
+   o:["1","1/2","√3/2","1/4"],
+   a:1,
+   why:"**sin30° = cos60° = 1/2**, so sin²30° + cos²60° = 1/4 + 1/4 = `1/2`. Option A (1) is what the Pythagorean identity sin²θ + cos²θ gives — but that needs the **same** angle in both terms, and here the angles are different.",
+   tag:"Standard values"},
+
+  {q:"The value of `tan45° + cot45°` is:",
+   o:["0","1","2","√2"],
+   a:2,
+   why:"**tan45° = 1 and cot45° = 1**, so the sum is `2`. Option D (√2) is sec45°, which is the reciprocal of cos45° — a different function of the same angle.",
+   tag:"Standard values"},
+
+  {q:"The value of `sin60°cos30° + cos60°sin30°` is:",
+   o:["√3/2","√3","1","1/2"],
+   a:2,
+   why:"**sin60°cos30° + cos60°sin30° = sinA cosB + cosA sinB = sin(A + B)** = sin90° = `1`. Alternatively, (√3/2)(√3/2) + (1/2)(1/2) = 3/4 + 1/4 = 1. Option A (√3/2) is sin60° alone.",
+   tag:"Compound angle"},
+
+  {q:"If `sinθ = cosθ` for an acute angle θ, then θ is:",
+   o:["30°","60°","90°","45°"],
+   a:3,
+   why:"**sinθ = cosθ means tanθ = 1, so θ = `45°`** — the only acute angle where sine and cosine are equal. Option A (30°) gives sin30° = 1/2 and cos30° = √3/2, which are not equal.",
+   tag:"Complementary"},
+
+  {q:"The value of `cos0° + cos30° + cos60° + cos90°` is:",
+   o:["(3 + √3)/2","2 + √3","(1 + √3)/2","2"],
+   a:0,
+   why:"**cos0° = 1, cos30° = √3/2, cos60° = 1/2, cos90° = 0**, so the sum is 1 + √3/2 + 1/2 + 0 = `(3 + √3)/2`. Option D (2) is what leaving out cos30° gives.",
+   tag:"Standard values"},
+
+  {q:"If `tanθ = 4/3` and θ is acute, then `sinθ + cosθ` is:",
+   o:["7/4","7/12","1","7/5"],
+   a:3,
+   why:"**With opposite = 4 and adjacent = 3, the hypotenuse is 5** (the 3-4-5 triple), so sinθ = 4/5 and cosθ = 3/5, giving sinθ + cosθ = `7/5`. Option A (7/4) adds the numerators over the wrong denominator.",
+   tag:"From tanθ"}
+],
   note:"Every question above is one row of the sheet or one cell of the table. If a value had to be worked out rather than recalled, rebuild it from the sine and cosine rows with tanθ = sinθ/cosθ and the three reciprocals — that is cheaper than memorising thirty entries."}
 ]
 },
 
-/* ============================================================ 2 — The standard identities and what questions do with them (22 questions) */
+/* ============================================================ 2 — The standard identities and what questions do with them (28 questions) */
 {
 id:"trig-identities", n:"The standard identities and what questions do with them", hy:1,
 w:"Three identities and their rearrangements — the secθ − tanθ pair, the (sinθ + cosθ) = k family, the fourth and sixth powers, and the expressions SSC sets again and again.",
@@ -393,13 +429,49 @@ blocks:[
    o:["sin²θ + cos²θ = 1","sec²θ − tan²θ = 1","sinθ + cosθ = 1","cosec²θ − cot²θ = 1"],
    a:2,
    why:"**sin²θ + cos²θ = 1** is the identity; **sinθ + cosθ** is not `1`, because squaring it gives **1 + 2sinθcosθ**, which exceeds 1 for every angle strictly between `0°` and `90°`. At `45°` the sum is `√2` and at `30°` it is (1 + √3)/2, neither of them 1. The other three options are correct as written and are the three Pythagorean identities in their subtracted form.",
-   tag:"The big slip"}
- ],
+   tag:"The big slip"},
+
+  {q:"The value of `sec²θ − tan²θ` is:",
+   o:["1","0","sin²θ","−1"],
+   a:0,
+   why:"**sec²θ − tan²θ = 1** is the Pythagorean identity obtained by dividing sin²θ + cos²θ = 1 by cos²θ throughout. Option D (−1) is what reversing the order to tan²θ − sec²θ gives.",
+   tag:"Pythagorean"},
+
+  {q:"The value of `cosec²θ − cot²θ` is:",
+   o:["0","cos²θ","−1","1"],
+   a:3,
+   why:"**cosec²θ − cot²θ = 1**, from dividing sin²θ + cos²θ = 1 by sin²θ. Option C (−1) is the result of writing it the other way round as cot²θ − cosec²θ, which reverses the sign.",
+   tag:"Pythagorean"},
+
+  {q:"If `sinθ − cosθ = 0`, then `sin²θ − cos²θ` is:",
+   o:["0","1","−1","1/2"],
+   a:0,
+   why:"**sin²θ − cos²θ = (sinθ − cosθ)(sinθ + cosθ)** = 0 × (sinθ + cosθ) = `0`, because the first factor is zero. Option B (1) is what the identity sin²θ + cos²θ = 1 gives — the sum, not the difference.",
+   tag:"Factorise"},
+
+  {q:"The expression `(1 − cos²θ)/sin²θ` simplifies to:",
+   o:["cosec²θ","sinθ","0","1"],
+   a:3,
+   why:"**1 − cos²θ = sin²θ**, so (1 − cos²θ)/sin²θ = sin²θ/sin²θ = `1`. Option A (cosec²θ) is what dividing 1 by sin²θ gives — forgetting to substitute the numerator first.",
+   tag:"Simplify"},
+
+  {q:"The value of `tan²θ − sec²θ` is:",
+   o:["1","−sin²θ","0","−1"],
+   a:3,
+   why:"**sec²θ − tan²θ = 1, so tan²θ − sec²θ = `−1`**. Option A (1) is the result with the terms in the standard order; reversing them flips the sign, which is what the question tests.",
+   tag:"Sign reversal"},
+
+  {q:"If `secθ − tanθ = 2`, then `secθ + tanθ` is:",
+   o:["2","−2","1/4","1/2"],
+   a:3,
+   why:"**sec²θ − tan²θ = 1** can be factored as (secθ − tanθ)(secθ + tanθ) = 1, so secθ + tanθ = 1/2 = `1/2`. Option A (2) is the given value repeated — assuming the two expressions are equal, but they are reciprocals.",
+   tag:"Product = 1"}
+],
   note:"Every question above is answered by one line from the sheet. If a question needed more than about three lines of writing, the identity it rests on is the one to go back to."}
 ]
 },
 
-/* ============================================================ 3 — Conditional identities and special angles (22 questions) */
+/* ============================================================ 3 — Conditional identities and special angles (28 questions) */
 {
 id:"trig-conditional", n:"Conditional identities and special angles", hy:1,
 w:"The compound, double and triple angle formulas, the surd values they give for 15°, 75° and 22½°, the products and sums SSC sets, and the rule for reducing an angle above 90°.",
@@ -582,13 +654,49 @@ blocks:[
    o:["√3/2","1/2","1/4","(√3 − 1)/2"],
    a:1,
    why:"**sin2θ = 2sinθcosθ**, so 2sin15°cos15° = `sin30° = ½`. Multiplying the surds out gives the same thing four times slower: 2 × (√3 − 1)/(2√2) × (√3 + 1)/(2√2) = 2 × (3 − 1)/8 = ½. Option A is sin60°, which is what doubling twice gives; option C is sin15°cos15° with the 2 left off, which is ¼.",
-   tag:"sin2θ"}
- ],
+   tag:"sin2θ"},
+
+  {q:"`cos(A + B)` expands to:",
+   o:["cosAcosB + sinAsinB","sinAcosB − cosAsinB","cosAcosB − sinAsinB","cosAsinB + sinAcosB"],
+   a:2,
+   why:"**cos(A + B) = cosAcosB − sinAsinB** — the cosine compound formula has a **minus** sign for the sum. Option A has a plus, which is what cos(A − B) gives — the plus/minus swap between the sum and difference formulas is the standard trap.",
+   tag:"cos(A+B)"},
+
+  {q:"The value of `sin75°` is:",
+   o:["(√6 + √2)/4","(√6 − √2)/4","(√3 + 1)/4","(√3 − 1)/(2√2)"],
+   a:0,
+   why:"**sin75° = sin(45° + 30°) = sin45°cos30° + cos45°sin30°** = (√2/2)(√3/2) + (√2/2)(1/2) = `(√6 + √2)/4`. Option B is sin(45° − 30°) = sin15°, with the sign between the surds flipped.",
+   tag:"sin75°"},
+
+  {q:"The value of `cos75°` is:",
+   o:["(√6 + √2)/4","(√3 + 1)/(2√2)","(√3 − 1)/(2√2)","(√6 − √2)/4"],
+   a:3,
+   why:"**cos75° = cos(45° + 30°) = cos45°cos30° − sin45°sin30°** = (√2/2)(√3/2) − (√2/2)(1/2) = `(√6 − √2)/4`. Option A has a plus sign, giving cos(45° − 30°) = cos15° instead.",
+   tag:"cos75°"},
+
+  {q:"`1 − cos2θ` is equal to:",
+   o:["2cos²θ","cos²θ","sin²θ","2sin²θ"],
+   a:3,
+   why:"**cos2θ = 1 − 2sin²θ**, so 1 − cos2θ = `2sin²θ`. Option A (2cos²θ) is what 1 **+** cos2θ gives — the plus/minus sign in front of cos2θ decides whether the result is in sine or cosine.",
+   tag:"Double angle"},
+
+  {q:"The value of `cos²15° − sin²15°` is:",
+   o:["1/2","1","√3/2","(√6 − √2)/4"],
+   a:2,
+   why:"**cos²A − sin²A = cos2A**, so cos²15° − sin²15° = cos30° = `√3/2`. Option A (1/2) is cos60°, which would come from using 30° instead of 15° as the half-angle.",
+   tag:"Double angle"},
+
+  {q:"`sin(A + B)sin(A − B)` equals:",
+   o:["cos²A − cos²B","sin²A + sin²B","sin²A − sin²B","cos²A + cos²B"],
+   a:2,
+   why:"**sin(A + B)sin(A − B) = sin²A − sin²B**. Expanding: (sinAcosB + cosAsinB)(sinAcosB − cosAsinB) = sin²Acos²B − cos²Asin²B, which simplifies to sin²A − sin²B. Option A has cosines instead of sines.",
+   tag:"Product identity"}
+],
   note:"Every question above is answered by one row of the sheet. If a question needed the value of sin20° or of sin15° to be worked out, the identity it was testing was missed."}
 ]
 },
 
-/* ============================================================ 4 — Maximum and minimum of a trigonometric expression (22 questions) */
+/* ============================================================ 4 — Maximum and minimum of a trigonometric expression (28 questions) */
 {
 id:"trig-maxmin", n:"Maximum and minimum of a trigonometric expression", hy:1,
 w:"The handful of expressions SSC asks for the greatest or least value of, and the one rule that decides which of them is a root and which is just the bigger coefficient.",
@@ -764,13 +872,49 @@ blocks:[
    o:["`1/2` to `1`","`1` to `3`","`1/3` to `1/2`","`1/3` to `1`"],
    a:3,
    why:"**The denominator 2 + sinθ runs from 1 to 3, and taking the reciprocal turns the range over**, so the expression runs from `1/3` (where the denominator is largest) to `1` (where it is smallest). Option B is the denominator's own range, left un-inverted — the commonest slip. The greatest value of the fraction goes with the least value of the bottom, which is the point of the question.",
-   tag:"1/(2 + sinθ)"}
- ],
+   tag:"1/(2 + sinθ)"},
+
+  {q:"The maximum value of `sin²θ × cos²θ` is:",
+   o:["1/4","1/2","1","√2/2"],
+   a:0,
+   why:"**sin²θcos²θ = (sin2θ)²/4**, and the maximum of sin²2θ is 1, so the maximum is `1/4`. Option B (1/2) is the maximum of sinθcosθ (without the squares) — squaring halves the peak.",
+   tag:"Product max"},
+
+  {q:"The minimum value of `2sinθ + 3cosθ` is:",
+   o:["-√13","-5","−√5","−1"],
+   a:0,
+   why:"**The minimum of a sinθ + b cosθ is −√(a² + b²)** = −√(4 + 9) = `−√13`. Option B (−5) adds the coefficients and negates, which is what treating them as if both peaks occur together gives.",
+   tag:"a sinθ + b cosθ"},
+
+  {q:"The maximum value of `sinθ − cosθ` is:",
+   o:["1","√2","2","0"],
+   a:1,
+   why:"**sinθ − cosθ = √2 sin(θ − 45°)**, so its maximum is `√2`. Option A (1) is what assuming the individual maxima of sinθ and −cosθ occur at the same angle gives — but they do not.",
+   tag:"Max of difference"},
+
+  {q:"The greatest value of `3 − 2sinθ` is:",
+   o:["3","1","4","5"],
+   a:3,
+   why:"**sinθ ranges from −1 to 1**, so −2sinθ ranges from −2 to 2, and 3 − 2sinθ ranges from 1 to `5`. The greatest value occurs when sinθ = −1. Option A (3) is the value when sinθ = 0, not at the extremes.",
+   tag:"Linear in sinθ"},
+
+  {q:"The maximum value of `cos²θ + sinθ` is:",
+   o:["2","1","5/4","3/2"],
+   a:2,
+   why:"**cos²θ + sinθ = 1 − sin²θ + sinθ = −(sinθ − 1/2)² + 5/4** by completing the square. The greatest value is `5/4`, at sinθ = 1/2. Option A (2) is what setting both cos²θ = 1 and sinθ = 1 simultaneously gives — but those cannot happen at the same angle.",
+   tag:"Complete square"},
+
+  {q:"The minimum value of `4sin²θ + 3cosec²θ` is:",
+   o:["7","12","4√3","2√3"],
+   a:2,
+   why:"**By AM ≥ GM, 4sin²θ + 3cosec²θ ≥ 2√(4 × 3) = `4√3`**, with equality when 4sin²θ = 3cosec²θ. Option A (7) adds the coefficients, and option B (12) takes their product — neither is how AM-GM works.",
+   tag:"AM ≥ GM"}
+],
   note:"Three rules answer almost every question above: the root √(a² + b²) for the first-power form, the larger or smaller coefficient for the squared form, and the double angle 2θ wherever sinθ and cosθ are multiplied together."}
 ]
 },
 
-/* ============================================================ 5 — Height and distance: the three standard triangles (22 questions) */
+/* ============================================================ 5 — Height and distance: the three standard triangles (28 questions) */
 {
 id:"trig-hd-basics", n:"Height and distance: the three standard triangles", hy:1,
 w:"One relation, h = d·tanθ, and the three triangles it makes at 30°, 45° and 60° — with the shadow, the ladder, the kite, the broken pole and the observer who forgets his own height.",
@@ -956,13 +1100,49 @@ blocks:[
    o:["h√3","h/√3","h","2h"],
    a:0,
    why:"**d = h·cotθ** and cot30° = √3, so the distance is **h√3** — at a low elevation the observer stands far back. Option B, h/√3, is the answer at 60°, since cot60° = 1/√3; option C is the answer at 45°, where distance and height are equal. `2h` is h·cosec30°, the line of sight rather than the ground distance.",
-   tag:"30°"}
- ],
+   tag:"30°"},
+
+  {q:"A vertical pole `6` m high casts a shadow `2√3` m long on level ground. The sun's angle of elevation is:",
+   o:["30°","45°","60°","90°"],
+   a:2,
+   why:"**tanθ = height/shadow** = 6/(2√3) = 3/√3 = √3, so θ = `60°`. Option A (30°) gives tan30° = 1/√3, which would mean a shadow √3 times the height, not shorter — the greater the angle, the shorter the shadow.",
+   tag:"Shadow"},
+
+  {q:"From the top of a lighthouse `100` m high the angle of depression of a ship is `30°`. The distance of the ship from the foot of the lighthouse is:",
+   o:["100 m","50 m","50√3 m","100√3 m"],
+   a:3,
+   why:"**The angle of depression equals the angle of elevation from the ship.** tan30° = 100/d, so d = 100/tan30° = 100 × √3 = `100√3 m`. Option A (100 m) is what using tan45° = 1 instead of tan30° gives.",
+   tag:"Depression"},
+
+  {q:"A tower `20√3` m high casts a shadow `60` m long. The angle of elevation of the sun is:",
+   o:["45°","60°","30°","90°"],
+   a:2,
+   why:"**tanθ = height/shadow** = 20√3/60 = √3/3 = 1/√3, so θ = `30°`. Option B (60°) is what reversing the fraction — shadow/height — gives, which is cotθ, not tanθ.",
+   tag:"Shadow"},
+
+  {q:"A `10` m ladder leans against a wall so that its foot is `5` m from the wall. The angle the ladder makes with the ground is:",
+   o:["30°","45°","60°","90°"],
+   a:2,
+   why:"**cosθ = adjacent/hypotenuse** = 5/10 = 1/2, so θ = `60°`. Alternatively, the vertical reach is √(100 − 25) = √75 = 5√3, and tanθ = 5√3/5 = √3, confirming 60°. Option A (30°) uses sin30° = 1/2 instead of cos.",
+   tag:"Ladder"},
+
+  {q:"The angle of elevation of the top of a tower is `60°` from a point `20` m away from its base. The height of the tower is:",
+   o:["20 m","40 m","10√3 m","20√3 m"],
+   a:3,
+   why:"**h = d × tanθ** = 20 × tan60° = 20√3 m. Option A (20 m) is what tan45° = 1 would give, and option C (10√3) comes from using tan60°/2 instead of the full product.",
+   tag:"Tower height"},
+
+  {q:"A kite is at a height of `30` m directly above one end of a horizontal string. The string makes an angle of `30°` with the horizontal. The length of the string is:",
+   o:["30√3 m","60 m","30 m","15√3 m"],
+   a:1,
+   why:"**sinθ = height/string length**, so sin30° = 30/L, giving L = 30/sin30° = 30/(1/2) = `60 m`. Option A (30√3) is what using tanθ instead of sinθ produces — tanθ gives the horizontal distance, not the string.",
+   tag:"Kite string"}
+],
   note:"Every question above comes from one row of the sheet. If the working took more than a line, it was almost certainly d = h·cotθ used as h·tanθ, or a hypotenuse treated as a side."}
 ]
 },
 
-/* ============================================================ 6 — Height and distance: two angles, two observers (22 questions) */
+/* ============================================================ 6 — Height and distance: two angles, two observers (28 questions) */
 {
 id:"trig-hd-two", n:"Height and distance: two angles, two observers", hy:1,
 w:"Two angles instead of one: the x/(cotα − cotβ) family, the flagstaff on the tower, two towers across a road, the river, the aeroplane, the boat below the cliff, and the walking-time results.",
@@ -1143,13 +1323,49 @@ blocks:[
    o:["5(√3 − 1) minutes","5(√3 + 1) minutes","5 minutes","10(√3 + 1) minutes"],
    a:1,
    why:"**The distance from the foot is h·cotθ**, falling from `h√3` to `h`: the `10` minutes covered h(√3 − 1) and `h` remains, so the remaining time is 10/(√3 − 1) = **5(√3 + 1) minutes**, about `13.7`. Option C halves the time, which is the `30°`-to-`60°` rule used on the wrong pair; option A multiplies by (√3 − 1) instead of dividing by it. Note that `30°` to `45°` and `45°` to `60°` give the same factor, `(√3 + 1)/2`.",
-   tag:"30° to 45°"}
- ],
+   tag:"30° to 45°"},
+
+  {q:"The angles of elevation of the top of a tower from two points `40` m apart on the same side of the tower are `30°` and `60°`. The height of the tower is:",
+   o:["40√3 m","40 m","20√3 m","20 m"],
+   a:2,
+   why:"**h = d × tan30° × tan60° / (tan60° − tan30°)** = 40 × (1/√3)(√3) / (√3 − 1/√3) = 40 / (2/√3) = `20√3 m`. Option A (40√3) forgets the denominator and just multiplies the distance by √3.",
+   tag:"Same side"},
+
+  {q:"A flagstaff stands on a tower. From a point on the ground the top of the flagstaff is seen at `60°` and the base of the flagstaff (top of the tower) at `45°`. If the tower is `30` m high, the height of the flagstaff is:",
+   o:["30 m","30(√3 + 1) m","30√3 m","30(√3 − 1) m"],
+   a:3,
+   why:"**tan45° = 30/d gives d = 30 m.** Then tan60° = (30 + f)/30, so 30 + f = 30√3 and `f = 30(√3 − 1) m`. Option C (30√3) is the total height including the tower, not the flagstaff alone.",
+   tag:"Flag on tower"},
+
+  {q:"An aeroplane flying at a height of `3000` m is seen from a point on the ground. Its angle of elevation changes from `60°` to `30°` as it flies away. The distance it has covered is:",
+   o:["3000 m","6000 m","3000√3 m","2000√3 m"],
+   a:3,
+   why:"**Distance = h(cot30° − cot60°)** = 3000(√3 − 1/√3) = 3000 × 2/√3 = `2000√3 m`. Option C (3000√3) is h×cot30° alone — the total horizontal distance when the elevation is 30°, not the distance covered during the change.",
+   tag:"Aeroplane"},
+
+  {q:"From the top of a building `30` m high, the angle of elevation of the top of a tower is `60°` and the angle of depression of its foot is `30°`. The height of the tower is:",
+   o:["30√3 m","60 m","90 m","120 m"],
+   a:3,
+   why:"**tan30° = 30/d gives d = 30√3 m.** The tower rises 30 m (level with the building top) plus d×tan60° = 30√3 × √3 = 90 m above it. Total tower height = 30 + 90 = `120 m`. Option C (90) is the part above the building only.",
+   tag:"Building and tower"},
+
+  {q:"A man walks `50` m towards a tower and the angle of elevation of its top changes from `30°` to `45°`. The height of the tower is:",
+   o:["50(√3 + 1) m","25(√3 − 1) m","25(√3 + 1) m","50 m"],
+   a:2,
+   why:"**h = d × tanθ₁ × tanθ₂/(tanθ₂ − tanθ₁)** = 50(1/√3)(1)/(1 − 1/√3) = 50/(√3 − 1) = 50(√3 + 1)/2 = `25(√3 + 1) m`. Option A forgets to halve after rationalising.",
+   tag:"Walk towards"},
+
+  {q:"A tree on the far bank of a river is observed from the near bank at elevation `60°`. After walking `40` m directly away from the river, the elevation drops to `30°`. The width of the river is:",
+   o:["40 m","40√3 m","20 m","20√3 m"],
+   a:2,
+   why:"**Let the width be w. h = w×tan60° = w√3, and h = (w + 40)×tan30° = (w + 40)/√3.** So w√3 = (w + 40)/√3, giving 3w = w + 40, so `w = 20 m`. Option A (40) is the walking distance itself, not the river width.",
+   tag:"River width"}
+],
   note:"Every question above is one line from the sheet with cot30° = √3, cot45° = 1 or cot60° = 1/√3 put into it. If a question took more than a minute, the line to go back to is the one naming its configuration."}
 ]
 },
 
-/* ============================================================ 7 — Height and distance: the standard results (21 questions) */
+/* ============================================================ 7 — Height and distance: the standard results (28 questions) */
 {
 id:"trig-hd-results", n:"Height and distance: the standard results", hy:1,
 w:"The short list of height-and-distance results that turn a two-minute question into a ten-second one — the geometric mean, the lengthening shadow, the cloud in the lake, the road between two pillars.",
@@ -1317,8 +1533,50 @@ blocks:[
    o:["`1`","`2/√3`","`√3/4`","`√3/2`"],
    a:3,
    why:"**The two foot distances are h·cot30° = h√3 and h·cot60° = h/√3, so the midpoint stands (h√3 + h/√3)/2 = (4h/√3)/2 = 2h/√3 from the foot, and tanθ = h ÷ (2h/√3) = √3/2.** Option A is tan45°, which is what averaging the two *angles* gives — the height varies as the tangent, so the mean angle is not the angle at the mean point. Option C is what forgetting to halve the sum of the two distances gives, and option B is the reciprocal `2/√3`, which is cotθ rather than tanθ.",
-   tag:"Midpoint trap"}
- ],
+   tag:"Midpoint trap"},
+
+  {q:"The angles of elevation of the top of a tower from two points `16` m and `9` m from its foot, on **opposite** sides and in line with it, are complementary. The height of the tower is:",
+   o:["12 m","25 m","12.5 m","7 m"],
+   a:0,
+   why:"**h = √(xy)** = √(16 × 9) = √144 = `12 m`. The result applies when the two angles are complementary and the points are on opposite sides. Option B (25) adds the distances instead of multiplying them under the root.",
+   tag:"h = √(xy)"},
+
+  {q:"When the sun's angle of elevation drops from `45°` to `30°`, the shadow of a `10` m pole lengthens by:",
+   o:["10(√3 + 1) m","10√3 m","10(√3 − 1) m","10 m"],
+   a:2,
+   why:"**Extra shadow = h(cot30° − cot45°)** = 10(√3 − 1) m. At 45° the shadow is 10 m, and at 30° it is 10√3 m, so the increase is `10(√3 − 1)`. Option A adds instead of subtracting.",
+   tag:"Shadow change"},
+
+  {q:"Two pillars of equal height `25` m stand on either side of a road. From a point between them on the road, one is seen at elevation `60°` and the other at `30°`. The width of the road is:",
+   o:["100√3/3 m","50 m","25(√3 + 1) m","50√3 m"],
+   a:0,
+   why:"**Width = h×cot60° + h×cot30°** = 25/√3 + 25√3 = 25(1 + 3)/√3 = `100√3/3 m` (about 57.7 m). Option B (50) is twice the height, which would need both angles to be the same.",
+   tag:"Two pillars"},
+
+  {q:"Two towers stand facing each other. The angle of elevation of the top of the first from the foot of the second is `30°`, and that of the second from the foot of the first is `60°`. The ratio of their heights is:",
+   o:["1 : √3","√3 : 1","1 : 3","3 : 1"],
+   a:2,
+   why:"**h₁ = d×tan30° and h₂ = d×tan60°**, so h₁/h₂ = tan30°/tan60° = (1/√3)/√3 = 1/3, giving `1 : 3`. Option A (1 : √3) uses the tangent values themselves as the ratio, forgetting that tan30°/tan60° = 1/3, not 1/√3.",
+   tag:"Two towers"},
+
+  {q:"From the top of a tower `60` m high, the angles of depression of two cars on the same straight line through the foot of the tower are `30°` and `60°`. The distance between the two cars is:",
+   o:["80√3 m","40√3 m","120 m","40 m"],
+   a:1,
+   why:"**d₁ = 60cot30° = 60√3 m and d₂ = 60cot60° = 60/√3 = 20√3 m**, so the distance between them is 60√3 − 20√3 = `40√3 m`. Option A (80√3) adds the distances, which would be the answer if the cars were on opposite sides.",
+   tag:"Two depressions"},
+
+  {q:"A man standing on the deck of a ship `10` m above the water observes a cloud at an angle of elevation of `30°` and its reflection in the water at an angle of depression of `60°`. The height of the cloud above the water is:",
+   o:["10 m","30 m","20 m","40 m"],
+   a:2,
+   why:"**H = h(tanα + tanβ)/(tanβ − tanα)** with h = 10, α = 30°, β = 60°: H = 10(1/√3 + √3)/(√3 − 1/√3) = 10(4/√3)/(2/√3) = 10 × 2 = `20 m`. Option B (30) is what adding 10 to the cloud formula gives — confusing the height above the water with the height above the observer.",
+   tag:"Cloud reflection"},
+
+  {q:"A tower on an island is observed from the shore at an angle of elevation of `45°`. After walking `100` m away from the shore, the elevation drops to `30°`. The height of the tower is:",
+   o:["50(√3 + 1) m","100(√3 − 1) m","50(√3 − 1) m","100 m"],
+   a:0,
+   why:"**h = 100×tan45°×tan30°/(tan45° − tan30°)** = 100 × (1/√3)/(1 − 1/√3) = 100/(√3 − 1) = 100(√3 + 1)/2 = `50(√3 + 1) m`. Option B rationalises incorrectly with a minus sign.",
+   tag:"Walk away"}
+],
   note:"Every question above is one line from the sheet. The three results worth knowing cold are h = √(xy) for complementary angles, the shadow as h·cotθ, and h(cotα − cotβ) for two points seen from one height."}
 ]
 }

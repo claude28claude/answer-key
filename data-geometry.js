@@ -21,7 +21,7 @@ intro:"Twelve topics. The plane results first, then the triangle in four topics,
 
 topics:[
 
-/* ============================================================ 1 — Lines, angles and the parallel-line results (22 questions) */
+/* ============================================================ 1 — Lines, angles and the parallel-line results (28 questions) */
 {
 id:"geo-lines-angles", n:"Lines, angles and the parallel-line results", hy:1,
 w:"Complementary and supplementary pairs, the four angles at a crossing, everything a transversal does to two parallel lines, the bisector results, and the clock.",
@@ -199,13 +199,49 @@ blocks:[
    o:["only the vertically opposite angle is a right angle","four are right angles and four are not","the transversal is parallel to both lines","all eight angles are right angles"],
    a:3,
    why:"The eight angles take only two sizes, one being the supplement of the other. **If one angle is 90°, its supplement is also 90°**, so both sizes are `90°` and all eight angles are right angles — the transversal is perpendicular to both lines. Option B is the usual four-and-four picture, which holds for every value except `90°`, and that exception is what the question is testing.",
-   tag:"The eight angles"}
- ],
+   tag:"The eight angles"},
+
+  {q:"The supplement of `53°` is:",
+   o:["37°","53°","127°","143°"],
+   a:2,
+   why:"**The supplement of θ is 180° − θ** = 180° − 53° = `127°`. Option A, `37°`, is the **complement** 90° − 53° — the one pair of words that costs more marks here than anything else. Two angles are supplementary when they add to `180°` and complementary when they add to `90°`.",
+   tag:"Supplement"},
+
+  {q:"Two complementary angles are in the ratio `4 : 5`. The smaller angle is:",
+   o:["40°","50°","80°","100°"],
+   a:0,
+   why:"**Complementary angles add to 90°**, so nine parts share `90°`, each part is `10°`, and the angles are `40°` and `50°`. Option C, `80°`, is what dividing `180°` in the same ratio gives — the supplementary total used by mistake — and option D comes from 5 parts of `180°`.",
+   tag:"Ratio complement"},
+
+  {q:"The angle between the hands of a clock at `5:30` is:",
+   o:["15°","10°","20°","25°"],
+   a:0,
+   why:"**The angle between the hands is |30H − 5½M| degrees** = |30(5) − 5½(30)| = |150 − 165| = `15°`. Without the hour-hand correction the answer would be `|150 − 180| = 30°`, which is not on the list — the `5½M` term exists because the hour hand moves `½°` every minute, and by 5:30 it has crept `15°` past the 5.",
+   tag:"Clock angle"},
+
+  {q:"An angle is `20°` more than its complement. The angle is:",
+   o:["35°","55°","70°","45°"],
+   a:1,
+   why:"**The complement of θ is 90° − θ**, so θ = (90° − θ) + 20° gives 2θ = 110° and θ = `55°`. Check: the complement is 35° and the difference is 20°. Option A, `35°`, is the complement itself — the smaller of the pair, not the one asked for. Option C, `70°`, is what the same working gives when the supplement total `180°` is used instead of `90°`.",
+   tag:"Complement"},
+
+  {q:"If four lines meet at a point and one of the angles formed is `40°`, the angle vertically opposite to it is:",
+   o:["140°","40°","50°","320°"],
+   a:1,
+   why:"**Vertically opposite angles are equal**, whatever the number of lines through the point. The angle directly across from `40°` is `40°`. Option A, `140°`, is the **adjacent** angle on a straight line, which is the supplement — the question asked for the one straight across, not the one next door. Option D is `360° − 40°`, which is not an angle in any standard sense here.",
+   tag:"Vertically opposite"},
+
+  {q:"A transversal cuts two parallel lines. If a pair of co-interior angles are `(3x + 10)°` and `(2x + 20)°`, the value of x is:",
+   o:["34","30","36","26"],
+   a:1,
+   why:"**Co-interior (allied) angles between parallel lines are supplementary**, so (3x + 10) + (2x + 20) = 180, giving 5x + 30 = 180, 5x = 150 and x = `30`. The two angles are then `100°` and `80°`. Option A, `34`, is what treating the sum as `200°` instead of `180°` gives. Option C, `36`, comes from dividing `180` by `5` without subtracting the constant terms first.",
+   tag:"Co-interior numeric"}
+],
   note:"Every question above is answered by one line from the sheet. Before dividing a ratio, read which total the question gives you — `90°`, `180°` or `360°` — because all three appear in the options."}
 ]
 },
 
-/* ============================================================ 2 — The triangle: sides, angles and inequalities (22 questions) */
+/* ============================================================ 2 — The triangle: sides, angles and inequalities (28 questions) */
 {
 id:"geo-triangle-basics", n:"The triangle: sides, angles and inequalities", hy:1,
 w:"The angle sum and the exterior angle, the triangle inequality in both directions, the order of the sides against the order of the angles, and the test by squares that separates a right triangle from an obtuse one.",
@@ -379,13 +415,49 @@ blocks:[
    o:["acute-angled","obtuse-angled","right-angled","no such triangle exists, since 1 + 2 = 3"],
    a:2,
    why:"**The three angles add to 180°**, so one part is 180° ÷ (1 + 2 + 3) = 30° and the angles are 30°, 60° and 90°: the triangle is **right-angled**, and its sides are then in the ratio 1 : √3 : 2. Option D is the trap, and a good one — read `1 : 2 : 3` as a ratio of *sides* and the triangle inequality kills it, since 1 + 2 = 3. The ratio in the question is of the angles, where no such restriction applies. Option A would need all three angles below 90°, which the 90° rules out.",
-   tag:"Angles in ratio"}
- ],
+   tag:"Angles in ratio"},
+
+  {q:"If two angles of a triangle are `65°` and `45°`, the third angle is:",
+   o:["70°","80°","110°","60°"],
+   a:0,
+   why:"**The angles of a triangle add to `180°`**, so the third angle is 180 − 65 − 45 = `70°`. Option C (110°) is 65 + 45, the sum of the other two angles — adding them instead of subtracting from 180° is the slip.",
+   tag:"Angle sum"},
+
+  {q:"In a triangle, one angle is twice the smallest and the third is three times the smallest. The smallest angle is:",
+   o:["60°","30°","45°","20°"],
+   a:1,
+   why:"**Let the smallest angle be x; then x + 2x + 3x = 180°**, so 6x = 180 and `x = 30°`. The three angles are 30°, 60° and 90° — a right triangle. Option A (60°) is the second angle, not the smallest.",
+   tag:"Angle sum"},
+
+  {q:"A triangle whose sides are `6 cm`, `8 cm` and `10 cm` has area:",
+   o:["48 cm²","24 cm²","30 cm²","40 cm²"],
+   a:1,
+   why:"**6² + 8² = 100 = 10², so the triangle is right-angled**, with legs 6 and 8. Area = ½ × 6 × 8 = `24 cm²`. Option A (48) leaves out the half, the standard slip with the right-triangle area formula.",
+   tag:"Right triangle area"},
+
+  {q:"Two sides of a triangle are `5 cm` and `12 cm`. If the triangle is right-angled, the hypotenuse is:",
+   o:["17 cm","7 cm","13 cm","√119 cm"],
+   a:2,
+   why:"**The hypotenuse is the longest side**, and √(5² + 12²) = √(25 + 144) = √169 = `13 cm` — the well-known 5-12-13 set. Option A (17) adds the two legs, and option D treats one of the legs as the hypotenuse.",
+   tag:"Pythagorean set"},
+
+  {q:"In an equilateral triangle, each angle is:",
+   o:["90°","45°","60°","120°"],
+   a:2,
+   why:"**All three angles are equal, and they add to 180°**, so each is `60°`. Option D (120°) is the interior angle of a regular hexagon, not a triangle, and the two are often confused because a hexagon splits into six equilateral triangles.",
+   tag:"Equilateral"},
+
+  {q:"In △ABC, ∠A > ∠B > ∠C. Which of these is true?",
+   o:["AB > BC > CA","BC > CA > AB","CA > AB > BC","BC > AB > CA"],
+   a:1,
+   why:"**The side opposite the larger angle is longer**: the side opposite ∠A (the largest angle) is `BC`, so `BC` is the longest side. The order is `BC > CA > AB`. Option A reverses the rule, putting the sides in the same order as the angles.",
+   tag:"Side-angle relation"}
+],
   note:"Every question above comes out of one line of the sheet. Two of them turn on the same pair of numbers read the wrong way round — the exterior angle against the interior angle beside it, and the base angle of an isosceles triangle against the vertical angle — and those two pairs are where most of the marks in this topic are lost."}
 ]
 },
 
-/* ============================================================ 3 — The four centres of a triangle (22 questions) */
+/* ============================================================ 3 — The four centres of a triangle (28 questions) */
 {
 id:"geo-centres", n:"The four centres of a triangle", hy:1,
 w:"The four centres, the three angle formulas that are constantly swapped for one another, and where each centre sits in an acute, a right-angled and an obtuse triangle.",
@@ -571,13 +643,50 @@ blocks:[
    o:["any isosceles triangle","any right-angled triangle","an equilateral triangle only","any acute-angled triangle"],
    a:2,
    why:"**All four centres coincide only in an equilateral triangle**, because there every median is at the same time an angle bisector, an altitude and a perpendicular bisector of a side, so the four sets of lines are one set. Option A is the near miss worth knowing: in an isosceles triangle all four centres lie on the **axis of symmetry** — collinear, but not the same point. In a right triangle two of them sit at opposite ends of the figure, O at the midpoint of the hypotenuse and H at the right angle.",
-   tag:"All four coincide"}
- ],
+   tag:"All four coincide"},
+
+  {q:"`O` is the circumcentre of △ABC and `∠BOC = 100°`. Then `∠BAC` is:",
+   o:["50°","100°","80°","55°"],
+   a:0,
+   why:"**∠BOC = 2A**, so A = 100°/2 = `50°`. Option B leaves the angle undoubled — the central angle is twice the inscribed angle, so running the formula backwards means halving, not keeping it. Option C, `80°`, comes from using `180° − A` (the orthocentre formula) instead of `2A`.",
+   tag:"∠BOC reversed",
+   d:"t-circumcentre"},
+
+  {q:"In an equilateral triangle of side `6 cm`, the inradius is:",
+   o:["√3 cm","2√3 cm","3√3 cm","6√3 cm"],
+   a:0,
+   why:"**The inradius of an equilateral triangle is `a/(2√3)`** = 6/(2√3) = 3/√3 = `√3 cm`. Alternatively, `r = Δ/s` with Δ = (√3/4)(36) = 9√3 and s = 9 gives r = 9√3/9 = √3. Option B, `2√3 cm`, is the **circumradius** `a/√3` — and R = 2r as always. Option C is the altitude (√3/2)(6) = 3√3, the full median rather than one third of it.",
+   tag:"Equilateral r"},
+
+  {q:"The incentre of a right-angled triangle with legs `5 cm`, `12 cm` and hypotenuse `13 cm` lies at a distance of `2 cm` from each side. The circumradius of the same triangle is:",
+   o:["2 cm","6.5 cm","13 cm","5 cm"],
+   a:1,
+   why:"**In a right triangle, R = c/2** = 13/2 = `6.5 cm`, while r = (a + b − c)/2 = (5 + 12 − 13)/2 = 2 cm, confirming the inradius given. Option A is the inradius itself — the question gives r and asks for R, and swapping them is the trap. Option C is the hypotenuse left unhalved.",
+   tag:"R vs r"},
+
+  {q:"The orthocentre of a triangle lies **outside** the triangle when the triangle is:",
+   o:["acute-angled","right-angled","obtuse-angled","equilateral"],
+   a:2,
+   why:"**In an obtuse triangle, two of the three altitudes fall outside the triangle, so the orthocentre — their point of intersection — lies outside.** In an acute triangle the orthocentre is inside, in a right triangle it sits at the right-angle vertex, and in an equilateral triangle it coincides with the centroid. Option B is the near-miss: in a right triangle H is at the vertex, which is on the boundary, not outside.",
+   tag:"H outside"},
+
+  {q:"On the Euler line, the centroid G divides the segment from the circumcentre O to the orthocentre H such that `OG : OH` is:",
+   o:["1 : 2","1 : 3","2 : 3","1 : 1"],
+   a:1,
+   why:"**OG : GH = 1 : 2, so OG : OH = 1 : 3** — the centroid sits one third of the way from O to H. Option A, `1 : 2`, is `OG : GH`, the ratio of the two pieces, not the ratio of the part to the whole. Option C, `2 : 3`, is `AG : AD` on a median, which is a true statement about a different ratio entirely.",
+   tag:"Euler line"},
+
+  {q:"In △ABC with sides `a = 13 cm`, `b = 14 cm`, `c = 15 cm` and area `Δ = 84 cm²`, the circumradius R is:",
+   o:["8.125 cm","4 cm","21 cm","6.5 cm"],
+   a:0,
+   why:"**R = abc/4Δ** = (13 × 14 × 15)/(4 × 84) = 2730/336 = `8.125 cm`. Option B, `4 cm`, is the **inradius** Δ/s = 84/21 = 4. Option D, `6.5 cm`, is 13/2, which would be correct only if the triangle were right-angled with hypotenuse 13 — but it is not. The formula R = abc/4Δ works for every triangle.",
+   tag:"R = abc/4Δ"}
+],
   note:"Every question above is answered by one line of the sheet. If the three angle formulas are the ones that go wrong, learn them as a set of three with ∠A = 70°: `125°` at the incentre, `140°` at the circumcentre, `110°` at the orthocentre."}
 ]
 },
 
-/* ============================================================ 4 — Medians, bisectors, altitudes and Apollonius (20 questions) */
+/* ============================================================ 4 — Medians, bisectors, altitudes and Apollonius (28 questions) */
 {
 id:"geo-cevians", n:"Medians, bisectors, altitudes and Apollonius", hy:1,
 w:"The three cevians, the two length formulas that are asked by name, and the area facts that follow from them.",
@@ -753,15 +862,63 @@ blocks:[
    o:["a median is perpendicular to the side it meets","the three medians meet at one point","a median bisects the angle it is drawn from","an altitude always falls inside the triangle"],
    a:1,
    why:"**The three medians of any triangle are concurrent, at the centroid.** A median is perpendicular to its side, or bisects its angle, only in an isosceles triangle taken from the apex; and in an obtuse triangle two of the three altitudes fall **outside**, which is what makes option D false.",
-   tag:"What is always true"}
+   tag:"What is always true"},
 
-  ],
+  {q:"In △ABC, `G` is the centroid and `AD` is a median. If `AD = 18 cm`, then `AG` is:",
+   o:["6 cm","9 cm","12 cm","15 cm"],
+   a:2,
+   why:"**The centroid divides each median in the ratio `2 : 1` from the vertex**, so `AG = (2/3) × 18 = 12 cm` and `GD = 6 cm`. Option B, `9 cm`, halves the median instead of taking two thirds of it — the midpoint of AD is not the centroid. Option A is `GD`, the shorter piece, and is what you get by reading the ratio as `1 : 2` from the vertex.",
+   tag:"Centroid 2:1",
+   d:"t-centroid"},
+
+  {q:"The length of the internal bisector from A is given by the formula:",
+   o:["AD² = AB + AC − BD − DC","AD² = AB·AC + BD·DC","AD = AB·AC/BC","AD² = AB·AC − BD·DC"],
+   a:3,
+   why:"**AD² = AB·AC − BD·DC** — the product of the two sides containing the bisected angle, minus the product of the two pieces the bisector cuts from the base. Option B adds the two products instead of subtracting, and that sign is the whole content of the formula.",
+   tag:"Bisector length"},
+
+  {q:"In △ABC, the three medians are `m₁`, `m₂` and `m₃`. If the sides are `a = 7`, `b = 8` and `c = 9`, the sum `m₁² + m₂² + m₃²` is:",
+   o:["145.5","194","72.75","97"],
+   a:0,
+   why:"**The sum of the squares of the three medians is ¾(a² + b² + c²)** = ¾(49 + 64 + 81) = ¾ × 194 = `145.5`. Option B is the sum of the squares of the sides itself, without the ¾ factor. Option C is half the correct answer, and option D is half of 194.",
+   tag:"Medians"},
+
+  {q:"In △ABC, `AB = 8 cm`, `AC = 6 cm` and `BC = 10 cm`. The length of the median to `BC` is:",
+   o:["7 cm","√31 cm","5 cm","2√7 cm"],
+   a:2,
+   why:"**4m² = 2b² + 2c² − a²** with a = BC = 10, b = AC = 6, c = AB = 8: 4m² = 2(36) + 2(64) − 100 = 72 + 128 − 100 = 100, so m = `5 cm`. Since 6² + 8² = 10², the triangle is right-angled at A, and the median to the hypotenuse is always half the hypotenuse — a quick check. Option A averages two sides, and option B is what putting the wrong side into the formula gives.",
+   tag:"Median to hypotenuse"},
+
+  {q:"The area of a triangle with sides `13 cm`, `14 cm` and `15 cm` is `84 cm²`. The altitude to the side of length `14 cm` is:",
+   o:["6 cm","12 cm","10 cm","14 cm"],
+   a:1,
+   why:"**The altitude to a side is `h = 2Δ/a`** = (2 × 84)/14 = `12 cm`. Option A, `6 cm`, is `Δ/a` with the factor of 2 forgotten — the area is `½ × base × height`, so recovering the height needs the 2 put back. Option C takes the area divided by the average of two other sides, and option D uses the base itself.",
+   tag:"Altitude numeric"},
+
+  {q:"In a right triangle with legs `a` and `b` and hypotenuse `c`, the altitude `p` to the hypotenuse and the median `m` to the hypotenuse satisfy:",
+   o:["p = m always","p > m always","p ≤ m, with equality only when a = b","p + m = c"],
+   a:2,
+   why:"**The median to the hypotenuse is `c/2` (the arithmetic mean of the two segments) and the altitude is `p = ab/c`.** Since AM ≥ GM, we have `m ≥ p`, with equality when the two segments are equal — that is, when `a = b` and the triangle is isosceles. Option A claims they are always equal, which holds only for the `45°-45°-90°` case.",
+   tag:"Altitude vs median"},
+
+  {q:"In △ABC, `D` lies on `BC` such that `BD : DC = 3 : 5`. If the area of △ABC is `120 cm²`, the area of △ABD is:",
+   o:["75 cm²","72 cm²","45 cm²","60 cm²"],
+   a:2,
+   why:"**Triangles ABD and ACD share the same height from A, so their areas are in the ratio of their bases**, `3 : 5`. Eight parts share `120 cm²`, so one part is `15 cm²` and area of △ABD = 3 × 15 = `45 cm²`. Option A, `75 cm²`, is the area of △ACD — the other piece — and is the answer for the wrong triangle. Option D halves the total, which would give the median's split, not a `3 : 5` division.",
+   tag:"Cevian and area"},
+
+  {q:"The three altitudes of any triangle are always:",
+   o:["equal in length","concurrent, meeting at one point","parallel to one another","inversely proportional to the angles"],
+   a:1,
+   why:"**The three altitudes of any triangle are concurrent — they meet at the orthocentre.** They are equal only in an equilateral triangle, never parallel, and they are inversely proportional to the **sides**, not the angles. Option D is the near-miss: `h = 2Δ/a` makes the altitudes inversely proportional to the sides they are drawn to, and that slip from sides to angles is the trap.",
+   tag:"Altitudes concurrent"}
+],
   note:"Every question above comes from one row of the sheet. The two that are asked by name — Apollonius' theorem and the angle bisector theorem — are worth knowing by name as well as by formula, because the question sometimes gives you only the name."}
 
 ]
 },
 
-/* ============================================================ 5 — Congruence, similarity and the proportionality theorem (22 questions) */
+/* ============================================================ 5 — Congruence, similarity and the proportionality theorem (28 questions) */
 {
 id:"geo-similar", n:"Congruence, similarity and the proportionality theorem", hy:1,
 w:"The five congruence criteria and the one that is not a criterion, the three similarity criteria, and every proportion that follows from a line drawn parallel to a side.",
@@ -944,13 +1101,49 @@ blocks:[
    o:["25 : 9","√5 : √3","5 : 3","3 : 5"],
    a:2,
    why:"**Every corresponding length in two similar triangles is in the ratio of the sides** — medians, altitudes, angle bisectors, perimeters, inradii and circumradii alike — so the inradii are in the ratio `5 : 3`. Only the areas take the square, and option A, `25 : 9`, is that square put where a length was asked for. Option D is the same ratio reversed.",
-   tag:"Inradius ratio"}
- ],
+   tag:"Inradius ratio"},
+
+  {q:"The altitudes of two similar triangles are in the ratio `3 : 5`. The ratio of their areas is:",
+   o:["9 : 25","3 : 5","6 : 10","9 : 5"],
+   a:0,
+   why:"**In similar triangles every corresponding length — side, altitude, median, inradius — is in the same ratio, and the areas are in the square of that ratio.** So `3² : 5² = 9 : 25`. Option B (3 : 5) is the linear ratio, not the area ratio — treating areas as proportional to lengths is the standard slip.",
+   tag:"Area ratio"},
+
+  {q:"In △ABC, D lies on AB and E on AC with DE ∥ BC. If `AD/AB = 2/5`, then `DE/BC` is:",
+   o:["2/5","3/5","4/25","2/3"],
+   a:0,
+   why:"**When DE ∥ BC, △ADE is similar to △ABC with ratio AD/AB**, so DE/BC = AD/AB = `2/5`. Option C (4/25) squares the ratio, which gives the area ratio, not the length ratio — the two are different, and the question asked for a length.",
+   tag:"BPT"},
+
+  {q:"Two similar triangles have areas `50 cm²` and `72 cm²`. If a side of the smaller is `5 cm`, the corresponding side of the larger is:",
+   o:["7.2 cm","6 cm","36 cm","12 cm"],
+   a:1,
+   why:"**The ratio of areas is the square of the ratio of corresponding sides**: 50/72 = 25/36, so the side ratio is `5/6` and the corresponding side is `6 cm`. Option A (7.2) divides 72 by 10, confusing the area with the side; option C (36) uses the area ratio as a side ratio.",
+   tag:"Area to side"},
+
+  {q:"In △ABC and △DEF, AB/DE = BC/EF = CA/FD = `1`. The two triangles are:",
+   o:["similar but not necessarily congruent","congruent","neither similar nor congruent","equal in area but not similar"],
+   a:1,
+   why:"**Similar triangles with ratio `1 : 1` are congruent** — all corresponding sides are equal (SSS). Option A leaves out the congruence, which always follows when the ratio of similarity is exactly 1.",
+   tag:"Ratio 1:1"},
+
+  {q:"In a trapezium ABCD with AB ∥ DC, the diagonals cross at O. If AB = `12 cm` and DC = `8 cm`, the ratio area(△AOB) : area(△COD) is:",
+   o:["3 : 2","2 : 3","9 : 4","4 : 9"],
+   a:2,
+   why:"**△AOB and △COD are similar (AA), with ratio AB : DC = 12 : 8 = 3 : 2, so the ratio of their areas is 3² : 2² = `9 : 4`.** Option A (3 : 2) is the linear ratio of the parallel sides, not the area ratio — areas go as the square.",
+   tag:"Trapezium diagonals"},
+
+  {q:"In △ABC, the midpoints of AB, BC and CA are joined to form △DEF. The perimeter of △DEF is what fraction of the perimeter of △ABC?",
+   o:["1/4","3/4","1/3","1/2"],
+   a:3,
+   why:"**By the midpoint theorem each side of △DEF is half the corresponding side of △ABC**, so the perimeter is also half: `1/2`. Option A (1/4) is the **area** ratio — the midpoint triangle has a quarter of the area but half the perimeter, and the two fractions are different.",
+   tag:"Midpoint triangle"}
+],
   note:"Two lines decide most of these questions: the ratio of areas is the square of the ratio of sides, and a line parallel to a side divides the other two sides in the same ratio. If a question took longer than that, the line it uses is the one to go back to."}
 ]
 },
 
-/* ============================================================ 6 — The right triangle: Pythagoras and the standard sets (22 questions) */
+/* ============================================================ 6 — The right triangle: Pythagoras and the standard sets (28 questions) */
 {
 id:"geo-right-triangle", n:"The right triangle: Pythagoras and the standard sets", hy:1,
 w:"Pythagoras both ways, the six triples worth knowing by sight, the two standard angle sets, the four relations the altitude to the hypotenuse satisfies, and the ladder, pole and wire questions that are right triangles in disguise.",
@@ -1144,13 +1337,49 @@ blocks:[
    o:["PB·PD","PB² + PD²","½(PB² + PD²)","AB² + AD²"],
    a:1,
    why:"**The British flag theorem: for any point `P` and a rectangle `ABCD`, `PA² + PC² = PB² + PD²`** — the two pairs of opposite corners give the same total. Dropping perpendiculars from `P` to all four sides and applying Pythagoras to each of the four small triangles turns both sums into the same four squares. Option D, `AB² + AD²`, is the square on the diagonal, which the two sums equal only when `P` happens to sit at a corner. SSC asks this occasionally and always in this exact form.",
-   tag:"British flag"}
- ],
+   tag:"British flag"},
+
+  {q:"A right-angled triangle has hypotenuse `41 cm` and one leg `40 cm`. The other leg is:",
+   o:["1 cm","9 cm","81 cm","√81 cm"],
+   a:1,
+   why:"**When the hypotenuse is given, subtract the squares: the other leg is `√(c² − b²)`** = √(1681 − 1600) = √81 = `9 cm`. The triple is `9-40-41`. Option A subtracts the lengths, 41 − 40 = 1, instead of their squares — the standard slip. Option D, `√81`, is the same answer left un-simplified, and option C is the square left un-rooted.",
+   tag:"9-40-41"},
+
+  {q:"One acute angle of a right-angled triangle is `30°` and the hypotenuse is `20 cm`. The side opposite the `60°` angle is:",
+   o:["10 cm","20√3 cm","10√3 cm","10√2 cm"],
+   a:2,
+   why:"**From the ratio `1 : √3 : 2`, the side opposite `60°` is `(√3/2)` times the hypotenuse** = (√3/2) × 20 = `10√3 cm`. The side opposite `30°` is half the hypotenuse, `10 cm`, which is option A — the other leg, asked when this one was wanted. Option D uses `√2` instead of `√3`, importing the `45°-45°-90°` set.",
+   tag:"30°-60°-90°"},
+
+  {q:"The diagonal of a square is `14√2 cm`. The side of the square is:",
+   o:["7 cm","14 cm","7√2 cm","28 cm"],
+   a:1,
+   why:"**The diagonal of a square is `a√2`, so the side is `d/√2`** = 14√2/√2 = `14 cm`. Option A, `7 cm`, halves again — it takes the diagonal divided by 2 rather than by `√2`, which is the `30°-60°-90°` rule applied to the wrong triangle. Option C, `7√2`, is what dividing by 2 and then multiplying by `√2` gives.",
+   tag:"d = a√2"},
+
+  {q:"Each side of an equilateral triangle is `10 cm`. The hypotenuse of the `30°-60°-90°` triangle formed by the altitude is:",
+   o:["5 cm","10 cm","5√3 cm","10√3 cm"],
+   a:1,
+   why:"**The altitude of an equilateral triangle bisects a side, creating two `30°-60°-90°` right triangles whose hypotenuse is the original side** — here `10 cm`. The half-base is `5 cm` (the side opposite `30°`) and the altitude is `5√3 cm` (the side opposite `60°`). Option A is the half-base, and option C is the altitude — both are legs, not the hypotenuse.",
+   tag:"Equilateral split"},
+
+  {q:"The body diagonal of a cube of edge `5 cm` is:",
+   o:["5√2 cm","25 cm","10 cm","5√3 cm"],
+   a:3,
+   why:"**The body diagonal of a cube is `a√3`** = 5√3 cm — Pythagoras applied twice, once across a face (giving `a√2`) and once up to the opposite corner. Option A, `5√2`, is the **face** diagonal, one step short, and that is the trap every time this question appears. Option C, `10 cm`, is `2a`, the diagonal of a different figure (a square of the same side).",
+   tag:"Cube diagonal"},
+
+  {q:"Each equal side of a right-angled isosceles triangle is `7 cm`. Its hypotenuse is:",
+   o:["14 cm","7√3 cm","7√2 cm","49 cm"],
+   a:2,
+   why:"**A right-angled isosceles triangle is `45°-45°-90°`, with sides `1 : 1 : √2`.** The hypotenuse is `a√2` = 7√2 cm. Option A, `14 cm`, doubles the side — the hypotenuse is `√2` times a side, not `2` times, and that `√2` versus `2` confusion is the one this triangle exists to test. Option B uses `√3`, which belongs to the `30°-60°-90°` set.",
+   tag:"45°-45°-90°"}
+],
   note:"Every question above is answered by one line from the sheet. Where the numbers were not clean, the hypotenuse was identified wrongly — go back and name it before writing anything down."}
 ]
 },
 
-/* ============================================================ 7 — Quadrilaterals and polygons (20 questions) */
+/* ============================================================ 7 — Quadrilaterals and polygons (28 questions) */
 {
 id:"geo-quad-poly", n:"Quadrilaterals and polygons", hy:1,
 w:"Which quadrilateral has which diagonals, the two trapezium segments, and the four polygon counts that are asked straight and backwards.",
@@ -1328,15 +1557,62 @@ blocks:[
    a:2,
    why:"**In a kite one diagonal — the axis of symmetry — bisects the other at right angles**, and bisects the two angles it joins. Option A is true of a parallelogram, where **both** diagonals are bisected, and promoting the kite to that is the trap; a kite's axis is itself bisected only when the kite is a rhombus.",
    tag:"Kite",
-   d:"q-kite"}
+   d:"q-kite"},
 
-  ],
+  {q:"The diagonals of a rhombus are `24 cm` and `10 cm`. Its area is:",
+   o:["120 cm²","240 cm²","340 cm²","60 cm²"],
+   a:0,
+   why:"**The area of a rhombus is `½ × d₁ × d₂`** = ½ × 24 × 10 = `120 cm²`. Option B, `240 cm²`, is `d₁ × d₂` with the halving forgotten — the diagonals divide the rhombus into **four** right triangles, and counting them as two rectangles is the standard slip. Option D halves the answer again.",
+   tag:"Rhombus area"},
+
+  {q:"Each interior angle of a regular polygon is `140°`. The number of sides is:",
+   o:["10","8","9","12"],
+   a:2,
+   why:"**Each exterior angle is `180° − 140° = 40°`, and the number of sides is `360°/exterior angle`** = 360/40 = `9`. Option A, `10`, comes from dividing `1440` by the interior angle — a step that does not hold unless you already know the answer. Going through the exterior angle is the safe route: it is always `360/n`, whatever n is.",
+   tag:"Backward angle"},
+
+  {q:"A parallelogram whose diagonals are **perpendicular** must be a:",
+   o:["rectangle","trapezium","rhombus","kite"],
+   a:2,
+   why:"**Perpendicular diagonals in a parallelogram make it a rhombus** — all four sides become equal because each half-diagonal is a leg of a right triangle with the side as hypotenuse, and the four right triangles are congruent. Option A is what **equal** diagonals give — a rectangle — and swapping perpendicular with equal is the commonest error in this topic.",
+   tag:"Perp diagonals"},
+
+  {q:"The area of a trapezium with parallel sides `8 cm` and `14 cm` and height `6 cm` is:",
+   o:["66 cm²","132 cm²","84 cm²","48 cm²"],
+   a:0,
+   why:"**Area of a trapezium = ½(a + b) × h** = ½(8 + 14) × 6 = ½ × 22 × 6 = `66 cm²`. Option B, `132 cm²`, is `(a + b) × h` with the halving left out. Option C, `84 cm²`, is `14 × 6`, using only the longer parallel side — the formula needs the **average** of the two parallel sides, not one of them.",
+   tag:"Trapezium area"},
+
+  {q:"The area of a square whose diagonal is `10 cm` is:",
+   o:["100 cm²","50 cm²","25 cm²","50√2 cm²"],
+   a:1,
+   why:"**The area of a square in terms of its diagonal is `d²/2`** = 100/2 = `50 cm²`. Alternatively, the side is `d/√2`, so the area is `d²/2`. Option A, `100 cm²`, treats the diagonal as the side — the side of a square is shorter than its diagonal by a factor of `√2`, and forgetting that inflates the area. Option C halves again.",
+   tag:"Square area"},
+
+  {q:"In a parallelogram `ABCD`, `∠A = 110°`. Then `∠B` is:",
+   o:["110°","70°","90°","55°"],
+   a:1,
+   why:"**Consecutive angles of a parallelogram are supplementary**, so `∠B = 180° − 110° = 70°`. Option A, `110°`, is the **opposite** angle `∠C`, which is equal to `∠A` — the question asked for the *consecutive* angle, not the opposite one, and that swap is the trap. Option D halves the given angle, which no property of a parallelogram calls for.",
+   tag:"Parallelogram angles"},
+
+  {q:"A quadrilateral is cyclic (inscribed in a circle) if and only if:",
+   o:["its diagonals bisect each other","all four angles are equal","its opposite angles are supplementary","its diagonals are equal"],
+   a:2,
+   why:"**A cyclic quadrilateral has opposite angles that add to `180°`** — this is both necessary and sufficient. Option A is the property of a parallelogram, not a cyclic quadrilateral. Option B describes a rectangle (all 90°), which is always cyclic but is far from the only one — an isosceles trapezium is cyclic too. Option D is true of rectangles only.",
+   tag:"Cyclic quadrilateral"},
+
+  {q:"The number of diagonals of a polygon with `12` sides is:",
+   o:["54","66","48","36"],
+   a:0,
+   why:"**Diagonals = n(n − 3)/2** = 12 × 9/2 = `54`. Option B, `66`, is `n(n − 1)/2`, which counts all the line segments joining pairs of vertices including the 12 sides. Option D, `36`, is `n(n − 3)` with the halving forgotten — every diagonal is shared by two vertices and is otherwise counted twice.",
+   tag:"Diagonals of 12-gon"}
+],
   note:"The four polygon counts — the interior sum, the exterior sum, each regular angle and the number of diagonals — are asked backwards as often as forwards. If you can run each of them in both directions, most of this topic is finished."}
 
 ]
 },
 
-/* ============================================================ 8 — The circle: chords, arcs and angles (23 questions) */
+/* ============================================================ 8 — The circle: chords, arcs and angles (28 questions) */
 {
 id:"geo-circle-chord", n:"The circle: chords, arcs and angles", hy:1,
 w:"The chord and its distance from the centre, equal chords, parallel chords, the angle at the centre against the angle at the circumference, and the two product rules.",
@@ -1540,13 +1816,43 @@ blocks:[
    a:0,
    why:"For two secants from an external point the same product rule holds, **PA·PB = PC·PD**, with each distance measured from P: 4 × 9 = 3 × PD, so PD = 36 ÷ 3 = `12 cm`. Option B, `6 cm`, is √36 — the length of the *tangent* from P, by PT² = PA·PB, which is a different question. Option D is the product 36 itself.",
    tag:"Two secants",
-   d:"c-chords-ext"}
- ],
+   d:"c-chords-ext"},
+
+  {q:"The longest chord of a circle of radius `r` has length:",
+   o:["r","πr","r√2","2r"],
+   a:3,
+   why:"**The longest chord of a circle is the diameter, whose length is `2r`.** Option C (r√2) is the diagonal of a square of side r, not a chord of a circle — though it is the chord subtending a right angle at the centre, which is shorter than the diameter.",
+   tag:"Longest chord"},
+
+  {q:"O is the centre of a circle and the reflex `∠AOB = 240°`. A point C lies on the **minor** arc AB. Then `∠ACB` is:",
+   o:["60°","240°","120°","30°"],
+   a:2,
+   why:"**The inscribed angle is half the arc on the opposite side.** C lies on the minor arc, so it sees the major arc, whose central angle is 240°: ∠ACB = ½ × 240° = `120°`. Option A (60°) halves the non-reflex angle 120° — that is the angle seen from the **major** arc, not the minor one.",
+   tag:"Reflex central angle"},
+
+  {q:"Two chords AB and CD of a circle cross at P inside the circle, with PA = `3 cm`, PB = `8 cm` and PC = `6 cm`. Then PD is:",
+   o:["2 cm","11 cm","4 cm","16 cm"],
+   a:2,
+   why:"**PA × PB = PC × PD** (intersecting chords): 3 × 8 = 6 × PD, so PD = 24/6 = `4 cm`. Option D (16) takes the product 24 and multiplies by PB/PA instead of dividing by PC — the formula is a product equality, not a ratio.",
+   tag:"Intersecting chords"},
+
+  {q:"In a circle with centre O, ∠AOB = `110°` and C lies on the minor arc AB. Then ∠ACB is:",
+   o:["55°","70°","110°","125°"],
+   a:3,
+   why:"**The angle in the minor segment is supplementary to the angle in the major segment.** The angle in the major segment is ½ × 110° = 55°, so the angle in the minor segment is 180° − 55° = `125°`. Option A (55°) is the angle in the major segment — it gives the wrong segment.",
+   tag:"Minor arc angle"},
+
+  {q:"A chord AB subtends `∠AOB = 60°` at the centre O. If the radius is `10 cm`, the length of chord AB is:",
+   o:["5 cm","10√3 cm","5√3 cm","10 cm"],
+   a:3,
+   why:"**Chord = 2r sin(θ/2)** = 2 × 10 × sin 30° = 20 × ½ = `10 cm` — the chord equals the radius when the central angle is 60°, because △OAB is equilateral. Option C (5√3) confuses the chord with the perpendicular from O to AB, which is r cos(θ/2) = 10 × cos 30° = 5√3.",
+   tag:"Chord length"}
+],
   note:"Every question above comes out of one line of the sheet. If a chord question takes more than a line of working, the triangle with sides `d`, chord/2 and `r` is the thing to draw first."}
 ]
 },
 
-/* ============================================================ 9 — Tangents, secants and the alternate segment (22 questions) */
+/* ============================================================ 9 — Tangents, secants and the alternate segment (28 questions) */
 {
 id:"geo-circle-tangent", n:"Tangents, secants and the alternate segment", hy:1,
 w:"The one right angle the whole topic rests on, the two tangents from an outside point, PT² = PA·PB, the alternate segment theorem, and the tangent lengths that give Pitot's rule.",
@@ -1731,13 +2037,49 @@ blocks:[
    o:["50°","40°","80°","100°"],
    a:0,
    why:"△OAB is isosceles with OA = OB = r and apex 100°, so ∠OAB = (180° − 100°)/2 = 40°; and **the tangent is perpendicular to the radius at A**, so ∠PAB = 90° − 40° = `50°`. The same answer comes straight out of **the alternate segment theorem**, by which the tangent–chord angle ∠PAB is half the central angle, 100°/2 = 50°. Option B is ∠OAB, the angle inside the triangle of radii, and option C is ∠APB = 180° − 100° = 80°.",
-   tag:"Tangent–chord angle"}
- ],
+   tag:"Tangent–chord angle"},
+
+  {q:"The inradius of a triangle with area `Δ` and semi-perimeter `s` is:",
+   o:["Δ/s","s/Δ","Δ/(2s)","2Δ/s"],
+   a:0,
+   why:"**r = Δ/s.** The incircle touches all three sides, and the area of the triangle equals `r × s` (summing the three sub-triangles formed by the incentre). Option D (2Δ/s) puts the 2 on the wrong side — the area is `½ × perimeter × r`, not `perimeter × r`.",
+   tag:"Inradius formula"},
+
+  {q:"From a point P on a circle, the number of tangents that can be drawn to the circle is:",
+   o:["0","2","3","1"],
+   a:3,
+   why:"**Exactly one tangent can be drawn from a point on the circle** — the line perpendicular to the radius at that point. Option B (2) is the number from an **external** point, not from a point on the circle itself.",
+   tag:"Tangent count"},
+
+  {q:"Two secants PAB and PCD are drawn from an external point P. If PA = `3 cm`, PB = `12 cm` and PC = `4 cm`, then PD is:",
+   o:["36 cm","6 cm","9 cm","15 cm"],
+   a:2,
+   why:"**PA × PB = PC × PD** (the secant–secant power of a point): 3 × 12 = 4 × PD, so PD = 36/4 = `9 cm`. Option A (36) is the product PA × PB itself, left undivided — the formula gives a product, and one more division is needed.",
+   tag:"Two secants"},
+
+  {q:"AT is a tangent at A to a circle and AB is a chord. If `∠BAT = 40°`, the angle subtended by chord AB at the centre is:",
+   o:["40°","100°","80°","20°"],
+   a:2,
+   why:"**The tangent-chord angle equals the angle in the alternate segment**, so the inscribed angle on the major arc is 40°. **The central angle is twice the inscribed angle**: 2 × 40° = `80°`. Option A (40°) stops at the inscribed angle and does not double it.",
+   tag:"Tangent-chord"},
+
+  {q:"The incircle of a triangle with sides `13 cm`, `14 cm` and `15 cm` has radius:",
+   o:["8 cm","6 cm","3 cm","4 cm"],
+   a:3,
+   why:"**r = Δ/s.** Here s = (13 + 14 + 15)/2 = 21 and by Heron's formula Δ = √(21 × 8 × 7 × 6) = √7056 = 84, so r = 84/21 = `4 cm`. Option A (8) is what using the semi-perimeter as the area gives; option B (6) confuses r with the 6 in Heron's product.",
+   tag:"Inradius numerical"},
+
+  {q:"A circle of radius `5 cm` has centre O. From an external point P, tangents PA and PB are drawn with ∠APB = `60°`. The length OP is:",
+   o:["5√3 cm","10 cm","5√2 cm","15 cm"],
+   a:1,
+   why:"**∠OPA = 30°** (half of ∠APB, by symmetry) and **∠OAP = 90°** (tangent ⊥ radius). In right △OAP, sin 30° = OA/OP, so OP = OA/sin 30° = 5/(1/2) = `10 cm`. Option A (5√3) is the tangent length PA, not the distance OP.",
+   tag:"Tangent and angle"}
+],
   note:"Two lines answer most of these: ∠OAP = 90° at the point of contact, and the tangent–chord angle equals the angle in the alternate segment, which is half the angle at the centre."}
 ]
 },
 
-/* ============================================================ 10 — Segments, sectors and cyclic quadrilaterals (23 questions) */
+/* ============================================================ 10 — Segments, sectors and cyclic quadrilaterals (28 questions) */
 {
 id:"geo-circle-segment", n:"Segments, sectors and cyclic quadrilaterals", hy:1,
 w:"Which region is the segment and which the sector, the three chord chains that fix every segment angle, and the whole of the cyclic quadrilateral including Ptolemy.",
@@ -1922,13 +2264,43 @@ blocks:[
    o:["110°","140°","220°","70°"],
    a:1,
    why:"**The two segment angles are supplementary**, so the angle in the major segment is 180° − 110° = `70°`, and **the angle at the centre is twice the angle at the circumference**, giving 2 × 70° = `140°`. Option C, `220°`, is 2 × 110° — the **reflex** angle at the centre, which stands on the major arc and is the one this question excluded. Option D stops at the major-segment angle without doubling it.",
-   tag:"Centre from segment"}
- ],
+   tag:"Centre from segment"},
+
+  {q:"AB is a diameter of a circle. C lies on the circle, not at A or B. The angle ∠ACB is:",
+   o:["180°","60°","45°","90°"],
+   a:3,
+   why:"**The angle in a semicircle is 90°** — the diameter subtends a right angle at every point on the circle. Option A (180°) is the straight angle along the diameter itself, not the angle at the circumference, and confusing the two is the trap.",
+   tag:"Semicircle angle"},
+
+  {q:"In a cyclic quadrilateral ABCD, `∠A = 110°`. The angle ∠C is:",
+   o:["110°","90°","140°","70°"],
+   a:3,
+   why:"**Opposite angles of a cyclic quadrilateral are supplementary**: ∠A + ∠C = 180°, so ∠C = 180° − 110° = `70°`. Option A assumes opposite angles are equal (true of a parallelogram, not a cyclic quadrilateral) and option C takes 360° − 110° − 110° = 140°.",
+   tag:"Cyclic supplementary"},
+
+  {q:"A quadrilateral ABCD has `∠A + ∠C = 180°`. It follows that ABCD is:",
+   o:["a parallelogram","a rectangle","a rhombus","a cyclic quadrilateral"],
+   a:3,
+   why:"**If the opposite angles of a quadrilateral are supplementary, the quadrilateral is cyclic** — this is the converse of the cyclic-quadrilateral theorem. Option A (parallelogram) has opposite angles **equal**, not supplementary — equal and supplementary simultaneously forces 90° each, which is a rectangle.",
+   tag:"Converse cyclic"},
+
+  {q:"In a cyclic quadrilateral ABCD, the exterior angle at B equals:",
+   o:["∠B","180° − ∠B","∠D","∠A + ∠C"],
+   a:2,
+   why:"**The exterior angle of a cyclic quadrilateral equals the interior opposite angle.** The exterior angle at B is 180° − ∠B, and since ∠B + ∠D = 180° (opposite angles supplementary), 180° − ∠B = ∠D. Option A gives the interior angle, not the exterior, and option D adds two non-opposite angles.",
+   tag:"Exterior angle"},
+
+  {q:"A chord PQ subtends an angle of `70°` in the major segment. The angle subtended by PQ in the minor segment is:",
+   o:["70°","140°","110°","35°"],
+   a:2,
+   why:"**The angles in the major and minor segments are supplementary**: they add to 180°, so the angle in the minor segment is 180° − 70° = `110°`. Option A (70°) assumes the two angles are equal — they are equal only when both are 90°, that is, when PQ is a diameter.",
+   tag:"Supplementary segments"}
+],
   note:"Every question above tests one line of the sheet at the top of this topic."}
 ]
 },
 
-/* ============================================================ 11 — Two circles: touching, cutting and common tangents (22 questions) */
+/* ============================================================ 11 — Two circles: touching, cutting and common tangents (28 questions) */
 {
 id:"geo-circle-two", n:"Two circles: touching, cutting and common tangents", hy:1,
 w:"The five positions of two circles read off the distance between their centres, the number of common tangents in each, the two tangent-length formulas, the common chord, and the circles that sit inside a square or an equilateral triangle.",
@@ -2119,13 +2491,49 @@ blocks:[
    o:["the circles cut each other at two points","the circles do not overlap, that is d ≥ r₁ + r₂","d ≥ r₁ − r₂","one circle lies inside the other"],
    a:1,
    why:"**The transverse common tangent is √(d² − (r₁ + r₂)²)**, which is a real length only while `d ≥ r₁ + r₂` — so the circles must not overlap. Option A is the trap: two circles that cut each other still have two common tangents, but both are *direct*, and the transverse formula there would ask for the square root of a negative number. At `d = r₁ + r₂` the two transverse tangents have merged into the single tangent at the point of contact.",
-   tag:"Transverse tangent"}
- ],
+   tag:"Transverse tangent"},
+
+  {q:"Two concentric circles have radii `13 cm` and `5 cm`. The length of a chord of the larger circle that is tangent to the smaller circle is:",
+   o:["24 cm","18 cm","12 cm","8 cm"],
+   a:0,
+   why:"**The chord is tangent to the inner circle, so it is at distance 5 from the centre.** Chord = 2√(R² − d²) = 2√(169 − 25) = 2√144 = `24 cm`. Option B (18) uses the difference of radii (13 − 5 = 8) in place of the perpendicular distance, giving 2√(169 − 64).",
+   tag:"Concentric circles"},
+
+  {q:"Two circles of radii `9 cm` and `2 cm` have their centres `7 cm` apart. The circles:",
+   o:["touch externally","touch internally","cut at two points","lie wholly apart"],
+   a:1,
+   why:"**d = r₁ − r₂ = 9 − 2 = 7**, so the circles touch internally — the smaller sits inside the larger with one common point. Option A would need d = r₁ + r₂ = 11, and option C would need r₁ − r₂ < d < r₁ + r₂.",
+   tag:"Internal touch"},
+
+  {q:"Two circles of radii `5 cm` and `12 cm` touch externally. The length of the direct common tangent between the two points of contact is:",
+   o:["4√15 cm","17 cm","7 cm","2√60 cm"],
+   a:0,
+   why:"**When two circles touch externally, the direct tangent between the contact points is `2√(r₁r₂)`** = 2√(5 × 12) = 2√60 = `4√15 cm`. Option B (17) is r₁ + r₂, the distance between centres, not the tangent length. Note: 2√60 = 2 × 2√15 = 4√15.",
+   tag:"Contact tangent"},
+
+  {q:"Two circles with `d < r₁ − r₂` (d is the distance between centres) have how many common tangents?",
+   o:["4","2","1","0"],
+   a:3,
+   why:"**When one circle lies entirely inside the other (d < r₁ − r₂), no common tangent can be drawn** — there is no line that touches both without crossing one. Option C (1) is the count for internal tangency (d = r₁ − r₂), the boundary case.",
+   tag:"No tangent"},
+
+  {q:"A circle is inscribed in an equilateral triangle of side `a`. The ratio of the area of the circle to the area of the triangle is:",
+   o:["π : 3","π : 3√3","π : 4","2π : 3√3"],
+   a:1,
+   why:"**The inradius of an equilateral triangle is `a/(2√3)`**, so the circle's area is π × a²/12. The triangle's area is (√3/4)a². The ratio is (πa²/12)/((√3/4)a²) = π/(3√3), that is `π : 3√3`. Option A omits the √3 in the denominator.",
+   tag:"Incircle area ratio"},
+
+  {q:"A square of side `a` is inscribed in a circle. A second circle is inscribed in the same square. The ratio of the area of the larger circle to the smaller is:",
+   o:["√2 : 1","4 : π","2 : 1","π : 2"],
+   a:2,
+   why:"**The circle circumscribing the square has diameter `a√2`, so R = a√2/2. The circle inscribed in the square has diameter `a`, so r = a/2.** The area ratio is R²/r² = (a²/2)/(a²/4) = `2 : 1`. Option A (√2 : 1) is the ratio of the radii, not the areas — areas go as the square of the radii.",
+   tag:"Circum vs inscribed"}
+],
   note:"If a question here took more than about half a minute, the line to go back to is the one comparing d with r₁ + r₂ and r₁ − r₂. Every result in this topic is read off that comparison."}
 ]
 },
 
-/* ============================================================ 12 — Coordinate geometry and the graph of a line (22 questions) */
+/* ============================================================ 12 — Coordinate geometry and the graph of a line (28 questions) */
 {
 id:"geo-coord", n:"Coordinate geometry and the graph of a line", hy:1,
 w:"Distance, midpoint, section, centroid and area from the coordinates alone, then slope and every form of a straight line — including the two distance formulas that are always confused.",
@@ -2228,8 +2636,44 @@ blocks:[
    o:["6","7","8","9"],
    a:1,
    why:"**Three points are collinear exactly when the area of the triangle they form is zero**, that is x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂) = 0. Here 2(7 − 11) + 5(11 − 1) + k(1 − 7) = −8 + 50 − 6k = 0, so k = `7`. Equal slopes give the same answer: (7 − 1)/(5 − 2) = 2 must equal (11 − 7)/(k − 5). Option C, `8`, continues the pattern 2, 5, 8 in the x-coordinates and ignores the y-coordinates completely, which is what makes it the tempting one.",
-   tag:"Collinearity"}
- ]},
+   tag:"Collinearity"},
+
+  {q:"The distance of the point `(5, −12)` from the origin is:",
+   o:["13","17","7","√119"],
+   a:0,
+   why:"**Distance from the origin = √(x² + y²)** = √(25 + 144) = √169 = `13`. Option B (17) adds the absolute values instead of using Pythagoras, and option D squares before adding but then forgets to root properly.",
+   tag:"Distance from origin"},
+
+  {q:"The slope of a line parallel to the x-axis is:",
+   o:["1","undefined","−1","0"],
+   a:3,
+   why:"**A horizontal line has slope `0`** — there is no rise for any run. Option B (undefined) is the slope of a line parallel to the **y-axis**, not the x-axis, and swapping the two is the whole trap.",
+   tag:"Horizontal slope"},
+
+  {q:"The point dividing the join of `(2, 5)` and `(8, 11)` **externally** in the ratio `3 : 1` is:",
+   o:["(11, 14)","(5, 8)","(6.5, 9.5)","(4, 7)"],
+   a:0,
+   why:"**External division: ((mx₂ − nx₁)/(m − n), (my₂ − ny₁)/(m − n))** = ((24 − 2)/2, (33 − 5)/2) = `(11, 14)`. Option B uses **internal** division ((24 + 2)/4, (33 + 5)/4) = (6.5, 9.5), which is option C — swapping internal for external is the standard error.",
+   tag:"External division"},
+
+  {q:"The area of the triangle with vertices `(0, 0)`, `(6, 0)` and `(0, 8)` is:",
+   o:["48","14","24","28"],
+   a:2,
+   why:"**Two sides lie along the axes, so area = ½ × base × height** = ½ × 6 × 8 = `24`. Option A (48) omits the half, which is the commonest slip in coordinate-geometry area questions.",
+   tag:"Triangle area"},
+
+  {q:"The equation of a line with slope `3` and y-intercept `−2` is:",
+   o:["y = −2x + 3","y = 3x − 2","3x + y = 2","y = 3x + 2"],
+   a:1,
+   why:"**y = mx + c** with m = 3 and c = −2 gives `y = 3x − 2`. Option A swaps the slope and intercept, putting −2 as the coefficient of x and 3 as the constant.",
+   tag:"Slope-intercept"},
+
+  {q:"The line `y = x` makes an angle with the positive x-axis of:",
+   o:["30°","60°","90°","45°"],
+   a:3,
+   why:"**The slope of y = x is 1, and tan θ = 1 gives θ = 45°.** Option A (30°) is tan⁻¹(1/√3) and option B (60°) is tan⁻¹(√3) — the two standard-triangle angles on either side of 45°, each a plausible guess if the exact value is not recalled.",
+   tag:"Angle of inclination"}
+]},
 
  {h:"QUESTIONS — slope and the equation of a line",
   mcq:[

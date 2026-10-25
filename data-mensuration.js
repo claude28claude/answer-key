@@ -22,7 +22,7 @@ intro:"Four topics in two dimensions and four in three. The 2D half ends with th
 
 topics:[
 
-/* ============================================================ 1 — 2D: the triangle (22 questions) */
+/* ============================================================ 1 — 2D: the triangle (28 questions) */
 {
 id:"men-2d-triangle", n:"2D: the triangle", hy:1,
 w:"Area from the base and the height, from the three sides by Heron, and from two sides and the angle between them; the equilateral, isosceles and right triangles; the inradius and the circumradius; and the ratio facts — similar areas, the midpoint triangle and the six equal areas of the medians.",
@@ -204,13 +204,49 @@ blocks:[
    o:["The two triangles are congruent","The two triangles have equal perimeters","The two triangles have equal areas","The area of △ABC is twice the area of △DBC"],
    a:2,
    why:"**Triangles on the same base and between the same parallels are equal in area**, because the base is shared and each height is the distance between the two parallel lines. Equal area is all that follows: `AB` and `DB` may be quite different lengths, so the perimeters generally differ and the triangles are generally not congruent. Option A is the tempting one, and it holds only in the special case where `A` and `D` are the same point.",
-   tag:"Same base"}
- ],
+   tag:"Same base"},
+
+  {q:"A triangle has sides `8 cm`, `15 cm` and `17 cm`. Its area is:",
+   o:["120 cm²","60 cm²","68 cm²","136 cm²"],
+   a:1,
+   why:"**8² + 15² = 64 + 225 = 289 = 17², so it is a right triangle with legs 8 and 15.** Area = ½ × 8 × 15 = `60 cm²`. Option A (120) is 8 × 15 without the ½ — the standard slip. Heron's formula also works: s = 20, Δ = √(20 × 12 × 5 × 3) = √3600 = 60.",
+   tag:"Right triangle area"},
+
+  {q:"The altitude of an equilateral triangle of side `14 cm` is:",
+   o:["14√3 cm","7 cm","14 cm","7√3 cm"],
+   a:3,
+   why:"**Height of equilateral triangle = (√3/2) × side = (√3/2) × 14 = `7√3 cm`**. Option A (14√3) is √3 × side, forgetting to halve; option B (7) is half the side with the √3 left out entirely.",
+   tag:"Equilateral height"},
+
+  {q:"The circumradius of a triangle with sides `a`, `b`, `c` and area `Δ` is:",
+   o:["abc/Δ","abc/(4Δ)","4Δ/(abc)","Δ/s"],
+   a:1,
+   why:"**Circumradius R = abc/(4Δ)**. Option A (abc/Δ) omits the 4 in the denominator, giving a value four times too large; option D (Δ/s) is the **inradius**, not the circumradius — swapping the two is the classic confusion.",
+   tag:"Circumradius"},
+
+  {q:"Two sides of a triangle are `12 cm` and `5 cm` and the included angle is `90°`. Its area is:",
+   o:["60 cm²","17 cm²","30 cm²","120 cm²"],
+   a:2,
+   why:"**Area = ½ × a × b × sin C = ½ × 12 × 5 × sin 90° = ½ × 60 = `30 cm²`**. Since sin 90° = 1, this is simply the right-triangle formula ½ × base × height. Option A (60) omits the ½.",
+   tag:"SAS area"},
+
+  {q:"A triangle has sides `6 cm`, `8 cm` and `10 cm`. The radius of the circle inscribed in it is:",
+   o:["4 cm","2 cm","5 cm","3 cm"],
+   a:1,
+   why:"**Inradius r = Δ/s.** This is a 6-8-10 right triangle: Δ = ½ × 6 × 8 = 24 cm², s = (6 + 8 + 10)/2 = 12. So r = 24/12 = `2 cm`. Option A (4) is 24/6, dividing by the shortest side rather than the semi-perimeter.",
+   tag:"Inradius"},
+
+  {q:"The sides of two similar triangles are in the ratio `2 : 5`. The ratio of their areas is:",
+   o:["2 : 5","4 : 10","25 : 4","4 : 25"],
+   a:3,
+   why:"**The areas of similar triangles are in the ratio of the squares of their corresponding sides**: 2² : 5² = `4 : 25`. Option A (2 : 5) takes the areas directly proportional to the sides — the same error as with circles — and option C (25 : 4) reverses the ratio.",
+   tag:"Similar triangle areas"}
+],
   note:"Nothing in this topic needs π: every formula here is algebraic, and the incircle and the circumcircle enter only as the lengths `r = Δ/s` and `R = abc/4Δ`. Every numeric answer above carries its unit, because an area offered in `cm`, or a length offered in `cm²`, is the commonest careless tick in mensuration."}
 ]
 },
 
-/* ============================================================ 2 — 2D: quadrilaterals and polygons (22 questions) */
+/* ============================================================ 2 — 2D: quadrilaterals and polygons (28 questions) */
 {
 id:"men-2d-quad", n:"2D: quadrilaterals and polygons", hy:1,
 w:"The square, rectangle, parallelogram, rhombus, kite and trapezium; the general quadrilateral from one diagonal; Brahmagupta's formula; the regular polygon and the regular hexagon; and what a percentage change in a side does to the area.",
@@ -392,13 +428,49 @@ blocks:[
    a:0,
    why:"**Perimeter = 4a**, so the side is 13 cm, and the diagonals bisect each other at right angles, so half the other diagonal is √(13² − 12²) = 5 cm and the other diagonal is 10 cm. **Area = ½d₁d₂** = ½ × 24 × 10 = `120 cm²`. Option D, `60 cm²`, is ½ × 24 × 5, the half-diagonal used in place of the whole one — the commonest slip in this question. Option B drops the half, and option C is 12 × 13, two lengths that bound nothing.",
    tag:"Rhombus",
-   d:"q-rhombus"}
- ],
+   d:"q-rhombus"},
+
+  {q:"The area of a square whose side is `17 cm` is:",
+   o:["289 cm²","68 cm²","578 cm²","34 cm²"],
+   a:0,
+   why:"**Area of a square = side² = 17² = `289 cm²`**. Option C (578) doubles it, confusing area with perimeter squared divided by something; option B (68) is 4 × 17, the perimeter.",
+   tag:"Square area"},
+
+  {q:"The area of a trapezium is `100 cm²` and its parallel sides are `12 cm` and `8 cm`. The distance between the parallel sides is:",
+   o:["5 cm","10 cm","20 cm","8 cm"],
+   a:1,
+   why:"**Area = ½(a + b)h**, so 100 = ½(12 + 8)h = 10h, giving h = `10 cm`. Option A (5) is from dividing 100 by (12 + 8) without the ½, which doubles the height — the standard slip in working the formula backwards.",
+   tag:"Trapezium height"},
+
+  {q:"The diagonals of a rhombus are `24 cm` and `10 cm`. Its perimeter is:",
+   o:["68 cm","52 cm","34 cm","26 cm"],
+   a:1,
+   why:"**The diagonals of a rhombus bisect at right angles, so each side = √(12² + 5²) = √(144 + 25) = √169 = 13 cm.** Perimeter = 4 × 13 = `52 cm`. Option A (68) adds the diagonals twice, 2(24 + 10), confusing the perimeter of the rhombus with the perimeter of the rectangle formed by the diagonals.",
+   tag:"Rhombus perimeter"},
+
+  {q:"A parallelogram has base `15 cm` and height `8 cm`. A triangle with the same base and the same height has area:",
+   o:["120 cm²","240 cm²","60 cm²","30 cm²"],
+   a:2,
+   why:"**Area of triangle = ½ × base × height = ½ × 15 × 8 = `60 cm²`**, which is half the parallelogram's area (120 cm²). Option A (120) is the parallelogram's own area — the trap of forgetting the ½.",
+   tag:"Area comparison"},
+
+  {q:"If the diagonal of a square is `10√2 cm`, the area of the square is:",
+   o:["50 cm²","200 cm²","100 cm²","100√2 cm²"],
+   a:2,
+   why:"**Diagonal = a√2**, so a = 10 cm and area = a² = `100 cm²`. Alternatively, **area = d²/2 = (10√2)²/2 = 200/2 = 100 cm²**. Option B (200) is d² without the halving — a very common slip.",
+   tag:"Square from diagonal"},
+
+  {q:"A field in the shape of a quadrilateral has a diagonal `40 m` long. The perpendiculars from the other two vertices onto this diagonal are `12 m` and `8 m`. The area of the field is:",
+   o:["960 m²","800 m²","480 m²","400 m²"],
+   a:3,
+   why:"**Area = ½ × diagonal × (sum of perpendiculars) = ½ × 40 × (12 + 8) = ½ × 40 × 20 = `400 m²`**. Option A (960) is 40 × (12 + 8) + something; option B (800) is 40 × 20, omitting the ½.",
+   tag:"Quadrilateral area"}
+],
   note:"Every question above is answered by one line of the sheet. If an answer came out with a stray factor of two in it, the line to go back to is the one with the ½ in front."}
 ]
 },
 
-/* ============================================================ 3 — 2D: circle, sector and segment (22 questions) */
+/* ============================================================ 3 — 2D: circle, sector and segment (28 questions) */
 {
 id:"men-2d-circle", n:"2D: circle, sector and segment", hy:1,
 w:"The circle, the semicircle and the quadrant; the arc, the sector and the segment; the ring; and the circle drawn inside and outside a square and an equilateral triangle.",
@@ -586,13 +658,49 @@ blocks:[
    a:2,
    why:"**Perimeter of a quadrant = ¼ of the circumference + the two radii = ½πr + 2r.** The arc is ½ × (22/7) × 14 = 22 cm, so the perimeter is 22 + 28 = `50 cm`, taking π = 22/7. Option A is the arc alone; option B adds only one radius; option D is the quadrant's **area**, ¼πr² = 154 cm² — an area where a length was asked.",
    tag:"Quadrant",
-   d:"c-quadrant"}
- ],
+   d:"c-quadrant"},
+
+  {q:"The area of a sector of a circle of radius `14 cm` with a central angle of `90°` is:",
+   o:["616 cm²","44 cm²","308 cm²","154 cm²"],
+   a:3,
+   why:"**Area of sector = (θ/360) × πr²** = (90/360) × (22/7) × 14² = ¼ × 616 = `154 cm²`. Option A (616) is the full circle's area — using the whole 360° instead of the given 90° — and option C (308) is the semicircle's area.",
+   tag:"Sector area"},
+
+  {q:"The perimeter of a sector of a circle of radius `21 cm` with a central angle of `60°` is:",
+   o:["22 cm","42 cm","44 cm","64 cm"],
+   a:3,
+   why:"**Perimeter of a sector = 2r + arc length = 2r + (θ/360) × 2πr** = 42 + (60/360) × 2 × (22/7) × 21 = 42 + 22 = `64 cm`. Option A (22) is the arc length alone, forgetting the two radii that close the sector.",
+   tag:"Sector perimeter"},
+
+  {q:"The area of a circle whose diameter is `28 cm` is:",
+   o:["2464 cm²","616 cm²","176 cm²","88 cm²"],
+   a:1,
+   why:"**Area = πr²** = (22/7) × 14² = (22/7) × 196 = `616 cm²`. Option A (2464) is what using the diameter (28) instead of the radius (14) gives — four times the correct area — and that is the standard slip.",
+   tag:"Area from diameter"},
+
+  {q:"Two concentric circles have radii `14 cm` and `7 cm`. The area of the ring between them is:",
+   o:["154 cm²","462 cm²","308 cm²","616 cm²"],
+   a:1,
+   why:"**Area of ring = π(R² − r²)** = (22/7)(196 − 49) = (22/7) × 147 = `462 cm²`. Option D (616) is the area of the outer circle alone, ignoring the inner hole; option A (154) is the area of the inner circle.",
+   tag:"Annulus"},
+
+  {q:"A wire is bent into a circle of radius `7 cm`. If the same wire is bent into a square, the side of the square is:",
+   o:["7 cm","14 cm","11 cm","22 cm"],
+   a:2,
+   why:"**The perimeter stays the same.** Circumference = 2πr = 2 × (22/7) × 7 = 44 cm. Side of square = 44/4 = `11 cm`. Option A (7) is the radius itself; option D (22) is half the perimeter.",
+   tag:"Wire reshaping"},
+
+  {q:"The ratio of the areas of two circles whose radii are in the ratio `3 : 5` is:",
+   o:["3 : 5","6 : 10","9 : 25","27 : 125"],
+   a:2,
+   why:"**Areas of circles are in the ratio of the squares of their radii**: 3² : 5² = `9 : 25`. Option A takes the areas to be directly proportional to the radii, which is the standard mistake — the area depends on the **square** of the radius.",
+   tag:"Ratio of areas"}
+],
   note:"Two checks will catch most of the marks lost in this topic. First, read the unit on your answer: a length must come out in cm and an area in cm². Second, ask whether the question wanted the sector or the segment, the arc or the perimeter, the radius or the diameter."}
 ]
 },
 
-/* ============================================================ 4 — 2D: paths, borders and shaded regions (22 questions) */
+/* ============================================================ 4 — 2D: paths, borders and shaded regions (28 questions) */
 {
 id:"men-2d-paths", n:"2D: paths, borders and shaded regions", hy:1,
 w:"Paths round a field, roads crossing it, grazing at a corner, and the shaded part of a figure — every one of them a single subtraction, with the two shapes to subtract named for you.",
@@ -771,13 +879,49 @@ blocks:[
    o:["1.5 m","6 m","3 m","3.15 m"],
    a:2,
    why:"**(60 + 2w)² − 60² = 756**, so (60 + 2w)² = 3600 + 756 = 4356 = 66², giving 60 + 2w = 66 and `w = 3 m`. Written out, the equation is **4w² + 240w − 756 = 0**. Option D, `3.15 m`, is 756 ÷ 240 — the answer when the corner term `4w²` is dropped, and the one that looks nearly right.",
-   tag:"Width from area"}
- ],
+   tag:"Width from area"},
+
+  {q:"A square garden of side `40 m` has a path `5 m` wide all round it on the outside. The area of the path is:",
+   o:["400 m²","800 m²","900 m²","500 m²"],
+   a:2,
+   why:"**Outer side = 40 + 2×5 = 50 m. Area of path = 50² − 40² = 2500 − 1600 = `900 m²`.** Option A (400) is 4 × side × width = 4 × 40 × 5, which misses the four corner squares — the standard slip with paths around a square.",
+   tag:"Square outer path"},
+
+  {q:"A circular pond of radius `14 m` has a path `3.5 m` wide inside it along its edge. Taking π = 22/7, the area of the path is:",
+   o:["269.5 m²","616 m²","577.5 m²","346.5 m²"],
+   a:3,
+   why:"**Inner radius = 14 − 3.5 = 10.5 m. Area of path = π(R² − r²) = (22/7)(196 − 110.25) = (22/7) × 85.75 = `346.5 m²`.** Option B (616) is the full circle, ignoring the inner part entirely.",
+   tag:"Circular inner path"},
+
+  {q:"A horse is tethered to a corner of a rectangular field by a rope `21 m` long. The field is larger than the rope. Taking π = 22/7, the area the horse can graze is:",
+   o:["1386 m²","346.5 m²","693 m²","462 m²"],
+   a:1,
+   why:"**At a corner of a rectangle the rope sweeps a quarter-circle**: (1/4)πr² = (1/4) × (22/7) × 441 = `346.5 m²`. Option A (1386) is the full circle — the mistake of not seeing that three-quarters of the turn is blocked by the walls.",
+   tag:"Corner tether"},
+
+  {q:"Four equal circles of radius `7 cm` are drawn inside a square of side `28 cm`, each touching two sides and two other circles. Taking π = 22/7, the area inside the square but outside the four circles is:",
+   o:["784 cm²","616 cm²","392 cm²","168 cm²"],
+   a:3,
+   why:"**Area of square − 4 × πr² = 28² − 4 × (22/7) × 49 = 784 − 616 = `168 cm²`.** Option B (616) is the total area of the four circles, which is the part being subtracted, not the leftover.",
+   tag:"Circles in square"},
+
+  {q:"A rectangular sheet `22 cm` by `14 cm` has the largest possible circle cut from it. Taking π = 22/7, the area of the remaining sheet is:",
+   o:["308 cm²","154 cm²","462 cm²","132 cm²"],
+   a:1,
+   why:"**The largest circle has diameter = shorter side = 14 cm, so r = 7 cm.** Remaining area = 22 × 14 − (22/7) × 49 = 308 − 154 = `154 cm²`. Option A (308) is the rectangle's own area with nothing removed.",
+   tag:"Circle from rectangle"},
+
+  {q:"A rope `44 m` long is bent into a circle. Taking π = 22/7, the area enclosed is:",
+   o:["616 m²","1386 m²","154 m²","44 m²"],
+   a:2,
+   why:"**Circumference = 2πr = 44**, so r = 44 × 7/44 = `7 m`. Area = (22/7) × 49 = `154 m²`. Option A (616) uses r = 14, which is what treating the circumference as the diameter gives — the standard confusion between perimeter and diameter.",
+   tag:"Rope to circle"}
+],
   note:"Every question above is the same instruction: write down the area of the whole figure, write down the area of what has been removed, subtract. If a question felt long, it was the second of those two areas that was not identified."}
 ]
 },
 
-/* ============================================================ 5 — 3D: cube, cuboid and prism (22 questions) */
+/* ============================================================ 5 — 3D: cube, cuboid and prism (28 questions) */
 {
 id:"men-3d-cuboid", n:"3D: cube, cuboid and prism", hy:1,
 w:"The flat-faced solids — cuboid, cube and right prism — with the four walls against the whole room, the face diagonal against the body diagonal, and the painted cube cut into unit cubes.",
@@ -961,13 +1105,49 @@ blocks:[
    o:["4 times","6 times","8 times","2 times"],
    a:2,
    why:"**Volume goes as the cube of the linear factor: k = 2 gives k³ = `8` times.** Option A is k² = 4, which is what the **surface area** becomes — the surface quadruples while the volume becomes eight times, and swapping the two is the standard confusion. Option B, `6`, is only the number of faces, and option D is the linear factor left un-powered.",
-   tag:"Edge doubled"}
- ],
+   tag:"Edge doubled"},
+
+  {q:"The lateral surface area of a cuboid of length `l`, breadth `b` and height `h` is:",
+   o:["2(lb + bh + hl)","lbh","2(l + b + h)","2h(l + b)"],
+   a:3,
+   why:"**Lateral (four walls) = 2h(l + b)** — the perimeter of the base times the height. Option A is the **total** surface area (all six faces), which adds the top and bottom; confusing lateral with total is the standard slip.",
+   tag:"Cuboid lateral SA"},
+
+  {q:"The total surface area of a cube is `294 cm²`. Its edge is:",
+   o:["7 cm","49 cm","6 cm","√49 cm"],
+   a:0,
+   why:"**TSA = 6a²**, so a² = 294/6 = 49 and a = `7 cm`. Option B (49) is a² itself, stopping one step early; option C (6) divides 294 by 49 instead of the other way round.",
+   tag:"Cube edge from TSA"},
+
+  {q:"A cube has edge `5 cm`. Its body diagonal is:",
+   o:["5√2 cm","10 cm","5√3 cm","25 cm"],
+   a:2,
+   why:"**Body diagonal of a cube = a√3 = 5√3 cm**. Option A (5√2) is the **face** diagonal, not the body diagonal — the face diagonal lies in one face, while the body diagonal passes through the interior.",
+   tag:"Body diagonal"},
+
+  {q:"A painted cube of edge `4 cm` is cut into unit cubes of edge `1 cm`. The number of unit cubes with exactly two painted faces is:",
+   o:["8","32","16","24"],
+   a:3,
+   why:"**Two-face cubes sit along the edges, excluding corners.** Each edge has 4 − 2 = 2 such cubes, and a cube has 12 edges: 12 × 2 = `24`. Option A (8) is the count of corner cubes (three painted faces), the most common swap.",
+   tag:"Painted cube edges"},
+
+  {q:"A closed rectangular box 12 cm long, 8 cm wide and 5 cm high is made of metal sheet. The area of sheet used is:",
+   o:["480 cm²","320 cm²","392 cm²","96 cm²"],
+   a:2,
+   why:"**TSA = 2(lb + bh + hl) = 2(96 + 40 + 60) = 2 × 196 = `392 cm²`**. Option A (480) is the volume (12 × 8 × 5), not the surface area — confusing the two is the trap.",
+   tag:"Cuboid TSA"},
+
+  {q:"How many cubes of edge `2 cm` can be cut from a block `8 cm` × `6 cm` × `4 cm`?",
+   o:["48","12","96","24"],
+   a:3,
+   why:"**Count along each dimension: 8/2 = 4, 6/2 = 3, 4/2 = 2. Total = 4 × 3 × 2 = `24`.** Option A (48) divides the volume of the block (192) by the edge (2) instead of by the volume of each small cube (8) — the standard error.",
+   tag:"Cubes from block"}
+],
   note:"Every question above is answered by one line of the sheet. Before ticking, read the unit on the option: the commonest loss in this chapter is correct arithmetic attached to the quantity the question did not ask for."}
 ]
 },
 
-/* ============================================================ 6 — 3D: cylinder, cone and frustum (22 questions) */
+/* ============================================================ 6 — 3D: cylinder, cone and frustum (28 questions) */
 {
 id:"men-3d-cylinder", n:"3D: cylinder, cone and frustum", hy:1,
 w:"The cylinder, the pipe, the cone and the frustum — and the four places where a curved surface is offered for a total one, or a slant height for a vertical one.",
@@ -1151,13 +1331,49 @@ blocks:[
    a:2,
    why:"The small cone is **similar** to the whole cone, so halving the height halves the radius, and volumes go as the **cube** of the ratio: small : whole = `1 : 8`. The frustum is everything else, 8 − 1 = 7 parts, so small cone : frustum = **1 : 7**. Option D is small to **whole**, the answer one step early and the commonest tick; option A is the ratio of the heights and option B the ratio of the curved surfaces, which go as `k²`.",
    tag:"Cone cut in half",
-   d:"s-cone-cut"}
- ],
+   d:"s-cone-cut"},
+
+  {q:"A solid cylinder of radius `7 cm` and height `10 cm` is melted and recast into a cone of the same radius. The height of the cone is:",
+   o:["10 cm","20 cm","30 cm","15 cm"],
+   a:2,
+   why:"**Volume of cylinder = πr²h = volume of cone = (1/3)πr²H.** Since the radii are the same, H = 3h = 3 × 10 = `30 cm`. The cone must be three times as tall to hold the same volume, because its volume is one-third of a cylinder of the same base and height.",
+   tag:"Cylinder to cone"},
+
+  {q:"The ratio of the total surface area to the curved surface area of a cylinder whose height equals its diameter is:",
+   o:["3 : 2","2 : 1","4 : 3","3 : 1"],
+   a:0,
+   why:"**h = 2r.** CSA = 2πrh = 2πr(2r) = 4πr². TSA = CSA + 2πr² = 4πr² + 2πr² = 6πr². Ratio = 6πr² : 4πr² = `3 : 2`. Option B (2 : 1) is what h = r gives, not h = 2r.",
+   tag:"TSA : CSA ratio"},
+
+  {q:"A cone has base radius `3 cm` and height `4 cm`. Its slant height is:",
+   o:["7 cm","5 cm","√7 cm","12 cm"],
+   a:1,
+   why:"**Slant height l = √(r² + h²) = √(9 + 16) = √25 = `5 cm`** — a 3-4-5 right triangle. Option A (7) adds r + h instead of using Pythagoras, the most common slip.",
+   tag:"Cone slant height"},
+
+  {q:"The volume of a cone of base radius `7 cm` and height `12 cm`, taking π = 22/7, is:",
+   o:["1848 cm³","616 cm³","924 cm³","308 cm³"],
+   a:1,
+   why:"**Volume = (1/3)πr²h = (1/3) × (22/7) × 49 × 12 = (1/3) × 1848 = `616 cm³`**. Option A (1848) is πr²h, the cylinder's volume — the commonest error is forgetting the 1/3.",
+   tag:"Cone volume"},
+
+  {q:"A frustum has end radii `10 cm` and `6 cm` and a slant height of `5 cm`. Its curved surface area is:",
+   o:["80π cm²","160π cm²","50π cm²","100π cm²"],
+   a:0,
+   why:"**CSA of frustum = π(R + r)l = π(10 + 6) × 5 = `80π cm²`**. Option B (160π) uses π(R + r) × 2l, doubling the formula; option D uses (R + r) × l without π.",
+   tag:"Frustum CSA"},
+
+  {q:"A cone of height `20 cm` is cut by a plane parallel to its base at a height of `15 cm` from the base. The ratio of the volume of the small cone removed to the volume of the original cone is:",
+   o:["1 : 8","1 : 64","27 : 64","1 : 27"],
+   a:1,
+   why:"**The small cone's height = 20 − 15 = 5 cm, which is 5/20 = 1/4 of the original height.** For similar cones, volumes scale as the cube of the linear ratio: (1/4)³ = `1/64`. Option A (1 : 8) cubes 1/2 instead of 1/4 — which is the ratio for cutting at the midpoint of the height, not at 15 cm from the base.",
+   tag:"Cone cut ratio"}
+],
   note:"Two checks will catch most of the losses in this topic. Before ticking, ask whether the answer should carry a square unit or a cubic one; and ask whether the length you used was the height or the slant height."}
 ]
 },
 
-/* ============================================================ 7 — 3D: sphere, hemisphere and pyramid (22 questions) */
+/* ============================================================ 7 — 3D: sphere, hemisphere and pyramid (28 questions) */
 {
 id:"men-3d-sphere", n:"3D: sphere, hemisphere and pyramid", hy:1,
 w:"The sphere and its half, the spherical shell, the right pyramid on a square base, the regular tetrahedron, and the solids that sit exactly inside one another.",
@@ -1262,8 +1478,44 @@ blocks:[
    o:["(1/3)πr³","(4/3)πr³","(3/2)πr³","(2/3)πr³"],
    a:3,
    why:"**Volume of a hemisphere = (2/3)πr³**, exactly half the sphere's **(4/3)πr³** — so a sphere and a hemisphere of the same radius stand in the ratio `2 : 1` by volume. Option B is the whole sphere, the commonest tick here. Option A belongs to no solid on this page: the cone's third goes with r²h, not with r³.",
-   tag:"Hemisphere volume"}
- ]},
+   tag:"Hemisphere volume"},
+
+  {q:"A sphere of radius `7 cm` has surface area (taking π = 22/7):",
+   o:["154 cm²","308 cm²","616 cm²","1232 cm²"],
+   a:2,
+   why:"**Surface area of a sphere = 4πr²** = 4 × (22/7) × 49 = `616 cm²`. Option B (308) is half of this — it is `2πr²`, the curved surface of the hemisphere — and option A (154) is a quarter, `πr²`, just one great-circle area.",
+   tag:"Sphere SA"},
+
+  {q:"The curved surface area of a solid hemisphere of radius `r` is:",
+   o:["4πr²","πr²","2πr²","3πr²"],
+   a:2,
+   why:"**The curved surface of a hemisphere is `2πr²`** — exactly half the full sphere's surface. Adding the flat circular base (`πr²`) gives the **total** surface area `3πr²`, which is option D; option A is the whole sphere.",
+   tag:"Hemisphere CSA"},
+
+  {q:"A solid sphere of radius `6 cm` is melted and recast into a solid cylinder of radius `6 cm`. The height of the cylinder is:",
+   o:["6 cm","8 cm","12 cm","4 cm"],
+   a:1,
+   why:"**Volume is conserved when melting**: (4/3)πr³ = πR²h. With r = R = 6: (4/3) × 216 = 36h, so 288 = 36h and `h = 8 cm`. Option A (6) assumes h = r, and option C (12) doubles the radius instead of using the volume equation.",
+   tag:"Melt and recast"},
+
+  {q:"The volume of a regular tetrahedron of edge `a` is:",
+   o:["(a³√2)/12","(a³√3)/12","a³/6","(a³√2)/6"],
+   a:0,
+   why:"**Volume = (a³√2)/12** — derived from V = (1/3) × base area × height with base area = (√3/4)a² and height = a√(2/3). Option B replaces √2 with √3, and option C drops the surd entirely.",
+   tag:"Tetrahedron"},
+
+  {q:"A toy is a hemisphere of radius `3.5 cm` topped with a cone of the same radius and height `3.5 cm`. The total surface area of the toy is (π = 22/7):",
+   o:["214.5 cm²","115.5 cm²","77 cm²","192.5 cm²"],
+   a:1,
+   why:"**Total SA = hemisphere curved + cone curved** = 2πr² + πrl. Slant height l = √(3.5² + 3.5²) = 3.5√2. So SA = 2 × (22/7) × 12.25 + (22/7) × 3.5 × 3.5√2 = 77 + 38.5 = `115.5 cm²`. Option C (77) is just the hemisphere part, and option A counts the flat base that is inside the toy.",
+   tag:"Combined solid"},
+
+  {q:"A right pyramid on a square base has base edge `10 cm` and slant height `13 cm`. Its lateral surface area is:",
+   o:["130 cm²","260 cm²","520 cm²","169 cm²"],
+   a:1,
+   why:"**Lateral SA = ½ × perimeter × slant height** = ½ × 40 × 13 = `260 cm²`. Option A (130) uses half the perimeter again — dividing by 4 instead of using the full perimeter — and option C (520) forgets the half.",
+   tag:"Pyramid LSA"}
+]},
 
  {h:"QUESTIONS — solids inside solids, the pyramid and the tetrahedron",
   mcq:[
@@ -1356,7 +1608,7 @@ blocks:[
 ]
 },
 
-/* ============================================================ 8 — 3D: melting, recasting and scaling (22 questions) */
+/* ============================================================ 8 — 3D: melting, recasting and scaling (28 questions) */
 {
 id:"men-3d-melt", n:"3D: melting, recasting and scaling", hy:1,
 w:"One principle — volume is conserved and surface area is not — plus knowing which power a ratio is raised to: melting, recasting, displacement, flow and scaling.",
@@ -1461,8 +1713,44 @@ blocks:[
    o:["2 : 1 : 3","1 : 2 : 3","1 : 3 : 2","3 : 2 : 1"],
    a:1,
    why:"**A hemisphere's height is its own radius, so the common height is r**, and the three volumes are **(1/3)πr³, (2/3)πr³ and πr³** — the ratio `1 : 2 : 3`. Option D is the same ratio read backwards, from naming the cylinder first, and option A swaps the cone and the hemisphere. The line worth keeping is that the cone is a third of the cylinder and the hemisphere two thirds of it.",
-   tag:"1 : 2 : 3"}
- ]},
+   tag:"1 : 2 : 3"},
+
+  {q:"A solid cylinder of radius `6 cm` and height `32 cm` is melted and recast into identical spheres of radius `2 cm`. The number of spheres is:",
+   o:["27","54","108","36"],
+   a:2,
+   why:"**Cylinder volume = πr²h = π × 36 × 32 = 1152π cm³. Sphere volume = (4/3)π(2)³ = (32/3)π cm³.** n = 1152π ÷ (32/3)π = 1152 × 3/32 = `108`. Option A (27) is what forgetting the factor of 3 in the sphere formula gives.",
+   tag:"Cylinder to spheres"},
+
+  {q:"A metallic sphere of radius `6 cm` is melted and drawn into a wire of radius `0.2 cm`. The length of the wire is:",
+   o:["7200 cm","1800 cm","3600 cm","14400 cm"],
+   a:0,
+   why:"**Sphere volume = (4/3)π(6)³ = 288π cm³. Wire is a cylinder: πR²L = π × 0.04 × L.** So L = 288/0.04 = `7200 cm` = 72 m. Option B (1800) uses the diameter (0.4) instead of the radius in the area, giving a cross-section four times too large.",
+   tag:"Sphere to wire"},
+
+  {q:"A solid cone of base radius `3 cm` and height `4 cm` is melted and recast into solid spheres of radius `1 cm`. The number of spheres formed is:",
+   o:["12","36","3","9"],
+   a:3,
+   why:"**Cone volume = (1/3)πr²h = (1/3)π × 9 × 4 = 12π cm³. Sphere volume = (4/3)π(1)³ = (4/3)π cm³.** n = 12π ÷ (4/3)π = 12 × 3/4 = `9`. Option A (12) divides by the sphere radius instead of its volume.",
+   tag:"Cone to spheres"},
+
+  {q:"A cube of edge `6 cm` is dropped into a rectangular tank with a base `18 cm` by `12 cm`. If the cube sinks fully, the water rises by:",
+   o:["2 cm","1 cm","3 cm","0.5 cm"],
+   a:1,
+   why:"**Rise = volume of cube ÷ base area of tank = 6³/(18 × 12) = 216/216 = `1 cm`**. Option A (2) doubles it, perhaps from halving the base by mistake; option C (3) divides by one dimension only.",
+   tag:"Displacement"},
+
+  {q:"If the radius of a sphere is halved, its volume becomes:",
+   o:["one half of the original","one quarter of the original","one eighth of the original","one sixteenth of the original"],
+   a:2,
+   why:"**Volume = (4/3)πr³ scales as the cube of the radius.** Halving the radius gives (1/2)³ = `1/8` of the original volume. Option B (1/4) squares the ratio instead of cubing it — the surface-area scaling, not the volume scaling.",
+   tag:"Scaling volume"},
+
+  {q:"A solid metallic hemisphere of radius `6 cm` is melted and recast into a solid right circular cone of base radius `6 cm`. The height of the cone is:",
+   o:["6 cm","18 cm","12 cm","9 cm"],
+   a:2,
+   why:"**Hemisphere volume = (2/3)πr³ = (2/3)π × 216 = 144π cm³. Cone volume = (1/3)πr²h = (1/3)π × 36 × h = 12πh.** So 12πh = 144π, h = `12 cm`. Option A (6) is the radius itself; option B (18) uses the full sphere volume instead of the hemisphere.",
+   tag:"Hemisphere to cone"}
+]},
 
  {h:"QUESTIONS — displacement, flow and scaling",
   mcq:[
