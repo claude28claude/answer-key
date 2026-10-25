@@ -884,13 +884,13 @@ blocks:[
   {q:"A square garden of side `40 m` has a path `5 m` wide all round it on the outside. The area of the path is:",
    o:["400 m²","800 m²","900 m²","500 m²"],
    a:2,
-   why:"**Outer side = 40 + 2×5 = 50 m. Area of path = 50² − 40² = 2500 − 1600 = `900 m²`.** Option A (400) is 4 × side × width = 4 × 40 × 5, which misses the four corner squares — the standard slip with paths around a square.",
+   why:"**Outer side = 40 + 2×5 = 50 m. Area of path = 50² − 40² = 2500 − 1600 = `900 m²`.** Option B (800) is 4 × side × width = 4 × 40 × 5, which misses the four corner squares — the standard slip with paths around a square.",
    tag:"Square outer path"},
 
   {q:"A circular pond of radius `14 m` has a path `3.5 m` wide inside it along its edge. Taking π = 22/7, the area of the path is:",
    o:["269.5 m²","616 m²","577.5 m²","346.5 m²"],
-   a:3,
-   why:"**Inner radius = 14 − 3.5 = 10.5 m. Area of path = π(R² − r²) = (22/7)(196 − 110.25) = (22/7) × 85.75 = `346.5 m²`.** Option B (616) is the full circle, ignoring the inner part entirely.",
+   a:0,
+   why:"**Inner radius = 14 − 3.5 = 10.5 m. Area of path = π(R² − r²) = (22/7)(196 − 110.25) = (22/7) × 85.75 = `269.5 m²`.** Option D (346.5) is π × 10.5² — the area of the inner circle, not the annular path. Option B (616) is the full circle area.",
    tag:"Circular inner path"},
 
   {q:"A horse is tethered to a corner of a rectangular field by a rope `21 m` long. The field is larger than the rope. Taking π = 22/7, the area the horse can graze is:",

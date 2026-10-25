@@ -667,7 +667,7 @@ blocks:[
   {q:"A shopkeeper uses a weight of 850 g for 1 kg and sells at `5%` above cost price. His total gain per cent is:",
    o:["22 12/17 %","23 9/17 %","25%","20%"],
    a:1,
-   why:"**factor = (true/given) × (100 + x)/100** = (1000/850) × (105/100) = (20/17) × 1.05 = 2100/1700 = 21/17. Gain = (21 − 17)/17 × 100 = 400/17 = `23 9/17 %`. Option A is what the weight gain alone gives, (150/850) × 100 = 17 11/17%, plus 5 added — the standard error of adding instead of multiplying. Option C is a rounded guess and option D the weight gain computed on 1000 g.",
+   why:"**factor = (true/given) × (100 + x)/100** = (1000/850) × (105/100) = (20/17) × 1.05 = 2100/1700 = 21/17. Gain = (21 − 17)/17 × 100 = 400/17 = `23 9/17 %`. Option A comes from adding the weight gain to the markup instead of multiplying — the standard error. Option C is a rounded guess and option D the weight gain computed on 1000 g.",
    tag:"Weight and markup"}
 ],
   note:"Every question here turns on which quantity the percentage is taken of. When an answer comes out at a round 10% or 20%, check the denominator before ticking it — the round number is usually the trap."}
@@ -1081,7 +1081,7 @@ blocks:[
   {q:"A vessel of capacity `v` litres is full of pure milk. After `x` litres is drawn off and replaced with water once, the water in the vessel is:",
    o:["x litres","v − x litres","v(1 − x/v) litres","(x/v) × v litres"],
    a:0,
-   why:"In one operation, `x` litres of pure milk is removed and `x` litres of water is added, so **the water in the vessel is exactly `x` litres** and the milk is `v − x`. The replacement formula (1 − x/v)ⁿ is a shortcut for repeated operations; for n = 1 from pure liquid, milk left = v − x and water = `x`. Option B is the milk, not the water. Options C and D are both the milk left, stated differently.",
+   why:"In one operation, `x` litres of pure milk is removed and `x` litres of water is added, so **the water in the vessel is exactly `x` litres** and the milk is `v − x`. The replacement formula (1 − x/v)ⁿ is a shortcut for repeated operations; for n = 1 from pure liquid, milk left = v − x and water = `x`. Option B is the milk, not the water. Option C simplifies to v − x (also the milk). Option D simplifies to x (same as option A, just written differently).",
    tag:"First operation"},
 
   {q:"A 60-litre mixture of milk and water is in the ratio `2 : 1`. 12 litres of the mixture is taken out and replaced with pure water. The amount of milk now in the vessel is:",

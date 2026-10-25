@@ -236,7 +236,7 @@ blocks:[
    a:1,
    why:"**Co-interior (allied) angles between parallel lines are supplementary**, so (3x + 10) + (2x + 20) = 180, giving 5x + 30 = 180, 5x = 150 and x = `30`. The two angles are then `100°` and `80°`. Option A, `34`, is what treating the sum as `200°` instead of `180°` gives. Option C, `36`, comes from dividing `180` by `5` without subtracting the constant terms first.",
    tag:"Co-interior numeric"}
-],
+ ],
   note:"Every question above is answered by one line from the sheet. Before dividing a ratio, read which total the question gives you — `90°`, `180°` or `360°` — because all three appear in the options."}
 ]
 },
@@ -293,8 +293,8 @@ blocks:[
    o:["48°","60°","108°","120°"],
    a:3,
    why:"**An exterior angle equals the sum of the two interior opposite angles**, so ∠ACD = ∠BAC + ∠ABC = 72° + 48° = `120°`. Option B, `60°`, is ∠ACB — the interior angle beside the exterior one, and so its supplement; it is the commonest tick because it is the angle the eye lands on at C. Option C is 180° − 72°, which supplements the wrong angle altogether.",
-   d:"t-exterior",
-   tag:"Exterior angle"},
+   tag:"Exterior angle",
+   d:"t-exterior"},
 
   {q:"The sum of the exterior angles of a convex polygon, one taken at each vertex, is:",
    o:["(n − 2)180°","360°","180°","360/n degrees"],
@@ -384,8 +384,8 @@ blocks:[
    o:["5 cm","10 cm","12 cm","26 cm"],
    a:1,
    why:"**The altitude from the apex of an isosceles triangle bisects the base, and bisects the vertical angle as well**, so BD = DC. In the right triangle ABD, BD = √(13² − 12²) = √25 = 5 cm, and BC = 2 × 5 = `10 cm`. Option A stops at BD, which is only half the base, and is the tick most often made. Option D doubles the equal side instead of doubling the half-base.",
-   d:"t-isosceles",
-   tag:"Isosceles altitude"},
+   tag:"Isosceles altitude",
+   d:"t-isosceles"},
 
   {q:"In △ABC the median AD is drawn to the side BC. The sum AB + AC is:",
    o:["equal to 2AD","greater than 2AD","less than 2AD","equal to 2AD when AB = AC"],
@@ -452,7 +452,7 @@ blocks:[
    a:1,
    why:"**The side opposite the larger angle is longer**: the side opposite ∠A (the largest angle) is `BC`, so `BC` is the longest side. The order is `BC > CA > AB`. Option A reverses the rule, putting the sides in the same order as the angles.",
    tag:"Side-angle relation"}
-],
+ ],
   note:"Every question above comes out of one line of the sheet. Two of them turn on the same pair of numbers read the wrong way round — the exterior angle against the interior angle beside it, and the base angle of an isosceles triangle against the vertical angle — and those two pairs are where most of the marks in this topic are lost."}
 ]
 },
@@ -681,7 +681,7 @@ blocks:[
    a:0,
    why:"**R = abc/4Δ** = (13 × 14 × 15)/(4 × 84) = 2730/336 = `8.125 cm`. Option B, `4 cm`, is the **inradius** Δ/s = 84/21 = 4. Option D, `6.5 cm`, is 13/2, which would be correct only if the triangle were right-angled with hypotenuse 13 — but it is not. The formula R = abc/4Δ works for every triangle.",
    tag:"R = abc/4Δ"}
-],
+ ],
   note:"Every question above is answered by one line of the sheet. If the three angle formulas are the ones that go wrong, learn them as a set of three with ∠A = 70°: `125°` at the incentre, `140°` at the circumcentre, `110°` at the orthocentre."}
 ]
 },
@@ -700,26 +700,25 @@ quick:[
  "**The median to the hypotenuse of a right triangle is half the hypotenuse** — the same length as the circumradius, because the circumcentre sits at that midpoint."
 ],
 blocks:[
-
  {h:"THE SHEET — every result this topic tests",
   cols:["Asked as","The result","The point it turns on"],
   rows:[
-   ["**Apollonius' theorem**","AB² + AC² = 2(AD² + BD²), with AD the median to BC","`BD` is **half** of BC, not BC. Putting the whole base in is the standard slip"],
-   ["**The length of a median**","4AD² = 2AB² + 2AC² − BC²","Apollonius with BD = BC/2 substituted. The minus sign goes with the side the median is drawn **to**"],
-   ["**The sum of the squares of the medians**","¾(a² + b² + c²)","Three quarters, not three halves"],
-   ["**The angle bisector theorem**","BD/DC = AB/AC","The ratio of the two sides **containing** the bisected angle, not the two sides touching the base"],
-   ["**The length of the internal bisector**","AD² = AB·AC − BD·DC","Product of the two sides, **minus** the product of the two pieces of the base"],
-   ["**The external bisector**","BD/DC = AB/AC, with D outside the segment BC","Same ratio, point taken on BC produced"],
-   ["**An altitude**","h = 2Δ/a","So `a·h` is the same for all three sides, and the altitudes are inversely proportional to the sides"],
-   ["**The altitude of an equilateral triangle**","(√3/2)a","Half the side times √3"],
-   ["**The median to the hypotenuse**","Half the hypotenuse","It is also the circumradius, since the circumcentre is that midpoint"],
-   ["**A median and area**","A median divides a triangle into two of **equal area**","Equal area, not equal perimeter — the two halves share the median and the equal base"],
-   ["**The three medians and area**","They cut the triangle into **six** triangles of equal area","Each is Δ/6; any two adjacent ones make Δ/3"],
-   ["**The triangle built on the three medians**","Its area is `¾` of the original","Asked as a fraction, so the answer is 3/4 of Δ"],
-   ["**A cevian from A meeting BC at D**","area ABD : area ACD = BD : DC","The two triangles have the same height from A, so the areas go as the bases"],
-   ["**The altitude to the hypotenuse, p**","p = ab/c, and 1/p² = 1/a² + 1/b²","Two forms of one fact; the reciprocal form is the one usually asked"],
-   ["**The two pieces of the hypotenuse**","p² = BD·DC, and a² = c·BD","The altitude is the geometric mean of the two pieces"]
-  ]},
+  ["**Apollonius' theorem**","AB² + AC² = 2(AD² + BD²), with AD the median to BC","`BD` is **half** of BC, not BC. Putting the whole base in is the standard slip"],
+  ["**The length of a median**","4AD² = 2AB² + 2AC² − BC²","Apollonius with BD = BC/2 substituted. The minus sign goes with the side the median is drawn **to**"],
+  ["**The sum of the squares of the medians**","¾(a² + b² + c²)","Three quarters, not three halves"],
+  ["**The angle bisector theorem**","BD/DC = AB/AC","The ratio of the two sides **containing** the bisected angle, not the two sides touching the base"],
+  ["**The length of the internal bisector**","AD² = AB·AC − BD·DC","Product of the two sides, **minus** the product of the two pieces of the base"],
+  ["**The external bisector**","BD/DC = AB/AC, with D outside the segment BC","Same ratio, point taken on BC produced"],
+  ["**An altitude**","h = 2Δ/a","So `a·h` is the same for all three sides, and the altitudes are inversely proportional to the sides"],
+  ["**The altitude of an equilateral triangle**","(√3/2)a","Half the side times √3"],
+  ["**The median to the hypotenuse**","Half the hypotenuse","It is also the circumradius, since the circumcentre is that midpoint"],
+  ["**A median and area**","A median divides a triangle into two of **equal area**","Equal area, not equal perimeter — the two halves share the median and the equal base"],
+  ["**The three medians and area**","They cut the triangle into **six** triangles of equal area","Each is Δ/6; any two adjacent ones make Δ/3"],
+  ["**The triangle built on the three medians**","Its area is `¾` of the original","Asked as a fraction, so the answer is 3/4 of Δ"],
+  ["**A cevian from A meeting BC at D**","area ABD : area ACD = BD : DC","The two triangles have the same height from A, so the areas go as the bases"],
+  ["**The altitude to the hypotenuse, p**","p = ab/c, and 1/p² = 1/a² + 1/b²","Two forms of one fact; the reciprocal form is the one usually asked"],
+  ["**The two pieces of the hypotenuse**","p² = BD·DC, and a² = c·BD","The altitude is the geometric mean of the two pieces"]
+ ]},
 
  {careful:"**In Apollonius' theorem the `BD` is half the base.** `AB² + AC² = 2(AD² + BD²)` with `BD = BC/2`. Substituting the whole of BC gives an answer that is always too large, and it is the option the question offers."},
 
@@ -736,7 +735,6 @@ blocks:[
 
  {h:"QUESTIONS — the three cevians",
   mcq:[
-
   {q:"**Apollonius' theorem** states that, if `AD` is the median to `BC` in △ABC:",
    o:["AB² + AC² = 2(AD² + BD²)","AB² + AC² = AD² + BD²","AB² + AC² = 2AD² + BC²","AB² − AC² = 2(AD² − BD²)"],
    a:0,
@@ -912,9 +910,8 @@ blocks:[
    a:1,
    why:"**The three altitudes of any triangle are concurrent — they meet at the orthocentre.** They are equal only in an equilateral triangle, never parallel, and they are inversely proportional to the **sides**, not the angles. Option D is the near-miss: `h = 2Δ/a` makes the altitudes inversely proportional to the sides they are drawn to, and that slip from sides to angles is the trap.",
    tag:"Altitudes concurrent"}
-],
+ ],
   note:"Every question above comes from one row of the sheet. The two that are asked by name — Apollonius' theorem and the angle bisector theorem — are worth knowing by name as well as by formula, because the question sometimes gives you only the name."}
-
 ]
 },
 
@@ -1187,13 +1184,16 @@ blocks:[
  ],
   note:"All three are set with numbers that come out of a standard triple. If the arithmetic is not clean, the triangle has been drawn wrongly."},
 
- {h:"PYTHAGORAS, DRAWN", dia:"t-pythagoras",
+ {h:"PYTHAGORAS, DRAWN",
+  dia:"t-pythagoras",
   cap:"The three squares on the sides of a right triangle: the one on the hypotenuse matches the other two put together."},
 
- {h:"THE `30°-60°-90°` SET", dia:"t-30-60-90",
+ {h:"THE `30°-60°-90°` SET",
+  dia:"t-30-60-90",
   cap:"Sides `1 : √3 : 2` opposite `30°`, `60°` and `90°`. This is half an equilateral triangle, cut by an altitude."},
 
- {h:"THE `45°-45°-90°` SET", dia:"t-45-45-90",
+ {h:"THE `45°-45°-90°` SET",
+  dia:"t-45-45-90",
   cap:"Sides `1 : 1 : √2`. This is half a square, cut by a diagonal."},
 
  {careful:"**The hypotenuse faces the right angle and is always the longest side.** When both legs are given you *add* their squares; when the hypotenuse is given you *subtract*. Most of the marks lost in this topic are a subtraction done as an addition, and the answer that mistake produces is always sitting on the option list."},
@@ -1255,9 +1255,9 @@ blocks:[
   {q:"In the figure, `CD` is the altitude from the right angle `C` to the hypotenuse `AB`. If the legs are `a = 6 cm` and `b = 8 cm`, the altitude `p` is:",
    o:["5 cm","7 cm","2.4 cm","4.8 cm"],
    a:3,
-   d:"t-right-altitude",
    why:"**The altitude to the hypotenuse is `p = ab/c` — the legs multiplied, divided by the hypotenuse.** Here `c = √(36 + 64) = 10 cm`, so `p = (6 × 8)/10 = 4.8 cm`. Option A, `5 cm`, is `c/2`, which is the **median** from `C` to the hypotenuse, not the altitude: both are drawn from the same vertex to the same line, and telling them apart is the point of this question. Option B is the average of the legs and option C is half the true altitude.",
-   tag:"p = ab/c"},
+   tag:"p = ab/c",
+   d:"t-right-altitude"},
 
   {q:"If `p` is the altitude from the right angle to the hypotenuse of a right-angled triangle whose legs are `a` and `b`, then:",
    o:["1/p² = 1/a² + 1/b²","1/p = 1/a + 1/b","p² = a² + b²","p = (a + b)/2"],
@@ -1268,16 +1268,16 @@ blocks:[
   {q:"In the figure, the altitude `CD` from the right angle meets the hypotenuse `AB` at `D`. If `AD = 4 cm` and `DB = 9 cm`, then `CD` is:",
    o:["6.5 cm","13 cm","6 cm","36 cm"],
    a:2,
-   d:"t-right-altitude",
    why:"**The altitude to the hypotenuse is the geometric mean of the two segments it cuts: `p² = AD·DB`.** So `CD² = 4 × 9 = 36` and `CD = 6 cm`. Option A, `6.5 cm`, is the *arithmetic* mean `(4 + 9)/2`, which is the median to the hypotenuse — the geometric mean is always the smaller of the two, and confusing them is the trap. Option B is the whole hypotenuse `AD + DB`, and option D is `36` left un-rooted.",
-   tag:"p² = AD·DB"},
+   tag:"p² = AD·DB",
+   d:"t-right-altitude"},
 
   {q:"In the figure, `CD ⊥ AB` and `∠ACB = 90°`. If `AB = 25 cm` and `BD = 9 cm`, then `BC` is:",
    o:["20 cm","15 cm","12 cm","16 cm"],
    a:1,
-   d:"t-right-altitude",
    why:"**A leg squared is the hypotenuse times the segment of it beside that leg: `a² = c·BD`.** Here `BC² = 25 × 9 = 225`, so `BC = 15 cm`. Option A, `20 cm`, is `AC`, which comes from `AC² = 25 × 16 = 400` — using the far segment instead of the near one is the whole trap. Option C, `12 cm`, is the altitude `CD = √(9 × 16)`, and option D is the other segment `AD` itself.",
-   tag:"a² = c·BD"},
+   tag:"a² = c·BD",
+   d:"t-right-altitude"},
 
   {q:"The median drawn from the right angle to the hypotenuse of a right-angled triangle is:",
    o:["half the sum of the two legs","the geometric mean of the two segments of the hypotenuse","equal to the shorter leg","half the hypotenuse"],
@@ -1374,7 +1374,7 @@ blocks:[
    a:2,
    why:"**A right-angled isosceles triangle is `45°-45°-90°`, with sides `1 : 1 : √2`.** The hypotenuse is `a√2` = 7√2 cm. Option A, `14 cm`, doubles the side — the hypotenuse is `√2` times a side, not `2` times, and that `√2` versus `2` confusion is the one this triangle exists to test. Option B uses `√3`, which belongs to the `30°-60°-90°` set.",
    tag:"45°-45°-90°"}
-],
+ ],
   note:"Every question above is answered by one line from the sheet. Where the numbers were not clean, the hypotenuse was identified wrongly — go back and name it before writing anything down."}
 ]
 },
@@ -1393,27 +1393,26 @@ quick:[
  "**Joining the midpoints of any quadrilateral gives a parallelogram** (Varignon), with half the area."
 ],
 blocks:[
-
  {h:"THE SHEET — the diagonals, the segments and the counts",
   cols:["Shape or quantity","The result","The point it turns on"],
   rows:[
-   ["**Any quadrilateral**","Angles add to 360°","Two triangles, 180° each"],
-   ["**Parallelogram**","Opposite sides and opposite angles equal; consecutive angles supplementary; diagonals **bisect each other**","The diagonals are **not** equal and **not** perpendicular unless it is a rectangle or a rhombus"],
-   ["**Parallelogram, diagonals**","d₁² + d₂² = 2(a² + b²), the sum of the squares of all four sides","Both diagonals together, not one of them"],
-   ["**Rectangle**","Diagonals bisect **and are equal**","Equal, but not perpendicular"],
-   ["**Rhombus**","Diagonals bisect **at right angles** and bisect the angles; side = ½√(d₁² + d₂²)","Perpendicular, but not equal"],
-   ["**Square**","Diagonals equal, perpendicular, and bisect the angles; d = a√2","The only quadrilateral with all of them"],
-   ["**Kite**","One diagonal bisects the other at right angles, and bisects the two angles it joins","Only **one** of the two diagonals is bisected"],
-   ["**Trapezium — the midline**","The segment joining the midpoints of the slant sides is ½(a + b)","The **sum** of the parallel sides, halved"],
-   ["**Trapezium — the diagonals**","The segment joining the midpoints of the two diagonals is ½(a − b)","The **difference**, halved. A different segment from the midline"],
-   ["**Varignon**","Joining the midpoints of any quadrilateral gives a parallelogram, of half the area","True for *any* quadrilateral, however irregular"],
-   ["**Interior angle sum**","(n − 2) × 180°","Asked backwards as often as forwards"],
-   ["**Each interior angle of a regular polygon**","(n − 2) × 180/n, which is 180 − 360/n","Easier through the exterior angle"],
-   ["**Each exterior angle of a regular polygon**","360/n","The exterior angles always add to 360°, whatever n is"],
-   ["**Number of diagonals**","n(n − 3)/2","Each vertex joins to n − 3 others, and every diagonal is counted twice"],
-   ["**Regular hexagon**","Six equilateral triangles; interior angle 120°; longest diagonal 2a","The longest diagonal is twice the side, not a√3 — that is the shorter one"],
-   ["**Which quadrilaterals are cyclic**","An isosceles trapezium always; a parallelogram only if it is a rectangle; a rhombus only if it is a square","Opposite angles must be supplementary"]
-  ]},
+  ["**Any quadrilateral**","Angles add to 360°","Two triangles, 180° each"],
+  ["**Parallelogram**","Opposite sides and opposite angles equal; consecutive angles supplementary; diagonals **bisect each other**","The diagonals are **not** equal and **not** perpendicular unless it is a rectangle or a rhombus"],
+  ["**Parallelogram, diagonals**","d₁² + d₂² = 2(a² + b²), the sum of the squares of all four sides","Both diagonals together, not one of them"],
+  ["**Rectangle**","Diagonals bisect **and are equal**","Equal, but not perpendicular"],
+  ["**Rhombus**","Diagonals bisect **at right angles** and bisect the angles; side = ½√(d₁² + d₂²)","Perpendicular, but not equal"],
+  ["**Square**","Diagonals equal, perpendicular, and bisect the angles; d = a√2","The only quadrilateral with all of them"],
+  ["**Kite**","One diagonal bisects the other at right angles, and bisects the two angles it joins","Only **one** of the two diagonals is bisected"],
+  ["**Trapezium — the midline**","The segment joining the midpoints of the slant sides is ½(a + b)","The **sum** of the parallel sides, halved"],
+  ["**Trapezium — the diagonals**","The segment joining the midpoints of the two diagonals is ½(a − b)","The **difference**, halved. A different segment from the midline"],
+  ["**Varignon**","Joining the midpoints of any quadrilateral gives a parallelogram, of half the area","True for *any* quadrilateral, however irregular"],
+  ["**Interior angle sum**","(n − 2) × 180°","Asked backwards as often as forwards"],
+  ["**Each interior angle of a regular polygon**","(n − 2) × 180/n, which is 180 − 360/n","Easier through the exterior angle"],
+  ["**Each exterior angle of a regular polygon**","360/n","The exterior angles always add to 360°, whatever n is"],
+  ["**Number of diagonals**","n(n − 3)/2","Each vertex joins to n − 3 others, and every diagonal is counted twice"],
+  ["**Regular hexagon**","Six equilateral triangles; interior angle 120°; longest diagonal 2a","The longest diagonal is twice the side, not a√3 — that is the shorter one"],
+  ["**Which quadrilaterals are cyclic**","An isosceles trapezium always; a parallelogram only if it is a rectangle; a rhombus only if it is a square","Opposite angles must be supplementary"]
+ ]},
 
  {careful:"**The diagonals of a parallelogram bisect each other, but they are not equal.** Equal diagonals make it a rectangle; perpendicular diagonals make it a rhombus; both make it a square. Nearly every wrong answer in this topic comes from promoting a parallelogram to one of those without being told."},
 
@@ -1428,7 +1427,6 @@ blocks:[
 
  {h:"QUESTIONS — the quadrilaterals, then the polygons",
   mcq:[
-
   {q:"The four angles of a quadrilateral add up to:",
    o:["360°","180°","540°","720°"],
    a:0,
@@ -1606,9 +1604,8 @@ blocks:[
    a:0,
    why:"**Diagonals = n(n − 3)/2** = 12 × 9/2 = `54`. Option B, `66`, is `n(n − 1)/2`, which counts all the line segments joining pairs of vertices including the 12 sides. Option D, `36`, is `n(n − 3)` with the halving forgotten — every diagonal is shared by two vertices and is otherwise counted twice.",
    tag:"Diagonals of 12-gon"}
-],
+ ],
   note:"The four polygon counts — the interior sum, the exterior sum, each regular angle and the number of diagonals — are asked backwards as often as forwards. If you can run each of them in both directions, most of this topic is finished."}
-
 ]
 },
 
@@ -2653,7 +2650,7 @@ blocks:[
   {q:"The point dividing the join of `(2, 5)` and `(8, 11)` **externally** in the ratio `3 : 1` is:",
    o:["(11, 14)","(5, 8)","(6.5, 9.5)","(4, 7)"],
    a:0,
-   why:"**External division: ((mx₂ − nx₁)/(m − n), (my₂ − ny₁)/(m − n))** = ((24 − 2)/2, (33 − 5)/2) = `(11, 14)`. Option B uses **internal** division ((24 + 2)/4, (33 + 5)/4) = (6.5, 9.5), which is option C — swapping internal for external is the standard error.",
+   why:"**External division: ((mx₂ − nx₁)/(m − n), (my₂ − ny₁)/(m − n))** = ((24 − 2)/2, (33 − 5)/2) = `(11, 14)`. Using **internal** division instead gives ((24 + 2)/4, (33 + 5)/4) = (6.5, 9.5), which is option C — swapping internal for external is the standard error. Option B (5, 8) is the midpoint.",
    tag:"External division"},
 
   {q:"The area of the triangle with vertices `(0, 0)`, `(6, 0)` and `(0, 8)` is:",
