@@ -6,6 +6,8 @@ desktop.ini
 
 # The launch configuration is local tooling, not part of the site.
 .claude/
+firebase.json
+.firebaserc
 
 # Generated build inputs. data-*.js and diagrams.js are the real files;
 # "node tools/build.js --split" regenerates these from them.
