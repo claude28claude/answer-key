@@ -1,5 +1,5 @@
 /* THE ANSWER KEY — data-geo.js
-   Geography, built around the Himalayas.
+   Geography: from the Himalayas to climate, soils and vegetation.
 
    WHY THE HIMALAYAS CARRY THE SUBJECT. In an SSC paper the Himalayas supply
    more geography questions than any other single topic, and they supply them in
@@ -19,9 +19,9 @@
 
 (window.SUBJECTS = window.SUBJECTS || []).push({
 
-id:"geo", n:"Geography", tab:"Geography", sub:"The Himalayas",
-w:"India's physical divisions, and then the Himalayas in full — the three ranges, the four regions, the peaks, the passes, the glaciers and the rivers.",
-intro:"The physical divisions first, so that the Himalayas have somewhere to sit. Then the mountains themselves: how they were formed, the three ranges running parallel from north to south, the four regions running west to east, and then the four things that are actually asked — peaks, passes, glaciers and rivers — each as its own table.",
+id:"geo", n:"Geography", tab:"Geography", sub:"Physical geography, climate and environment",
+w:"India's physical divisions, the Himalayas, the Northern Plains, the Peninsular Plateau, coasts and islands, rivers, climate, soils and natural vegetation.",
+intro:"The physical divisions first, then the Himalayas in full detail, then the other landforms — the Northern Plains, the Peninsular Plateau, the coasts and islands. After the land, the rivers, the climate, the soils and the vegetation.",
 
 topics:[
 
@@ -421,6 +421,463 @@ topics:[
    ]},
 
   {careful:"**No river is called the Ganga above Devprayag, and no river is called the Brahmaputra above Sadiya.** The Ganga's headstreams are the Bhagirathi and the Alaknanda; the Brahmaputra's are the Siang, the Dibang and the Lohit. Questions ask for 'the source of the Ganga' expecting **Gangotri glacier / Gaumukh** — the source of the *Bhagirathi* — and that is the accepted answer."}
+ ]},
+
+/* ===================================================================== 7 */
+{id:"northern-plains", n:"The Northern Plains", hy:1,
+ w:"The alluvial plains of the Indus, Ganga and Brahmaputra — their sub-divisions, soils and the features that are asked.",
+ quick:[
+  "The Northern Plains stretch about `2,400` km from the Satluj–Indus plain in the west to the Brahmaputra plain in the east, and are `150–300` km wide.",
+  "They are built entirely of **alluvium** — river-deposited sediment — and are among the most fertile regions in the world.",
+  "Four belts run parallel to the Himalayas, south from the foothills: **Bhabar → Terai → Bhangar → Khadar**.",
+  "The plains are divided into three sections by river system: the **Punjab plain** (Indus system), the **Ganga plain** (the largest), and the **Brahmaputra plain**.",
+  "The soil depth in places exceeds `3,000` m — the alluvium has been accumulating since the Himalayas began rising."
+ ],
+ blocks:[
+  {h:"The four belts, Himalayas to river",
+   cols:["Belt","Position","What defines it"],
+   rows:[
+    ["**Bhabar**","Immediately below the Shivaliks, `8–16` km wide","A narrow belt of **pebbles and boulders**. Rivers disappear underground here — they sink into the porous gravel and re-emerge in the Terai. **No cultivation** because of the stony, porous ground"],
+    ["**Terai**","South of the Bhabar, `15–30` km wide","The zone where the rivers **re-emerge**. Marshy, thickly forested, and until the 1950s full of malaria. Much of it has since been cleared for farming. The **Dudhwa and Corbett** national parks sit in the Terai belt"],
+    ["**Bhangar**","The higher, older flood plain, above the reach of normal floods","Made of **older alluvium** (Pleistocene). Contains **kankar** — nodules of calcium carbonate — which is the single most-tested identifier of Bhangar. Forms terraces and upland patches"],
+    ["**Khadar**","The lower, newer flood plain, renewed each monsoon","Made of **newer alluvium** deposited by current floods. Extremely fertile — **no kankar**, finer silt. Renewed every year, which is why it is called the *bangar* of the farmer's calendar in some regions"]
+   ]},
+
+  {careful:"**Bhangar has kankar; Khadar does not.** This is the single most reliable way the exam distinguishes the two. Bhangar = older, higher, kankar nodules, less fertile. Khadar = newer, lower, no kankar, more fertile but flood-prone. If a question says 'contains calcium carbonate nodules', it is Bhangar. If it says 'renewed by annual floods', it is Khadar."},
+
+  {h:"The three regional plains",
+   cols:["Plain","River system","Key fact"],
+   rows:[
+    ["**Punjab plain (Sindh plain in Pakistan)**","Indus and its five tributaries: **Jhelum, Chenab, Ravi, Beas, Satluj**","The land between two rivers is a **doab** — Punjab literally means 'five waters'. The doabs have their own names: **Bist Doab** (Beas–Satluj), **Bari Doab** (Beas–Ravi), **Rachna Doab** (Ravi–Chenab), **Chaj Doab** (Chenab–Jhelum)"],
+    ["**Ganga plain**","Ganga and its tributaries — Yamuna, Ghaghara, Gandak, Kosi, Son, Chambal","The **largest** of the three sections, running from Haryana to West Bengal. Divided into the **Upper Ganga plain** (Haryana, UP), the **Middle Ganga plain** (Bihar), and the **Lower Ganga/Delta** (West Bengal, Bangladesh)"],
+    ["**Brahmaputra plain**","Brahmaputra and its tributaries — Subansiri, Manas, Teesta","Also called the **Assam plain**. Narrower and more flood-prone. Contains **Majuli**, the world's largest river island"]
+   ]},
+
+  {h:"Landforms of the plains",
+   swap:[
+    ["Doab","The land between two rivers","From Persian *do* (two) + *ab* (water). The Punjab has four named doabs"],
+    ["Oxbow lake","A U-shaped lake formed when a river meander is cut off","Common in the middle Ganga plain and the Brahmaputra plain"],
+    ["Levee","A natural raised bank along a river, built by repeated flood deposits","The Kosi in Bihar shifts course within its own levee system"],
+    ["Flood plain","The flat area beside a river that is covered during floods","The Khadar belt is essentially the active flood plain"],
+    ["Delta","A fan-shaped deposit of silt at a river's mouth","The **Sundarbans** is the world's largest delta, shared by the Ganga and Brahmaputra"],
+    ["Terai","The marshy re-emergence zone below the Bhabar","Once malarial forest; now heavily cultivated"]
+   ]},
+
+  {careful:"**The Kosi is the Sorrow of Bihar, not the Sorrow of Bengal.** The Brahmaputra is the Sorrow of Assam. The Damodar was historically the Sorrow of Bengal (before the DVC dams). These three 'Sorrow' tags are mixed up constantly."},
+
+  {h:"Numbers worth knowing",
+   cols:["Measure","Value"],
+   rows:[
+    ["Length of the Northern Plains","About `2,400` km east to west"],
+    ["Width","`150–300` km, widest in the middle Ganga plain"],
+    ["Depth of alluvium","Over `3,000` m in places near the Shivaliks"],
+    ["Width of the Bhabar belt","`8–16` km"],
+    ["Width of the Terai belt","`15–30` km"],
+    ["Majuli island area","About `880` sq km (shrinking due to erosion)"],
+    ["Sundarbans delta area (Indian side)","About `9,630` sq km"]
+   ]}
+
+ ]},
+
+/* ===================================================================== 8 */
+{id:"peninsular-plateau", n:"The Peninsular Plateau", hy:1,
+ w:"India's oldest landmass — the Central Highlands, the Deccan, the Ghats, and the ranges that frame them.",
+ quick:[
+  "The Peninsular Plateau is the **oldest** landmass in India, part of the ancient **Gondwana** supercontinent — made of old igneous and metamorphic rock.",
+  "It is broadly **triangular**, bounded by the **Aravallis** in the north-west, the **Vindhyas and Satpuras** in the north, and the **Western and Eastern Ghats** on either side.",
+  "Two broad divisions: the **Central Highlands** (north of the Narmada) and the **Deccan Plateau** (south of the Narmada).",
+  "The plateau tilts gently from **west to east**, which is why most peninsular rivers — Godavari, Krishna, Kaveri, Mahanadi — flow **eastward** into the Bay of Bengal.",
+  "The **Aravallis** are the oldest fold mountains in India; the **Western Ghats** are higher and more continuous than the Eastern Ghats; the two Ghats meet at the **Nilgiri hills**."
+ ],
+ blocks:[
+  {h:"Central Highlands vs Deccan Plateau",
+   cols:["","Central Highlands","Deccan Plateau"],
+   rows:[
+    ["Position","**North** of the Narmada","**South** of the Narmada"],
+    ["Slope","Slopes **northward** towards the Ganga plain","Slopes gently from **west to east**"],
+    ["Major rivers","Chambal, Betwa, Ken — all tributaries of the Yamuna, flowing **north**","Godavari, Krishna, Kaveri, Mahanadi — flowing **east**"],
+    ["Rock type","Bundelkhand gneiss, Vindhyan sandstone","**Deccan Trap** — basalt lava flows covering about 5 lakh sq km, producing **black soil (regur)**"],
+    ["Key plateaus","**Malwa Plateau** (MP, Rajasthan) — black soil, relatively flat","**Chotanagpur Plateau** (Jharkhand) — rich in minerals: coal, iron ore, mica, manganese"]
+   ]},
+
+  {h:"The mountain ranges of the Peninsula",
+   cols:["Range","Position","Key fact"],
+   rows:[
+    ["**Aravallis**","North-west; Delhi to Gujarat","The **oldest fold mountains in India** — heavily eroded, average height only `400–600` m. **Guru Shikhar** (`1,722` m, near Mount Abu) is the highest peak. Rich in non-ferrous minerals: lead, zinc, copper"],
+    ["**Vindhyas**","Runs roughly east–west, north of the Narmada","Forms the **traditional boundary** between North India and South India. Made of ancient sandstone"],
+    ["**Satpuras**","South of and parallel to the Vindhyas, between the Narmada and the Tapi","**Dhupgarh** (`1,350` m) in the Mahadeo hills is the highest point. The Pachmarhi hill station sits on the Satpuras"],
+    ["**Western Ghats (Sahyadri)**","Along the western coast, from the Tapi to Kanyakumari","Average height `900–1,600` m. **Higher** and **more continuous** than the Eastern Ghats. Peaks: **Anai Mudi** (`2,695` m, highest in peninsular India), **Doda Betta** (`2,637` m). A UNESCO World Heritage Site for biodiversity"],
+    ["**Eastern Ghats**","Along the eastern coast, from Odisha to Tamil Nadu","**Discontinuous** — broken by the Godavari, Krishna, Kaveri and Mahanadi rivers. Average height `600` m. Highest peak: **Mahendragiri** (`1,501` m). The Shevroy, Javadi and Palkonda hills are part of the Eastern Ghats"],
+    ["**Nilgiri Hills**","Where Western and Eastern Ghats **meet**","The junction point. Contains **Ooty (Udhagamandalam)** at `2,240` m"]
+   ]},
+
+  {careful:"**Anai Mudi is the highest peak in peninsular India, not Doda Betta.** Anai Mudi (`2,695` m) is in the Anamalai hills of Kerala — part of the Western Ghats. Doda Betta (`2,637` m) is in the Nilgiris. Questions that ask for the 'highest peak south of the Himalayas' want Anai Mudi. Doda Betta is the standard wrong option."},
+
+  {h:"The Deccan Trap and black soil",
+   list:[
+    "The **Deccan Trap** is a massive sheet of solidified basalt lava that covers about **5 lakh sq km** of Maharashtra, western MP, Karnataka and Gujarat.",
+    "It was formed by volcanic eruptions roughly `65–67` million years ago — around the time of the dinosaur extinction (the Cretaceous–Paleogene boundary).",
+    "The basalt weathers into **black soil (regur)** — self-ploughing, moisture-retentive, and ideal for **cotton**. Maharashtra's black cotton soil belt sits on the Deccan Trap.",
+    "The stepped, flat-topped hills of the Deccan (like the Ajanta hills) are typical of trap topography — *trap* comes from the Swedish for 'step'.",
+    "Questions confuse the Deccan Trap (igneous basalt, Cretaceous) with the Vindhyan system (sedimentary sandstone, Proterozoic). They are different rock types from different eras."
+   ]},
+
+  {careful:"**The Meghalaya plateau is NOT part of the Himalayas.** The Garo, Khasi and Jaintia hills are a **detached block of the Peninsular Plateau**, separated from the Chotanagpur plateau by the **Malda gap** (also called the Rajmahal gap). They sit right next to the north-eastern Himalayas and are constantly mistaken for part of them, but they are made of old Gondwana rock, not young fold-mountain sediment."},
+
+  {h:"Western Ghats vs Eastern Ghats",
+   cols:["","Western Ghats","Eastern Ghats"],
+   rows:[
+    ["Other name","**Sahyadri**","No single alternative name"],
+    ["Continuity","**Continuous** — unbroken from the Tapi to Kanyakumari","**Discontinuous** — broken by rivers (Godavari, Krishna, Kaveri, Mahanadi)"],
+    ["Average height","`900–1,600` m","`600` m"],
+    ["Highest peak","**Anai Mudi** — `2,695` m","**Mahendragiri** — `1,501` m"],
+    ["Rainfall","**Windward** side of the south-west monsoon — very heavy rainfall (Western coast)","**Rain shadow** of the Western Ghats in some sections"],
+    ["Biodiversity","UNESCO World Heritage Site — extremely high endemism","Comparatively lower, but the Araku Valley and Nallamala hills are biodiversity spots"],
+    ["Hill stations","Mahabaleshwar, Munnar, Coorg, Ooty (at the junction)","Araku Valley, Horsley Hills"]
+   ]},
+
+  {h:"Key plateaus at a glance",
+   swap:[
+    ["Malwa Plateau","MP and Rajasthan; black soil; drained by Chambal, Betwa, Ken","Part of the Central Highlands"],
+    ["Chotanagpur Plateau","Jharkhand; **India's mineral heartland** — coal, iron ore, mica, manganese, bauxite","Drained by the Damodar and Subarnarekha rivers"],
+    ["Meghalaya Plateau","Garo, Khasi, Jaintia hills; **Peninsular** rock, NOT Himalayan","Separated from the main plateau by the Malda gap"],
+    ["Deccan Plateau","South of the Narmada; basalt trap in the north-west, granite-gneiss in the south","Tilts west to east — rivers flow eastward"],
+    ["Bundelkhand Plateau","Southern UP and northern MP; granite and gneiss","Part of the Central Highlands, between the Yamuna and the Vindhyas"]
+   ]}
+
+ ]},
+
+/* ===================================================================== 9 */
+{id:"coastal-islands", n:"The Coastal Plains and the Islands", hy:1,
+ w:"The western and eastern coasts, the lakes and lagoons, and the two island groups.",
+ quick:[
+  "The **Western coastal plain** is narrow (`50–65` km) and has estuaries and lagoons but **no major deltas**.",
+  "The **Eastern coastal plain** is wider (`100–130` km) and has the **large deltas** of the Mahanadi, Godavari, Krishna and Kaveri.",
+  "Two island groups: **Andaman and Nicobar** (Bay of Bengal, volcanic/tectonic origin) and **Lakshadweep** (Arabian Sea, coral atolls).",
+  "**Barren Island** in the Andamans is India's **only active volcano**.",
+  "The total coastline including islands is `7,516.6` km; **Gujarat** has the longest coastline of any state."
+ ],
+ blocks:[
+  {h:"The Western Coastal Plain, north to south",
+   cols:["Section","Extent","Key feature"],
+   rows:[
+    ["**Konkan**","Mumbai to Goa","Narrow, rocky, with sea cliffs. The ports of Mumbai and Marmagao sit here"],
+    ["**Karnataka coast (Kanara)**","Goa to Mangalore","Relatively flat; the Sharavathi Falls (including **Jog Falls**, `253` m) is nearby in the Western Ghats"],
+    ["**Malabar**","Mangalore to Kanyakumari (Kerala coast)","**Backwaters (kayals)** — a chain of lagoons, lakes and canals. **Vembanad Lake** is the longest lake in India (`96.5` km). Coconut and spice plantations"]
+   ]},
+
+  {h:"The Eastern Coastal Plain, north to south",
+   cols:["Section","Extent","Key feature"],
+   rows:[
+    ["**Utkal plain**","Odisha coast","The **Mahanadi delta** is here. **Chilika Lake** — India's largest coastal lagoon (`1,100` sq km), a Ramsar site, famous for Irrawaddy dolphins"],
+    ["**Northern Circars (Andhra plain)**","Odisha border to Krishna delta","Wide alluvial plain with the deltas of the **Godavari** (second largest in India) and the **Krishna**. **Pulicat Lake** straddles the Andhra–Tamil Nadu border"],
+    ["**Coromandel**","South of the Krishna delta, along Tamil Nadu","The **Kaveri delta** — called the *granary of South India*. Receives rainfall from the **north-east monsoon** (October–December), unlike the rest of India"]
+   ]},
+
+  {careful:"**Western coast = estuaries; Eastern coast = deltas.** The Narmada and Tapi flow into the Arabian Sea through **estuaries** — they form no deltas because the hard-rock rift valleys they flow through produce little silt, and the coast is narrow. The east-flowing rivers (Mahanadi, Godavari, Krishna, Kaveri) cross the wide, gentle Deccan Plateau, collect enormous silt loads, and deposit them as **large deltas** on the wider eastern plain."},
+
+  {h:"The important lakes and lagoons",
+   swap:[
+    ["Chilika Lake","India's largest **coastal lagoon**, `1,100` sq km, Odisha","Ramsar site; Irrawaddy dolphins; Nalabana bird sanctuary inside it"],
+    ["Vembanad Lake","Longest lake in India — `96.5` km, Kerala","Part of the Kerala backwaters; Kumarakom bird sanctuary on its banks; Nehru Trophy boat race held here"],
+    ["Pulicat Lake","Second largest coastal lagoon, on the Andhra–Tamil Nadu border","Sriharikota island (ISRO's launch centre) separates it from the Bay of Bengal"],
+    ["Ashtamudi Lake","Kerala's second largest lake, a Ramsar site","Eight-armed ('ashta-mudi') shape; important for coir processing and fisheries"],
+    ["Kolleru Lake","Between the Krishna and Godavari deltas, Andhra Pradesh","A freshwater lake that fills in the monsoon; Ramsar site"]
+   ]},
+
+  {h:"Andaman and Nicobar Islands",
+   cols:["Fact","Detail"],
+   rows:[
+    ["Location","**Bay of Bengal**, between `6°N` and `14°N`. About `1,200` km from the mainland (Kolkata)"],
+    ["Origin","**Volcanic and tectonic** — an extension of the submerged mountain chain from Arakan Yoma (Myanmar). NOT coral"],
+    ["Total islands","`572` islands — **38 inhabited**. The Andaman group has `325` islands; the Nicobar group has `24`"],
+    ["Separation","The **10° Channel** separates the Andaman group from the Nicobar group"],
+    ["Highest point","**Saddle Peak** (`737` m) on North Andaman"],
+    ["Active volcano","**Barren Island** — India's **only active volcano**. Last erupted in 2017"],
+    ["Dormant volcano","**Narcondam Island** — the only dormant volcano in India"],
+    ["Indira Point","Southernmost point of India, `6°45'N`, on **Great Nicobar**. Submerged in the 2004 tsunami"],
+    ["Tribes","**Jarawa, Sentinelese, Onge, Great Andamanese, Shompen, Nicobarese** — protected under the Andaman and Nicobar Protection of Aboriginal Tribes Regulation"]
+   ]},
+
+  {h:"Lakshadweep Islands",
+   cols:["Fact","Detail"],
+   rows:[
+    ["Location","**Arabian Sea**, about `280–480` km off the Kerala coast"],
+    ["Origin","**Coral atolls** — built on submarine ridges by coral organisms. Completely different from Andaman's volcanic origin"],
+    ["Total islands","`36` islands — **10 inhabited**. Total area only `32` sq km — **India's smallest Union Territory**"],
+    ["Capital","**Kavaratti**"],
+    ["Separation from Maldives","The **8° Channel** (Eight Degree Channel) separates Minicoy from the Maldives"],
+    ["Separation within Lakshadweep","The **9° Channel** separates Minicoy from the rest of Lakshadweep"],
+    ["Key feature","**Pitti Island** — a bird sanctuary, the smallest island, uninhabited. Coral reefs around the islands are rich fishing grounds"]
+   ]},
+
+  {careful:"**Lakshadweep is coral; Andaman and Nicobar is volcanic.** They are NOT the same type of island. Lakshadweep is built by living coral organisms on submarine ridges in the Arabian Sea — low, flat atolls, highest point barely `5` m. Andaman and Nicobar is an extension of the Arakan Yoma mountain chain, of volcanic and tectonic origin, with peaks up to `737` m and India's only active volcano (Barren Island). A question that says 'coral atolls' means Lakshadweep; one that says 'volcanic' or 'extension of a mountain chain' means Andaman and Nicobar."},
+
+  {h:"The channels at a glance",
+   swap:[
+    ["8° Channel","Between **Minicoy** (Lakshadweep) and the **Maldives**",""],
+    ["9° Channel","Between **Minicoy** and the rest of **Lakshadweep**","Minicoy is the southernmost island of Lakshadweep"],
+    ["10° Channel","Between the **Andaman** group and the **Nicobar** group","About `150` km wide"],
+    ["Duncan Passage","Between **South Andaman** and **Little Andaman**",""],
+    ["Palk Strait","Between India (**Tamil Nadu**) and **Sri Lanka**","About `53–80` km wide; contains **Pamban Island** (Rameswaram)"]
+   ]}
+
+ ]},
+
+/* ===================================================================== 10 */
+{id:"pen-rivers", n:"The Peninsular Rivers", hy:1,
+ w:"The east-flowing and west-flowing rivers of peninsular India — source, length, tributaries and the delta-vs-estuary rule.",
+ quick:[
+  "Almost every peninsular river flows **east** into the **Bay of Bengal** and forms a **delta**. The two big exceptions — **Narmada** and **Tapi** — flow **west** into the **Arabian Sea** and form **estuaries**.",
+  "The **Godavari** is the longest peninsular river (`1,465 km`) and drains the largest area — it is called the **Dakshin Ganga**.",
+  "Peninsular rivers are **rain-fed and seasonal**: they depend on the monsoon and many shrink to a trickle in summer, unlike the perennial Himalayan rivers fed by snowmelt.",
+  "The **Narmada** and **Tapi** flow in **rift valleys** — fault-formed troughs — which is why they flow west against the general eastward tilt of the peninsula, and why they form estuaries instead of deltas.",
+  "The **watershed** between the east-flowing and west-flowing systems is the **Western Ghats**, which run close to the west coast; rivers rising on their eastern slope have a long run to the Bay of Bengal, while rivers on the western slope have only a short run to the Arabian Sea."
+ ],
+ blocks:[
+  {h:"The major east-flowing rivers",
+   cols:["River","Length","Source","Key facts"],
+   rows:[
+    ["**Godavari**","`1,465 km`","**Trimbakeshwar**, near Nasik, Maharashtra","Longest peninsular river. Called **Dakshin Ganga**. Drains parts of Maharashtra, Telangana, Andhra Pradesh, Chhattisgarh, Odisha. Major tributaries: **Pranhita, Indravati, Manjira, Sabari**. Forms a large delta in Andhra Pradesh"],
+    ["**Krishna**","`1,400 km`","**Mahabaleshwar**, Maharashtra","Second longest. Flows through Maharashtra, Karnataka, Telangana, Andhra Pradesh. Tributaries: **Bhima, Tungabhadra, Koyna, Ghatprabha, Malaprabha**. The **Nagarjuna Sagar** and **Srisailam** dams are on it"],
+    ["**Kaveri**","`805 km`","**Talakaveri**, Brahmagiri Hills, Coorg (Karnataka)","Called the **Ganga of the South**. Flows through Karnataka and Tamil Nadu. Creates **Shivasamudram Falls** (one of India's earliest hydroelectric sites) and the island of **Srirangapatna**. Tributaries: **Hemavati, Shimsha, Arkavati, Kabini, Amaravati**"],
+    ["**Mahanadi**","`851 km`","Near **Sihawa**, Chhattisgarh","Flows through Chhattisgarh and Odisha. The **Hirakud Dam** on it is one of the longest earthen dams in the world. Forms a delta near Cuttack. Tributaries: **Seonath, Hasdeo, Mand, Ib, Jonk**"],
+    ["**Subarnarekha**","`395 km`","Near **Ranchi**, Jharkhand","Flows through Jharkhand, West Bengal, Odisha. Creates the **Hundru Falls** near Ranchi"],
+    ["**Brahmani**","`799 km`","Confluence of **Koel** and **Sankh** at Vedvyas, Odisha","Flows entirely through Odisha. Shares its delta with the Baitarani river"]
+   ]},
+
+  {h:"The two major west-flowing rivers",
+   cols:["River","Length","Source","Key facts"],
+   rows:[
+    ["**Narmada**","`1,312 km`","**Amarkantak** plateau, Madhya Pradesh","Flows through a **rift valley** between the Vindhyas (north) and the Satpuras (south). Passes through the **Marble Rocks** gorge at **Jabalpur** (Dhuandhar Falls). The **Sardar Sarovar Dam** (Gujarat) and **Indira Sagar Dam** (MP) are on it. Enters the Arabian Sea through the **Gulf of Khambhat** via an estuary"],
+    ["**Tapi (Tapti)**","`724 km`","**Multai**, near Betul, Madhya Pradesh","Also flows in a **rift valley**, roughly parallel to the Narmada but to its south. Passes through MP, Maharashtra, Gujarat. Enters the Arabian Sea at **Surat** through an estuary. The **Ukai Dam** is on it"]
+   ]},
+
+  {careful:"**Narmada and Tapi are the ONLY two major peninsular rivers that flow west.** Every other major peninsular river — Godavari, Krishna, Kaveri, Mahanadi — flows east. The reason is geological: the peninsula tilts gently eastward, and the Western Ghats form the main watershed close to the west coast. The Narmada and Tapi are exceptions because they follow **rift valleys** (fault-formed troughs) that happen to run east-to-west."},
+
+  {h:"Why some rivers form deltas and others form estuaries",
+   cols:["Feature","Delta-forming (east-flowing)","Estuary-forming (west-flowing)"],
+   rows:[
+    ["**Gradient**","Gentle slope over a long distance — sediment is deposited at the mouth","Steeper gradient through rift valleys — sediment is carried out to sea"],
+    ["**Flood plain**","Wide alluvial plains allow the river to slow and spread","Narrow rift valleys give no room to spread"],
+    ["**Course length**","Long courses (`800–1,465 km`) — more time to pick up and sort sediment","Shorter effective courses to the coast"],
+    ["**Examples**","Godavari delta, Krishna delta, Kaveri delta, Mahanadi delta","Narmada estuary (Gulf of Khambhat), Tapi estuary (at Surat)"]
+   ]},
+
+  {h:"River disputes and interstate water — the ones that are asked",
+   swap:[
+    ["Kaveri water dispute","Between **Karnataka** and **Tamil Nadu**","One of the oldest inter-state river disputes in India; adjudicated by the Kaveri Water Disputes Tribunal"],
+    ["Krishna water dispute","Between **Maharashtra, Karnataka** and **Andhra Pradesh/Telangana**","The Krishna Water Disputes Tribunal (KWDT) made two awards"],
+    ["Godavari water dispute","Between **Maharashtra, Karnataka, Andhra Pradesh, Madhya Pradesh, Odisha**","Resolved by the Godavari Water Disputes Tribunal in 1980"],
+    ["Narmada water dispute","Between **Madhya Pradesh, Gujarat, Maharashtra, Rajasthan**","The Narmada Water Disputes Tribunal (1969) allocated shares; the Sardar Sarovar Dam height was a long-running controversy"]
+   ]},
+
+  {h:"The falls — peninsular rivers and their waterfalls",
+   cols:["Waterfall","River","Location","Note"],
+   rows:[
+    ["**Shivasamudram Falls**","Kaveri","Karnataka","One of India's earliest hydroelectric projects (1902)"],
+    ["**Dhuandhar Falls**","Narmada","Jabalpur, MP","At the **Marble Rocks** gorge — the spray looks like smoke (*dhuandhar*)"],
+    ["**Hundru Falls**","Subarnarekha","Near Ranchi, Jharkhand","One of the highest in Jharkhand"],
+    ["**Jog / Gersoppa Falls**","Sharavathi","Karnataka","Highest plunge waterfall in India (`253 m`). The Sharavathi is a smaller west-flowing river, not one of the six major ones"],
+    ["**Chitrakote Falls**","Indravati","Chhattisgarh","Called the **Niagara of India** because of its horseshoe shape"]
+   ]},
+
+  {careful:"**Jog Falls is NOT on the Kaveri.** It is on the **Sharavathi**, a small west-flowing river in Karnataka. This is one of the most common wrong associations in SSC geography. Similarly, **Dhuandhar Falls** is on the **Narmada**, not the Tapi — the two rift-valley rivers are constantly swapped."}
+
+ ]},
+
+/* ===================================================================== 11 */
+{id:"climate", n:"Climate of India", hy:1,
+ w:"The monsoon mechanism, the four seasons, rainfall distribution and the numbers that are asked.",
+ quick:[
+  "India has a **tropical monsoon** climate. The monsoon dominates the rainfall pattern — about `75–90 per cent` of annual rainfall comes from the **south-west monsoon** (June–September).",
+  "Under the **Köppen classification**, most of India is **Aw** (tropical savanna) or **Cwg** (humid subtropical with dry winter). The Thar is **BWh** (hot desert) and the Western Ghats are **Am** (tropical monsoon).",
+  "The four seasons: **Cold weather** (December–February), **Hot weather** (March–May), **Advancing south-west monsoon** (June–September), **Retreating monsoon** (October–November).",
+  "**Mawsynram** in Meghalaya receives the highest average annual rainfall in the world — about `11,872 mm`. **Cherrapunji**, nearby, holds the record for the highest rainfall in a single year.",
+  "The **Western Ghats** cause **orographic rainfall** on the windward side (west) and a **rain shadow** on the leeward side (east) — which is why Pune and Bengaluru are drier than the Konkan coast."
+ ],
+ blocks:[
+  {h:"The four seasons",
+   cols:["Season","Months","What defines it"],
+   rows:[
+    ["**Cold weather season**","December – February","Clear skies, low humidity, cool dry winds from the north-west (the **N-E trade winds** after they cross the Tropic of Cancer). **Western disturbances** bring rainfall to Punjab, Haryana, Himachal, J&K. Frost in the northern plains; snowfall in the Himalayas"],
+    ["**Hot weather season**","March – May","Temperatures rise sharply — `45°C` and above in the north-western plains. An intense **low-pressure area** develops over the Thar and adjoining Pakistan. **Loo** — hot, dry winds — blow across the northern plains. **Nor'westers** (Kalbaisakhi) bring thunderstorms to Bengal and Assam; **mango showers** (pre-monsoon rain) occur in Kerala and Karnataka"],
+    ["**Advancing south-west monsoon**","June – September","The ITCZ shifts north, the **south-east trade winds** cross the equator, are deflected right by the Coriolis force, and arrive as the **south-west monsoon**. Two branches: the **Arabian Sea branch** and the **Bay of Bengal branch**. The monsoon **'bursts'** over Kerala around **1 June** and covers the whole country by mid-July"],
+    ["**Retreating monsoon**","October – November","The monsoon withdraws from the north-west first and from Tamil Nadu last. The **Bay of Bengal** gets cyclones. The **north-east monsoon** (returning winds now carrying moisture from the Bay) gives **Tamil Nadu** most of its rainfall in this season — the reason Chennai's wettest months are October–December, not June–September"]
+   ]},
+
+  {careful:"**Tamil Nadu gets most of its rain from the retreating monsoon, not the advancing one.** During the south-west monsoon (June–September), Tamil Nadu lies in the **rain shadow** of the Western Ghats and stays dry. Its main rainfall comes from the **north-east monsoon** in October–December, when moisture-laden winds from the Bay of Bengal hit the Coromandel coast. This is why Chennai's rainfall pattern is the opposite of Mumbai's."},
+
+  {h:"The south-west monsoon — the two branches",
+   cols:["Branch","Route","Where it rains"],
+   rows:[
+    ["**Arabian Sea branch**","Hits the **Western Ghats** first, then splits: one arm goes north along the west coast, another curves around the Ghats towards central India","**Heavy orographic rain** on the windward (western) side of the Ghats — Konkan, Malabar. **Rain shadow** on the lee side — the Deccan Plateau is drier. The branch that moves north gives rain to Gujarat, Rajasthan (some) and reaches the **Ganga plain** from the west"],
+    ["**Bay of Bengal branch**","Enters the **north-east** first (Assam, Meghalaya) and then moves west along the **Ganga plain**","Gives very heavy rain to **Meghalaya** (Mawsynram, Cherrapunji) because the hills force the moist air sharply upward. Then progresses westward — by the time it reaches **Rajasthan** and **Punjab**, it carries less moisture. The **Aravallis** run parallel to the winds rather than across them, so they do NOT cause orographic rain — which is why Rajasthan stays dry"]
+   ]},
+
+  {careful:"**The Aravallis do NOT block the monsoon.** They run roughly **south-west to north-east**, which is nearly parallel to the Arabian Sea branch of the monsoon. Because they do not lie across the wind, they cause almost no orographic rainfall. This is a standard wrong option — 'the Aravallis cause rain in Rajasthan' — and the correct answer is that their alignment lets the monsoon pass without rising."},
+
+  {h:"Rainfall extremes and patterns",
+   swap:[
+    ["Wettest place (annual average)","**Mawsynram**, Meghalaya — about `11,872 mm`","Cherrapunji (Sohra), nearby, was once recorded as the wettest but Mawsynram now holds the average record"],
+    ["Highest single-year rainfall","**Cherrapunji** — `26,471 mm` in 1860–61","This one-year record has not been broken"],
+    ["Driest region","**Western Rajasthan (Thar Desert)** — under `150 mm`","Jaisalmer gets about `100 mm` a year"],
+    ["City with inverted rainfall","**Chennai** — wettest in October–December","Gets rain from the north-east monsoon, not the south-west"],
+    ["Western disturbances","Bring **winter rain** to north India (Dec–Feb)","Originating over the Mediterranean, they travel eastward and cause rain and snowfall in J&K, Himachal, Punjab"],
+    ["Mango showers","**Pre-monsoon rain** in Kerala and Karnataka (April–May)","Named because they help the early ripening of mangoes"],
+    ["Loo","**Hot dry westerly winds** in the northern plains (April–June)","Temperatures can exceed `45°C`; the Loo blows from Rajasthan and Pakistan"],
+    ["Nor'westers / Kalbaisakhi","**Thunderstorms** in Bengal and Assam (April–May)","Called Kalbaisakhi ('the calamity of Baisakh'); beneficial for tea and jute crops"]
+   ]},
+
+  {h:"Koeppen's classification — the types that apply to India",
+   cols:["Code","Name","Where in India"],
+   rows:[
+    ["**Aw**","Tropical savanna","Most of peninsular India — distinct wet and dry seasons"],
+    ["**Am**","Tropical monsoon","Western coast (Konkan, Malabar), Western Ghats — very heavy monsoon rain, short dry season"],
+    ["**Cwg**","Humid subtropical with dry winter","The Ganga plain — warm wet summer, cool dry winter"],
+    ["**BWh**","Hot desert","Western Rajasthan (Thar)"],
+    ["**BSh**","Semi-arid / steppe","Parts of Rajasthan, Gujarat, Haryana around the desert margin"],
+    ["**Dfc**","Subarctic / cold humid","Parts of Arunachal Pradesh and Ladakh at high altitude"],
+    ["**ET**","Tundra","The highest parts of J&K and Ladakh — permafrost"]
+   ]},
+
+  {h:"The monsoon's advance and retreat — the calendar",
+   list:[
+    "**1 June** — the monsoon normally reaches **Kerala**.",
+    "**10 June** — reaches **Mumbai** and the Konkan coast.",
+    "**Mid-June** — covers the entire south and the Bay of Bengal branch reaches the north-east.",
+    "**1 July** — reaches the **eastern half** of the Ganga plain.",
+    "**15 July** — covers the **entire country**, including western Rajasthan and Punjab (the last to be covered).",
+    "**1 September** — the monsoon begins **withdrawing** from western Rajasthan.",
+    "**Mid-October** — has withdrawn from the northern plains.",
+    "**Mid-December** — has withdrawn from the rest of India. Tamil Nadu is the last to lose the monsoon influence, since the retreating monsoon's NE winds pick up moisture from the Bay and give it rain."
+   ]}
+
+ ]},
+
+/* ===================================================================== 12 */
+{id:"soils", n:"Soils of India", hy:1,
+ w:"The six major soil types — where they are found, what they are made of, and what grows in them.",
+ quick:[
+  "India has **six major soil types**: Alluvial, Black (Regur), Red, Laterite, Arid (Desert) and Forest (Mountain).",
+  "**Alluvial soil** covers the largest area — the entire Indo-Gangetic plain, the coastal deltas and parts of the river valleys. It is further divided into **Bhangar** (older, higher, with kankar nodules) and **Khadar** (newer, in the flood plains, renewed each year).",
+  "**Black soil (Regur)** is formed from the weathering of **Deccan Trap basalt**. It is the ideal soil for **cotton** — hence called **black cotton soil**.",
+  "The **Indian Council of Agricultural Research (ICAR)** classifies Indian soils into **eight** types, adding Peaty/Marshy and Saline/Alkaline to the six above.",
+  "Soil erosion is worst in the **Shivalik foothills** (unconsolidated sediment), the **Chambal ravines** and the **Thar margin** — the areas where neither root cover nor compacted rock holds the surface in place."
+ ],
+ blocks:[
+  {h:"The six major soil types at a glance",
+   cols:["Soil","Where found","Formed from","Crops / use"],
+   rows:[
+    ["**Alluvial**","Indo-Gangetic plain, Brahmaputra valley, coastal deltas, river valleys of peninsular India","**Transported** — deposited by rivers. Bhangar = old alluvium (with **kankar** lime nodules); Khadar = new alluvium (renewed every flood)","Rice, wheat, sugarcane, jute — the most **productive** soil and the most widely cultivated"],
+    ["**Black (Regur)**","Maharashtra, Madhya Pradesh, Gujarat, Karnataka, Andhra Pradesh — the **Deccan Trap** region","**In situ** weathering of **basalt** lava. The dark colour comes from **titaniferrous magnetite** and clay minerals, not humus","**Cotton** (hence 'black cotton soil'). Also sugarcane, jowar, wheat. It **self-ploughs** — swells when wet, shrinks and cracks when dry"],
+    ["**Red**","Odisha, Chhattisgarh, southern fringe of the Gangetic plain, Tamil Nadu, parts of Karnataka, Andhra Pradesh","Weathering of **crystalline igneous** and **metamorphic** rocks. Red colour from **ferric oxide (iron)**","Wheat, rice, millets, pulses, tobacco. Deficient in nitrogen, phosphorus and humus; responds well to fertilisers"],
+    ["**Laterite**","Western Ghats, parts of Odisha, Meghalaya plateau, some areas of Tamil Nadu, Karnataka, Kerala","Intense **leaching** in areas of heavy rainfall — soluble minerals are washed out, leaving behind **iron** and **aluminium hydroxides**. The name comes from Latin *later* (brick)","**Tea, coffee, cashew, rubber** on the hill slopes. Humus-poor because of high temperature and bacterial activity. Hardens into brick when exposed to air — used as a building material in Kerala"],
+    ["**Arid (Desert)**","Western Rajasthan, parts of Gujarat, Haryana and southern Punjab","**Sandy**, with high **salt content** (kankar at the base). Low organic matter and moisture. Colour ranges from red to brown","Productive when irrigated — the **Indira Gandhi Canal** has turned parts of the Thar into cultivable land. Bajra, gram, guar"],
+    ["**Forest (Mountain)**","Himalayan slopes, Western and Eastern Ghats, hill areas above `1,500 m`","**Humus-rich** due to the accumulation of leaf litter. Texture varies from **loamy** to **silty**. Often acidic at higher altitudes","Orchards (apple, walnut in Kashmir; tea in Darjeeling and Nilgiris). Thin and easily eroded where deforestation occurs"]
+   ]},
+
+  {careful:"**Black soil is NOT formed from alluvium — it is formed from basalt.** The Deccan Trap is a massive lava flow (not river deposits), and the weathering of this **basalt** produces the black soil. Its dark colour comes from **titaniferrous magnetite** and clay minerals, NOT from humus. This is the single most common wrong reason given in SSC options — 'rich in humus' is always a trap for black soil."},
+
+  {h:"Alluvial soil — the Bhangar and Khadar distinction",
+   cols:["","Bhangar (old alluvium)","Khadar (new alluvium)"],
+   rows:[
+    ["**Position**","Above the flood plain, on **terraces**","In the flood plain itself, along the river banks"],
+    ["**Age**","Older, more compacted","Younger, renewed by each flood"],
+    ["**Texture**","Coarser, often clayey, with **kankar** (lime nodules)","Finer, more sandy, richer in fresh silt"],
+    ["**Fertility**","Less fertile — not renewed","**More fertile** — refreshed annually by new alluvium"],
+    ["**Colour**","Dark, sometimes yellowish","Lighter, sandy"]
+   ]},
+
+  {h:"What each soil type is rich in and deficient in",
+   cols:["Soil","Rich in","Deficient in"],
+   rows:[
+    ["**Alluvial**","Potash, lime","Nitrogen, phosphorus (in some areas)"],
+    ["**Black**","Lime, iron, magnesia, alumina, **calcium carbonate**","**Nitrogen, phosphorus, organic matter**"],
+    ["**Red**","Iron, potash","Nitrogen, phosphorus, humus, lime"],
+    ["**Laterite**","Iron, aluminium","Nitrogen, potash, lime, organic matter — almost everything soluble is leached out"],
+    ["**Arid**","Soluble salts, phosphate","Humus, nitrogen, moisture"],
+    ["**Forest**","Humus (at lower altitudes)","Can be very acidic at higher altitudes; thin and easily eroded"]
+   ]},
+
+  {h:"Soil conservation — the methods that are asked",
+   swap:[
+    ["Contour ploughing","Ploughing along the **contour lines** of a slope, not up and down","Slows water run-off and reduces soil erosion on slopes"],
+    ["Terrace farming","Cutting **step-like flat surfaces** into a hillside","Used extensively in the Himalayas and the Western Ghats"],
+    ["Strip cropping","Growing different crops in **alternate strips** along the contour","One strip catches the soil washed from the next"],
+    ["Shelter belts","Rows of **trees planted as windbreaks**","Used in arid and semi-arid areas to stop wind erosion; the Indira Gandhi Canal zone uses them"],
+    ["Mulching","Covering the soil surface with **crop residue or organic material**","Retains moisture and protects the surface from rain impact"]
+   ]},
+
+  {careful:"**Laterite soil hardens into brick when cut and exposed to air** — this is how it gets its name (Latin *later* = brick). In Kerala it is widely used as a building material. But this same hardening makes it very poor for agriculture unless continuously enriched. The standard trap is 'laterite is fertile because it is found in high-rainfall areas' — in fact the high rainfall is exactly what makes it infertile, because **leaching** washes out every soluble nutrient."}
+
+ ]},
+
+/* ===================================================================== 13 */
+{id:"vegetation", n:"Natural Vegetation", hy:1,
+ w:"The five vegetation types, the rainfall and altitude that decide each, and the trees that identify them.",
+ quick:[
+  "India's vegetation is governed by **rainfall** in the plains and by **altitude** in the mountains. Temperature matters, but rainfall is the primary control.",
+  "**Tropical Deciduous (Monsoon) forests** cover the largest area — roughly 65 per cent of the total forest cover. They are NOT the densest; that is the evergreen.",
+  "Five major types: **Tropical Evergreen**, **Tropical Deciduous**, **Thorn and Scrub**, **Montane**, and **Mangrove (Tidal)**.",
+  "India's total forest cover (2023 State of Forest Report) is about `713,789` sq km — `21.71%` of the geographical area. The target is `33%`.",
+  "**Madhya Pradesh** has the largest forest cover in absolute area. **Mizoram** has the highest percentage of its area under forest (about `84%`)."
+ ],
+ blocks:[
+  {h:"The five types at a glance",
+   cols:["Type","Rainfall / Altitude","Where","Signature trees"],
+   rows:[
+    ["**Tropical Evergreen**","Above `200 cm` rainfall","Western Ghats (windward), NE India, Andaman & Nicobar","Ebony, mahogany, rosewood, rubber, cinchona. Dense canopy, no definite season of leaf-fall"],
+    ["**Tropical Deciduous** (Monsoon)","`70–200 cm` rainfall","The largest area — most of peninsular India, the eastern slopes of the Western Ghats, Jharkhand, Odisha, eastern MP","**Moist deciduous** (`100–200 cm`): teak, sal, shisham, sandalwood. **Dry deciduous** (`70–100 cm`): tendu, palas, amaltas, neem"],
+    ["**Thorn and Scrub**","Below `70 cm` rainfall","Western Rajasthan, SW Haryana, Gujarat (Kutch and Kathiawar), southern Punjab","Babool (kikar), ber, date palm, khejri, cactus. Leaves are small or turn to thorns to reduce water loss"],
+    ["**Montane (Mountain)**","Varies by altitude, not rainfall","The Himalayas, the Western Ghats above `1,500 m`, the Nilgiris, Meghalaya hills","Temperate: oak, chestnut, birch. Conifers: pine, deodar, spruce, fir. Alpine: juniper, rhododendron, birch scrub. Above `3,600 m`: mosses and lichens (tundra)"],
+    ["**Mangrove (Tidal)**","Coastal, saline, waterlogged","River deltas and estuaries — Sundarbans (largest), Bhitarkanika (Odisha), Pichavaram (Tamil Nadu), Gulf of Kutch","Sundari (gives the Sundarbans their name), rhizophora, avicennia. Stilt roots and breathing roots (pneumatophores)"]
+   ]},
+
+  {careful:"**Teak is deciduous, not evergreen.** It sheds its leaves in the dry season and is the most important timber tree of the **moist deciduous** forests. SSC questions regularly place teak among evergreen trees — it does not belong there. The evergreen timbers are **ebony, mahogany and rosewood**. If a question lists teak alongside those three and asks which does not belong, teak is the answer."},
+
+  {h:"Tropical Deciduous — the two sub-types",
+   cols:["","Moist Deciduous","Dry Deciduous"],
+   rows:[
+    ["Rainfall","`100–200 cm`","`70–100 cm`"],
+    ["Where","Eastern slopes of the Western Ghats, NE India, Jharkhand, Odisha, Chhattisgarh, eastern MP","Bihar, UP, Karnataka interior, Tamil Nadu interior, the drier parts of MP"],
+    ["Key trees","**Teak**, **sal**, shisham (sheesham), sandalwood, bamboo, mulberry","**Tendu**, **palas** (flame of the forest), amaltas, neem, pipal"],
+    ["Leaf-fall","Shed leaves for about `6–8` weeks in the dry season","Shed leaves for a longer period; the forest looks bare for several months"],
+    ["Economic value","Teak and sal are the most commercially valuable Indian hardwoods","Tendu leaves are used to wrap **bidi** — a major forest product by revenue"]
+   ]},
+
+  {h:"Montane forests — the altitude bands",
+   cols:["Altitude band","Vegetation","Examples"],
+   rows:[
+    ["`1,000–2,000 m`","**Wet temperate** — broad-leaved evergreen","Oak, chestnut, laurel, magnolia. Found in the eastern Himalayas, Western Ghats above `1,500 m`"],
+    ["`1,500–3,000 m`","**Coniferous** — needle-leaved","**Pine** (Chir pine in the western Himalayas), **deodar** (the most valued), spruce, silver fir, cedar"],
+    ["`3,000–3,600 m`","**Alpine** — stunted trees and scrub","Juniper, rhododendron, silver birch. Trees become increasingly dwarfed"],
+    ["Above `3,600 m`","**Alpine meadows**, then tundra","Grasses and sedges at first (*bugyals* in Uttarakhand), then mosses and lichens near the snowline"]
+   ]},
+
+  {careful:"**Deodar is a conifer, not a broadleaf tree.** Its name comes from Sanskrit *devadāru* (timber of the gods). It grows between `1,500` and `3,200 m` in the western Himalayas — Himachal Pradesh, Uttarakhand, Jammu & Kashmir. Questions sometimes place it among the broad-leaved temperate trees (oak, chestnut); it belongs with the conifers (pine, spruce, fir)."},
+
+  {h:"Mangrove forests — the key sites",
+   swap:[
+    ["**Sundarbans**","West Bengal — the **largest** mangrove area in India and the world","Home to the Royal Bengal Tiger; UNESCO World Heritage Site. Named after the **sundari** tree"],
+    ["**Bhitarkanika**","Odisha — the second-largest mangrove in India","At the mouth of the Brahmani and Baitarani rivers. Famous for saltwater crocodiles"],
+    ["**Pichavaram**","Tamil Nadu — one of the largest mangroves on the east coast","Between the Vellar and Kollidam rivers, near Chidambaram"],
+    ["**Gulf of Kutch**","Gujarat — marine national park with mangroves","The westernmost significant mangrove area in India"],
+    ["**Andaman & Nicobar**","Extensive mangroves along the coast","Diverse species; relatively undisturbed compared to mainland mangroves"]
+   ]},
+
+  {h:"Trees and their states — the pairs that are asked",
+   swap:[
+    ["**Sal**","Jharkhand, Chhattisgarh, Odisha, eastern UP","Moist deciduous. The **Sal** forests of the Chotanagpur plateau are the densest stands"],
+    ["**Teak**","MP, Maharashtra, Karnataka, Kerala, Tamil Nadu","Moist deciduous. MP has the largest teak forests in India"],
+    ["**Sandalwood**","Karnataka (Mysore region)","Moist deciduous. Karnataka produces most of India's sandalwood"],
+    ["**Sundari**","Sundarbans, West Bengal","Mangrove. Hard, durable wood that resists saltwater"],
+    ["**Khejri (Prosopis cineraria)**","Rajasthan — the **state tree** of Rajasthan","Thorn forest. Grows in the Thar desert; the Bishnoi community protects it"],
+    ["**Chir pine**","Western Himalayas — Uttarakhand, Himachal","Coniferous. The commonest pine of the lower Himalayan slopes (`1,000–1,800 m`)"]
+   ]},
+
+  {careful:"**The Western Ghats are an evergreen AND deciduous zone — it depends on which side.** The windward (western) slopes receive heavy rainfall (`>200 cm`) and carry **tropical evergreen** forests. The leeward (eastern) slopes, in the rain shadow, receive much less rain and carry **deciduous** forests. A question that asks about 'the forests of the Western Ghats' without specifying the slope is testing whether you know this distinction."}
+
  ]}
 
 ]});
