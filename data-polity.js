@@ -19,9 +19,9 @@
 
 (window.SUBJECTS = window.SUBJECTS || []).push({
 
-id:"polity", n:"Polity", tab:"Polity", sub:"Centre-State and Schedule 7",
-w:"The Seventh Schedule entry by entry, and the legislative, administrative and financial relations between the Union and the States.",
-intro:"Two topics only, done properly. The Seventh Schedule first — the three Lists, their entry counts, the subjects that moved between them, and which entries are actually asked. Then the three kinds of Centre-State relation, Article by Article, with the five exceptions that let Parliament legislate on a State subject.",
+id:"polity", n:"Polity", tab:"Polity", sub:"The Constitution from Fundamental Rights to Centre-State",
+w:"Fundamental Rights, Directive Principles, Fundamental Duties, Parliament, Emergency, key amendments, the President and Governor, constitutional bodies, and Centre-State relations with the Seventh Schedule.",
+intro:"The constitution from the citizen outward: the rights guaranteed by Part III, the aspirations in Part IV, the duties in Part IVA; then the organs of government — Parliament and the executive; then the emergency provisions and the amendments that reshaped the document; and finally, how power is divided between Centre and State.",
 
 topics:[
 
@@ -605,6 +605,517 @@ topics:[
     ["Paul Appleby","**Extremely federal**","A minority view, and worth remembering because it is the odd one out"],
     ["The Supreme Court","**Federal in structure with unitary features**","*State of West Bengal v. Union of India (1963)* held that the Indian Constitution is not truly federal; *S. R. Bommai (1994)* affirmed federalism as part of the basic structure"]
    ]}
+ ]},
+
+/* ===================================================================== 9 */
+{id:"fund-rights", n:"Fundamental Rights (Articles 12–35)", hy:1,
+ w:"The six Fundamental Rights, the five writs, and the articles that are actually asked.",
+ quick:[
+  "Part III of the Constitution (Articles `12` to `35`) guarantees **six** Fundamental Rights. Originally there were **seven** — the **Right to Property** (Article `31`) was removed by the **44th Amendment, 1978**, and is now only a legal right under Article `300A`.",
+  "Fundamental Rights are **enforceable in court** — Article `32` (Supreme Court) and Article `226` (High Courts). Directive Principles are not.",
+  "Article `13` declares any law inconsistent with Fundamental Rights to be **void**. This is the basis of **judicial review** of legislation in India.",
+  "Article `17` — abolition of untouchability — is the **only** Fundamental Right that is **absolute**. Every other right has reasonable restrictions.",
+  "Article `32` was called by Dr. Ambedkar **'the heart and soul of the Constitution'** — it guarantees the right to move the Supreme Court directly for the enforcement of Fundamental Rights."
+ ],
+ blocks:[
+  {h:"The six Fundamental Rights",
+   cols:["Right","Articles","What it covers"],
+   rows:[
+    ["**Right to Equality**","`14–18`","Equality before law (`14`), no discrimination (`15`), equal opportunity in public employment (`16`), abolition of untouchability (`17`), abolition of titles (`18`)"],
+    ["**Right to Freedom**","`19–22`","Six freedoms (`19`), protection against ex-post-facto laws and double jeopardy (`20`), protection of life and personal liberty (`21`), right to education (`21A`), protection against arrest and detention (`22`)"],
+    ["**Right against Exploitation**","`23–24`","Prohibition of traffic in human beings and forced labour (`23`), prohibition of child labour in factories, mines and hazardous occupations (`24`)"],
+    ["**Right to Freedom of Religion**","`25–28`","Freedom of conscience and free profession, practice and propagation of religion (`25`), freedom to manage religious affairs (`26`), no compulsory religious taxes (`27`), no religious instruction in state-funded schools (`28`)"],
+    ["**Cultural and Educational Rights**","`29–30`","Protection of interests of minorities (`29`), right of minorities to establish and administer educational institutions (`30`)"],
+    ["**Right to Constitutional Remedies**","`32`","The right to move the Supreme Court for the enforcement of Fundamental Rights. The Supreme Court can issue the **five writs**"]
+   ]},
+
+  {careful:"**Article 15 lists exactly FIVE grounds of non-discrimination: religion, race, caste, sex and place of birth.** 'Language' is NOT one of them — it is the single most common wrong option in SSC papers. The Constitution protects linguistic minorities elsewhere (Articles 29–30, 350A, 350B), but language is absent from Article 15's list."},
+
+  {h:"The key articles, one by one",
+   cols:["Article","Subject","The point that is asked"],
+   rows:[
+    ["`14`","**Equality before law** and **equal protection of laws**","Two concepts from two traditions: equality before law from **Dicey** (British — negative, nobody is above the law), equal protection from the **US 14th Amendment** (positive, equals treated equally). Article 14 contains **both**"],
+    ["`15`","Prohibition of **discrimination**","Five grounds only: religion, race, caste, sex, place of birth. The State *may* make special provisions for women and children (15(3)), and for socially and educationally backward classes, SCs and STs (15(4) and 15(5))"],
+    ["`16`","**Equality of opportunity** in public employment","Does not prevent the State from reserving posts for backward classes (16(4)), or for any class of citizens inadequately represented (16(4A) — added by **77th Amendment**, for SCs/STs in promotion)"],
+    ["`17`","**Abolition of untouchability**","The ONLY Fundamental Right that is **absolute** — no exceptions, no reasonable restrictions. Enforcement through the **Protection of Civil Rights Act, 1955**"],
+    ["`18`","**Abolition of titles**","No citizen may accept a title from a foreign state. Military and academic distinctions are exempt. The **Bharat Ratna and Padma awards** are NOT titles and do not violate this article (Balaji Raghavan case, 1996)"],
+    ["`19`","**Six freedoms**","Speech and expression (a), assembly (b), association (c), movement (d), residence (e), profession/trade (f). Originally **seven** — freedom to acquire property (f) was repealed by the **44th Amendment**. Each has **reasonable restrictions** listed in clauses (2) to (6)"],
+    ["`20`","**Protection in respect of conviction**","Three protections: no **ex-post-facto** criminal law (20(1)), no **double jeopardy** (20(2)), no **self-incrimination** (20(3)). Available even during an Emergency"],
+    ["`21`","**Protection of life and personal liberty**","The **most expanded** article — the Supreme Court has read into it the rights to livelihood, privacy, clean environment, shelter, medical aid, speedy trial, legal aid, dignity, and education (before 21A)"],
+    ["`21A`","**Right to education**","Added by the **86th Amendment, 2002**. Free and compulsory education for children aged `6` to `14`. Implemented by the **Right of Children to Free and Compulsory Education Act, 2009** (RTE Act)"],
+    ["`22`","**Protection against arrest and detention**","Two parts: ordinary arrest (right to be informed, right to consult a lawyer, right to be produced before a magistrate within **24 hours**) and **preventive detention** (an advisory board must review within **3 months**)"],
+    ["`32`","**Right to Constitutional Remedies**","Dr. Ambedkar: *the heart and soul of the Constitution*. Cannot be suspended except during a **National Emergency** (Art 359). Article `226` gives the **same writ powers to High Courts**, but for all rights, not only Fundamental Rights"]
+   ]},
+
+  {h:"The five writs",
+   cols:["Writ","Literal meaning","What it does"],
+   rows:[
+    ["**Habeas Corpus**","*Have the body*","Orders a person who has detained another to **produce the detained person before the court**. Used against unlawful detention. The **most important** writ for personal liberty"],
+    ["**Mandamus**","*We command*","Orders a **public authority to perform a duty** it has failed to perform. Cannot be issued against **private persons**, the **President**, the **Governor**, or a **Chief Justice** acting in a judicial capacity"],
+    ["**Certiorari**","*To be certified*","Transfers a case from a **lower court** or tribunal to a **higher court** for review — typically when the lower court has exceeded its jurisdiction or violated principles of natural justice"],
+    ["**Prohibition**","*To forbid*","Orders a lower court or tribunal to **stop proceedings** that exceed its jurisdiction. Like certiorari but issued **before** the decision, not after"],
+    ["**Quo Warranto**","*By what authority*","Challenges a person who holds a **public office** without legal authority. The only writ that can be sought by **any person**, not only the aggrieved party"]
+   ]},
+
+  {careful:"**Article 32 is a Fundamental Right itself, and it is the ONLY article whose suspension requires a Presidential order under Article 359.** Article 226 (High Court writs) is NOT a Fundamental Right and continues to operate during an Emergency — this distinction is asked constantly. Also: Mandamus CANNOT be issued against the President or a Governor — the two constitutional heads are protected."},
+
+  {h:"What happens during an Emergency",
+   cols:["Type of Emergency","Effect on Fundamental Rights"],
+   rows:[
+    ["**National Emergency (Art 352)**","Article `19` is **automatically suspended** if the proclamation is on the ground of war or external aggression (not on ground of armed rebellion, after the 44th Amendment). Other FRs (except `20` and `21`) may be suspended by a **Presidential order under Art 359**"],
+    ["**President's Rule (Art 356)**","Fundamental Rights are **NOT affected** — they continue in full force"],
+    ["**Financial Emergency (Art 360)**","Fundamental Rights are **NOT affected** — but salaries and allowances can be reduced"]
+   ]},
+
+  {h:"The Right to Property — how it was removed",
+   swap:[
+    ["Originally","Article `31` — Right to Property — was a **Fundamental Right** in Part III","It was the most amended article in the Constitution's first three decades"],
+    ["Removed by","**44th Amendment, 1978**","Article 31 was repealed and a new Article `300A` was inserted in Part XII"],
+    ["Now","Property is a **legal right**, not a Fundamental Right","The State can still acquire property, but the affected person can go to a **High Court** (Art 226), not to the **Supreme Court** under Art 32"],
+    ["Why it was removed","To clear the path for **land reforms** and **nationalisation**","The repeated clashes between Parliament and the Supreme Court over property compensation — starting from the **First Amendment** itself — made the change inevitable"]
+   ]}
+
+ ]},
+
+/* ===================================================================== 10 */
+{id:"dpsp", n:"Directive Principles of State Policy (Articles 36–51)", hy:1,
+ w:"The principles the State must strive toward — not enforceable, but fundamental in governance.",
+ quick:[
+  "DPSPs are in **Part IV** (Articles `36` to `51`). They are **not enforceable** by any court (Article `37`), but are *fundamental in the governance of the country*.",
+  "Borrowed from the **Irish Constitution**, which took them from the **Spanish** Constitution.",
+  "Originally DPSPs could not override Fundamental Rights. The **42nd Amendment** added Article `31C`, which said DPSPs in Articles 39(b) and (c) prevail over Articles 14 and 19. The **Minerva Mills case (1980)** struck down the broader extension, preserving the balance.",
+  "The three-way classification into **Socialist, Gandhian and Liberal-Intellectual** principles is widely used but is **not in the Constitution** — it comes from constitutional commentators.",
+  "Several DPSPs have been **implemented through legislation**: Article `40` through the **73rd and 74th Amendments** (Panchayats and Municipalities), Article `45` through the **86th Amendment** (right to education), and Article `39A` through the **Legal Services Authorities Act, 1987**."
+ ],
+ blocks:[
+  {h:"Socialist principles",
+   cols:["Article","Directive","The point that is asked"],
+   rows:[
+    ["`38`","**Social order** for the promotion of welfare","The State shall strive to minimise **inequalities in income, status, facilities and opportunities** — clause (2) was added by the **44th Amendment**"],
+    ["`39`","Certain principles of policy","Six sub-clauses: (a) adequate means of livelihood, (b) distribution of material resources for the common good, (c) no concentration of wealth, (d) **equal pay for equal work** for both men and women, (e) health of workers and children, (f) opportunities for children in freedom and dignity"],
+    ["`39A`","**Equal justice and free legal aid**","Added by the **42nd Amendment**. Implemented through the **Legal Services Authorities Act, 1987**, and the **NALSA** (National Legal Services Authority)"],
+    ["`41`","**Right to work**, education and public assistance","In cases of unemployment, old age, sickness and disablement — a DPSP, not a Fundamental Right"],
+    ["`42`","Just and humane **conditions of work** and maternity relief","Basis for the **Maternity Benefit Act**"],
+    ["`43`","**Living wage** and decent standard of life for workers","Also covers the promotion of **cottage industries** — which makes this article appear under Gandhian principles too in some classifications"],
+    ["`43A`","**Participation of workers** in management of industries","Added by the **42nd Amendment**"]
+   ]},
+
+  {h:"Gandhian principles",
+   cols:["Article","Directive","The point that is asked"],
+   rows:[
+    ["`40`","Organisation of **village panchayats**","The State shall take steps to organise them as units of self-government. Implemented by the **73rd Amendment (1992)**, which added Part IXA and the Eleventh Schedule"],
+    ["`43`","Promotion of **cottage industries**","The same article that directs a living wage — its cottage-industry clause is treated as Gandhian"],
+    ["`46`","Promotion of educational and economic interests of **SCs, STs and other weaker sections**","Protection from social injustice and all forms of exploitation"],
+    ["`47`","**Prohibition** of intoxicating drinks and drugs injurious to health","Raising the level of nutrition and the standard of living — a duty, not a ban. Some states have enacted prohibition laws citing this article"],
+    ["`48`","Prohibition of slaughter of **cows** and calves and other milch and draught cattle","Organisation of agriculture and animal husbandry on modern and scientific lines"]
+   ]},
+
+  {h:"Liberal-intellectual principles",
+   cols:["Article","Directive","The point that is asked"],
+   rows:[
+    ["`44`","**Uniform Civil Code**","The State shall endeavour to secure a UCC throughout India. The most debated DPSP — **never implemented** nationally. **Goa** is the only state that has a uniform civil code (inherited from the Portuguese)"],
+    ["`45`","Early childhood care for children below `6` years","**Changed by the 86th Amendment (2002)**: the original article directed free and compulsory education for children under 14. That duty moved to Article `21A` (a Fundamental Right). The current Article 45 covers only **early childhood care for under-6**"],
+    ["`48A`","Protection and improvement of **environment** and safeguarding forests and wildlife","Added by the **42nd Amendment**. Read with Article `51A(g)` (the Fundamental Duty to protect the environment)"],
+    ["`49`","Protection of **monuments** and places and objects of national importance from spoliation, disfigurement, destruction","Basis for the **Ancient Monuments and Archaeological Sites and Remains Act**"],
+    ["`50`","Separation of **judiciary** from the **executive**","In the public services of the State. Not yet fully implemented at the lower-court level in all states"],
+    ["`51`","Promotion of **international peace and security**","Maintenance of just and honourable relations between nations, and respect for **international law** and treaty obligations. India's position at the UN and in Non-Alignment is cited under this article"]
+   ]},
+
+  {careful:"**Article 45 is a favourite trap because it was rewritten.** Before 2002, it said 'free and compulsory education for all children until they complete the age of fourteen years.' After the **86th Amendment**, that duty became Article `21A` — a justiciable Fundamental Right. The current Article 45 says only 'early childhood care and education for all children until they complete the age of six years.' If a question asks what Article 45 *originally* said, the answer is education for under-14. If it asks what Article 45 says *now*, the answer is care for under-6."},
+
+  {h:"Fundamental Rights vs. Directive Principles — the evolution",
+   cols:["Case","Year","What it decided"],
+   rows:[
+    ["**Champakam Dorairajan**","`1951`","Fundamental Rights **prevail** over DPSPs — the starting position"],
+    ["**Golaknath**","`1967`","Parliament **cannot** amend Fundamental Rights at all — even to implement DPSPs"],
+    ["**Kesavananda Bharati**","`1973`","Overruled Golaknath: Parliament **can** amend FRs, but cannot destroy the **basic structure** of the Constitution"],
+    ["**42nd Amendment**","`1976`","Gave DPSPs in Articles 39(b) and (c) **primacy** over Articles 14 and 19, and tried to extend this to **all** DPSPs"],
+    ["**Minerva Mills**","`1980`","Struck down the blanket extension: the **harmony and balance** between FRs and DPSPs is itself part of the basic structure. DPSPs in 39(b) and (c) still prevail over Articles 14 and 19, but no wider"]
+   ]},
+
+  {h:"DPSPs that have been implemented",
+   swap:[
+    ["Art `39A` — Free legal aid","**Legal Services Authorities Act, 1987** and **NALSA**",""],
+    ["Art `40` — Panchayats","**73rd Amendment (1992)** — Part IX, Eleventh Schedule",""],
+    ["Art `41` — Right to work","**MGNREGA, 2005** — 100 days of guaranteed employment",""],
+    ["Art `43` — Cottage industries","**Khadi and Village Industries Commission** set up under the KVIC Act, 1956",""],
+    ["Art `44` — Uniform Civil Code","**Not implemented nationally** — Goa is the only state with one (inherited, not enacted under Art 44)",""],
+    ["Art `45` — Education (original)","**86th Amendment** moved it to Article `21A` as a Fundamental Right; **RTE Act, 2009**",""],
+    ["Art `47` — Prohibition","Several states enacted prohibition laws: **Gujarat (since 1960)**, Bihar (since 2016), Nagaland, Mizoram",""],
+    ["Art `48` — Cow protection","Most states have **anti-cow-slaughter laws**; no central legislation",""],
+    ["Art `48A` — Environment","**Environment Protection Act, 1986**, Wildlife Protection Act, 1972, Forest Conservation Act, 1980",""],
+    ["Art `50` — Separation of judiciary","**Criminal Procedure Code, 1973** (Sections 3 and 4) separated the judiciary from the executive at the magistrate level, but not yet fully at all levels",""]
+   ]},
+
+  {careful:"**The Gandhian classification of Article 43 (cottage industries) and the Socialist classification of Article 43 (living wage) come from the SAME article.** Article 43 directs both a living wage AND the promotion of cottage industries. Different commentators place it under different headings depending on which clause they emphasise. If an exam names Article 43 and asks which category, accept either — but if it says 'cottage industries', it is Gandhian."}
+
+ ]},
+
+/* ===================================================================== 11 */
+{id:"fund-duties", n:"Fundamental Duties (Article 51A)", hy:1,
+ w:"The eleven duties of every citizen — added in 1976, expanded in 2002, and asked as a list.",
+ quick:[
+  "Fundamental Duties are in **Part IVA**, **Article `51A`**. Part IVA was added by the **42nd Amendment (1976)** on the recommendation of the **Swaran Singh Committee**.",
+  "Originally **ten** duties. The **11th** — duty of parents/guardians to provide opportunities for education to children aged `6` to `14` — was added by the **86th Amendment (2002)**, the same amendment that made education a Fundamental Right (Art `21A`).",
+  "Borrowed from the **USSR Constitution** (now defunct). India is one of the few democracies with a list of duties in the constitution.",
+  "Like DPSPs, Fundamental Duties are **not directly enforceable** — there is no legal sanction for their violation. But the courts can take them into account when examining the constitutional validity of a law.",
+  "They are applicable to **citizens only**, not to foreigners. Some Fundamental Rights (Articles 14, 20, 21, 25) apply to **all persons** including foreigners — but duties are for citizens alone."
+ ],
+ blocks:[
+  {h:"The eleven Fundamental Duties",
+   cols:["Clause","Duty","The keyword that identifies it"],
+   rows:[
+    ["**(a)**","To abide by the **Constitution** and respect its ideals and institutions, the **National Flag** and the **National Anthem**","Constitution, Flag, Anthem"],
+    ["**(b)**","To cherish and follow the **noble ideals** that inspired the **national struggle for freedom**","Freedom struggle"],
+    ["**(c)**","To uphold and protect the **sovereignty, unity and integrity** of India","Sovereignty and integrity"],
+    ["**(d)**","To **defend the country** and render national service when called upon","Defence"],
+    ["**(e)**","To promote **harmony and the spirit of common brotherhood** amongst all the people of India, transcending religious, linguistic and regional or sectional diversities, and to **renounce practices derogatory to the dignity of women**","Brotherhood, dignity of women"],
+    ["**(f)**","To value and preserve the rich heritage of the **composite culture**","Composite culture"],
+    ["**(g)**","To protect and improve the **natural environment** including forests, lakes, rivers and wildlife, and to have **compassion for living creatures**","Environment, wildlife"],
+    ["**(h)**","To develop **scientific temper**, humanism and the spirit of inquiry and reform","Scientific temper"],
+    ["**(i)**","To safeguard **public property** and to abjure violence","Public property, non-violence"],
+    ["**(j)**","To strive towards **excellence** in all spheres of individual and collective activity","Excellence"],
+    ["**(k)**","To provide opportunities for **education** to children between `6` and `14` years — by parent or guardian","Education of children — **added 2002**"]
+   ]},
+
+  {careful:"**The 11th duty (clause k) and Article 21A both came from the same amendment — the 86th (2002).** The amendment did three things simultaneously: (1) inserted Article `21A` making education a Fundamental Right, (2) changed Article `45` from education-for-under-14 to early-childhood-care-for-under-6, and (3) added clause (k) to Article 51A as a Fundamental Duty. If a question asks 'which amendment added the 11th Fundamental Duty?', the answer is the **86th**, not the 42nd."},
+
+  {h:"Fundamental Duties vs. Fundamental Rights and DPSPs",
+   cols:["","Fundamental Rights (Part III)","DPSPs (Part IV)","Fundamental Duties (Part IVA)"],
+   rows:[
+    ["**Enforceable?**","**Yes** — through Articles 32 and 226","**No** — Article 37","**No** — no provision for enforcement"],
+    ["**Apply to**","Some to all persons, some to citizens only","The **State** — directions to the government","**Citizens only**"],
+    ["**Source**","**US Bill of Rights** (mostly)","**Irish Constitution**","**USSR Constitution**"],
+    ["**Added by**","Original Constitution, 1950","Original Constitution, 1950","**42nd Amendment, 1976**"],
+    ["**Number**","Six categories (originally seven)","Articles 36–51 (about 20 principles)","**11** (originally 10)"],
+    ["**During Emergency**","Article 19 auto-suspended; others may be suspended under Art 359 (except 20 and 21)","**Not affected**","**Not affected**"]
+   ]},
+
+  {h:"How the courts have used Fundamental Duties",
+   swap:[
+    ["AIIMS Students Union case (2001)","The Supreme Court held that Fundamental Duties can be used to **determine the reasonableness of restrictions** on Fundamental Rights under Article 19","A law enacted to give effect to a duty is more likely to survive a challenge"],
+    ["Ranganath Misra Commission (2007)","Recommended that Fundamental Duties be made **enforceable by suitable legislation**","Not implemented — they remain non-justiciable"],
+    ["Verma Committee (1999)","Set up to examine how to **teach** Fundamental Duties — recommended including them in the school curriculum","The NCERT textbooks now include them"],
+    ["Prevention of Insults to National Honour Act, 1971","Gives legal force to duty **(a)** — disrespecting the flag or anthem is punishable","The only duty that has a dedicated penal statute"]
+   ]},
+
+  {h:"The Swaran Singh Committee — what it recommended vs. what was adopted",
+   list:[
+    "The **Swaran Singh Committee (1976)** recommended the inclusion of Fundamental Duties. Parliament accepted the list but **rejected** two recommendations:",
+    "**Rejected:** the Committee wanted a duty to **pay taxes** — Parliament did not include it.",
+    "**Rejected:** the Committee wanted **Parliament to impose penalties** for non-compliance with duties — Parliament did not include any penalty provision.",
+    "The Committee recommended **eight** duties. Parliament added **two more** (scientific temper and excellence), making **ten** in the 42nd Amendment. The **eleventh** came later, with the 86th Amendment in 2002."
+   ]},
+
+  {careful:"**There is NO duty to pay taxes in Article 51A.** The Swaran Singh Committee recommended it, but Parliament rejected it. This is a standard SSC trap — if a question asks which of these is NOT a Fundamental Duty, 'duty to pay taxes' is almost always the correct answer."}
+
+ ]},
+
+/* ===================================================================== 12 */
+{id:"parliament", n:"Parliament — Lok Sabha and Rajya Sabha", hy:1,
+ w:"The composition, sessions and law-making powers of both Houses, and the differences between them.",
+ quick:[
+  "**Parliament** = **President** + **Rajya Sabha** (Council of States) + **Lok Sabha** (House of the People) — **Article 79**.",
+  "**Lok Sabha**: maximum `552` members (`530` from states + `20` from UTs + `2` Anglo-Indians — but Anglo-Indian nomination removed by the **104th Amendment, 2020**). Term **5 years**. Minimum age **25**. Presided over by the **Speaker**.",
+  "**Rajya Sabha**: maximum `250` members (`238` elected by state and UT legislatures + `12` nominated by the President). It is **permanent** — not subject to dissolution. **One-third** of members retire every `2` years. Minimum age **30**. Presided over by the **Chairman** (the **Vice President**).",
+  "A **Money Bill** can only be introduced in **Lok Sabha** (**Article 110**). The Rajya Sabha gets **14 days** and may only *recommend* — it cannot amend or reject. The **Speaker's certification** that a bill is a money bill is **final** and cannot be questioned.",
+  "**Quorum** is **one-tenth** of total membership (**Article 100**). The gap between two sessions cannot exceed **6 months** (**Article 85**)."
+ ],
+ blocks:[
+  {h:"Lok Sabha against Rajya Sabha",
+   cols:["","Lok Sabha","Rajya Sabha"],
+   rows:[
+    ["Maximum strength","`552` (now effectively `550` after 104th Amendment)","`250`"],
+    ["How chosen","**Directly elected** by the people","**Indirectly elected** by state legislatures (single transferable vote) + 12 nominated"],
+    ["Term","**5 years** (can be dissolved earlier)","**Permanent**; members serve 6 years, 1/3 retire every 2 years"],
+    ["Minimum age","`25` years","`30` years"],
+    ["Presiding officer","**Speaker** (elected from among members)","**Chairman** (the Vice President, who is NOT a member of the House)"],
+    ["Money Bills","**Introduced here only**; Lok Sabha has the final word","Can only **recommend** within 14 days; has no power to amend or reject"],
+    ["No-confidence motion","**Only in Lok Sabha** — Art 75. The government must have LS confidence","Rajya Sabha cannot move a no-confidence motion"],
+    ["Joint sitting","Lok Sabha **dominates** because of its larger numbers","Rajya Sabha participates but is outnumbered"]
+   ]},
+
+  {careful:"**Money Bills cannot go to a joint sitting.** Article 108 provides for joint sitting only for **ordinary bills**, and only when there is a disagreement between the two Houses. A Money Bill's deadlock is resolved by the 14-day rule, not by a joint sitting. Questions routinely ask whether a joint sitting can be called for a Money Bill — the answer is **no**."},
+
+  {h:"The three kinds of bill",
+   cols:["Type","Where introduced","If the two Houses disagree"],
+   rows:[
+    ["**Ordinary Bill**","Either House","**Joint sitting** under Article 108, presided by the **Speaker**. Has happened only **3 times**: Dowry Prohibition Act (1961), Banking Service Commission Repeal Act (1978), POTA (2002)"],
+    ["**Money Bill** (Art 110)","**Lok Sabha only**","Rajya Sabha has **14 days** to recommend. If it does not act, or LS rejects its recommendations, the bill is deemed passed. **No joint sitting.**"],
+    ["**Constitutional Amendment Bill** (Art 368)","Either House","Must be passed by **each House separately** by **special majority**. **No joint sitting.** Some amendments also need ratification by **half the state legislatures**"],
+    ["**Finance Bill (Type I)**","Lok Sabha only","Treated as a Money Bill"],
+    ["**Finance Bill (Type II)**","Lok Sabha only","Treated as an Ordinary Bill — **joint sitting is possible**"]
+   ]},
+
+  {h:"The three sessions",
+   cols:["Session","Months","What happens"],
+   rows:[
+    ["**Budget session**","February to May","The **Union Budget** is presented (since 2017, on `1 February`). The longest session"],
+    ["**Monsoon session**","July to August/September","Legislative business, private members' bills"],
+    ["**Winter session**","November to December","The shortest of the three"]
+   ]},
+
+  {h:"Key numbers and articles",
+   swap:[
+    ["Quorum","**One-tenth** of total membership (Art 100)","If there is no quorum, the presiding officer adjourns or suspends the sitting"],
+    ["Prorogation vs adjournment","**Adjournment** ends a sitting; **prorogation** ends a session","Bills do not lapse on prorogation — they lapse only on **dissolution** of Lok Sabha"],
+    ["Anti-defection","**Tenth Schedule**, inserted by the **52nd Amendment (1985)**","Decision by the **Speaker/Chairman**, now subject to judicial review (Kihoto Hollohan case, 1992)"],
+    ["Question Hour","First hour of every sitting","**Starred** questions get oral answers; **unstarred** get written answers; **short-notice** questions are for urgent matters"],
+    ["Zero Hour","Starts at **noon**, after Question Hour","Not mentioned in the rules — it is a **convention**, not a procedure"],
+    ["Article 105","**Parliamentary privileges** — freedom of speech in Parliament","No member is liable in court for anything said or any vote given in Parliament"]
+   ]},
+
+  {careful:"**The Vice President is the Chairman of Rajya Sabha but is NOT a member of Rajya Sabha.** The Vice President can vote only in the event of a tie — a **casting vote** (Art 89). The Speaker, by contrast, IS a member of Lok Sabha, votes only in a tie, and ordinarily does not vote to preserve the convention of impartiality. The question usually asks whether the Chairman is a member — and the answer is **no**."}
+
+ ]},
+
+/* ===================================================================== 13 */
+{id:"emergency", n:"Emergency Provisions (Articles 352, 356, 360)", hy:1,
+ w:"The three types of emergency, when each has been used, and what happens to Fundamental Rights during one.",
+ quick:[
+  "Three types: **National Emergency** (Art `352`), **President's Rule** (Art `356`) and **Financial Emergency** (Art `360`).",
+  "National Emergency has been proclaimed **3 times**: `1962` (Chinese aggression), `1971` (Pakistan war) and `1975` (internal emergency). The 1975 proclamation was on grounds of *internal disturbance*, a phrase the **44th Amendment** changed to **armed rebellion**.",
+  "During a National Emergency, **Article 19** is automatically suspended. But **Articles 20 and 21 can never be suspended** — even during emergency (**44th Amendment**).",
+  "**Financial Emergency has never been proclaimed.** Not once in India's history.",
+  "The **44th Amendment (1978)** imposed safeguards on all three emergencies: written cabinet advice for Art 352, judicial review of Art 356 (strengthened later by the **S.R. Bommai** case, 1994), and the protection of Articles 20 and 21."
+ ],
+ blocks:[
+  {h:"The three emergencies compared",
+   cols:["","National Emergency (Art 352)","President's Rule (Art 356)","Financial Emergency (Art 360)"],
+   rows:[
+    ["Ground","War, external aggression or **armed rebellion**","Failure of constitutional machinery in a **state**","Threat to **financial stability or credit** of India"],
+    ["Proclaimed by","**President**, on written advice of the **Cabinet** (44th Amendment)","**President**, on Governor's report or otherwise","**President**"],
+    ["Parliamentary approval","Within **1 month**, by **special majority**","Within **2 months**, by **simple majority**","Within **2 months**, by **simple majority**"],
+    ["Maximum duration","**Indefinite**, with 6-month extensions (each by special majority)","**3 years**, with 6-month extensions","**Indefinite**, until revoked"],
+    ["Times used","**3** — 1962, 1971, 1975","**Over 100 times**","**Never**"],
+    ["Revocation","President must revoke if Lok Sabha passes a resolution (simple majority). The 44th Amendment added this check","Automatically revoked if not approved in time","President may revoke at any time"]
+   ]},
+
+  {careful:"**Articles 20 and 21 can NEVER be suspended**, not even during a National Emergency. Before the 44th Amendment, ALL Fundamental Rights could be suspended. The 44th Amendment protected Art 20 (protection against ex-post-facto laws and double jeopardy) and Art 21 (right to life and personal liberty) absolutely. This is one of the most-asked SSC questions on emergency."},
+
+  {h:"What happens to Fundamental Rights during National Emergency",
+   cols:["Article","Position during National Emergency"],
+   rows:[
+    ["**Art 19** (six freedoms)","**Automatically suspended** — no separate order needed (Art 358)"],
+    ["**Art 20** (ex-post-facto laws, double jeopardy, self-incrimination)","**Cannot be suspended** — absolutely protected by the 44th Amendment"],
+    ["**Art 21** (right to life and personal liberty)","**Cannot be suspended** — absolutely protected by the 44th Amendment"],
+    ["**Other FRs (Art 14, 15, 16, etc.)**","Can be suspended by a **separate Presidential Order** under Art 359 — but only for the period of the emergency"],
+    ["**Art 32** (right to constitutional remedies)","Can be suspended by a Presidential Order under Art 359, except for enforcement of Art 20 and 21"]
+   ]},
+
+  {h:"President's Rule — the key cases",
+   cols:["Case / Event","What happened"],
+   rows:[
+    ["**First imposition**","Punjab, `1951` — the first use of Art 356"],
+    ["**Kerala, 1959**","The first state where an elected government was dismissed under Art 356 — the **Namboodiripad** government"],
+    ["**S.R. Bommai v. Union of India (1994)**","The **landmark case**. SC laid down guidelines: (a) the President's satisfaction is **justiciable**, (b) the court can restore the dismissed government, (c) the state assembly should not be dissolved until Parliament approves, (d) **floor test** is the proper way to determine majority, not the Governor's personal assessment"],
+    ["**Most imposed in**","The 1970s and 1980s saw the most frequent use. It was used **over 100 times** before the Bommai judgment restricted it"],
+    ["**Uttarakhand, 2016**","SC quashed the imposition as unconstitutional and restored the elected government — the Bommai principles applied"]
+   ]},
+
+  {h:"The three proclamations of National Emergency",
+   swap:[
+    ["1962","Chinese aggression (**external emergency**)","In force until `1968` — continued 6 years after the war ended"],
+    ["1971","Pakistan war (**external emergency**)","The 1962 proclamation was still in force; the 1971 one was **additional**. Both revoked together in `1977`"],
+    ["1975","**Internal disturbance** (**internal emergency**)","Proclaimed on `25 June 1975` by President Fakhruddin Ali Ahmed on PM Indira Gandhi's advice. Elections postponed, press censored, opposition leaders arrested. Revoked in `1977` when elections were called"],
+    ["The aftermath","The **44th Amendment (1978)** tightened safeguards","Changed 'internal disturbance' to **armed rebellion**, required **written cabinet advice**, gave Lok Sabha the power to force revocation, protected Art 20 and 21"]
+   ]},
+
+  {careful:"**Financial Emergency has never been declared — not once.** It exists only on paper (Art 360). During it, the President can direct states to reduce salaries and can reduce salaries of all government servants including **judges of the Supreme Court and High Courts**. The fact that it was never used, and the fact that judges' salaries can be reduced under it, are both high-frequency questions."}
+
+ ]},
+
+/* ===================================================================== 14 */
+{id:"amendments", n:"Constitutional Amendments — the ones that are asked", hy:1,
+ w:"The amendment procedure and the fifteen amendments SSC actually asks about, by number and year.",
+ quick:[
+  "**Article 368** gives the procedure. A Constitutional Amendment Bill can be introduced in **either House** (no prior Presidential recommendation needed) but requires a **special majority**: majority of total membership of the House **AND** two-thirds of members present and voting.",
+  "Some amendments also require **ratification by the legislatures of half the states** — anything that touches the federal structure: election of President, executive/judicial power of Centre and states, representation of states in Parliament, the Seventh Schedule, Article 368 itself.",
+  "No **joint sitting** for a Constitutional Amendment Bill. Each House must pass it separately.",
+  "The **42nd Amendment (1976)** is the largest single amendment — called the *Mini Constitution*. The **44th Amendment (1978)** reversed most of it.",
+  "The latest major amendment the SSC asks about is the **104th Amendment (2020)** — extending SC/ST reservation in legislatures to `2030` and ending Anglo-Indian nomination to Lok Sabha."
+ ],
+ blocks:[
+  {h:"The amendment procedure — three routes",
+   cols:["Route","Majority required","Used for"],
+   rows:[
+    ["**Simple majority**","Ordinary majority of members present and voting","Amendments under **Articles 2, 3, 4** (admission/formation of new states), **Article 169** (abolition of Legislative Councils), and certain other provisions that are explicitly exempted from Art 368"],
+    ["**Special majority**","Majority of **total membership** of the House + **two-thirds** of members present and voting","Most amendments — Fundamental Rights, DPSPs, all other provisions not in the third category"],
+    ["**Special majority + ratification by half the states**","Same as above + approval by **at least half** the state legislatures by simple majority","Federal provisions: election of President (Art 54, 55), extent of executive/judicial power, representation of states in Parliament, Seventh Schedule, Article 368 itself"]
+   ]},
+
+  {h:"The amendments SSC asks about",
+   cols:["Amendment (Year)","What it did","The one fact that is asked"],
+   rows:[
+    ["**1st (1951)**","Added the **Ninth Schedule** (laws placed here are shielded from judicial review). Added reasonable restrictions to Art 19(1)(a) — freedom of speech","**Ninth Schedule** — and that laws in it *were* immune from review until the **I.R. Coelho case (2007)** said the basic structure test still applies"],
+    ["**7th (1956)**","Reorganised states on **linguistic basis**. Abolished the old A/B/C/D state categories and created **14 states and 6 UTs**","States reorganised on **language**, and the old four-tier classification was dropped"],
+    ["**24th (1971)**","Parliament can amend **any part** of the Constitution including Fundamental Rights. The President **must** give assent to amendment bills","A response to the **Golaknath case (1967)**, which had said Parliament cannot amend FRs"],
+    ["**42nd (1976)**","The **'Mini Constitution'**: added **Fundamental Duties** (Part IVA), amended the **Preamble** (added *Socialist, Secular, Integrity*), moved 5 subjects from State to Concurrent List, curtailed judicial review, extended terms of LS and state assemblies to 6 years","It added **Socialist, Secular** and **Integrity** to the Preamble, and added **Fundamental Duties**"],
+    ["**44th (1978)**","**Reversed** the 42nd: restored LS/assembly term to 5 years, restored judicial review, changed 'internal disturbance' to **armed rebellion** in Art 352, removed **Right to Property** from FRs (now Art 300A — a legal right, not fundamental)","Right to Property **removed** from FRs. Art 20 and 21 made **non-suspendable**"],
+    ["**52nd (1985)**","Added the **Tenth Schedule** — the **anti-defection law**","The **Tenth Schedule**. Two-thirds is the magic number for a valid split (now merger — 'split' was deleted by the 91st)"],
+    ["**61st (1989)**","Reduced **voting age** from `21` to **`18`** years","Article **326** was amended"],
+    ["**73rd (1992)**","Gave **constitutional status to Panchayati Raj** — Part IX, **Eleventh Schedule** (29 subjects). Three-tier structure, reservation for SC/ST/women, five-year term, State Election Commission, State Finance Commission","**Eleventh Schedule** — and the three-tier system (village / intermediate / district)"],
+    ["**74th (1992)**","Gave constitutional status to **Municipalities** — Part IXA, **Twelfth Schedule** (18 subjects)","**Twelfth Schedule** — the 18 subjects of municipal governance"],
+    ["**86th (2002)**","Made education a **Fundamental Right** — **Art 21A** (free and compulsory education for ages 6–14). Changed DPSP **Art 45** (now about early childhood care for under-6). Added the **11th Fundamental Duty** (parents to provide education to children 6–14)","Three changes in one amendment — Art 21A, Art 45 rewritten, 11th duty added"],
+    ["**91st (2003)**","Capped the size of the **Council of Ministers** at **15%** of the total strength of the lower house (Lok Sabha or state assembly). Deleted the provision for 'split' in the Tenth Schedule — now only **merger** (with two-thirds) is recognised","**15% cap** on the Council of Ministers"],
+    ["**101st (2016)**","Introduced **GST**. Inserted **Art 246A** (giving both Parliament and state legislatures the power to make laws on GST), **Art 269A** (inter-state GST), **Art 279A** (GST Council). Abolished CST, entry tax and several local levies","**GST Council** (Art 279A) — and that it subsumed central excise, service tax, VAT and entry tax"],
+    ["**103rd (2019)**","Provided **10% reservation for EWS** (Economically Weaker Sections) in education and public employment — added Art 15(6) and Art 16(6)","**EWS** reservation — above and beyond the existing SC/ST/OBC quotas"],
+    ["**104th (2020)**","Extended **reservation for SC/ST** in Lok Sabha and state assemblies for another **10 years** (to `2030`). **Removed** the provision for nomination of **Anglo-Indian** members to Lok Sabha and state assemblies","Anglo-Indian nomination **ended**; SC/ST reservation extended to **2030**"]
+   ]},
+
+  {careful:"**The 42nd and 44th are a matched pair — nearly every change the 42nd made, the 44th reversed.** Questions swap them: they will say the 42nd removed Right to Property (it was the 44th), or that the 44th added Fundamental Duties (it was the 42nd), or that the 44th amended the Preamble (it was the 42nd). If an amendment question feels slightly wrong, check whether the number should be the other one of this pair."},
+
+  {h:"The Schedules and which amendment created them",
+   cols:["Schedule","Subject","Added by"],
+   rows:[
+    ["**First Schedule**","States and UTs, their territories","**Original** Constitution"],
+    ["**Eighth Schedule**","Languages recognised — originally 14, now **22**","**Original**; languages added by 21st (Sindhi), 71st (Konkani, Manipuri, Nepali), 92nd (Bodo, Dogri, Maithili, Santhali)"],
+    ["**Ninth Schedule**","Laws shielded from judicial review","**1st Amendment (1951)**"],
+    ["**Tenth Schedule**","Anti-defection law","**52nd Amendment (1985)**"],
+    ["**Eleventh Schedule**","29 subjects for Panchayats","**73rd Amendment (1992)**"],
+    ["**Twelfth Schedule**","18 subjects for Municipalities","**74th Amendment (1992)**"]
+   ]},
+
+  {h:"The landmark cases behind the amendments",
+   swap:[
+    ["Shankari Prasad (1951)","Parliament **can** amend FRs — the word 'law' in Art 13 does not include a constitutional amendment","Upheld the 1st Amendment"],
+    ["Golaknath (1967)","Parliament **cannot** amend FRs — overruled Shankari Prasad","Led to the **24th Amendment** to overturn this ruling"],
+    ["Kesavananda Bharati (1973)","Parliament can amend any part of the Constitution, **but cannot destroy its basic structure**","The **basic structure doctrine** — the most important constitutional case. Decided 7–6"],
+    ["Minerva Mills (1980)","Reaffirmed basic structure. Struck down parts of the 42nd Amendment that tried to bar judicial review of amendments","The balance between FRs and DPSPs is itself part of the basic structure"],
+    ["I.R. Coelho (2007)","Laws in the Ninth Schedule are **not immune** from review if they violate the basic structure","Put a limit on the Ninth Schedule's protection"]
+   ]}
+
+ ]},
+
+/* ===================================================================== 15 */
+{id:"president-governor", n:"The President and the Governor", hy:1,
+ w:"Election, powers, ordinances, and the differences between the two offices.",
+ quick:[
+  "The President is elected **indirectly** by an **electoral college** of the **elected members** of both Houses of Parliament and the elected members of the State Legislative Assemblies (`Article 54`). Nominated members and MLCs do NOT vote.",
+  "Qualifications: citizen of India, completed `35` years, qualified to be a member of the Lok Sabha (`Article 58`). Term: `5` years, no limit on re-election.",
+  "The **Governor** is **appointed** by the President (`Article 155`), holds office at the **pleasure of the President** (`Article 156`), and is NOT elected.",
+  "The President can return a bill (not a Money Bill) for reconsideration (`Article 111`). If Parliament passes it again, the President **must** give assent. The Governor can additionally **reserve** a bill for the President's consideration (`Article 200`) — a power the President does not have.",
+  "**Ordinance power**: the President under `Article 123`, the Governor under `Article 213`. An ordinance must be laid before Parliament/Legislature within **six weeks** of reassembly, or it ceases to operate."
+ ],
+ blocks:[
+  {h:"President — election and the electoral college",
+   cols:["Detail","What Article 54 says"],
+   rows:[
+    ["**Who votes**","Elected members of **both Houses of Parliament** (Lok Sabha + Rajya Sabha) AND elected members of the **State Legislative Assemblies**. Since 70th Amendment (1992), also Delhi and Puducherry assemblies"],
+    ["**Who does NOT vote**","**Nominated** members of either House, **nominated** MLAs, and **MLCs** — Members of Legislative Councils do not vote at all"],
+    ["**Value of an MLA's vote**","State population ÷ (total elected MLAs × 1000). Varies from state to state — UP's MLA has the highest vote value"],
+    ["**Value of an MP's vote**","Total value of all MLAs' votes ÷ total elected MPs. Same for every MP"],
+    ["**How it works**","Single transferable vote, proportional representation, **secret ballot**"],
+    ["**Disputes**","Decided by the **Supreme Court** (`Article 71`). The election of a President cannot be challenged on the ground of a vacancy in the electoral college"]
+   ]},
+
+  {careful:"**The President does NOT vote in the presidential election.** The President is part of Parliament (`Article 79`) but is not an elected member of either House. Nor do nominated members of Rajya Sabha, nominated MLAs, or any MLC (whether elected or nominated) vote. The electoral college is strictly **elected MPs + elected MLAs**. This is the single most-asked trap on this topic."},
+
+  {h:"President vs Governor — a comparison",
+   cols:["","President","Governor"],
+   rows:[
+    ["**How chosen**","**Elected** indirectly by electoral college","**Appointed** by the President (`Article 155`)"],
+    ["**Term**","`5` years, removable only by **impeachment** (`Article 61`)","`5` years in theory, but holds office at **pleasure of President** — can be removed at will (`Article 156`)"],
+    ["**Minimum age**","`35` years","`35` years"],
+    ["**Qualifications**","Citizen, 35, qualified for Lok Sabha (`Article 58`)","Citizen, 35, not holding office of profit (`Article 157–158`)"],
+    ["**Oath**","Administered by **Chief Justice of India** (`Article 60`)","Administered by the **High Court Chief Justice** (`Article 159`)"],
+    ["**Impeachment**","By Parliament: `Article 61`. 14 days' notice, resolution by **2/3 majority** in each House","**No impeachment process**. Removed by the President; can be removed by the Supreme Court on proven grounds (Rameshwar Prasad case)"],
+    ["**Ordinance power**","`Article 123` — when **Parliament** is not in session","`Article 213` — when **State Legislature** is not in session"],
+    ["**Pardoning power**","`Article 72` — can pardon **death sentences**, court-martial sentences","`Article 161` — can pardon offences under State law, but **cannot** pardon death sentences or court-martial sentences"],
+    ["**Assent to bills**","Can give assent, withhold, or return for reconsideration (`Article 111`). If repassed, **must** assent","Can give assent, withhold, return for reconsideration, or **reserve for President** (`Article 200`). If repassed, **must** assent — but reservation overrides this"],
+    ["**Discretionary power**","Almost none; acts on **aid and advice** of the Council of Ministers (`Article 74`)","**Several**: appointing CM when no clear majority, dismissing a government, reserving bills for President, reporting failure of constitutional machinery"]
+   ]},
+
+  {careful:"**The Governor can pardon but CANNOT commute a death sentence.** Under `Article 161`, the Governor can grant pardons, reprieves, respites and remissions for offences against **State laws only**. But the power to pardon a **death sentence** rests solely with the **President** under `Article 72`. A common SSC question mixes up these two pardoning powers."},
+
+  {h:"The President's legislative powers",
+   cols:["Power","Article","Key detail"],
+   rows:[
+    ["**Summoning and proroguing**","`Article 85`","Summons each House, prorogues either House, **dissolves Lok Sabha** (Rajya Sabha is not subject to dissolution)"],
+    ["**First address**","`Article 87`","Addresses both Houses at the start of the **first session each year** and the first session after each general election"],
+    ["**Nomination to Rajya Sabha**","`Article 80(1)(a)`","Nominates **12 members** with special knowledge in literature, science, art and social service"],
+    ["**Nomination to Lok Sabha**","formerly `Article 331`","Could nominate **2 Anglo-Indians** — this was **removed** by the **104th Amendment (2020)**"],
+    ["**Assent to bills**","`Article 111`","Three options: assent, withhold, or return for reconsideration. If repassed without amendment, **must** assent. No time limit on withholding (the **pocket veto**)"],
+    ["**Ordinances**","`Article 123`","Has the same force as an Act of Parliament. Must be laid before Parliament within **6 weeks** of reassembly"]
+   ]},
+
+  {h:"Key articles at a glance",
+   swap:[
+    ["`Article 52`","There shall be a President of India",""],
+    ["`Article 53`","Executive power vested in the President, exercised through officers subordinate to him",""],
+    ["`Article 54`","Election of the President — the electoral college","Elected members of Parliament + State Legislative Assemblies"],
+    ["`Article 61`","Impeachment of the President","2/3 majority in each House; no equivalent for Governor"],
+    ["`Article 72`","President's pardoning power","Can pardon death sentences; Governor under Art 161 **cannot**"],
+    ["`Article 74`","Council of Ministers to aid and advise the President","42nd Amendment made advice binding; 44th allowed President to ask Cabinet to reconsider once"],
+    ["`Article 111`","Assent to bills","Three options; if repassed, must assent"],
+    ["`Article 123`","President's ordinance power","When Parliament not in session; lapses 6 weeks after reassembly"],
+    ["`Article 155`","Appointment of Governor","By the **President**"],
+    ["`Article 156`","Term of Governor","At **pleasure of President**"],
+    ["`Article 200`","Governor's assent to bills","Four options — the extra one is **reserve for President**"],
+    ["`Article 213`","Governor's ordinance power","Like Art 123, but for State Legislature"]
+   ]}
+
+ ]},
+
+/* ===================================================================== 16 */
+{id:"const-bodies", n:"Constitutional and Statutory Bodies", hy:1,
+ w:"The bodies created by the Constitution itself, the key statutory ones, and how to tell them apart.",
+ quick:[
+  "A **constitutional body** is established by the Constitution and can be altered only by constitutional amendment. A **statutory body** is created by an Act of Parliament and can be abolished or changed by another Act.",
+  "The **Election Commission** (`Article 324`), **CAG** (`Article 148`), **UPSC** (`Article 315`), **Finance Commission** (`Article 280`), and the commissions for **SCs** (`Article 338`) and **STs** (`Article 338A`) are constitutional bodies.",
+  "The **NHRC**, **CIC (Central Information Commission)**, **NCBC**, **Lokpal** and **NITI Aayog** are **statutory or executive** bodies — they are NOT in the Constitution.",
+  "The **Attorney General** (`Article 76`) is a constitutional office — appointed by the President, qualified to be a Supreme Court judge. Can participate in Parliament proceedings but **cannot vote**.",
+  "The **CEC (Chief Election Commissioner)** can be removed only by the same process as a Supreme Court judge — **impeachment by Parliament**. Other Election Commissioners can be removed by the President on the CEC's recommendation."
+ ],
+ blocks:[
+  {h:"The constitutional bodies",
+   cols:["Body","Article","Key facts"],
+   rows:[
+    ["**Election Commission of India**","`324`","CEC + such other ECs as President may fix (currently **3-member** since 1993). CEC can be removed only by **impeachment** (same process as SC judge). Other ECs can be removed by President on CEC's recommendation. Conducts elections to Parliament, State Legislatures, President and Vice President"],
+    ["**Comptroller and Auditor General (CAG)**","`148–151`","Appointed by the President. Removed only by **impeachment**. Audits all expenditure of the Union and States. Reports to the **President** (Union) or **Governor** (State), who lays it before Parliament/Legislature. Called the **guardian of the public purse**. Dr B. R. Ambedkar called the CAG the most important officer under the Constitution"],
+    ["**Union Public Service Commission (UPSC)**","`315–323`","Chairman and members appointed by the **President**. Chairman on retirement is **not eligible** for any further government employment (members may become Chairman). Conducts the **Civil Services Exam** and advises on disciplinary matters. The advice is **not binding** on the government, but any deviation must be reported to Parliament"],
+    ["**State Public Service Commission (SPSC)**","`315–323`","Chairman and members appointed by the **Governor**. Chairman on retirement may be appointed Chairman or member of **UPSC** or Chairman of another SPSC — but not any other government post"],
+    ["**Finance Commission**","`280`","Constituted by the President **every 5 years**. Chairman must be a person with experience in public affairs. Recommends the **distribution of net proceeds of taxes** between Centre and States, and principles governing **grants-in-aid**. Recommendations are **advisory**, not binding"],
+    ["**National Commission for SCs**","`338`","Constitutional since the original Constitution (renamed by 65th Amendment 1990). Investigates matters relating to safeguards for SCs. Reports to the **President** annually"],
+    ["**National Commission for STs**","`338A`","Created by **89th Amendment (2003)** — separated from the SC Commission. Same powers: investigates, reports to the President"],
+    ["**Special Officer for Linguistic Minorities**","`350B`","Appointed by the President. Investigates matters relating to safeguards for linguistic minorities. Reports to the President, who lays it before Parliament. Added by the **7th Amendment (1956)**"]
+   ]},
+
+  {careful:"**NHRC is NOT a constitutional body.** It is a *statutory* body created by the **Protection of Human Rights Act, 1993**. It can be abolished by Parliament tomorrow without touching the Constitution. The same applies to the **CIC** (Right to Information Act, 2005), **Lokpal** (Lokpal and Lokayuktas Act, 2013), **NCBC** — but the NCBC became *partly* constitutional by the **102nd Amendment (2018)**, which inserted `Article 338B`. The distinction between constitutional and statutory is the single most-asked question about these bodies."},
+
+  {h:"The key statutory and executive bodies",
+   cols:["Body","Created by","Key facts"],
+   rows:[
+    ["**National Human Rights Commission (NHRC)**","Protection of Human Rights Act, **1993**","Chairman must be a **retired Chief Justice of India**. Members include a retired SC judge, a retired HC Chief Justice, and two persons with knowledge of human rights. Investigates human rights violations, but its recommendations are **not binding**"],
+    ["**Central Information Commission (CIC)**","Right to Information Act, **2005**","CIC and Information Commissioners appointed by President on recommendation of a committee (PM + Leader of Opposition + Union Cabinet Minister)"],
+    ["**Lokpal**","Lokpal and Lokayuktas Act, **2013**","Chairperson must be a retired CJI, or a retired SC judge, or an eminent person. Jurisdiction over the **Prime Minister** (with exceptions), Ministers, MPs, and Group A and B officers"],
+    ["**National Commission for Backward Classes (NCBC)**","`Article 338B` (102nd Amendment, **2018**)","Originally statutory (1993 Act). Given **constitutional status** by the 102nd Amendment. Considers inclusion in and exclusion from the OBC list"],
+    ["**NITI Aayog**","Executive resolution, **2015**","Replaced the **Planning Commission**. **Not even statutory** — created by a Cabinet resolution, not an Act. Chairman is the **Prime Minister**. Has no power to allocate funds"],
+    ["**National Commission for Women (NCW)**","National Commission for Women Act, **1990**","Statutory body. Reviews constitutional and legal safeguards for women. Recommendations are advisory"]
+   ]},
+
+  {h:"Constitutional offices — Attorney General and Advocate General",
+   cols:["","Attorney General of India","Advocate General of a State"],
+   rows:[
+    ["**Article**","`76`","`165`"],
+    ["**Appointed by**","The **President**","The **Governor**"],
+    ["**Qualification**","Must be qualified to be a **Supreme Court judge**","Must be qualified to be a **High Court judge**"],
+    ["**Term**","Holds office during the **pleasure of the President** — no fixed term","Holds office during the **pleasure of the Governor**"],
+    ["**In Parliament/Legislature**","Can **speak and take part** in proceedings of both Houses. Has a **right of audience** in all courts. But **cannot vote**","Can speak and take part in the proceedings of the State Legislature. But **cannot vote**"],
+    ["**Not a member**","Is **not** a member of either House of Parliament","Is **not** a member of the State Legislature"]
+   ]},
+
+  {careful:"**The Attorney General can participate in Parliament but CANNOT vote.** The same applies to the Advocate General in the State Legislature. They are not members — they are officers of the court who are given a *right of audience* as a constitutional privilege. A question that asks 'who can attend Parliamentary proceedings without being a member' expects the Attorney General."},
+
+  {h:"How they are removed — the three standards",
+   swap:[
+    ["**Impeachment process** (like a SC judge)","CEC, CAG — removed by President on an address by **both Houses** of Parliament, passed by **special majority** (majority of total membership + 2/3 of those present and voting)","The process has **never been used** against any of these officers"],
+    ["**Removal by President on CEC's recommendation**","Other Election Commissioners — not the CEC","The CEC is the only one with impeachment protection; the others serve under the CEC"],
+    ["**At the pleasure of the President/Governor**","Attorney General, Advocate General, Governor","No grounds need to be stated; removal is at will. The Sarkaria Commission recommended that Governors should ordinarily be allowed to complete their 5-year term"],
+    ["**UPSC Chairman and members**","Removed by the **President** on the report of the **Supreme Court** — not by impeachment","The SC holds an inquiry, and the President can remove on its report (`Article 317`)"],
+    ["**Finance Commission members**","**No specific removal procedure** in the Constitution","Their term is defined by the President's order constituting the commission"]
+   ]}
+
  ]}
 
 ]});
