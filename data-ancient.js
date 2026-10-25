@@ -20,9 +20,9 @@
 
 (window.SUBJECTS = window.SUBJECTS || []).push({
 
-id:"ancient", n:"Ancient India", tab:"Ancient", sub:"Stone age to Harsha",
-w:"From the stone age to Harsha: the Indus cities, the Vedas, the sixteen Mahajanapadas, Jainism and Buddhism, the Mauryas, the Guptas, and the Sangam south.",
-intro:"The stone age and the Indus cities first, because they are asked as site-and-finding pairs and nothing else. Then the Vedas, the Mahajanapadas and the two heterodox faiths, which supply most of the questions on ancient India between them. Then the three empires — Maurya, Kushana, Gupta — and the Sangam south, which is a separate history and is asked separately.",
+id:"ancient", n:"Ancient India", tab:"Ancient", sub:"From the Stone Age to the Guptas, and the southern dynasties",
+w:"The Stone Age, the Indus Valley, the Vedic age, the Mahajanapadas, Jainism and Buddhism, the Mauryas, the post-Mauryan kingdoms, the Sangam Age, the Guptas, the southern dynasties, ancient literature and science, and rock-cut architecture.",
+intro:"Ancient India from the first stone tools to the Guptas, and then three new sections: the southern dynasties (Cholas, Chalukyas, Pallavas, Rashtrakutas), ancient Indian literature and science, and the rock-cut architecture that SSC asks about year after year.",
 
 topics:[
 
@@ -638,6 +638,208 @@ topics:[
     ["I-tsing (Yijing)","671–695 CE","After Harsha","An account of Nalanda and of Buddhist practice"],
     ["Al-Biruni","c. 1017–1030 CE","Came with **Mahmud of Ghazni**","**Tahqiq-i-Hind (Kitab-ul-Hind)** — see Medieval India"]
    ]}
+ ]},
+
+/* ===================================================================== 10 */
+{id:"southern-dynasties", n:"The Southern Dynasties — Cholas, Chalukyas, Pallavas", hy:1,
+ w:"The four great powers of the Deccan and the far south, dynasty by dynasty.",
+ quick:[
+  "The **Cholas** under **Rajendra I** built the only significant **naval empire** in Indian history, conquering Sri Lanka and raiding South-East Asia as far as Sumatra.",
+  "**Pulakeshin II** of the Badami Chalukyas defeated **Harsha** on the Narmada, halting the last north-Indian attempt at universal empire.",
+  "**Mahabalipuram** — the Shore Temple, the Five Rathas, and Arjuna's Penance — is entirely **Pallava** work, from the 7th century.",
+  "The **Kailasa Temple at Ellora** was carved top-down from a single rock by Rashtrakuta king **Krishna I** — no blocks were assembled.",
+  "The **Uttaramerur inscription** records the Chola system of village self-government in extraordinary detail — election by lot, qualifications for candidates, and term limits."
+ ],
+ blocks:[
+  {h:"The Pallavas of Kanchipuram",
+   cols:["Ruler","Period","What each is remembered for"],
+   rows:[
+    ["**Simhavishnu**","c. 550–580 CE","Founded the imperial Pallava line; defeated the Kalabhras"],
+    ["**Mahendravarman I**","c. 600–630 CE","Pioneer of **rock-cut architecture** in the south — the Mandagapattu cave temple. Also a poet and playwright (*Mattavilasa Prahasana*)"],
+    ["**Narasimhavarman I (Mahamalla)**","c. 630–668 CE","Defeated **Pulakeshin II** and sacked the Chalukya capital Vatapi. Built the **Five Rathas** (monolithic chariots) at **Mahabalipuram**. Sent a naval expedition to help the king of Sri Lanka"],
+    ["**Narasimhavarman II (Rajasimha)**","c. 700–728 CE","Built the **Shore Temple** at Mahabalipuram and the **Kailasanatha Temple** at Kanchipuram — the two finest Pallava structural temples"]
+   ]},
+
+  {careful:"**The Shore Temple was built by Narasimhavarman II (Rajasimha), NOT by Narasimhavarman I (Mahamalla).** The Five Rathas are Mahamalla's; the Shore Temple is his grandson's. Both are at Mahabalipuram, and questions swap the two builders constantly."},
+
+  {h:"The three Chalukya branches",
+   cols:["Branch","Capital","Period","The fact that is asked"],
+   rows:[
+    ["**Badami (Western) Chalukyas**","Vatapi (Badami)","c. 543–757 CE","**Pulakeshin II** defeated Harsha, earning the praise of the Chinese pilgrim Xuanzang. Overthrown by the **Rashtrakutas**"],
+    ["**Kalyani (Later Western) Chalukyas**","Kalyani (Basavakalyan)","c. 973–1189 CE","Revived after the Rashtrakutas. **Vikramaditya VI** introduced the **Chalukya-Vikrama era** (1076 CE). **Basavanna**, the founder of the Lingayat movement, was at this court"],
+    ["**Vengi (Eastern) Chalukyas**","Vengi (Andhra)","c. 624–1189 CE","A collateral branch. Eventually merged with the Cholas through a dynastic marriage — **Rajendra I's** son Rajadhiraja was half-Chalukya"]
+   ]},
+
+  {h:"The Rashtrakutas of Manyakheta",
+   cols:["Ruler","What is asked"],
+   rows:[
+    ["**Dantidurga**","Founded the dynasty by overthrowing the last Badami Chalukya"],
+    ["**Krishna I**","Built the **Kailasa Temple** at Ellora (Cave 16) — carved from a single rock, from the top down, no blocks assembled. The greatest rock-cut monument in India"],
+    ["**Dhruva**","Defeated both the Palas and the Gurjara-Pratiharas in the tripartite struggle for Kannauj"],
+    ["**Amoghavarsha I**","Wrote the **Kavirajamarga**, the earliest surviving work on Kannada poetics. Turned Jain. Compared by the Arab traveller Sulaiman to the greatest kings of the world"],
+    ["**Krishna III**","Defeated the Cholas at the Battle of Takkolam, extending Rashtrakuta power deep into Tamil country"]
+   ]},
+
+  {h:"The Chola Empire",
+   cols:["Ruler","Period","What each is remembered for"],
+   rows:[
+    ["**Vijayalaya**","c. 848–871 CE","Founded the imperial Chola line by capturing **Thanjavur** from the Muttaraiyars"],
+    ["**Rajaraja I**","985–1014 CE","Built the **Brihadeeswarar Temple** (Thanjavur) — the first all-granite temple, and a UNESCO World Heritage Site. Conquered Kerala, northern Sri Lanka, and the Maldives"],
+    ["**Rajendra I**","1014–1044 CE","**The naval conqueror.** Sent a naval expedition to Srivijaya (Sumatra, Malaya) in `1025`. Conquered the entire east coast to the Ganga and took the title **Gangaikondachola**. Built a new capital, **Gangaikondacholapuram**, with its own Brihadeeswarar Temple"],
+    ["**Kulottunga I**","1070–1120 CE","A Vengi Chalukya prince who inherited the Chola throne. Abolished tolls (*Sungam Tavirtta Cholan*)"]
+   ]},
+
+  {h:"Chola administration — the part that is asked",
+   swap:[
+    ["Local self-government","The **Uttaramerur inscription** records the village assembly (*Sabha*) system — members chosen by lot from eligible candidates","Candidates needed to own property, be literate, and be between 35 and 70. Term limits applied."],
+    ["Revenue unit","The **Nadu** — a group of villages. Below it the **Ur** (village assembly of all residents) and the **Sabha** (assembly of Brahmana villages)",""],
+    ["Taxation","Land revenue was the chief source, assessed on the basis of **land surveys**","Detailed records survive on temple inscriptions"],
+    ["Navy","The **Chola navy** is the most powerful in Indian history — it controlled the **Bay of Bengal** and raided as far as Sumatra and Malaya","No other Indian dynasty built a comparable naval force"],
+    ["Temple as institution","Temples were **economic hubs** — they received land grants, employed artisans, ran schools, and functioned as banks","The Brihadeeswarar Temple at Thanjavur was the centre of a large economic network"]
+   ]},
+
+  {careful:"**The Cholas are asked for three things: the Brihadeeswarar Temple, the naval expedition to South-East Asia, and the village self-government at Uttaramerur.** Do not confuse the two Brihadeeswarar Temples — one at **Thanjavur** (Rajaraja I) and one at **Gangaikondacholapuram** (Rajendra I). The Thanjavur one is the one in the UNESCO listing."}
+
+ ]},
+
+/* ===================================================================== 11 */
+{id:"ancient-lit-science", n:"Ancient Indian literature and science", hy:1,
+ w:"The Vedas, the epics, the grammarians and the scientists — who wrote what, and when.",
+ quick:[
+  "The **Rigveda** is the oldest — `10` mandalas, `1,028` hymns. The **Atharvaveda** is the youngest and the least ritualistic, dealing with medicine, spells and everyday life.",
+  "The **Mahabharata** at `100,000` shlokas is the **longest epic in the world**. The **Bhagavad Gita** is part of it (the Bhishma Parva).",
+  "**Panini's** Ashtadhyayi — roughly 4th century BCE — is the earliest known formal grammar of any language, with `3,959` rules.",
+  "**Aryabhata** (`499 AD`) stated that the earth rotates on its own axis and gave pi as `3.1416` — over a thousand years before Copernicus.",
+  "**Chanakya's** Arthashastra is a treatise on statecraft and economics, written to guide **Chandragupta Maurya**."
+ ],
+ blocks:[
+  {h:"The four Vedas",
+   cols:["Veda","Content","The fact that is asked"],
+   rows:[
+    ["**Rigveda**","Hymns of praise to the gods","The **oldest**, with `10` mandalas and `1,028` hymns. The 10th mandala contains the **Purusha Sukta** (the origin of varna). Written in the **early Vedic period**"],
+    ["**Yajurveda**","Prose mantras for rituals and sacrifices","Two recensions: **Shukla** (White — only mantras) and **Krishna** (Black — mantras with commentary). The manual for performing yajnas"],
+    ["**Samaveda**","Hymns set to musical notation for chanting","The **basis of Indian music**. Most of its hymns are taken from the Rigveda but set to melodic patterns (*saman*)"],
+    ["**Atharvaveda**","Spells, charms, medicine, philosophy","The **youngest** Veda and the most practical. Named after the sage **Atharvan**. Contains early references to medicine, surgery, and the treatment of disease"]
+   ]},
+
+  {h:"The six Vedangas — the limbs of the Veda",
+   swap:[
+    ["**Shiksha**","Phonetics","How to pronounce the sacred texts correctly"],
+    ["**Kalpa**","Ritual","Rules for performing sacrifices — includes the Shrautasutras, Grihyasutras and Dharmasutras"],
+    ["**Vyakarana**","Grammar","Panini's Ashtadhyayi is the supreme example"],
+    ["**Nirukta**","Etymology","**Yaska's** Nirukta — explains the meanings of difficult Vedic words"],
+    ["**Chhanda**","Metre","The rules of poetic metre — Pingala's Chhandasutra"],
+    ["**Jyotisha**","Astronomy and calendar-making","Fixing the right time for rituals"]
+   ]},
+
+  {h:"The two epics",
+   cols:["Epic","Author","Scale","The fact that is asked"],
+   rows:[
+    ["**Ramayana**","**Valmiki**","`24,000` shlokas, `7` kandas","Called the *Adi Kavya* (the first poem). The oldest sections may be from the 5th century BCE. Seven books: Bala, Ayodhya, Aranya, Kishkindha, Sundara, Yuddha, Uttara"],
+    ["**Mahabharata**","**Vyasa**","`100,000` shlokas, `18` parvas","The **longest epic in the world**. Contains the **Bhagavad Gita** (in the Bhishma Parva) and the **Shanti Parva** (on dharma and statecraft). Original name: *Jaya*, then expanded to *Bharata*, then *Mahabharata*"]
+   ]},
+
+  {careful:"**The Bhagavad Gita is part of the Mahabharata, not a separate text.** It appears in the **Bhishma Parva** (Book 6), as a dialogue between Krishna and Arjuna before the battle of Kurukshetra. Questions sometimes list it as a separate epic or place it in the wrong parva."},
+
+  {h:"The scholars and their works",
+   cols:["Scholar","Work","Subject","The one line"],
+   rows:[
+    ["**Panini**","**Ashtadhyayi**","Sanskrit grammar","c. 4th century BCE. `3,959` rules. The earliest formal grammar of any language"],
+    ["**Patanjali**","**Mahabhashya**","Commentary on Panini","Also traditionally credited with the *Yoga Sutras*, though this is debated"],
+    ["**Kautilya / Chanakya**","**Arthashastra**","Statecraft, economics, espionage","Written to guide **Chandragupta Maurya**. Rediscovered in `1905` by **R. Shamasastry**"],
+    ["**Charaka**","**Charaka Samhita**","Medicine (Ayurveda)","Called the **Father of Medicine** in India. Describes over 600 drugs and their uses"],
+    ["**Sushruta**","**Sushruta Samhita**","Surgery","Called the **Father of Surgery**. Describes **rhinoplasty** (nose reconstruction), 121 surgical instruments, and cataract surgery"],
+    ["**Aryabhata**","**Aryabhatiyam**","Mathematics, astronomy","Written `499 AD`. The earth rotates on its own axis; pi ≈ `3.1416`; place-value notation; sine tables"],
+    ["**Varahamihira**","**Brihat Samhita**, **Pancha-Siddhantika**","Astronomy, astrology, encyclopaedia","Court of Vikramaditya (Chandragupta II). The Pancha-Siddhantika summarises five earlier astronomical works"],
+    ["**Brahmagupta**","**Brahmasphutasiddhanta**","Mathematics, astronomy","Written `628 AD`. First to treat **zero as a number** and to formulate rules for negative numbers"],
+    ["**Bhaskara II**","**Lilavati**, **Siddhanta Shiromani**","Mathematics, astronomy","12th century. Lilavati covers arithmetic and algebra; Siddhanta Shiromani covers astronomy. Named the book after his daughter"]
+   ]},
+
+  {h:"Kalidasa — the greatest Sanskrit poet",
+   list:[
+    "Court poet of **Vikramaditya** — traditionally identified with **Chandragupta II** of the Guptas.",
+    "**Abhijnana Shakuntalam** (The Recognition of Shakuntala) — a play in seven acts, considered the finest in Sanskrit literature. Goethe admired it.",
+    "**Meghaduta** (The Cloud Messenger) — a lyric poem in which an exiled yaksha asks a cloud to carry a message to his wife.",
+    "**Raghuvamsha** — an epic poem tracing the lineage of Rama.",
+    "**Kumarasambhava** — the birth of the war-god Kartikeya, son of Shiva and Parvati.",
+    "**Ritusamhara** — a poem on the six seasons, considered an early work."
+   ]},
+
+  {careful:"**Aryabhata said the earth rotates on its own axis in 499 AD — over a thousand years before Copernicus.** SSC questions sometimes attribute this discovery to Copernicus or Galileo. Aryabhata also gave the value of pi as 3.1416 and used a place-value system. Do not confuse him with Aryabhata II (10th century), a later and less famous astronomer."}
+
+ ]},
+
+/* ===================================================================== 12 */
+{id:"rock-architecture", n:"Rock-cut architecture and sculpture", hy:1,
+ w:"Ajanta, Ellora, Elephanta, Mahabalipuram and the other rock-cut sites — who built them, what is in them, and the one thing each is famous for.",
+ quick:[
+  "**Ajanta** is famous for its **paintings** — Buddhist murals of the Gupta and post-Gupta period. **Ellora** is famous for its **sculptures** — Hindu, Buddhist and Jain, and especially the Kailasa Temple.",
+  "The **Kailasa Temple** (Ellora, Cave 16) was carved from a **single rock, from the top down**, by Rashtrakuta king **Krishna I**. No blocks were assembled.",
+  "**Barabar Caves** in Bihar are the **oldest surviving rock-cut caves** in India — Mauryan period, dedicated by **Ashoka** to the **Ajivikas**.",
+  "**Mahabalipuram** is entirely **Pallava** — the Shore Temple, the Five Rathas, and Arjuna's Penance (the world's largest open-air rock relief).",
+  "Ajanta has `30` caves. Ellora has `34` caves — `12` Buddhist, `17` Hindu, `5` Jain."
+ ],
+ blocks:[
+  {h:"The major rock-cut sites",
+   cols:["Site","Location","Religion","Dynasty / Period","UNESCO"],
+   rows:[
+    ["**Ajanta**","Aurangabad, Maharashtra","Buddhist","2nd century BCE to 6th century CE (Satavahana and Vakataka / Gupta period)","`1983`"],
+    ["**Ellora**","Aurangabad, Maharashtra","Buddhist, Hindu, Jain","6th to 11th century CE (Chalukyas, Rashtrakutas, Yadavas)","`1983`"],
+    ["**Elephanta**","Island near Mumbai, Maharashtra","Hindu (Shaiva)","Rashtrakuta period, c. 6th–8th century","`1987`"],
+    ["**Mahabalipuram**","Kanchipuram, Tamil Nadu","Hindu","**Pallava**, 7th century","`1984`"],
+    ["**Barabar and Nagarjuni**","Jehanabad, Bihar","Ajivika","**Mauryan** — `3rd century BCE`","—"],
+    ["**Udayagiri and Khandagiri**","Bhubaneswar, Odisha","Jain","**Kharavela** dynasty, 2nd–1st century BCE","—"],
+    ["**Badami**","Bagalkot, Karnataka","3 Hindu, 1 Jain","**Badami Chalukya**, 6th century","—"]
+   ]},
+
+  {h:"Ajanta — the paintings",
+   list:[
+    "`30` caves in a horseshoe bend of the Waghora river. Two types: **Chaityas** (prayer halls with a stupa) and **Viharas** (monasteries with cells).",
+    "Two phases: the early caves (9, 10, 12, 13, 15A) are **Hinayana** — from the Satavahana period, 2nd–1st century BCE. The later caves are **Mahayana** — Vakataka / Gupta period, 5th–6th century CE.",
+    "The **paintings** are the glory of Ajanta — the finest surviving examples of ancient Indian painting. Subjects: the **Jataka tales** (stories of the Buddha's previous lives), court scenes, nature.",
+    "Famous paintings: the **Bodhisattva Padmapani** (Cave 1) and the **Bodhisattva Vajrapani** (Cave 1) — the two most reproduced images from Ajanta.",
+    "Technique: **fresco secco** (painting on dry plaster), not true fresco (which is on wet plaster). The distinction is asked."
+   ]},
+
+  {h:"Ellora — the sculptures",
+   cols:["Caves","Religion","Count","What is in them"],
+   rows:[
+    ["Caves 1–12","**Buddhist**","12","Viharas and chaityas. Cave 10 (**Vishwakarma**) has a large seated Buddha. Cave 12 (**Tin Thal**) is three storeys"],
+    ["Caves 13–29","**Hindu**","17","**Cave 16** is the **Kailasa Temple** — the largest monolithic rock excavation in the world, carved top-down by **Krishna I** of the Rashtrakutas. Dedicated to Shiva. Cave 15 (**Dashavatara**) shows the ten avatars of Vishnu"],
+    ["Caves 30–34","**Jain**","5","Caves 32–34 have fine paintings and carvings of Jain tirthankaras. Cave 32 (**Indra Sabha**) is the finest of the Jain group"]
+   ]},
+
+  {careful:"**Ajanta is famous for PAINTINGS, Ellora is famous for SCULPTURES (especially the Kailasa Temple).** This is the single most swapped pair in SSC questions on Indian art. Remember: Ajanta = paintings of the Buddha's lives, Ellora = the rock-cut Kailasa Temple of Shiva."},
+
+  {h:"Elephanta",
+   swap:[
+    ["Location","An island in Mumbai Harbour, reached by ferry from the Gateway of India","Originally called **Gharapuri**; the Portuguese named it Elephanta after a stone elephant they found (now in the Bhau Daji Lad Museum)"],
+    ["The Trimurti","A `5.45 m` high three-headed bust of **Shiva** — as creator (Tatpurusha), preserver (Vamadeva) and destroyer (Aghora)","The most famous sculpture on the island, and one of the most iconic in Indian art"],
+    ["Dynasty","Attributed to the **Rashtrakutas** or the **Kalachuris**, c. 6th–8th century","The exact patron is debated"],
+    ["UNESCO","Inscribed `1987`",""]
+   ]},
+
+  {h:"Mahabalipuram (Pallava)",
+   cols:["Monument","What it is"],
+   rows:[
+    ["**Five Rathas (Pancha Rathas)**","Five monolithic temples carved from single boulders, named after the Pandavas and Draupadi. Each ratha is in a different architectural style. Built by **Narasimhavarman I (Mahamalla)**"],
+    ["**Shore Temple**","A structural (not rock-cut) temple on the shore — one of the oldest stone temples in south India. Built by **Narasimhavarman II (Rajasimha)**"],
+    ["**Arjuna's Penance / Descent of the Ganga**","The **world's largest open-air rock relief** — `29 m` long, `13 m` high. Carved on two enormous boulders. Depicts either Arjuna's penance for the Pashupatastra or the descent of the Ganga"],
+    ["**Varaha Cave**","A rock-cut cave with a magnificent panel of Vishnu as **Varaha** (the boar incarnation) lifting the earth"]
+   ]},
+
+  {h:"The oldest — Barabar Caves",
+   list:[
+    "In the **Barabar and Nagarjuni hills** near Gaya, Bihar.",
+    "The **oldest surviving rock-cut caves in India** — 3rd century BCE, **Mauryan period**.",
+    "Dedicated by **Ashoka** (and his grandson **Dasharatha**) to the **Ajivikas** — not to the Buddhists.",
+    "The **Lomas Rishi Cave** is the most famous, with a carved entrance imitating a wooden arch.",
+    "The interior walls are **polished to a mirror finish** — the distinctive Mauryan polish.",
+    "E. M. Forster used the Barabar Caves as the model for the **Marabar Caves** in his novel *A Passage to India*."
+   ]},
+
+  {careful:"**The Barabar Caves were dedicated to the Ajivikas, NOT to the Buddhists.** Ashoka is associated with Buddhism, and the instinct is to assume he gave caves to Buddhists — but the Barabar inscriptions specifically name the Ajivika sect. The Nagarjuni group of caves was added by his grandson Dasharatha, also for the Ajivikas."}
+
  ]}
 
 ]});

@@ -19,9 +19,9 @@
 
 (window.SUBJECTS = window.SUBJECTS || []).push({
 
-id:"medieval", n:"Medieval India", tab:"Medieval", sub:"Rajputs to the later Mughals",
-w:"The tripartite struggle, the five dynasties of the Delhi Sultanate, Vijayanagara and Bahmani, the Mughals, the Marathas, and the Bhakti and Sufi movements.",
-intro:"Five dynasties of the Delhi Sultanate, six great Mughals, two southern powers, one Maratha state and two devotional movements. Learnt as a spine of dates with the buildings, the revenue systems and the court poets hung off it, because that is how the questions come.",
+id:"medieval", n:"Medieval India", tab:"Medieval", sub:"The Sultanate, the Mughals, the Marathas, and the Europeans",
+w:"The Rajputs, the Delhi Sultanate, the Khaljis and Tughlaqs, Vijayanagara, the Mughals and their administration, the Marathas, the Bhakti and Sufi movements, the Sikh Gurus, medieval architecture, and the arrival of the Europeans.",
+intro:"Medieval India from the Rajputs through the Sultanate, the Mughals, and the Marathas, with two new sections: how the Mughal state was actually run (the mansabdari system, revenue, and provincial administration), and the arrival of the five European powers — Portuguese, Dutch, English, French, and Danish — the questions on which turn on dates, first factories, and the order of arrival.",
 
 topics:[
 
@@ -747,6 +747,134 @@ topics:[
     ["Storia do Mogor","**Niccolao Manucci**","An Italian who spent most of his life in India"],
     ["Muntakhab-ul-Lubab","Khafi Khan","Aurangzeb's reign, written in secret"]
    ]}
+ ]},
+
+/* ===================================================================== 12 */
+{id:"mughal-admin", n:"The Mughal administration", hy:1,
+ w:"The mansabdari system, the revenue system, and how the empire was actually run.",
+ quick:[
+  "The **Mansabdari system** was introduced by **Akbar** — a dual rank of **Zat** (personal status) and **Sawar** (cavalry obligation).",
+  "**Todar Mal's** revenue system (**Zabti** or **Dahsala**) measured the land, averaged ten years of prices, and fixed revenue at roughly **one-third** of the produce.",
+  "The empire was divided into **Subahs** (provinces), each under a **Subedar** (governor). Below the Subah: **Sarkar** → **Pargana** → **Village**.",
+  "Jagirs were assigned for salary and were **not hereditary** — mansabdars were transferred regularly to prevent the growth of feudal power.",
+  "**Akbar** abolished the **Jizya** (tax on non-Muslims). **Aurangzeb** reimposed it in `1679`."
+ ],
+ blocks:[
+  {h:"The mansabdari system",
+   cols:["Term","What it means"],
+   rows:[
+    ["**Mansab**","A rank or position in the imperial service — not an office or a post but a numerical grade"],
+    ["**Zat rank**","The **personal status** of the mansabdar — his pay grade and his position in the court hierarchy"],
+    ["**Sawar rank**","The **cavalry obligation** — how many horsemen the mansabdar was expected to maintain for the emperor"],
+    ["First class","Sawar rank **equals** the Zat rank"],
+    ["Second class","Sawar rank is **more than half** but less than the Zat rank"],
+    ["Third class","Sawar rank is **less than half** of the Zat rank"],
+    ["Highest ranks","Initially capped at `5,000`. Only princes of the blood could hold ranks above `5,000`. The cap was later raised as the empire expanded"],
+    ["Key feature","**Not hereditary.** The mansab died with the holder. This prevented the growth of feudal families"]
+   ]},
+
+  {careful:"**Zat is personal status, Sawar is cavalry.** Questions swap these constantly. The trap is to say 'Zat is the number of horsemen' — it is not. Zat determines the mansabdar's pay and position; Sawar determines how many horses and riders he must maintain. A mansabdar with Zat 3000 / Sawar 3000 is first class; Zat 3000 / Sawar 1000 is third class."},
+
+  {h:"Revenue administration — Todar Mal's system",
+   cols:["Term","What it means"],
+   rows:[
+    ["**Zabti / Dahsala**","The standard system introduced by **Todar Mal** under Akbar. Land was measured; the average of **ten years'** prices was taken; revenue was fixed at about **one-third** of the average produce. Also called *Ain-i-Dahsala* (the ten-year system)"],
+    ["**Batai / Ghalla-bakshi**","Crop-sharing — the harvest was divided between the cultivator and the state. Used where measurement was impractical"],
+    ["**Kankut**","Estimation by inspection — the standing crop was estimated and revenue fixed accordingly"],
+    ["**Nasaq**","A lump-sum assessment based on past payment records"],
+    ["**Bigha**","The standard unit of area for land measurement. Akbar standardised it"],
+    ["**Patwari**","The village-level official who kept the revenue records"]
+   ]},
+
+  {h:"The provincial hierarchy",
+   list:[
+    "**Subah** (province) — governed by a **Subedar** (also called **Sipahsalar**). Akbar divided the empire into `15` subahs; by Aurangzeb's time there were `21`.",
+    "**Sarkar** (district) — headed by a **Faujdar** (military) and an **Amalguzar** (revenue).",
+    "**Pargana** — headed by a **Shiqdar** (law and order), **Amin** (revenue), **Qanungo** (records) and **Patwari** (village records).",
+    "**Village** — the basic unit, managed by the **Muqaddam** (village headman) and the **Patwari**."
+   ]},
+
+  {h:"The central officials",
+   swap:[
+    ["**Wazir / Diwan**","Head of the revenue and finance department","The most powerful minister. Also called **Diwan-i-Ala** under later Mughals"],
+    ["**Mir Bakshi**","Head of the military department — the **paymaster**","Maintained the records of all mansabdars, verified muster rolls, and presented candidates for appointment"],
+    ["**Sadr-us-Sudur**","Head of the **religious and charitable** department","In charge of madad-i-maash (revenue-free land grants) and enforcing Sharia (under the orthodox rulers)"],
+    ["**Qazi-ul-Quzat**","The **Chief Justice**","Head of the judicial system. Dispensed justice according to Islamic law"],
+    ["**Mir Saman**","Head of the **royal household** — the karkhanas (workshops)","Supervised the manufacture of goods for the court"],
+    ["**Vakil**","The **Prime Minister** under the early Mughals (Babur and Humayun)","The post declined in importance under Akbar, who preferred to concentrate power in his own hands"]
+   ]},
+
+  {h:"Akbar's reforms beyond revenue",
+   cols:["Reform","What it was"],
+   rows:[
+    ["**Sulh-i-Kul**","Universal peace and tolerance — the governing principle of Akbar's reign. All religions were to be treated with equal respect"],
+    ["**Din-i-Ilahi**","A **syncretic religious order** founded by Akbar in `1582`. Not a new religion but a spiritual fellowship. Only `18` Hindus joined, the most prominent being **Birbal**"],
+    ["**Ibadat Khana**","The **Hall of Worship** at Fatehpur Sikri — built in `1575` for religious debates between scholars of all faiths"],
+    ["**Abolition of Jizya**","Akbar abolished the Jizya (poll tax on non-Muslims) in `1564`. Aurangzeb reimposed it in `1679` — one of the most asked dates in medieval India"],
+    ["**Abolition of pilgrim tax**","Along with Jizya, Akbar also abolished the tax levied on Hindu pilgrims visiting sacred places"],
+    ["**Ilahi Era**","A new calendar system introduced by Akbar in `1583`, beginning from his accession. Purely solar, not tied to any religion"]
+   ]},
+
+  {careful:"**Akbar abolished the Jizya in 1564; Aurangzeb reimposed it in 1679.** These two dates are among the most asked in medieval Indian history. The trap is swapping the two emperors — or placing the reimposition under Shah Jahan (who did not reimpose it). Din-i-Ilahi was Akbar's, not anyone else's — it died with him."}
+
+ ]},
+
+/* ===================================================================== 13 */
+{id:"europeans", n:"The arrival of the Europeans", hy:1,
+ w:"Portuguese, Dutch, English, French, Danish — who came first, what they built, and in what order they left.",
+ quick:[
+  "**Vasco da Gama** reached **Calicut** in `1498` — the first European to reach India by sea. The local ruler was the **Zamorin**.",
+  "The **English East India Company** was founded in `1600`; its first factory in India was at **Surat** (`1613`).",
+  "Order of European arrival: **Portuguese → Dutch → English → French → Danish** (by first permanent settlement).",
+  "The Portuguese were the **first to arrive** (`1498`) and the **last to leave** — Goa was liberated only in `1961`.",
+  "The **Carnatic Wars** (`1746–1763`) between the French and the British decided European supremacy in India — the French lost."
+ ],
+ blocks:[
+  {h:"The five European powers, in order of arrival",
+   cols:["Power","Company / Arrival","First settlement in India","What happened to them"],
+   rows:[
+    ["**Portuguese**","Vasco da Gama reached **Calicut**, `1498`","Factory at Calicut (`1500`), then **Cochin** (`1503`). **Goa** captured by **Albuquerque** in `1510` — became the capital of Portuguese India","Monopolized the spice trade in the 16th century. Declined from the 17th century as the Dutch and English grew stronger. **Last to leave India** — Goa liberated in `1961`"],
+    ["**Dutch**","**VOC** (Dutch East India Company), `1602`","Factories at **Masulipatnam** (`1605`), **Pulicat**, **Surat**, **Nagapattinam**","Focused on the spice trade (pepper and cinnamon). Lost the **Battle of Colachel** (`1741`) to **Travancore**. Left India by the late 18th century to focus on the Dutch East Indies (Indonesia)"],
+    ["**English**","**East India Company**, chartered `1600`","First factory at **Surat** (`1613`). **Fort St George** / Madras (`1639`). **Bombay** (`1668` — a dowry gift from Portugal). **Fort William** / Calcutta (`1690`)","Won supremacy over the French in the Carnatic Wars. After the **Battle of Plassey** (`1757`) became the dominant power in India"],
+    ["**French**","**French East India Company** (*Compagnie des Indes orientales*), `1664`","**Surat** (`1668`), **Pondicherry** (`1674`) — their capital in India. **Chandernagore** (`1692`) in Bengal","Lost to the British: **Battle of Wandiwash** (`1760`), **Treaty of Paris** (`1763`). Retained five small territories (Pondicherry, Karikal, Yanam, Mahe, Chandernagore) until `1954`"],
+    ["**Danish**","Danish East India Company, `1616`","**Tranquebar** (Tamil Nadu, `1620`), **Serampore** (Bengal, `1755`)","The smallest European presence. **Sold all possessions to the British** in `1845`. Serampore is remembered for the **Serampore Trio** (Carey, Marshman, Ward) and their press"]
+   ]},
+
+  {careful:"**The Portuguese were the first to arrive and the LAST to leave.** Vasco da Gama reached India in 1498; Goa was liberated only in 1961, fourteen years after Indian independence. No other European power remained that long. The Danish were the second-last European power to have territory in India (sold in 1845), not the French — the French territories were transferred in 1954."},
+
+  {h:"The English East India Company — the key dates",
+   swap:[
+    ["`1600`","**Company chartered** by Queen Elizabeth I","Formally: 'The Governor and Company of Merchants of London Trading into the East Indies'"],
+    ["`1608`","**Captain Hawkins** arrives at the court of **Jahangir** at Agra","Seeking trading rights; Jahangir was initially cordial"],
+    ["`1613`","First factory at **Surat**","A factory is a warehouse and trading post, not a manufacturing unit"],
+    ["`1615`","**Sir Thomas Roe** arrives as ambassador of **James I** to Jahangir","Secured a farman (imperial order) allowing the English to trade freely"],
+    ["`1639`","**Fort St George** built at **Madras** (now Chennai)","The first English fortified settlement — became the centre of the Madras Presidency"],
+    ["`1661`","**Bombay** given to **Charles II** as dowry by the Portuguese (marriage to Catherine of Braganza)","Transferred to the Company in `1668` for an annual rent of £10"],
+    ["`1690`","**Job Charnock** founds **Calcutta** and builds **Fort William**","Became the capital of British India in 1773"],
+    ["`1757`","**Battle of Plassey** — **Robert Clive** defeats **Siraj-ud-Daulah** with the help of **Mir Jafar**","The beginning of British political control in India"],
+    ["`1764`","**Battle of Buxar** — decisive victory over the combined forces of the Nawab of Bengal, the Nawab of Awadh, and Shah Alam II","More significant militarily than Plassey — established British supremacy in northern India"]
+   ]},
+
+  {h:"The Carnatic Wars — how the French lost",
+   cols:["War","Years","Key events","Result"],
+   rows:[
+    ["**First Carnatic War**","`1746–1748`","Extension of the Austrian War of Succession to India. French under **Dupleix** captured Madras. **Battle of Adyar** (`1746`) — small French force defeated the Nawab of Arcot's army","Ended by **Treaty of Aix-la-Chapelle** (`1748`). Madras returned to the British. Inconclusive"],
+    ["**Second Carnatic War**","`1749–1754`","Dupleix tried to install puppet nawabs. **Robert Clive** captured **Arcot** (`1751`) with only 200 men — the turning point. Dupleix was recalled to France","**Treaty of Pondicherry** (`1754`). French influence in the Deccan broken. Dupleix's recall ended French ambition in India"],
+    ["**Third Carnatic War**","`1756–1763`","Extension of the Seven Years' War. **Battle of Wandiwash** (`1760`) — the decisive battle. British under **Eyre Coote** defeated the French under **Lally**. Pondicherry fell in `1761`","**Treaty of Paris** (`1763`). France returned to India only as a trading power. French territories (Pondicherry etc.) returned but could not be fortified"]
+   ]},
+
+  {h:"The Portuguese in India — more detail",
+   list:[
+    "**Vasco da Gama** arrived at Calicut on `20 May 1498`, guided by an Arab navigator (**Ibn Majid**, according to some sources). He was received by the **Zamorin** (Samuthiri) of Calicut.",
+    "**Pedro Álvares Cabral** arrived in `1500` and established the first Portuguese factory at Calicut.",
+    "**Alfonso de Albuquerque** captured **Goa** from the Sultan of Bijapur in `1510`. He is called the **real founder of Portuguese power in India**. He introduced a policy of intermarriage and encouraged settlements.",
+    "The Portuguese brought **tobacco, potato, maize, cashew nut, pineapple, and papaya** to India — all New World crops.",
+    "They also introduced the **printing press** to India — at Goa, in `1556`.",
+    "**Decline**: the Portuguese lost Hormuz to Persia (1622) and most of their eastern possessions to the Dutch. By the late 17th century they held little beyond Goa, Daman and Diu."
+   ]},
+
+  {careful:"**The Battle of Plassey (1757) was NOT a Carnatic War — it was in Bengal.** The Carnatic Wars were fought in southern India between the French and the British. Plassey was a separate conflict in which Clive defeated the Nawab of Bengal. The Battle of **Wandiwash** (`1760`) was the decisive battle of the Carnatic Wars. Questions often swap Plassey and Wandiwash."}
+
  ]}
 
 ]});
